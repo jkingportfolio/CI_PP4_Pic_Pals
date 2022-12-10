@@ -37,6 +37,7 @@ ALLOWED_HOSTS = ['pic-pals-pp4.herokuapp.com', 'localhost']
 # Application definition
 
 INSTALLED_APPS = [
+    'account.apps.AccountConfig',
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
@@ -44,7 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'cloudinary',
-    'account',
+    # 'account',
 ]
 
 MIDDLEWARE = [
