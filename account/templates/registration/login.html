@@ -1,0 +1,23 @@
+<!-- login page to be created here-->
+{% extends "base.html" %}
+
+{% block title %}Log in{% endblock %}
+
+{% block content %}
+
+<h1>Welcome to Pic Pals</h1>
+<p>Please log in below</p>
+{% if form.errors %}
+<p>Invalid log in details. Please try again</p>
+{% else %}
+<p>Please log in below</p>
+{% endif %}
+<div class="container">
+    <form action="{% url 'login' %} " method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+        <input type="hidden" name="next" value="{{ next }}" />
+        <p><input type="submit" value="Log in"></p>
+    </form>
+</div>
+{% endblock %}
