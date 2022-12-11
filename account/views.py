@@ -2,12 +2,12 @@ from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 from .forms import LoginDetails
+from django.contrib.auth.decorators import login_required
 
 # Create your views here.
-# def index(request):
-#     return render(request, 'index.html')
 
 
+# User login view
 def user_login(request):
     if request.method == 'POST':
         form = LoginDetails(request.POST)
@@ -26,4 +26,8 @@ def user_login(request):
         form = LoginDetails()
     return render(request, 'account/login.html', {'form': form})
 
-        
+
+# Logged in user dashboard view        
+@login_required
+def dash(request):
+    return render(request, 'account/dashboard.html', {'section': dashboard})
