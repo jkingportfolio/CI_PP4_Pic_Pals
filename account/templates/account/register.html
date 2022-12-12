@@ -6,5 +6,9 @@
 {% block content %}
 
 <h1>Please register below</h1>
+<form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+<p><input type="submit" value="Create account"></p>
 
 {% endblock %}
