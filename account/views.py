@@ -27,7 +27,7 @@ def user_login(request):
     return render(request, 'account/login.html', {'form': form})
 
 
-# Logged in user dashboard view        
+# Logged in user dashboard view  
 @login_required
-def dash(request):
+def dashboard(request):
     return render(request, 'account/dashboard.html', {'section': dashboard})
