@@ -7,9 +7,9 @@ class LoginDetails(forms.Form):
     password = forms.CharField(widget=forms.PasswordInput())
 
 
-class Registration(forms.Form):
+class Registration(forms.ModelForm):
     password = forms.CharField(label='Password', widget=forms.PasswordInput())
-    password_confrim = forms.CharField(label='Password', widget=forms.PasswordInput())
+    password_confirm = forms.CharField(label='Password', widget=forms.PasswordInput())
 
     class Meta:
         model = User
