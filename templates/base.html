@@ -45,9 +45,9 @@
                         {% if request.user.is_authenticated %}
                         # Profile pic to display here once implemented
                             {{ request.user.username }},
-                                <a href="{% url 'logout'%}">Log out</a>>
+                                <a href="{% url 'logout' %}">Log out</a>>
                         {% else %}
-                            <a href="{% url 'login'%}">Log in</a>>
+                            <a href="{% url 'login' %}">Log in</a>>
                     {% endif %}
                     </span>
             </div>
