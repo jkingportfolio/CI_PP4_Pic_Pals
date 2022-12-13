@@ -47,6 +47,7 @@
                             {{ request.user.username }},
                                 <a href="{% url 'logout' %}">Log out</a>>
                         {% else %}
+                            <a href="{% url 'register' %}">Register</a>>
                             <a href="{% url 'login' %}">Log in</a>>
                     {% endif %}
                     </span>
