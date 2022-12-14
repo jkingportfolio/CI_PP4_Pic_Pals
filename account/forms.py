@@ -20,3 +20,15 @@ class Registration(forms.ModelForm):
         if clear['password'] != clear['password_confirm']:
             raise forms.ValidationError('Password re entry does not match.')
         return clear['password_confirm']
+
+# Edit attributes from the built in Django model
+class EditUser(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['first_name', 'last_name', 'email']
+
+# Edit attributes from the custom user profile model
+class EditProfile(forms.ModelForm):
+    class Meta:
+        model = Profile
+        fields = ['profile_pic', 'dob']
