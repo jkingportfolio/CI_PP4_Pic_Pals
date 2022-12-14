@@ -60,4 +60,4 @@ def edit_profile(request):
     else:
         user_form = EditUser(instance=request.user)
         profile_form = EditProfile(instance=request.user)
-    return render(request, 'account/edit-profile.html', {'user_form': user_form, 'profile_form': profile_form})
+    return render(request, 'account/edit_profile.html', {'user_form': user_form, 'profile_form': profile_form})
