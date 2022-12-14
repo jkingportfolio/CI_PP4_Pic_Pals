@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 from django.contrib.auth import authenticate, login
-from .forms import LoginDetails, Registration, Profile
+from .forms import LoginDetails, Registration, Profile, EditUser, EditProfile
 from django.contrib.auth.decorators import login_required
 
 # Create your views here.
@@ -46,3 +46,18 @@ def register(request):
     else:
         user_form = Registration()
     return render(request, 'account/register.html', {'user_form': user_form})
+
+
+# Edit user profile view
+@login_required()
+def edit_profile(request):
+    if request.method == 'POST':
+        user_form = EditUser(instance=requesat.user, data=request.POST)
+        profile_form = EditProfile(instance=request.user.profile, data=request.POST, files=reguest.FILES)
+        if user_form.is_valid() and profile_form.is_valid():
+            user_form.save()
+            profile_form.save()
+    else:
+        user_form = EditUser(instance=request.user)
+        profile_form = EditProfile(instance=request.user)
+    return render(request, 'account/edit-profile.html', {'user_form': user_form, 'profile_form': profile_form})

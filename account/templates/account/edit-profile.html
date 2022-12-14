@@ -1,0 +1,19 @@
+<!-- edit profile page to be created here-->
+{% extends "base.html" %}
+
+{% block title %}Edit profile{% endblock %}
+
+{% block content %}
+
+<h1>Edit profile</h1>
+<p>
+    Please edit your profile using the form below.
+</p>
+<form method="post" enctype="multipart/form-data">
+    {{ user_form.as_p }
+    {{ profile_form.as_p }}
+    {% csrf_token %}
+    <p><input type="submit" value="Update profile"></p>
+</form>
+
+{% endblock %}
