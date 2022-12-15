@@ -12,8 +12,8 @@ def user_login(request):
     if request.method == 'POST':
         form = LoginDetails(request.POST)
         if form.is_valid():
-            clearform = form.cleaned_data
-            user = authenticate(request, username=clearform['username'], password=clearform['password'])
+            clear_form = form.cleaned_data
+            user = authenticate(request, username=clear_form['username'], password=clear_form['password'])
             if user is not None:
                 if user.is_active:
                     login(request, user)
