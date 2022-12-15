@@ -1,6 +1,8 @@
-from django.shortcuts import render
+from django.shortcuts import render, get_object_or_404
 from .forms import PostImageForm
 from django.contrib.auth.decorators import login_required
+from .models import Post
+
 
 # Create your views here.
 @login_required
@@ -16,3 +18,8 @@ def create_post(request):
         form = PostImageForm()
     context = {'form': form}
     return render(request, 'create_post.html', context)
+
+
+def post_detail(request, id, slug):
+    post = get_object_or_404(Post. id=id, slug=slug)
+    return render(request, 'post/post_detail.html', {'section': post})
