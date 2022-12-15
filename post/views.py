@@ -15,4 +15,4 @@ def create_post(request):
     else:
         form = PostImageForm()
     context = {'form': form}
-    return render(request, 'new_post.html', context)
+    return render(request, 'create_post.html', context)
