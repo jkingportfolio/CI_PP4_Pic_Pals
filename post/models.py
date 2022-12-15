@@ -16,9 +16,9 @@ class Post(models.Model):
     likes = models.ManyToManyField(User, related_name='post_like', blank=True)
     # location = to be implemented in the future
 
-    class Meta:
-        ordering = ['-created_date'],
-        indexes = [models.Index(fields=['-created_date'])]
+    class Meta:        
+        # indexes = [models.Index(fields=['-created_date'])]
+        ordering = ['-created_date']
 
     # Automatically generate slug based on title field
     def save_post(self, *args, **kwargs):
@@ -28,3 +28,5 @@ class Post(models.Model):
 
     def __str__(self):
         return self.title
+
+

@@ -21,5 +21,5 @@ def create_post(request):
 
 
 def post_detail(request, id, slug):
-    post = get_object_or_404(Post. id=id, slug=slug)
+    post = get_object_or_404(Post, id=id, slug=slug)
     return render(request, 'post/post_detail.html', {'section': post})
