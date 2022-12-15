@@ -1,0 +1,16 @@
+<!-- create post page to be created here-->
+{% extends "base.html" %}
+
+{% block title %}Create post{% endblock %}
+
+{% block content %}
+
+<h1>Create a post</h1>
+
+<form method="post">
+    {{ form.as_p }}
+    {% csrf_token %}
+<p><input type="submit" value="Post"></p>
+</form>
+
+{% endblock %}
