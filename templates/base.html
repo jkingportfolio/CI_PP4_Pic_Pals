@@ -41,14 +41,13 @@
                         </li>
                     </ul>
                 {% endif %}
-                    <span>
+                    <span style="color:red;">
                         {% if request.user.is_authenticated %}
-                        # Profile pic to display here once implemented
-                            {{ request.user.username }},
-                                <a href="{% url 'logout' %}">Log out</a>>
+                           Hello, {{ user.username }}.
+                                <a href="{% url 'logout' %}">Log out</a>
                         {% else %}
-                            <a href="{% url 'register' %}">Register</a>>
-                            <a href="{% url 'login' %}">Log in</a>>
+                            <a href="{% url 'register' %}">Register</a>
+                            <a href="{% url 'login' %}">Log in</a>
                     {% endif %}
                     </span>
             </div>
