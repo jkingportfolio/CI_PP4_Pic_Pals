@@ -21,7 +21,7 @@ class Post(models.Model):
         ordering = ['-created_date']
 
     # Automatically generate slug based on title field
-    def save_post(self, *args, **kwargs):
+    def save(self, *args, **kwargs):
         if not self.slug:
             self.slug = slugify(self.title)
         super().save(*args, **kwargs)
