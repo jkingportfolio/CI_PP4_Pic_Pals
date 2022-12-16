@@ -1,0 +1,13 @@
+<!-- list of logged in users posts page to be created here-->
+{% extends "base.html" %}
+
+{% block title %} My posts {% endblock %}
+
+{% block content %}
+
+{% for post in posts %}
+<div>
+    {% post.post_image %}
+</div>
+
+{% endblock %}

@@ -1,4 +1,4 @@
-from django.shortcuts import render, get_object_or_404
+from django.shortcuts import render, get_object_or_404, redirect
 from .forms import PostImageForm
 from django.contrib.auth.decorators import login_required
 from .models import Post
@@ -20,6 +20,14 @@ def create_post(request):
     return render(request, 'create_post.html', context)
 
 
+@login_required()
 def post_detail(request, id, slug):
     post = get_object_or_404(Post, id=id, slug=slug)
     return render(request, 'post/post_detail.html', {'section': post})
+
+
+@login_required()
+def current_user_posts(request):
+    user_posts = Post.objects.filter(user=self.request.user)
+
+    return render(request, 'post/user_posts.html', {'section': 'post'})
