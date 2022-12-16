@@ -14,10 +14,11 @@ def create_post(request):
             new_post = form.save(commit=False)
             new_post.user = request.user
             new_post.save()
+            return redirect(new_post.get_absolute_url())
     else:
         form = PostImageForm()
-    context = {'form': form}
-    return render(request, 'create_post.html', context)
+        context = {'form': form}
+    return render(request, 'post/create_post.html', context)
 
 
 @login_required()
@@ -28,6 +29,7 @@ def post_detail(request, id, slug):
 
 @login_required()
 def current_user_posts(request):
-    user_posts = Post.objects.filter(user=self.request.user)
+    user_posts = Post.objects.filter(user=request.user)
+    print(user_posts)
 
-    return render(request, 'post/user_posts.html', {'section': 'post'})
+    return render(request, 'post/user_posts.html', {'section': user_posts})

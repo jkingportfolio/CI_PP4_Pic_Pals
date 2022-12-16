@@ -7,7 +7,10 @@
 
 {% for post in posts %}
 <div>
+    <a href="{{ post.get_absolute_url }}">
     {% post.post_image %}
+    </a>
+    <img src="{{ post_image }}">
 </div>
 
 {% endblock %}

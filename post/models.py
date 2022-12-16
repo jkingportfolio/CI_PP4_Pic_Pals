@@ -30,4 +30,7 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    # Define canonical URL
+    def get_url_absolute(self):
+        return reverse('post:user_posts', args=[self.id, self.slug])
 
