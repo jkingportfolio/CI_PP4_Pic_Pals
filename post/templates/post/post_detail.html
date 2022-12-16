@@ -1,13 +1,13 @@
 <!-- individual post page to be created here-->
 {% extends "base.html" %}
 
-{% block title %}{% post.title %}}{% endblock %}
+{% block title %}{ post.title }{% endblock %}
 
 {% block content %}
 
-<h1>{% post.title %}}</h1>
+<h1>{ post.title }</h1>
 
-<img src="{{ url 'post.post_image' }}">
+<img src="{{ post.post_image }}">
 <div>
     {{ post.description|linebreaks }}
 </div>
