@@ -15,3 +15,6 @@ class Post(models.Model):
     image = CloudinaryField('image', default='placeholder')
     caption = models.TextField(default='Please enter caption.')
     likes = models.IntegerField(default=0)
+
+    class Meta:
+        ordering = ['-created_date']
