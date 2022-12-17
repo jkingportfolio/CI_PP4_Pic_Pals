@@ -14,11 +14,11 @@ def create_post(request):
             new_post = form.save(commit=False)
             new_post.user = request.user
             new_post.save()
-            return redirect(new_post.get_absolute_url())
     else:
         form = PostImageForm()
-        context = {'form': form}
-    return render(request, 'post/create_post.html', context)
+        # context = {'form': form}
+    print('This worked')
+    return render(request, 'post/create_post.html', {'form':form})
 
 
 @login_required()
