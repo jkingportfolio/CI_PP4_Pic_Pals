@@ -8,9 +8,9 @@ from .models import Post
 @login_required
 def create_post(request):
     if request.method == 'POST':
-        form = PostImageForm(data=request.POST)
+        form = PostImageForm(request.POST, request.FILES)
         if form.is_valid():
-            clear_form = form.cleaned_data
+            # clear_form = form.cleaned_data
             new_post = form.save(commit=False)
             new_post.user = request.user
             new_post.save()
