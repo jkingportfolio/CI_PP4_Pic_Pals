@@ -5,12 +5,11 @@
 
 {% block content %}
 
-{% for post in posts %}
-<div>
-    <a href="{{ post.get_absolute_url }}">
-    { post.image }
-    </a>
-    <img src="{{ image }}">
-</div>
+{% for post in posts_objects %}
+    {{ post.user.username }}
+    {{ post.caption }}
+    <img src="{{ post.image.url }}">
+    {{ post.created_date|date:"d M Y" }}
 {% endfor %}
+<h1>Hello</h1>
 {% endblock %}
