@@ -74,7 +74,7 @@ def edit_profile(request):
 
 @login_required
 def site_users(request):
-    users = Profile.objects.filter(is_active=True)
+    users = Profile.objects.all()
     return render(request, 'account/user/user_list.html', {'section':'people', 'users': users})
 
 @login_required
