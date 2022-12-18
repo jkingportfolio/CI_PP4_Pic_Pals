@@ -8,5 +8,8 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ['image', 'created_date']
     list_filter = ['created_date']
 
-admin.site.register(Follow)
+@admin.register(Follow)
+class PostAdmin(admin.ModelAdmin):
+    list_display = ['created', 'follower', 'following']
+
 admin.site.register(Feed)
