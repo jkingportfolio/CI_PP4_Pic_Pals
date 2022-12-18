@@ -34,7 +34,7 @@ class Follow(models.Model):
         ordering = ['-created']
 
     def __str__(self):
-        return f'{self.follower} follows {self.follows}'
+        return f'{self.follower} follows {self.following}'
 
 class Feed(models.Model):
     following = models.ForeignKey(User, on_delete=models.CASCADE, null=True, related_name='feed_following')
