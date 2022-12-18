@@ -18,3 +18,4 @@ urlpatterns = [
     path('edit-profile/', views.edit_profile, name='edit_profile'),
     path('users/', views.site_users, name='site_users'),
     path('users/<username>/', views.logged_in_user, name='logged_in_user')
+]
