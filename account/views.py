@@ -3,6 +3,8 @@ from django.shortcuts import render
 from django.contrib.auth import authenticate, login
 from .forms import LoginDetails, Registration, Profile, EditUser, EditProfile
 from django.contrib.auth.decorators import login_required
+from django.shortcuts import get_object_or_404
+from django.contrib.auth.models import User
 
 # Create your views here.
 
@@ -61,3 +63,14 @@ def edit_profile(request):
         user_form = EditUser(instance=request.user)
         profile_form = EditProfile(instance=request.user)
     return render(request, 'account/edit_profile.html', {'user_form': user_form, 'profile_form': profile_form})
+
+
+@login_required
+def site_users(request):
+    users = User.objects.filter(is_active=True)
+    return render(request, 'account/user/site-users', {'section':'people', 'users':users})
+
+@login_required
+def logged_in_user(request, username):
+    user = get_object_or_404(User, username=username, is_active=True)
+    return render(request, 'account/user/user_detail.html', {'section': 'people', 'user':user})
