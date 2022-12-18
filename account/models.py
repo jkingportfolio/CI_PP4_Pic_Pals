@@ -1,6 +1,8 @@
 from django.db import models
 from django.conf import settings
 from cloudinary.models import CloudinaryField
+from django.contrib.auth import get_user_model
+from post.models import Follow
 
 # Create your models here.
 
@@ -13,3 +15,8 @@ class Profile(models.Model):
 
     def __str__(self):
         return f'Profile of {self.user.username}'
+
+
+user_model = get_user_model()
+user_model.add_to_class(
+    'accounts_following', models.ManyToManyField('self', through=Follow, related_name='followers', symmetrical=False))
