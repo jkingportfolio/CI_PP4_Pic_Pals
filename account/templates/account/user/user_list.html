@@ -1,5 +1,6 @@
 <!-- user list page to be created here-->
 {% extends "base.html" %}
+{% load cloudinary %}
 
 {% block title %}List of users{% endblock %}
 
@@ -8,10 +9,11 @@
 {% for user in users %}
 
 <div>
-    </a>
     <a href="{{ user.get_absolute_url }}">
         {{ user.get_full_name }}
+        {{ user.get_username }}
     </a>
+    
 </div>
 
 {% endfor %}
