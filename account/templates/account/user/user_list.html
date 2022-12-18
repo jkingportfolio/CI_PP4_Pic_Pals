@@ -12,11 +12,11 @@
 {% for user in users %}
 
 <div>
-    {% if "default_profile_pic" in profile.profile_pic.url %}
+    {% if "default_profile_pic" in user.profile_pic.url %}
         <img src="{% static 'images/default_profile_pic.jpeg' %}"
         alt="Profile Picture">
     {% else %}
-        <img src="{{ profile.profile_pic.url }}" alt="Profile Picture">
+        <img src="{{ user.profile_pic.url }}" alt="Profile Picture">
     {% endif %}
     <a href="{{ user.get_absolute_url }}">
         {{ profile.user }}
