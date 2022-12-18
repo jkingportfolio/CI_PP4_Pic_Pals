@@ -22,12 +22,19 @@ class Post(models.Model):
         ordering = ['-created_date']
 
     def get_absolute_url(self):
-        return reverse('post-details', args=[str(self.id)])
+        return reverse('post:post_detail', args=[str(self.id)])
 
 
 class Follow(models.Model):
-    follower = models.ForeignKey(User, on_delete=models.CASCADE, related_name='follower')
-    following = models.ForeignKey(User, on_delete=models.CASCADE, related_name='following')
+    follower = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='follower')
+    following = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='following')
+    created = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        ordering = ['-created']
+
+    def __str__(self):
+        return f'{self.follower} follows {self.follows}'
 
 class Feed(models.Model):
     following = models.ForeignKey(User, on_delete=models.CASCADE, null=True, related_name='feed_following')

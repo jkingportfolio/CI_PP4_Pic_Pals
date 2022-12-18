@@ -2,6 +2,7 @@ from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .forms import PostImageForm
 from django.contrib.auth.decorators import login_required
 from .models import Post, Follow, Feed
+from django.contrib import messages
 
 
 # Create your views here.
@@ -14,7 +15,8 @@ def create_post(request):
             new_post = form.save(commit=False)
             new_post.user = request.user
             new_post.save()
-            return render(request, 'post/create_post.html', {'form':form})
+            messages.success(request, 'Post added successfully')
+            return redirect(new_post.get_absolute_url())
     else:
         form = PostImageForm()
     return render(request, 'post/create_post.html', {'form':form})
@@ -22,7 +24,7 @@ def create_post(request):
 
 
 @login_required()
-def post_detail(request, id, slug):
+def post_detail(request, id):
     post = get_object_or_404(Post, id=id)
     return render(request, 'post/post_detail.html', {'section': post})
 
@@ -30,7 +32,7 @@ def post_detail(request, id, slug):
 @login_required()
 def current_user_posts(request):
     user = request.user
-    user_posts = Feed.objects.filter(user=user)
+    user_posts = Post.objects.filter(user=user)
     post_list = []
     for post in user_posts:
         post_list.append(post.id)

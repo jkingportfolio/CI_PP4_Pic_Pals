@@ -5,11 +5,15 @@
 
 {% block content %}
 
-{% for post in posts_objects %}
+<div>
+
+{% for post in posts %}
     {{ post.user }}
-    {{ post.caption }}
-    <img src="{{ post_objects.image.url }}">
+    {{ post.id }}
+    <img src="{{ post.image.url }}">
     {{ post.created_date|date:"d M Y" }}
 {% endfor %}
-<h1>Hello</h1>
+
+</div>
+
 {% endblock %}
