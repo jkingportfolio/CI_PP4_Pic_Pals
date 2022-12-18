@@ -33,11 +33,11 @@ def post_detail(request, id):
 def current_user_posts(request):
     user = request.user
     user_posts = Post.objects.filter(user=user)
-    post_list = []
-    for post in user_posts:
-        post_list.append(post.id)
-    post_objects = Post.objects.filter(id__in=post_list).all().order_by('-created_date')
+    # post_list = []
+    # for post in user_posts:
+    #     post_list.append(post.id)
+    # post_objects = Post.objects.filter(id__in=post_list).all().order_by('-created_date')
     context = {
-        'post_objects': post_objects
+        'user_posts': user_posts
     }
     return render(request, 'post/user_posts.html', context)

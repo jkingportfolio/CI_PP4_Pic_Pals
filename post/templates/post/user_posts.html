@@ -7,10 +7,10 @@
 
 <div>
 
-{% for post in posts %}
+{% for post in user_posts %}
     {{ post.user }}
-    {{ post.id }}
     <img src="{{ post.image.url }}">
+    {{ post.caption }}
     {{ post.created_date|date:"d M Y" }}
 {% endfor %}
 
