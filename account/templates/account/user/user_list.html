@@ -5,6 +5,15 @@
 
 {% block content %}
 
+{% for user in users %}
 
+<div>
+    </a>
+    <a href="{{ user.get_absolute_url }}">
+        {{ user.get_full_name }}
+    </a>
+</div>
+
+{% endfor %}
 
 {% endblock %}
