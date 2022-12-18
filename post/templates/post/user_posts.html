@@ -6,9 +6,9 @@
 {% block content %}
 
 {% for post in posts_objects %}
-    {{ post.user.username }}
+    {{ post.user }}
     {{ post.caption }}
-    <img src="{{ post.image.url }}">
+    <img src="{{ post_objects.image.url }}">
     {{ post.created_date|date:"d M Y" }}
 {% endfor %}
 <h1>Hello</h1>
