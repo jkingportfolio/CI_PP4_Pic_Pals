@@ -1,5 +1,8 @@
 <!-- user list page to be created here-->
 {% extends "base.html" %}
+
+{% load static %}
+
 {% load cloudinary %}
 
 {% block title %}List of users{% endblock %}
@@ -9,11 +12,17 @@
 {% for user in users %}
 
 <div>
+    {% if "default_profile_pic" in profile.profile_pic.url %}
+        <img src="{% static 'images/default_profile_pic.jpeg' %}"
+        alt="Profile Picture">
+    {% else %}
+        <img src="{{ profile.profile_pic.url }}" alt="Profile Picture">
+    {% endif %}
     <a href="{{ user.get_absolute_url }}">
-        {{ user.get_full_name }}
+        {{ profile.user }}
         {{ user.get_username }}
     </a>
-    
+
 </div>
 
 {% endfor %}

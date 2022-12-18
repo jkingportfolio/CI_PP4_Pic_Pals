@@ -5,6 +5,8 @@ from .forms import LoginDetails, Registration, Profile, EditUser, EditProfile
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
+from .models import Profile
+from django.contrib import messages
 
 # Create your views here.
 
@@ -32,7 +34,9 @@ def user_login(request):
 # Logged in user dashboard view  
 @login_required
 def dashboard(request):
-    return render(request, 'account/dashboard.html', {'section': dashboard})
+    user_object = User.objects.get(username=request.user.username)
+    user_profile = Profile.objects.get(user=user_object)
+    return render(request, 'account/dashboard.html', {'section': dashboard, 'user_profile': user_profile})
 
 
 # User registration view
@@ -59,6 +63,9 @@ def edit_profile(request):
         if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
             profile_form.save()
+            messages.success(request, 'Profile updated successfully')
+        else:
+            messages.error(request, 'Error updating profile.')
     else:
         user_form = EditUser(instance=request.user)
         profile_form = EditProfile(instance=request.user)
