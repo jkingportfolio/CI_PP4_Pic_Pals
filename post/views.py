@@ -23,8 +23,8 @@ def create_post(request):
 
 @login_required()
 def post_detail(request, id, slug):
-    post = get_object_or_404(Post, id=id, slug=slug)
-    return render(request, 'post/post_detail.html', {'section': post})
+    post = get_object_or_404(Post, id=id)
+    return render(request, 'post/post_detail.html', {'post': post})
 
 
 @login_required()

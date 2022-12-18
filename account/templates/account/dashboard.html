@@ -11,6 +11,15 @@
     <a href="{% url 'posts:create_post' %}">Add post</a>
 </p>
 
+<div>    
+    <p>My posts</p>
+    {% for post in posts %}
+    <div>
+        POST
+    </div>
+    {% endfor %}
+</div>
+
 <p>
     <a href="{% url 'edit_profile' %}">Edit profile</a>
     <a href="{% url 'password_change' %}">Change password</a>
