@@ -9,7 +9,7 @@
 <div class="container">
     <div class="row">
         <div class="col-3">
-            <img src="{{ user_profile.profile_pic.url }}" class="profile_pic">
+            <img src="{{ user_profile.profile_pic.url }}" class="profile-pic">
         </div>
         <div class="col-9">
             <h1>{{ user_profile.user }}</h1>
@@ -29,9 +29,11 @@
     <p>My posts</p>
     {% for post in user_posts %}
     <div class="row post">
-    {{ post.user }}
+    <a href="{{ user.get_absolute_url }}">
+        {{ post.user }}
+    </a>
     <a href="{{ post.get_absolute_url }}">
-    <img src="{{ post.image.url }}">
+    <img src="{{ post.image.url }}" class="post-pic">
     </a>
     <div>
         {{ post.caption }}
