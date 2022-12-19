@@ -6,6 +6,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
 from .models import Profile
+from post.models import Post
 from django.contrib import messages
 
 # Create your views here.
@@ -36,7 +37,9 @@ def user_login(request):
 def dashboard(request):
     user_object = User.objects.get(username=request.user.username)
     user_profile = Profile.objects.get(user=user_object)
-    return render(request, 'account/dashboard.html', {'section': dashboard, 'user_profile': user_profile})
+    user = request.user
+    user_posts = Post.objects.filter(user=user)
+    return render(request, 'account/dashboard.html', {'user_profile': user_profile, 'user_posts':user_posts})
 
 
 # User registration view

@@ -22,7 +22,7 @@ class Post(models.Model):
         ordering = ['-created_date']
 
     def get_absolute_url(self):
-        return reverse('post:post_detail', args=[str(self.id)])
+        return reverse('posts:post_detail', args=[str(self.id)])
 
 
 class Follow(models.Model):

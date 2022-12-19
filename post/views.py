@@ -19,8 +19,7 @@ def create_post(request):
             return redirect(new_post.get_absolute_url())
     else:
         form = PostImageForm()
-    return render(request, 'post/create_post.html', {'form':form})
-    
+    return render(request, 'post/create_post.html', {'form':form})    
 
 
 @login_required()

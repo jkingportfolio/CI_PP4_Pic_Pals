@@ -5,24 +5,25 @@
 
 {% block content %}
 
-<h1>User Dashboard</h1>
-
+<h1>{{ user_profile.user }}</h1>
 <p>
     <a href="{% url 'posts:create_post' %}">Add post</a>
 </p>
-
+<p>
+    <a href="{% url 'edit_profile' %}">Edit profile</a>
+</p>
+<p>
+    <a href="{% url 'password_change' %}">Change password</a>
+</p>
 <div>    
     <p>My posts</p>
-    {% for post in posts %}
-    <div>
-        POST
-    </div>
+    {% for post in user_posts %}
+    {{ post.user }}
+    <img src="{{ post.image.url }}">
+    {{ post.caption }}
+    {{ post.created_date|date:"d M Y" }}
     {% endfor %}
 </div>
 
-<p>
-    <a href="{% url 'edit_profile' %}">Edit profile</a>
-    <a href="{% url 'password_change' %}">Change password</a>
-</p>
 
 {% endblock %}

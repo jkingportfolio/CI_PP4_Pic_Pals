@@ -2,7 +2,7 @@ from django.db import models
 from django.conf import settings
 from cloudinary.models import CloudinaryField
 from django.contrib.auth import get_user_model
-from post.models import Follow
+from post.models import Post, Follow
 
 # Create your models here.
 
