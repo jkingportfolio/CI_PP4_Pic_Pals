@@ -78,9 +78,9 @@ def edit_profile(request):
 @login_required
 def site_users(request):
     users = Profile.objects.all()
-    return render(request, 'account/user/user_list.html', {'section':'people', 'users': users})
+    return render(request, 'account/user/user_list.html', {'users': users})
 
 @login_required
-def logged_in_user(request, username):
+def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
-    return render(request, 'account/user/user_detail.html', {'section': 'people', 'user': user})
+    return render(request, 'account/user/user_detail.html', {'user': user})

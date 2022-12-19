@@ -9,7 +9,9 @@
     <p>My posts</p>
     {% for post in user_posts %}
     <div class="row post">
+    <a href="{{ user.get_absolute_url }}">
     {{ post.user }}
+    </a>
     <img src="{{ post.image.url }}">
     <div>
         {{ post.caption }}

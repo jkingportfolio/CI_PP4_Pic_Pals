@@ -152,6 +152,6 @@ DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 # Used to generate a canonical URL for users 
 ABSOLUTE_URL_OVERRIDES = {
-    'auth.user': lambda u: reverse_lazy('logged_in_user',
+    'auth.user': lambda u: reverse_lazy('user_detail',
                                         args=[u.username])
 }
