@@ -4,11 +4,16 @@
 {% block title %}{{ image.title }}{% endblock %}
 
 {% block content %}
-
-<h1>{{ image.title }}</h1>
-<img src="{{ post.image.url }}">
-<div>
-    {{ post.caption|linebreaks }}
+<h1>POST SUCCESSFULL</h1>
+<div class="container">    
+    <div class="row post">
+    {{ post.user }}
+    <img src="{{ post.image.url }}">
+    <div>
+        {{ post.caption }}
+    </div>
+        {{ post.created_date|date:"d M Y" }}
+    </div>
 </div>
 
 {% endblock %}
