@@ -1,11 +1,21 @@
 <!-- user dashboard page to be created here-->
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block title %}Dashboard{% endblock %}
 
 {% block content %}
-
-<h1>{{ user_profile.user }}</h1>
+<div class="container">
+    <div class="row">
+        <div class="col-3">
+            <img src="{{ user_profile.profile_pic.url }}" class="profile_pic">
+        </div>
+        <div class="col-9">
+            <h1>{{ user_profile.user }}</h1>
+        </div>
+    </div>    
+</div>
 <p>
     <a href="{% url 'posts:create_post' %}">Add post</a>
 </p>
@@ -15,13 +25,17 @@
 <p>
     <a href="{% url 'password_change' %}">Change password</a>
 </p>
-<div>    
+<div class="container">    
     <p>My posts</p>
     {% for post in user_posts %}
+    <div class="row post">
     {{ post.user }}
     <img src="{{ post.image.url }}">
-    {{ post.caption }}
+    <div>
+        {{ post.caption }}
+    </div>
     {{ post.created_date|date:"d M Y" }}
+    </div>
     {% endfor %}
 </div>
 

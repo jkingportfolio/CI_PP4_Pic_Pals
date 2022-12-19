@@ -5,14 +5,19 @@
 
 {% block content %}
 
-<div>
-
-{% for post in user_posts %}
+<div class="container">    
+    <p>My posts</p>
+    {% for post in user_posts %}
+    <div class="row post">
     {{ post.user }}
     <img src="{{ post.image.url }}">
-    {{ post.caption }}
+    <div>
+        {{ post.caption }}
+    </div>
     {{ post.created_date|date:"d M Y" }}
-{% endfor %}
+    </div>
+    {% endfor %}
+</div>
 
 </div>
 

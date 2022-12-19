@@ -1,0 +1,10 @@
+.post {
+    border: solid;
+    margin-bottom: 10px;
+}
+
+.profile_pic {
+    width: 150px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
