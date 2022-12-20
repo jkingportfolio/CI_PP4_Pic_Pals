@@ -8,24 +8,27 @@
 
 {% block content %}
 
-{% for user in users %}
-
-<div style="border-style: solid;">
-    {% if user.profile.profile_pic %}
-    <div>
-        <img src="{{ user.profile.profile_pic.url }}"
-            alt="Profile Picture" class="profile-pic"><br>
-    {% else %}
-        <img src="{% static 'images/default_profile_pic.png' %}"
-            alt="Profile Picture" class="profile-pic"><br>
-    {% endif %}
-        <a href="{{ user.get_absolute_url }}">
-            {{ user.get_username }}
-        </a>
+<div class='row card-group'>
+    {% for user in users %}
+      <div class="col-4">
+        <div class="card h-100">
+          <div class="card-body">
+            {% if user.profile.profile_pic %}
+            <img src="{{ user.profile.profile_pic.url }}"
+                alt="Profile Picture" class="profile-pic"><br>
+            {% else %}
+            <img src="{% static 'images/default_profile_pic.png' %}"
+                alt="Profile Picture" class="profile-pic"><br>
+            {% endif %}
+            <a href="{{ user.get_absolute_url }}">
+                {{ user.get_username }}
+            </a>
+          </div>
+        </div>
+      </div>
+    {% endfor %}
     </div>
 
-</div>
-
-{% endfor %}
 
 {% endblock %}
+
