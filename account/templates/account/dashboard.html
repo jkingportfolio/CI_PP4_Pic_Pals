@@ -7,10 +7,16 @@
 
 {% block content %}
 <div class="container">
-    <div class="row">
+    <div class="row">   
         <div class="col-3">
-            <img src="{{ user_profile.profile_pic.url }}" class="profile-pic">
-        </div>
+            {% if user.profile.profile_pic %}
+            <div>
+                <img src="{{ user.profile.profile_pic.url }}"
+                    alt="Profile Picture" class="profile-pic"><br>
+            {% else %}
+                <img src="{% static 'images/default_profile_pic.png' %}"
+                    alt="Profile Picture" class="profile-pic"><br>
+            {% endif %}
         <div class="col-9">
             <h1>{{ user_profile.user }}</h1>
         </div>
