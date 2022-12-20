@@ -83,4 +83,9 @@ def site_users(request):
 @login_required
 def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
-    return render(request, 'account/user/user_detail.html', {'user': user})
+    user_posts = Post.objects.filter(user=user)
+    context = {
+        'user': user,
+        'user_posts': user_posts,
+    }
+    return render(request, 'account/user/user_detail.html', context)

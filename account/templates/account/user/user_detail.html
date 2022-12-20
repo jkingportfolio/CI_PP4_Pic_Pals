@@ -16,9 +16,9 @@
 {% endif %}
 
 {% for post in user_posts %}
-    <div>     
-    <img src="{{ user.post.image.url }}">
-    </div>
-{% endfor %}
+        <div>
+            <img src="{{ post.image.url }}">
+        </div>
+{% endfor%}
 
 {% endblock %}

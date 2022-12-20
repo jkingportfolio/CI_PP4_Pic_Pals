@@ -34,7 +34,3 @@ def current_user_posts(request):
     user_posts = Post.objects.filter(user=user)
     return render(request, 'post/user_posts.html', {'user_posts': user_posts})
 
-@login_required()
-def post_image_list(request):
-    images = Post.objects.all().values('image')
-    return render(request, 'post/posts_image.html', {'images': images})

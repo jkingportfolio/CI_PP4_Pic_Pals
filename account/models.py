@@ -16,6 +16,7 @@ class Profile(models.Model):
     def __str__(self):
         return f'Profile of {self.user.username}'
 
+# Dynamic user following field
 
 user_model = get_user_model()
 user_model.add_to_class(
