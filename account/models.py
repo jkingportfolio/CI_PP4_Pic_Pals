@@ -9,7 +9,7 @@ from post.models import Post, Follow
 class Profile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     dob = models.DateField(blank=True, null=True)
-    profile_pic = CloudinaryField(blank=True, default='default_profile_pic')
+    profile_pic = CloudinaryField(blank=True)
     # bio = models.CharField(max_length=5000, blank=True)
     # location with google maps api to potentially be future implemented
 
