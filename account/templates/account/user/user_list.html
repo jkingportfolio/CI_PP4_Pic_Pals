@@ -17,7 +17,7 @@
             <img src="{% static 'images/default_profile_pic.jpeg' %}"
             alt="Profile Picture"><br>
     {% else %}
-            <img src="{{ user.profile_pic.url }}" alt="Profile Picture"><br>
+            <img src="{{ user.profile.profile_pic.url }}" alt="Profile Picture"><br>
     {% endif %}
             <a href="{{ user.get_absolute_url }}">
                 {{ user.user }}<br>
