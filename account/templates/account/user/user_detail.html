@@ -15,10 +15,25 @@
             alt="Profile Picture" class="profile-pic"><br>
 {% endif %}
 
-{% for post in user_posts %}
-        <div>
+<div class='row card-group'>
+    {% for post in user_posts %}
+      <div class="col-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <h5 class="card-title">{{ item.title }}</h5>
             <img src="{{ post.image.url }}">
+            <p class="card-text">
+            {{ post.caption }}
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Comments</small>
+          </div>
         </div>
-{% endfor%}
+      </div>
+    {% endfor %}
+    </div>
 
 {% endblock %}
+
+
