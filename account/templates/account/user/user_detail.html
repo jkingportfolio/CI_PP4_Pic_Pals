@@ -1,13 +1,24 @@
 <!-- user detail page to be created here-->
 {% extends "base.html" %}
+{% load static %}
 
 {% block title %} {{ user.get_username }} {% endblock %}
 
 {% block content %}
 {{ user.get_username }}
-<div>
-    <img src="{{ user.profile.profile_pic.url }}" class="profile-pic">
-</div>
+{% if user.profile.profile_pic %}
+    <div>
+        <img src="{{ user.profile.profile_pic.url }}"
+            alt="Profile Picture" class="profile-pic"><br>
+    {% else %}
+        <img src="{% static 'images/default_profile_pic.png' %}"
+            alt="Profile Picture" class="profile-pic"><br>
+{% endif %}
 
+{% for post in user_posts %}
+    <div>     
+    <img src="{{ user.post.image.url }}">
+    </div>
+{% endfor %}
 
 {% endblock %}
