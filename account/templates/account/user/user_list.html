@@ -12,17 +12,18 @@
 {% for user in users %}
 
 <div style="border-style: solid;">
-    {% if "default_profile_pic" in user.profile_pic.url %}
-        <div>
-            <img src="{% static 'images/default_profile_pic.jpeg' %}"
-            alt="Profile Picture"><br>
+    {% if user.profile.profile_pic %}
+    <div>
+        <img src="{{ user.profile.profile_pic.url }}"
+            alt="Profile Picture" class="profile-pic"><br>
     {% else %}
-            <img src="{{ user.profile.profile_pic.url }}" alt="Profile Picture"><br>
+        <img src="{% static 'images/default_profile_pic.png' %}"
+            alt="Profile Picture" class="profile-pic"><br>
     {% endif %}
-            <a href="{{ user.get_absolute_url }}">
-                {{ user.get_username }}
-            </a>
-        </div>
+        <a href="{{ user.get_absolute_url }}">
+            {{ user.get_username }}
+        </a>
+    </div>
 
 </div>
 
