@@ -6,9 +6,10 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block content %}
+
 <div class="container">
-    <div class="row">   
-        <div class="col-3">
+    <div class="row">
+        <div class="col-sm">
             {% if user.profile.profile_pic %}
             <div>
                 <img src="{{ user.profile.profile_pic.url }}"
@@ -17,20 +18,21 @@
                 <img src="{% static 'images/default_profile_pic.png' %}"
                     alt="Profile Picture" class="profile-pic"><br>
             {% endif %}
-        <div class="col-9">
+            </div>
+            <div>
             <h1>{{ user_profile.user }}</h1>
+            </div>
         </div>
-    </div>    
+        <div class="col-sm">
+            
+        </div>
+        <div class="col-sm">
+            <a href="{% url 'posts:create_post' %}">Add post</a>
+            <a href="{% url 'edit_profile' %}">Edit profile</a>
+            <a href="{% url 'password_change' %}">Change password</a>
+        </div>
+    </div>
 </div>
-<p>
-    <a href="{% url 'posts:create_post' %}">Add post</a>
-</p>
-<p>
-    <a href="{% url 'edit_profile' %}">Edit profile</a>
-</p>
-<p>
-    <a href="{% url 'password_change' %}">Change password</a>
-</p>
 
 <div class='row card-group'>
     {% for post in user_posts %}

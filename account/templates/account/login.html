@@ -7,10 +7,13 @@
 
 <h1>Welcome to Pic Pals</h1>
 <p>Please sign in below</p>
-<form method="post">
-    {{ form.as_p }}
-    {% csrf_token %}
-<p><input type="submit" value="Log in"></p>
-</form>
+<div class="form-group">
+    <form method="post">
+        {{ form.as_p }}
+        {% csrf_token %}
+    <p><input type="submit" value="Log in"></p>
+    </form>
+</div>
+
 
 {% endblock %}

@@ -5,15 +5,35 @@
 {% block title %} {{ user.get_username }} {% endblock %}
 
 {% block content %}
-{{ user.get_username }}
-{% if user.profile.profile_pic %}
-    <div>
-        <img src="{{ user.profile.profile_pic.url }}"
-            alt="Profile Picture" class="profile-pic"><br>
-    {% else %}
-        <img src="{% static 'images/default_profile_pic.png' %}"
-            alt="Profile Picture" class="profile-pic"><br>
-{% endif %}
+
+<div class="container">
+  <div class="row">
+      <div class="col-sm">
+          {% if user.profile.profile_pic %}
+          <div>
+              <img src="{{ user.profile.profile_pic.url }}"
+                  alt="Profile Picture" class="profile-pic"><br>
+          {% else %}
+              <img src="{% static 'images/default_profile_pic.png' %}"
+                  alt="Profile Picture" class="profile-pic"><br>
+          {% endif %}
+          </div>
+          <div>
+          <h1>{{ user.profile.user }}</h1>
+          </div>
+      </div>
+      <div class="col-sm">
+          
+      </div>
+      <div class="col-sm">
+          <p>Post count</p>
+          <p>Followers</p>
+          <p>Following</p>
+      </div>
+  </div>
+</div>
+
+
 
 <div class='row card-group'>
     {% for post in user_posts %}
