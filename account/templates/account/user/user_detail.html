@@ -20,7 +20,9 @@
       <div class="col-4">
         <div class="card h-100">
           <div class="card-body">
-            <img src="{{ post.image.url }}">
+            <a href="{{ post.get_absolute_url }}">
+            <img src="{{ post.image.url }}" class="post-pic">
+            </a>
             <p class="card-text">
             {{ post.caption }}
             </p>

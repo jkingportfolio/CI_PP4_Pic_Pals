@@ -5,22 +5,26 @@
 
 {% block content %}
 
-<div class="container">    
-    <p>My posts</p>
+<div class='row card-group'>
     {% for post in user_posts %}
-    <div class="row post">
-    <a href="{{ user.get_absolute_url }}">
-    {{ post.user }}
-    </a>
-    <img src="{{ post.image.url }}">
-    <div>
-        {{ post.caption }}
-    </div>
-    {{ post.created_date|date:"d M Y" }}
-    </div>
+      <div class="col-4">
+        <div class="card h-100">
+          <div class="card-body">
+            <a href="{{ user.get_absolute_url }}">
+                {{ post.user }}
+                </a>
+            <img src="{{ post.image.url }}" class="post-pic">
+            <p class="card-text">
+            {{ post.caption }}
+            </p>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Comments</small>
+          </div>
+        </div>
+      </div>
     {% endfor %}
-</div>
-
-</div>
+    </div>
 
 {% endblock %}
+
