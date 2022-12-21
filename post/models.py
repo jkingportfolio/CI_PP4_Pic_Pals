@@ -51,5 +51,12 @@ class Feed(models.Model):
             feed = Feed(post=post, user=follower.follower, date=post.created_date, following=user)
             feed.save()
 
+class Like(models.Model):
+    post_id = models.CharField(max_length=500)
+    username = models.CharField(max_length=100)
+
+    def __str__(self):
+        return self.username
+
 
 post_save.connect(Feed.add_post, sender=Post)

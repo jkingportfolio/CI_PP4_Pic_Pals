@@ -34,3 +34,22 @@ def current_user_posts(request):
     user_posts = Post.objects.filter(user=user)
     return render(request, 'post/user_posts.html', {'user_posts': user_posts})
 
+@login_required
+def post_like(request):
+    username = request.user.username
+    post_id = request.GET.get('post_id')
+
+    post = Post.objects.get(id=post_id)
+    like_status = Like.objects.filter(post_id=post_id, username=username).first()
+
+    if like_status == None:
+        like = Like.objects.create(post_id=post_id, username=username)
+        like.savee()
+        post.likes = post.likes + 1
+        post.save()
+        return
+    else:
+        like_status.delete()
+        post.likes = post.likes - 1
+        post.save()
+        return 

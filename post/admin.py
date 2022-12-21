@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Follow, Feed
+from .models import Post, Follow, Feed, Like
 
 # Register your models here.
 
@@ -13,3 +13,5 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ['created', 'follower', 'following']
 
 admin.site.register(Feed)
+
+admin.site.register(Like)
