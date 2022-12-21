@@ -14,7 +14,7 @@
         {{ post.created_date|date:"d M Y" }}
     </div>
     <div>
-      <a href="{{ user.get_absolute_url }}">
+      <a href="{% url 'posts:like' post.id %}">
         <p>Likes: {{ post.likes }}</p>
         {% if post.likes == 0 %}
         <p>No likes</p>

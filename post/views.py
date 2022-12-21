@@ -36,19 +36,20 @@ def current_user_posts(request):
     return render(request, 'post/user_posts.html', {'user_posts': user_posts})
 
 @login_required
-def post_like(request):
-    username = request.user.username
-    post_id = request.GET.get('post_id')
-    post = Post.objects.get(id=post_id)
-    like_status = Like.objects.filter(post_id=post_id, username=username).first()
+def post_like(request, post):    
+    user = request.user
+    # post_id = request.GET.get('post')
+    post = Post.objects.get(id=post)
+    print(f"POST: {post}")      
+    
+    like_status = Like.objects.filter(post=post, user=user).first()
 
     if like_status == None:
-        like = Like.objects.create(post_id=post_id, username=username)
-        like.savee()
+        like = Like.objects.create(post=post, user=user)
+        like.save()
         post.likes = post.likes + 1
-        post.save()
     else:
         like_status.delete()
         post.likes = post.likes - 1
-        post.save()
-    return redirect(ost.get_absolute_url())
+    post.save()
+    return redirect(request.META.get('HTTP_REFERER'))
