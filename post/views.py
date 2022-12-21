@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from .forms import PostImageForm
+from .forms import PostImageForm, PostCommentForm
 from django.contrib.auth.decorators import login_required
-from .models import Post, Follow, Feed, Like
+from .models import Post, Follow, Feed, Like, Comment
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 
@@ -26,7 +26,9 @@ def create_post(request):
 @login_required()
 def post_detail(request, id):
     post = get_object_or_404(Post, id=id)
-    return render(request, 'post/post_detail.html', {'post': post})
+    comments = post.comments.filter(active=True)
+    form = PostCommentForm()
+    return render(request, 'post/post_detail.html', {'post': post, 'comments': comments, 'form': form})
 
 
 @login_required()
@@ -38,7 +40,6 @@ def current_user_posts(request):
 @login_required
 def post_like(request, post):    
     user = request.user
-    # post_id = request.GET.get('post')
     post = Post.objects.get(id=post)
     print(f"POST: {post}")      
     
@@ -60,3 +61,16 @@ def post_delete(request, id):
 	if request.user == post.user:
 		Post.objects.get(id=id).delete()
 	return redirect('/')
+
+@login_required
+def post_comment(request, user, post_id):
+    user = request.user
+    post = get_object_or_404(Post, id=post_id)
+    comment = None
+    form = PostCommentForm(data=request.POST)
+    if form.is_valid():
+        comment = form.save(commit=False)
+        comment.user = post
+        comment.post = post
+        comment = form.save()
+    return redirect(request.META.get('HTTP_REFERER'))

@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Follow, Feed, Like
+from .models import Post, Follow, Feed, Like, Comment
 
 # Register your models here.
 
@@ -14,3 +14,7 @@ class PostAdmin(admin.ModelAdmin):
 
 admin.site.register(Feed)
 admin.site.register(Like)
+
+@admin.register(Comment)
+class CommentAdmin(admin.ModelAdmin):
+    list_display = ['created_on', 'user', 'post', 'comment_body']
