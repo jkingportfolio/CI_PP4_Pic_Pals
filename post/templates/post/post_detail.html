@@ -24,22 +24,23 @@
         <p>Liked by {{ post.likes }} people</p>
         {% endif %}
       </a>
+      <div>
+        {% for comment in comments %}
+          <p>
+            {{ comment.name }}
+          </p>
+          <p>
+            {{ comment.created }}
+          </p>
+          {{ comment.body|linebreaks }}
+      </div>
+        {% empty %}
+        <p>There are no comments.</p>
+      {% endfor %}
+      </div>
     </div>
     <div>
-      <h2>Add a comment</h2>
-      <form action="{% url 'posts:post_comment" post.id %}" method='post'>
-        {{ form.as_p }}
-        {% csrf_token %}
-        <p><input type="submit" value="Add comment"></p>
-       </form>
-    </div>
-    <div>
-      {% if post.user == user %}
-      <a
-        href="{% url 'posts:post-delete' post.id %}"
-        >Delete</a
-      >
-      {% endif %}
+      {% include "post/comment_form.html" %}
     </div>
 </div>
 

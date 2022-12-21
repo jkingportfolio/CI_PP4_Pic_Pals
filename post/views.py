@@ -26,9 +26,9 @@ def create_post(request):
 @login_required()
 def post_detail(request, id):
     post = get_object_or_404(Post, id=id)
-    comments = post.comments.filter(active=True)
+    # comments = post.comments.filter(active=True)
     form = PostCommentForm()
-    return render(request, 'post/post_detail.html', {'post': post, 'comments': comments, 'form': form})
+    return render(request, 'post/post_detail.html', {'post': post, 'form': form})
 
 
 @login_required()
@@ -63,14 +63,17 @@ def post_delete(request, id):
 	return redirect('/')
 
 @login_required
-def post_comment(request, user, post_id):
+def post_comment(request, post_id):
     user = request.user
     post = get_object_or_404(Post, id=post_id)
     comment = None
     form = PostCommentForm(data=request.POST)
     if form.is_valid():
         comment = form.save(commit=False)
-        comment.user = post
+        comment.user = user
         comment.post = post
-        comment = form.save()
-    return redirect(request.META.get('HTTP_REFERER'))
+        comment.save()
+    return render(request, 'blog/post/comment.html',
+                           {'post': post,
+                            'form': form,
+                            'comment': comment})

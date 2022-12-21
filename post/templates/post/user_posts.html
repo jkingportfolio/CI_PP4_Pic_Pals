@@ -23,6 +23,11 @@
           <div class="card-footer">
             <small class="text-muted">{{ post.likes }}</small>
           </div>
+          <div>
+            {% with comments.count as total_comments %}
+            <h2>{{ total_comments }} comment{{ total_comments|pluralize }}</h2>
+            {% endwith %}
+          </div>
         </div>
       </div>
     {% endfor %}
