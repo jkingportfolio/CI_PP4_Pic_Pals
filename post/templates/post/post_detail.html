@@ -25,6 +25,14 @@
         {% endif %}
       </a>
     </div>
+    <div>
+      {% if post.user == user %}
+      <a
+        href="{% url 'posts:post-delete' post.id %}"
+        >Delete</a
+      >
+      {% endif %}
+    </div>
 </div>
 
 {% endblock %}

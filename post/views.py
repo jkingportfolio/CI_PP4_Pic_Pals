@@ -53,3 +53,10 @@ def post_like(request, post):
         post.likes = post.likes - 1
     post.save()
     return redirect(request.META.get('HTTP_REFERER'))
+
+@login_required
+def post_delete(request, id):
+	post = Post.objects.get(id=id)
+	if request.user == post.user:
+		Post.objects.get(id=id).delete()
+	return redirect('/')
