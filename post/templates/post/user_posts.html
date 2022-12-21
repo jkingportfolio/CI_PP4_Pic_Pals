@@ -13,7 +13,9 @@
             <a href="{{ user.get_absolute_url }}">
                 {{ post.user }}
                 </a>
+              <a href="{{ post.get_absolute_url }}">
             <img src="{{ post.image.url }}" class="post-pic">
+              </a>
             <p class="card-text">
             {{ post.caption }}
             </p>
