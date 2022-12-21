@@ -56,7 +56,7 @@ class Like(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="post_likes")
 
     def __str__(self):
-        return self.username
+        return f'{self.user} liked {self.post}'
 
 
 post_save.connect(Feed.add_post, sender=Post)
