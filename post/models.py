@@ -71,7 +71,7 @@ class Comment(models.Model):
         ordering = ['created_on']
 
     def __str__(self):
-        return f'{self.user} commented on post {post}' 
+        return f'{self.user} commented on post {self.post}' 
 
 
 post_save.connect(Feed.add_post, sender=Post)

@@ -25,14 +25,19 @@
         {% endif %}
       </a>
       <div>
+        {% with comments.count as total_comments %}
+        <h2>
+          {{ total_comments }} comment{{ total_comments|pluralize }}
+        </h2>
+        {% endwith %}
         {% for comment in comments %}
           <p>
-            {{ comment.name }}
+            {{ comment.user }}
           </p>
           <p>
             {{ comment.created }}
           </p>
-          {{ comment.body|linebreaks }}
+          {{ comment.comment_body|linebreaks }}
       </div>
         {% empty %}
         <p>There are no comments.</p>
