@@ -18,18 +18,6 @@
             {{ post.caption }}
             </p>
           </div>
-          <div>
-            <a href="/post_like?post_id={{post.id}}">
-              <p>Likes: {{ post.likes }}</p>
-              {% if post.likes == 0 %}
-              <p>No likes</p>
-              {% elif post.likes == 1 %}
-              <p>Liked by {{post.likes}} person</p>
-              {% else %}
-              <p>Liked by {{ post.likes }} people</p>
-              {% endif %}
-            </a>
-          </div>
           <div class="card-footer">
             <small class="text-muted">Comments</small>
           </div>

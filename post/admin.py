@@ -13,5 +13,4 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ['created', 'follower', 'following']
 
 admin.site.register(Feed)
-
 admin.site.register(Like)

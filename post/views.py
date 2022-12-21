@@ -1,8 +1,9 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .forms import PostImageForm
 from django.contrib.auth.decorators import login_required
-from .models import Post, Follow, Feed
+from .models import Post, Follow, Feed, Like
 from django.contrib import messages
+from django.http import HttpResponseRedirect
 
 
 # Create your views here.
@@ -38,7 +39,6 @@ def current_user_posts(request):
 def post_like(request):
     username = request.user.username
     post_id = request.GET.get('post_id')
-
     post = Post.objects.get(id=post_id)
     like_status = Like.objects.filter(post_id=post_id, username=username).first()
 
@@ -47,9 +47,8 @@ def post_like(request):
         like.savee()
         post.likes = post.likes + 1
         post.save()
-        return
     else:
         like_status.delete()
         post.likes = post.likes - 1
         post.save()
-        return 
+    return redirect(ost.get_absolute_url())
