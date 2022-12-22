@@ -109,8 +109,8 @@ def follow_user(request, user_name):
 
 
 @login_required
-def follow_status(request, user_name):
-    user_obj = User.objects.get(name=user_name)
+def follow_status(request, username):
+    user_obj = get_object_or_404(User, username=username, is_active=True)
     # current_user = request.user
     # current_user_following, create = Follow.objects.get_or_create(user=current_user)
     # following, create = Follow.objects.get_or_create(user=current_user.id)
