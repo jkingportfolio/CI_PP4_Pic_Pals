@@ -5,7 +5,7 @@ from .forms import LoginDetails, Registration, Profile, EditUser, EditProfile
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
-from .models import Profile
+from .models import Profile, Follow
 from post.models import Post
 from django.contrib import messages
 
@@ -84,8 +84,10 @@ def site_users(request):
 def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
     user_posts = Post.objects.filter(user=user)
+    user_following =  Follow.objects.filter(user=)
     context = {
         'user': user,
         'user_posts': user_posts,
+        'user_following': user_following,
     }
     return render(request, 'account/user/user_detail.html', context)

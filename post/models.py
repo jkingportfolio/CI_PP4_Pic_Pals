@@ -26,7 +26,7 @@ class Post(models.Model):
 
 
 class Follow(models.Model):
-    follower = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='follower')
+    user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
     following = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='following')
     created = models.DateTimeField(auto_now_add=True)
     
