@@ -38,11 +38,9 @@ def current_user_posts(request):
     return render(request, 'post/user_posts.html', {'user_posts': user_posts})
 
 @login_required
-def post_like(request, post):    
+def post_like(request, post):
     user = request.user
     post = Post.objects.get(id=post)
-    print(f"POST: {post}")      
-    
     like_status = Like.objects.filter(post=post, user=user).first()
 
     if like_status == None:
@@ -57,10 +55,11 @@ def post_like(request, post):
 
 @login_required
 def post_delete(request, id):
-	post = Post.objects.get(id=id)
-	if request.user == post.user:
-		Post.objects.get(id=id).delete()
-	return redirect('/')
+    post = Post.objects.get(id=id)
+    if request.user == post.user:
+        Post.objects.get(id=id).delete()
+    return redirect('/')
+
 
 @login_required
 def post_comment(request, id):
@@ -76,3 +75,20 @@ def post_comment(request, id):
     return redirect(request.META.get('HTTP_REFERER'), {'post': post,
                             'form': form,
                             'comment': comment})
+
+
+@login_required
+def follow_user(request):
+    user = request.user
+    post = Post.objects.get(id=post)
+    follow_status = Like.objects.filter(post=post, user=user).first()
+
+    if like_status == None:
+        like = Like.objects.create(post=post, user=user)
+        like.save()
+        post.likes = post.likes + 1
+    else:
+        like_status.delete()
+        post.likes = post.likes - 1
+    post.save()
+    return redirect(request.META.get('HTTP_REFERER'))
