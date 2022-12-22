@@ -96,20 +96,27 @@ def user_detail(request, username):
 def follow_user(request, user_name):
     user_to_follow = User.objects.get(name=user_name)
     current_user = request.user
-    follow_status = Followers.objects.get(user=get_user.id)
+    get_user = User.objects.get(name=current_user)
+    follow_status = Follow.objects.get(user=get_user.id)
     is_followed = False
     if user_to_follow.name != current_user:
-        if follow_status.another_user.filter(name=user_to_follow).exists():
-            add_follow_obj = Followers.objects.get(user=current_user)
-            add_follow_obj.another_user.remove(user_to_follow)
+        if follow_status.following.filter(name=user_to_follow).exists():
+            add_follow_obj = Follow.objects.get(user=current_user)
+            add_follow_obj.following.remove(user_to_follow)
             is_followed = False
             return redirect(request.META.get('HTTP_REFERER'))
         else:
-            add_follow_obj = Followers.objects.get(user=get_user)
-            add_follow_obj.another_user.add(user_to_follow)
+            add_follow_obj = Follow.objects.get(user=get_user)
+            add_follow_obj.following.add(user_to_follow)
             is_followed = True
             return redirect(request.META.get('HTTP_REFERER'))
 
         return redirect(request.META.get('HTTP_REFERER'))
     else:
         return redirect(request.META.get('HTTP_REFERER'))
+
+
+@login_required
+def create_follow
+
+
