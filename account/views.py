@@ -1,5 +1,5 @@
 from django.http import HttpResponse
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
 from .forms import LoginDetails, Registration, Profile, EditUser, EditProfile
 from django.contrib.auth.decorators import login_required
@@ -94,29 +94,39 @@ def user_detail(request, username):
 
 @login_required
 def follow_user(request, user_name):
-    user_to_follow = User.objects.get(name=user_name)
+    user_to_follow = User.objects.get(username=user_name)
     current_user = request.user
-    get_user = User.objects.get(name=current_user)
-    follow_status = Follow.objects.get(user=get_user.id)
+    get_user = User.objects.get(username=current_user)
+    follow_status, created = Follow.objects.get_or_create(user=get_user, following=user_to_follow)
     is_followed = False
-    if user_to_follow.name != current_user:
-        if follow_status.following.filter(name=user_to_follow).exists():
-            add_follow_obj = Follow.objects.get(user=current_user)
-            add_follow_obj.following.remove(user_to_follow)
+    if user_to_follow.username != current_user:
+        if not created:
             is_followed = False
+            follow_status.delete()
             return redirect(request.META.get('HTTP_REFERER'))
-        else:
-            add_follow_obj = Follow.objects.get(user=get_user)
-            add_follow_obj.following.add(user_to_follow)
-            is_followed = True
-            return redirect(request.META.get('HTTP_REFERER'))
-
-        return redirect(request.META.get('HTTP_REFERER'))
     else:
         return redirect(request.META.get('HTTP_REFERER'))
 
 
 @login_required
-def create_follow
+def create_follow(request, user_name):
+    user = User.objects.get(username=user_name)
+    current_user = request.user
+    current_user_following, create = Follow.objects.get_or_create(user=current_user)
+    following, create = Follow.objects.get_or_create(user=current_user.id)
+    check_user_followers = Follow.objects.filter(another_user=user_obj)
+
+    is_followed = False
+    if current_user_following.following.filter(name=user_name).exists() or following.following.filter(name=user_name).exists():
+        is_followed = True
+    else:
+        is_followed = False
+    context = {
+        'user': user,
+        'followers': check_user_followers,
+        'following': following,
+        'is_followed': is_followed
+    }
+    return redirect(request.META.get('HTTP_REFERER'), context)
 
 

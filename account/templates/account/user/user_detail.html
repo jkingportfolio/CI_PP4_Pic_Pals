@@ -24,18 +24,18 @@
       </div>
       <div class="col-sm">
           <p>Post count</p>
-          <p>Followers</p>
-          <p>Following</p>
+          <p>Followers:</p>
+          <p>Following:</p>
       </div>
       <div>
         Followers: {{ follow.count }}
       </div>
       <div>
-        {% if user.name != request.user%}
+        {% if user != current_user %}
         {% if is_followed %}
-            <a href="{% url 'follow_user' user_to_follow %}">Unfollow</a>
+            <a href="{% url 'follow_user' user %}">Unfollow</a>
         {% else %}
-            <a href="{% url 'follow_user' user_to_follow %}">Follow</a>
+            <a href="{% url 'follow_user' user %}">Follow</a>
         {% endif %}
     
         {% endif %}

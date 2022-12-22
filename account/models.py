@@ -29,6 +29,6 @@ class Follow(models.Model):
 
 # Dynamic user following field
 
-user_model = get_user_model()
-user_model.add_to_class(
-    'accounts_following', models.ManyToManyField('self', through=Follow, related_name='followers', symmetrical=False))
+# user_model = get_user_model()
+# user_model.add_to_class(
+#     'accounts_following', models.ManyToManyField('self', through=Follow, related_name='followers', symmetrical=False))
