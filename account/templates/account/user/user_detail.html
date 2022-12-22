@@ -32,7 +32,7 @@
       </div>
       <div>
         {% if user != current_user %}
-        {% if is_followed %}
+        {% if create_follow.is_followed %}
             <a href="{% url 'follow_user' user %}">Unfollow</a>
         {% else %}
             <a href="{% url 'follow_user' user %}">Follow</a>

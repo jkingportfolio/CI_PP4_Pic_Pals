@@ -104,8 +104,8 @@ def follow_user(request, user_name):
             is_followed = False
             follow_status.delete()
             return redirect(request.META.get('HTTP_REFERER'))
-    else:
-        return redirect(request.META.get('HTTP_REFERER'))
+        else:
+            return redirect(request.META.get('HTTP_REFERER'))
 
 
 @login_required
