@@ -11,5 +11,6 @@ urlpatterns = [
     path('<uuid:post>/like/', views.post_like, name='like'),
     path('post/<str:id>/delete/', views.post_delete, name='post_delete'),
     path('post-detail/<str:id>/comment/', views.post_comment, name='post_comment'),
+    path('post-detail/<str:id>/comment/delete/', views.comment_delete, name='comment_delete'),
     ]
     

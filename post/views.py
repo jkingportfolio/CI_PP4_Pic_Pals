@@ -84,7 +84,8 @@ def comment_delete(request, id):
     comment = Comment.objects.get(id=id)
     if request.user == comment.user:
         comment.delete()
-    return redirect('/', {'comment': comment})
+        return redirect('/', {'comment': comment})
+    return redirect(request.META.get('HTTP_REFERER'))
 
 
 
