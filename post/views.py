@@ -60,7 +60,8 @@ def post_delete(request, id):
     post = Post.objects.get(id=id)
     if request.user == post.user:
         post.delete()
-    return redirect('/', {'post': post})
+        return redirect('/', {'post': post})
+    return redirect(request.META.get('HTTP_REFERER'))
 
 
 @login_required
@@ -77,6 +78,13 @@ def post_comment(request, id):
     return redirect(request.META.get('HTTP_REFERER'), {'post': post,
                                                        'form': form,
                                                        'comment': comment})
+
+@login_required
+def comment_delete(request, id):
+    comment = Comment.objects.get(id=id)
+    if request.user == comment.user:
+        comment.delete()
+    return redirect('/', {'comment': comment})
 
 
 
