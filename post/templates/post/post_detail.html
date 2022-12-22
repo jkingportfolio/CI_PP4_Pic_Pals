@@ -4,7 +4,12 @@
 {% block title %}{{ image.title }}{% endblock %}
 
 {% block content %}
-<div class="container">    
+<div class="container">
+    {% if request.user.is_authenticated %}
+    <div>
+      <a href="{% url 'posts:post_delete' post.id %}">Delete</a>
+    </div> 
+    {% endif %}   
     <div class="row post">
     {{ post.user }}
     <img src="{{ post.image.url }}">
