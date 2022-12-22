@@ -43,7 +43,7 @@
                 {% endif %}
                     <span style="color:red;">
                         {% if request.user.is_authenticated %}
-                           Hello, {{ user.username }}.
+                           Hello, {{ request.user.username }}.
                                 <a href="{% url 'logout' %}">Log out</a>
                         {% else %}
                             <a href="{% url 'register' %}">Register</a>

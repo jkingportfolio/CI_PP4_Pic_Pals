@@ -19,5 +19,6 @@ urlpatterns = [
     path('edit-profile/', views.edit_profile, name='edit_profile'),
     path('users/', views.site_users, name='site_users'),
     path('users/<username>/', views.user_detail, name='user_detail'),
-    path('follow/<str:user_name>', views.follow_user, name='follow_user'),
+    path('follow-status/<str:user_name>', views.follow_status, name='follow_status'),
+    path('follow-user/<str:user_name>', views.follow_user, name='follow_user'),
 ]

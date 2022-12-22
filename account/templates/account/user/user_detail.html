@@ -31,14 +31,12 @@
         Followers: {{ follow.count }}
       </div>
       <div>
-        {% if user != current_user %}
-        {% if create_follow.is_followed %}
-            <a href="{% url 'follow_user' user %}">Unfollow</a>
-        {% else %}
-            <a href="{% url 'follow_user' user %}">Follow</a>
-        {% endif %}
-    
-        {% endif %}
+          {% if is_followed %}
+              <a href="{% url 'follow_user' user %}">Unfollow</a>
+          {% else %}
+              <a href="{% url 'follow_user' user %}">Follow</a>
+          {% endif %}
+
       </div>
   </div>
 </div>
