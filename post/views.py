@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .forms import PostImageForm, PostCommentForm
 from django.contrib.auth.decorators import login_required
-from .models import Post, Follow, Feed, Like, Comment
+from .models import Post, Feed, Like, Comment
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 
@@ -79,24 +79,4 @@ def post_comment(request, id):
                                                        'comment': comment})
 
 
-@login_required
-def follow_user(request, user_name):
-    user_to_follow = User.objects.get(name=user_name)
-    current_user = request.user
-    follow_status = Followers.objects.get(user=get_user.id)
-    is_followed = False
-    if user_to_follow.name != current_user:
-        if follow_status.another_user.filter(name=user_to_follow).exists():
-            add_follow_obj = Followers.objects.get(user=current_user)
-            add_follow_obj.another_user.remove(user_to_follow)
-            is_followed = False
-            return redirect(request.META.get('HTTP_REFERER'))
-        else:
-            add_follow_obj = Followers.objects.get(user=get_user)
-            add_follow_obj.another_user.add(user_to_follow)
-            is_followed = True
-            return redirect(request.META.get('HTTP_REFERER'))
 
-        return redirect(request.META.get('HTTP_REFERER'))
-    else:
-        return redirect(request.META.get('HTTP_REFERER'))

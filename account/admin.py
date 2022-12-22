@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Profile
+from .models import Profile, Follow
 
 # Register your models here.
 
@@ -8,3 +8,7 @@ from .models import Profile
 class ProfileAdmin(admin.ModelAdmin):
     fields = ['user', 'dob', 'profile_pic']
     raw_id_fields = ['user']
+
+@admin.register(Follow)
+class PostAdmin(admin.ModelAdmin):
+    list_display = ['created', 'user', 'following']

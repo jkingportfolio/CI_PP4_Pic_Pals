@@ -2,8 +2,7 @@ from django.db import models
 from django.conf import settings
 from cloudinary.models import CloudinaryField
 from django.contrib.auth import get_user_model
-from post.models import Post, Follow
-
+from post.models import Post
 # Create your models here.
 
 class Profile(models.Model):
@@ -15,6 +14,18 @@ class Profile(models.Model):
 
     def __str__(self):
         return f'Profile of {self.user.username}'
+
+
+class Follow(models.Model):
+    user = models.ForeignKey('auth.User', on_delete=models.CASCADE)
+    following = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='following')
+    created = models.DateTimeField(auto_now_add=True)
+    
+    class Meta:
+        ordering = ['-created']
+
+    def __str__(self):
+        return f'{self.user} follows {self.following}'
 
 # Dynamic user following field
 

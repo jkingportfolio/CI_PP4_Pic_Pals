@@ -84,10 +84,32 @@ def site_users(request):
 def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
     user_posts = Post.objects.filter(user=user)
-    user_following =  Follow.objects.filter(user=)
+    user_following =  Follow.objects.filter(user=user)
     context = {
         'user': user,
         'user_posts': user_posts,
         'user_following': user_following,
     }
     return render(request, 'account/user/user_detail.html', context)
+
+@login_required
+def follow_user(request, user_name):
+    user_to_follow = User.objects.get(name=user_name)
+    current_user = request.user
+    follow_status = Followers.objects.get(user=get_user.id)
+    is_followed = False
+    if user_to_follow.name != current_user:
+        if follow_status.another_user.filter(name=user_to_follow).exists():
+            add_follow_obj = Followers.objects.get(user=current_user)
+            add_follow_obj.another_user.remove(user_to_follow)
+            is_followed = False
+            return redirect(request.META.get('HTTP_REFERER'))
+        else:
+            add_follow_obj = Followers.objects.get(user=get_user)
+            add_follow_obj.another_user.add(user_to_follow)
+            is_followed = True
+            return redirect(request.META.get('HTTP_REFERER'))
+
+        return redirect(request.META.get('HTTP_REFERER'))
+    else:
+        return redirect(request.META.get('HTTP_REFERER'))
