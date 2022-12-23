@@ -84,10 +84,12 @@ def site_users(request):
 def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
     user_posts = Post.objects.filter(user=user)
+    user_post_count = user_posts.count()
     user_following = Follow.objects.filter(user=user)
     context = {
         'user': user,
         'user_posts': user_posts,
+        'user_post_count': user_post_count,
         'user_following': user_following,
     }
     return render(request, 'account/user/user_detail.html', context)
