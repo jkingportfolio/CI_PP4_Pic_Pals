@@ -1,5 +1,5 @@
 from django.contrib import admin
-from .models import Post, Feed, Like, Comment
+from .models import Post, Like, Comment
 
 # Register your models here.
 
@@ -8,7 +8,6 @@ class PostAdmin(admin.ModelAdmin):
     list_display = ['image', 'created_date']
     list_filter = ['created_date']
 
-admin.site.register(Feed)
 admin.site.register(Like)
 
 @admin.register(Comment)

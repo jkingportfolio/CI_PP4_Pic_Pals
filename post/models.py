@@ -8,8 +8,6 @@ import uuid
 
 # Create your models here.
 
-
-
 class Post(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     created_date = models.DateTimeField(auto_now_add=True)
@@ -24,21 +22,6 @@ class Post(models.Model):
     def get_absolute_url(self):
         return reverse('posts:post_detail', args=[str(self.id)])
 
-
-class Feed(models.Model):
-    following = models.ForeignKey(User, on_delete=models.CASCADE, null=True, related_name='feed_following')
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
-    post = models.ForeignKey(Post, on_delete=models.CASCADE, null=True)
-    date = models.DateTimeField()
-
-    def add_post(sender, instance, *args, **kwargs):
-        post = instance
-        user = post.user
-        followers = Follow.objects.all().filter(following=user)
-
-        for follower in followers:
-            feed = Feed(post=post, user=follower.follower, date=post.created_date, following=user)
-            feed.save()
 
 class Like(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_likes")
@@ -63,4 +46,3 @@ class Comment(models.Model):
         return f'{self.user} commented on post {self.post}' 
 
 
-post_save.connect(Feed.add_post, sender=Post)

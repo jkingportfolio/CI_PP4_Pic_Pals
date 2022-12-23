@@ -1,7 +1,7 @@
 from django.shortcuts import render, get_object_or_404, redirect, reverse
 from .forms import PostImageForm, PostCommentForm
 from django.contrib.auth.decorators import login_required
-from .models import Post, Feed, Like, Comment
+from .models import Post, Like, Comment
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 
