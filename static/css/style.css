@@ -46,3 +46,7 @@ footer{
     width: 150px;
     height: 150px;
 }
+
+.post-detail {
+    justify-content: center;
+}
