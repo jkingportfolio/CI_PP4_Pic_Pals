@@ -4,6 +4,12 @@
     max-width: 80%;
 }
 
+.post-image-resize {
+    display: block;
+    width: 100%;
+    height: auto;
+}
+
 .profile-pic {
     width: 200px;
     height: 200px;
@@ -25,4 +31,8 @@ body{
 }
 footer{
     margin-top: auto;
+}
+
+.margin-post-list {
+    margin: 50px !important; 
 }

@@ -1,22 +1,24 @@
 <!-- list of logged in users posts page to be created here-->
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block title %} My posts {% endblock %}
 
 {% block content %}
 <p>
   POST COUNT = {{ post_count }}
 </p>
-<div class='row card-group'>
+<div class='row card-group margin-post-list'>
     {% for post in user_posts %}
       <div class="col-4">
-        <div class="card h-100">
+        <div class="card h-200">
           <div class="card-body">
             <a href="{{ user.get_absolute_url }}">
                 {{ post.user }}
                 </a>
               <a href="{{ post.get_absolute_url }}">
-            <img src="{{ post.image.url }}" class="post-pic">
+            <img src="{{ post.image.url }}" class="post-image-resize">
               </a>
             <p class="card-text">
             {{ post.caption }}
