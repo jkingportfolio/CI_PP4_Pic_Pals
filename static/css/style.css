@@ -18,13 +18,11 @@
     margin-right: auto;
 }
 
-body {
+body{
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
- }
-
-.footer{
-    position:absolute;
-    min-height: calc(100vh - 40px);
-    }
+}
+footer{
+    margin-top: auto;
+}
