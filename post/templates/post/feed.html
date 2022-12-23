@@ -4,10 +4,10 @@
 {% block title %}User feed{% endblock %}
 
 {% block content %}
-
-<div>
+<h1>Latest Posts</h1>
+<div class="site-margin">
     {% for post in all_posts %}
-    <div class="col-4">
+    <div class="col-4 site-margin">
       <div class="card h-200">
         <div class="card-body">
           <a href="{{ user.get_absolute_url }}">
