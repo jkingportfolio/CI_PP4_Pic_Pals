@@ -29,16 +29,12 @@
           <p>Followers: {{ user_followers_count }}</p>
       </div>
       <div>
-        Followers: {{ follow.count }}
-      </div>
-      <div>
         {% if user_obj.username == request.user.username %}
-          {% if is_followed %}
-              <a href="{% url 'follow_user' user %}">Unfollow</a>
-          {% else %}
-              <a href="{% url 'follow_user' user %}">Follow</a>
-          {% endif %}
-    
+            {% if is_followed %}
+                <a href="{% url 'follow_user' user %}">Unfollow</a>
+            {% else %}
+                <a href="{% url 'follow_user' user %}">Follow</a>
+            {% endif %}    
         {% endif %}
       </div>
   </div>

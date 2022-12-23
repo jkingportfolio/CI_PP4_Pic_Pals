@@ -4,6 +4,7 @@ from django.contrib.auth.decorators import login_required
 from .models import Post, Like, Comment
 from django.contrib import messages
 from django.http import HttpResponseRedirect
+from account.models import Follow
 
 
 # Create your views here.
@@ -88,5 +89,34 @@ def comment_delete(request, id):
         return redirect('/', {'comment': comment})
     return redirect(request.META.get('HTTP_REFERER'))
 
+
+# @login_required
+# def followed_feed(request):
+#     current_user = request.user
+#     followed_accounts = Follow.objects.filter(user=current_user)
+#     user_following_feed = []
+#     feed_posts = []
+#     for account in followed_accounts:
+#         account.append(account.user)
+#     for usernames in user_following_feed:
+#         feed_lists = Post.objects.filter(user=usernames)
+#         feed_posts.append(feed_lists)
+#     context = {
+#         'feed_posts': feed_posts
+#     }
+#     return render(request, 'post/feed.html', context)
+
+
+@login_required
+def latest_posts(request):
+    all_posts = Post.objects.all()
+    post_count = all_posts.count()
+    return render(request, 'post/feed.html', {'all_posts': all_posts, 'post_count': post_count})
+
+
+        
+
+
+        
 
 

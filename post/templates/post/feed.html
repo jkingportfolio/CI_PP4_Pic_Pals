@@ -1,0 +1,29 @@
+<!-- create followed accounts feed here-->
+{% extends "base.html" %}
+
+{% block title %}User feed{% endblock %}
+
+{% block content %}
+
+<div>
+    {% for post in all_posts %}
+    <div class="col-4">
+      <div class="card h-200">
+        <div class="card-body">
+          <a href="{{ user.get_absolute_url }}">
+              {{ post.user }}
+              </a>
+            <a href="{{ post.get_absolute_url }}">
+          <img src="{{ post.image.url }}" class="post-image-resize">
+            </a>
+        </div>
+        <div class="card-footer">
+          <small class="text-muted">Likes: {{ post.likes }}</small>
+          <small class="text-muted">Created on: {{ post.created_date }}</small>
+        </div>
+      </div>
+    </div>
+  {% endfor %}
+</div>
+
+{% endblock %}

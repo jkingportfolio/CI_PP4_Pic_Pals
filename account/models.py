@@ -27,6 +27,7 @@ class Follow(models.Model):
     def __str__(self):
         return f'{self.user} follows {self.following}'
 
+
 # Dynamic user following field
 
 # user_model = get_user_model()
