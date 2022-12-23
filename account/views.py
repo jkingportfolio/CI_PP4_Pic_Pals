@@ -86,11 +86,13 @@ def user_detail(request, username):
     user_posts = Post.objects.filter(user=user)
     user_post_count = user_posts.count()
     user_following = Follow.objects.filter(user=user)
+    user_following_count = user_following.count()
     context = {
         'user': user,
         'user_posts': user_posts,
         'user_post_count': user_post_count,
         'user_following': user_following,
+        'user_following_count': user_following_count,
     }
     return render(request, 'account/user/user_detail.html', context)
 
