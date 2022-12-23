@@ -8,56 +8,58 @@
 {% block content %}
 
 <div class="container site-margin">
-    <div class="row">
-        <div class="col-sm">
-            {% if user.profile.profile_pic %}
-            <div>
-                <img src="{{ user.profile.profile_pic.url }}"
-                    alt="Profile Picture" class="profile-pic"><br>
-            {% else %}
-                <img src="{% static 'images/default_profile_pic.png' %}"
-                    alt="Profile Picture" class="profile-pic"><br>
-            {% endif %}
-            </div>
-            <div>
-            <h1>{{ user_profile.user }}</h1>
-            </div>
-        </div>
-        <div class="col-sm">
-            
-        </div>
-        <div class="col-sm">
-            <a href="{% url 'posts:create_post' %}">Add post</a>
-            <a href="{% url 'edit_profile' %}">Edit profile</a>
-            <a href="{% url 'password_change' %}">Change password</a>
-        </div>
-    </div>
-</div>
 
-<div class='row card-group site-margin'>
-    {% for post in user_posts %}
+  <div class="row">
+    <div class="container text-center">
+      <div class="row">
+        <div class="col">
+          {% if user.profile.profile_pic %}
+          <div>
+            <img src="{{ user.profile.profile_pic.url }}" alt="Profile Picture"
+              class="profile-pic"><br>
+            {% else %}
+            <img src="{% static 'images/default_profile_pic.png' %}"
+              alt="Profile Picture" class="profile-pic"><br>
+            {% endif %}
+          </div>
+          <div class="col">
+            Column
+          </div>
+          <div class="col">
+            <a href="{% url 'posts:create_post' %}" class="btn btn-primary"
+              href="#" role="button">Add post</a>
+            <a href="{% url 'edit_profile' %}" class="btn btn-primary" href="#"
+              role="button">Edit Profile</a>
+            <a href="{% url 'password_change' %}" class="btn btn-primary"
+              href="#" role="button">Change Password</a>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class='row card-group site-margin'>
+      {% for post in user_posts %}
       <div class="col-4">
         <div class="card h-100">
           <div class="card-body">
             <a href="{{ user.get_absolute_url }}">
-                {{ post.user }}
+              {{ post.user }}
             </a>
             <a href="{{ post.get_absolute_url }}">
-            <img src="{{ post.image.url }}" class="post-pic">
+              <img src="{{ post.image.url }}" class="post-pic">
             </a>
             <p class="card-text">
-            {{ post.caption }}
+              {{ post.caption }}
             </p>
           </div>
           <div class="card-footer">
-            <small class="text-muted">Posted: {{ post.created_date }}</small><br>
+            <small class="text-muted">Posted:
+              {{ post.created_date }}</small><br>
             <small class="text-muted">Likes: {{ post.likes }}</small>
           </div>
         </div>
       </div>
-    {% endfor %}
-    </div>
+      {% endfor %}
+</div>
 
 
-{% endblock %}
-
+    {% endblock %}
