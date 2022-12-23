@@ -54,7 +54,7 @@ def post_like(request, post):
         like_status.delete()
         post.likes = post.likes - 1
     post.save()
-    return redirect(request.META.get('HTTP_REFERER'))
+    return redirect(request.META.get('HTTP_REFERER'), {'liked_status': like_status})
 
 
 @login_required

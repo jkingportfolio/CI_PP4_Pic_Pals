@@ -109,8 +109,10 @@ def follow_user(request, user_name):
         if not created:
             is_followed = False
             follow_status.delete()
+            messages.success(request, 'Unfollowed added successfully')
             return redirect(request.META.get('HTTP_REFERER'))
         else:
+            messages.success(request, 'Follow added successfully')
             return redirect(request.META.get('HTTP_REFERER'))
 
 

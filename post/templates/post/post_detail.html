@@ -19,6 +19,8 @@
         {{ post.created_date|date:"d M Y" }}
     </div>
     <div>
+      {% if pos_like.like_status == None %}
+      Not liked
       <a href="{% url 'posts:like' post.id %}">
         <p>Likes: {{ post.likes }}</p>
         {% if post.likes == 0 %}
@@ -28,6 +30,9 @@
         {% else %}
         <p>Liked by {{ post.likes }} people</p>
         {% endif %}
+      {% else %}
+      Liked
+      {% endif %}
       </a>
       <div>
         {% with comments.count as total_comments %}
