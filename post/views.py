@@ -35,7 +35,8 @@ def post_detail(request, id):
 def current_user_posts(request):
     user = request.user
     user_posts = Post.objects.filter(user=user)
-    return render(request, 'post/user_posts.html', {'user_posts': user_posts})
+    post_count = user_posts.count()
+    return render(request, 'post/user_posts.html', {'user_posts': user_posts, 'post_count': post_count})
 
 
 @login_required

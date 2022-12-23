@@ -4,7 +4,9 @@
 {% block title %} My posts {% endblock %}
 
 {% block content %}
-
+<p>
+  POST COUNT = {{ post_count }}
+</p>
 <div class='row card-group'>
     {% for post in user_posts %}
       <div class="col-4">
