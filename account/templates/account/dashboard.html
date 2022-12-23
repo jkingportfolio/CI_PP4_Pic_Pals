@@ -7,7 +7,7 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container profile-info-panel">
     <div class="row">
         <div class="col-sm">
             {% if user.profile.profile_pic %}
@@ -34,7 +34,7 @@
     </div>
 </div>
 
-<div class='row card-group'>
+<div class='row card-group site-margin'>
     {% for post in user_posts %}
       <div class="col-4">
         <div class="card h-100">

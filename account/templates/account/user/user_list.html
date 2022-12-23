@@ -1,16 +1,15 @@
 <!-- user list page to be created here-->
 {% extends "base.html" %}
-{% load static %}
 
-{% load cloudinary %}
+{% load static %}
 
 {% block title %}List of users{% endblock %}
 
 {% block content %}
 
-<div class='row card-group'>
+<div class='row card-group site-margin'>
     {% for user in users %}
-      <div class="col-4">
+      <div class="col-4 user-list-margin">
         <div class="card h-100">
           <div class="card-body">
             {% if user.profile.profile_pic %}

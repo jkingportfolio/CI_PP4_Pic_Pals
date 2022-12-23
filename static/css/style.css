@@ -6,8 +6,9 @@
 
 .post-image-resize {
     display: block;
-    width: 100%;
-    height: auto;
+    width: auto;
+    height: 150px;
+    margin: auto;
 }
 
 .profile-pic {
@@ -33,6 +34,15 @@ footer{
     margin-top: auto;
 }
 
-.margin-post-list {
-    margin: 50px !important; 
+.site-margin {
+    margin: 50px;
+}
+
+.user-list-margin {
+    margin-bottom: 25px;
+}
+
+.user-card {
+    width: 150px;
+    height: 150px;
 }
