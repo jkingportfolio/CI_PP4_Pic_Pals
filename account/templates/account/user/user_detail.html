@@ -24,8 +24,8 @@
       </div>
       <div class="col-sm">
           <p>Post count: {{ user_post_count }}</p>
-          <p>Followers: {{ user_following_count }}</p>
-          <p>Following:</p>
+          <p>Following: {{ user_following_count }}</p>
+          <p>Followers: </p>
       </div>
       <div>
         Followers: {{ follow.count }}
@@ -42,9 +42,6 @@
       </div>
   </div>
 </div>
-
-
-
 <div class='row card-group'>
     {% for post in user_posts %}
       <div class="col-4">
