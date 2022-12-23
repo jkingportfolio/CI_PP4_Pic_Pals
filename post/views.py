@@ -90,21 +90,22 @@ def comment_delete(request, id):
     return redirect(request.META.get('HTTP_REFERER'))
 
 
-# @login_required
-# def followed_feed(request):
-#     current_user = request.user
-#     followed_accounts = Follow.objects.filter(user=current_user)
-#     user_following_feed = []
-#     feed_posts = []
-#     for account in followed_accounts:
-#         account.append(account.user)
-#     for usernames in user_following_feed:
-#         feed_lists = Post.objects.filter(user=usernames)
-#         feed_posts.append(feed_lists)
-#     context = {
-#         'feed_posts': feed_posts
-#     }
-#     return render(request, 'post/feed.html', context)
+@login_required
+def followed_feed(request):
+    current_user = request.user
+    followed_accounts = Follow.objects.filter(user=current_user)
+    user_following_feed = []
+    feed_posts = []
+    for account in followed_accounts:
+        user_following_feed.append(account)
+    for usernames in user_following_feed:
+        feed_lists = Post.objects.filter(user=usernames)
+        feed_posts.append(feed_lists)
+    context = {
+        'feed_posts': feed_posts
+    }
+    print(user_following_feed)
+    return render(request, 'post/feed.html', context)
 
 
 @login_required

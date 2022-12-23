@@ -105,7 +105,7 @@ def follow_user(request, user_name):
     get_user = User.objects.get(username=current_user)
     follow_status, created = Follow.objects.get_or_create(user=get_user, following=user_to_follow)
     is_followed = False
-    if user_to_follow.username != current_user:
+    if user_to_follow.username != current_user.username:
         if not created:
             is_followed = False
             follow_status.delete()
@@ -117,9 +117,9 @@ def follow_user(request, user_name):
 @login_required
 def follow_status(request, username):
     user_obj = get_object_or_404(User, username=username, is_active=True)
-    # current_user = request.user
-    # current_user_following, create = Follow.objects.get_or_create(user=current_user)
-    # following, create = Follow.objects.get_or_create(user=current_user.id)
+    user_to_follow = User.objects.get(username=user_name)
+    follow_status, created = Follow.objects.get_or_create(user=get_user, following=user_to_follow)
+    following, create = Follow.objects.get_or_create(user=user_obj.id)
     # check_user_followers = Follow.objects.filter(following=user_obj)
 
     is_followed = False
