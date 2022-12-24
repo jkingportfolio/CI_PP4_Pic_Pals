@@ -26,10 +26,23 @@ def create_post(request):
 
 @login_required()
 def post_detail(request, id):
+    user = request.user
     post = get_object_or_404(Post, id=id)
     comments = post.comments.filter(visible=True)
     form = PostCommentForm()
-    return render(request, 'post/post_detail.html', {'post': post, 'comments': comments, 'form': form})
+    liked_by_user = Like.objects.filter(post=post, user=user).first()
+    if liked_by_user is None:
+        liked_by_user = False
+    else:
+        liked_by_user = True
+    print(liked_by_user)
+    context = {
+        'post': post,
+        'comments': comments,
+        'form': form,
+        'liked_by_user': liked_by_user
+    }
+    return render(request, 'post/post_detail.html', context)
 
 
 @login_required()
@@ -45,7 +58,6 @@ def post_like(request, post):
     user = request.user
     post = Post.objects.get(id=post)
     like_status = Like.objects.filter(post=post, user=user).first()
-
     if like_status == None:
         like = Like.objects.create(post=post, user=user)
         like.save()
@@ -54,7 +66,7 @@ def post_like(request, post):
         like_status.delete()
         post.likes = post.likes - 1
     post.save()
-    return redirect(request.META.get('HTTP_REFERER'), {'liked_status': like_status})
+    return redirect(request.META.get('HTTP_REFERER'))
 
 
 @login_required

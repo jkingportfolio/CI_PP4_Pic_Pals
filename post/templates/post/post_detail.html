@@ -19,8 +19,8 @@
         {{ post.created_date|date:"d M Y" }}
     </div>
     <div>
-      {% if pos_like.like_status == None %}
-      Not liked
+      {% if liked_by_user %}
+      Liked
       <a href="{% url 'posts:like' post.id %}">
         <p>Likes: {{ post.likes }}</p>
         {% if post.likes == 0 %}
@@ -31,7 +31,16 @@
         <p>Liked by {{ post.likes }} people</p>
         {% endif %}
       {% else %}
-      Liked
+      Not liked
+      <a href="{% url 'posts:like' post.id %}">
+        <p>Likes: {{ post.likes }}</p>
+        {% if post.likes == 0 %}
+        <p>No likes</p>
+        {% elif post.likes == 1 %}
+        <p>Liked by {{post.likes}} person</p>
+        {% else %}
+        <p>Liked by {{ post.likes }} people</p>
+        {% endif %}
       {% endif %}
       </a>
       <div>
