@@ -20,19 +20,14 @@
     </div>
     <div>
       {% if liked_by_user %}
-      Liked
       <a href="{% url 'posts:like' post.id %}">
-        <p>Likes: {{ post.likes }}</p>
-        {% if post.likes == 0 %}
-        <p>No likes</p>
-        {% elif post.likes == 1 %}
-        <p>Liked by {{post.likes}} person</p>
-        {% else %}
-        <p>Liked by {{ post.likes }} people</p>
-        {% endif %}
+        <img src="/static/images/like.png">
+      </a>
       {% else %}
-      Not liked
       <a href="{% url 'posts:like' post.id %}">
+        <img src="/static/images/not_liked.png">
+      </a>
+      {% endif %}
         <p>Likes: {{ post.likes }}</p>
         {% if post.likes == 0 %}
         <p>No likes</p>
@@ -41,7 +36,6 @@
         {% else %}
         <p>Liked by {{ post.likes }} people</p>
         {% endif %}
-      {% endif %}
       </a>
       <div>
         {% with comments.count as total_comments %}
