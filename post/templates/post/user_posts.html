@@ -7,9 +7,9 @@
 
 {% block content %}
 
-<div class='row card-group site-margin'>
+<div class='container site-margin'>
     {% for post in user_posts %}
-      <div class="col-4">
+      <div class="col-12 col-md-6 col-lg-4">
         <div class="card h-200">
           <div class="card-body">
             <a href="{{ user.get_absolute_url }}">
