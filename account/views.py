@@ -88,13 +88,19 @@ def user_detail(request, username):
     user_following = Follow.objects.filter(user=user)
     user_following_count = user_following.count()
     user_followers_count = Follow.objects.filter(following=user).count()
+    user_following_status = Follow.objects.filter(following=user).first()
+    if user_following_status is None:
+        user_following_status = False
+    else:
+        user_following_status = True
+    print(user_following_status)    
     context = {
         'user': user,
         'user_posts': user_posts,
         'user_post_count': user_post_count,
         'user_following': user_following,
         'user_following_count': user_following_count,
-        'user_followers_count': user_followers_count,
+        'user_following_status': user_following_status,
     }
     return render(request, 'account/user/user_detail.html', context)
 
@@ -104,10 +110,8 @@ def follow_user(request, user_name):
     current_user = request.user
     get_user = User.objects.get(username=current_user)
     follow_status, created = Follow.objects.get_or_create(user=get_user, following=user_to_follow)
-    is_followed = False
     if user_to_follow.username != current_user.username:
         if not created:
-            is_followed = False
             follow_status.delete()
             messages.success(request, 'Unfollowed added successfully')
             return redirect(request.META.get('HTTP_REFERER'))

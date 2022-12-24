@@ -30,7 +30,7 @@
       </div>
       <div>
         {% if user.username != request.user.username %}
-            {% if is_followed %}
+            {% if user_following_status %}
                 <a href="{% url 'follow_user' user %}">Unfollow</a>
             {% else %}
                 <a href="{% url 'follow_user' user %}">Follow</a>
