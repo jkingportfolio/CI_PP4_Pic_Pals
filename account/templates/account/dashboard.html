@@ -7,11 +7,11 @@
 
 {% block content %}
 
-<div class="container site-margin">
+<div class="container">
 
   <div class="row">
     <div class="container text-center">
-      <div class="row">
+      <div class="row text-center" style="margin-top: 30px">
         <div class="col">
           {% if user.profile.profile_pic %}
           <div>
@@ -36,9 +36,9 @@
         </div>
       </div>
     </div>
-    <div class='row card-group site-margin'>
+    <div class='row card-group' style="margin-top: 30px">
       {% for post in user_posts %}
-      <div class="col-4">
+      <div class="col-12 col-md-6 col-lg-4">
         <div class="card h-100">
           <div class="card-body">
             <a href="{{ user.get_absolute_url }}">

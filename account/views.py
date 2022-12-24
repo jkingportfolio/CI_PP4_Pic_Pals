@@ -81,6 +81,21 @@ def site_users(request):
     return render(request, 'account/user/user_list.html', {'users': users})
 
 @login_required
+def follow_user(request, user_name):
+    user_to_follow = User.objects.get(username=user_name)
+    current_user = request.user
+    get_user = User.objects.get(username=current_user)
+    follow_status, created = Follow.objects.get_or_create(user=get_user, following=user_to_follow)
+    if user_to_follow.username != current_user.username:
+        if not created:
+            follow_status.delete()
+            messages.success(request, 'Unfollowed added successfully')
+            return redirect(request.META.get('HTTP_REFERER'))
+        else:
+            messages.success(request, 'Follow added successfully')
+            return redirect(request.META.get('HTTP_REFERER'))
+
+@login_required
 def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
     user_posts = Post.objects.filter(user=user)
@@ -88,7 +103,8 @@ def user_detail(request, username):
     user_following = Follow.objects.filter(user=user)
     user_following_count = user_following.count()
     user_followers_count = Follow.objects.filter(following=user).count()
-    user_following_status = Follow.objects.filter(following=user).first()
+    user_following_status = Follow.objects.filter(following=user)
+    print(user_following_status)
     if user_following_status is None:
         user_following_status = False
     else:
@@ -103,21 +119,6 @@ def user_detail(request, username):
         'user_following_status': user_following_status,
     }
     return render(request, 'account/user/user_detail.html', context)
-
-@login_required
-def follow_user(request, user_name):
-    user_to_follow = User.objects.get(username=user_name)
-    current_user = request.user
-    get_user = User.objects.get(username=current_user)
-    follow_status, created = Follow.objects.get_or_create(user=get_user, following=user_to_follow)
-    if user_to_follow.username != current_user.username:
-        if not created:
-            follow_status.delete()
-            messages.success(request, 'Unfollowed added successfully')
-            return redirect(request.META.get('HTTP_REFERER'))
-        else:
-            messages.success(request, 'Follow added successfully')
-            return redirect(request.META.get('HTTP_REFERER'))
 
 
 @login_required

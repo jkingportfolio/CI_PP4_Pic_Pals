@@ -6,8 +6,8 @@
 
 .post-image-resize {
     display: block;
-    width: auto;
-    height: 150px;
+    width: 150px;
+    height: auto;
     margin: auto;
 }
 

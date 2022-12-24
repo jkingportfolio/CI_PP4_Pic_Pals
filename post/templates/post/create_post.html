@@ -1,16 +1,18 @@
 <!-- create post page to be created here-->
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 
 {% block title %}Create post{% endblock %}
 
 {% block content %}
 
-<h1>Create a post</h1>
-
-<form method="post" enctype="multipart/form-data">
-    {{ form.as_p }}
-    {% csrf_token %}
-<p><input type="submit" value="Post"></p>
-</form>
+<div class="container">
+    <h1>Create a post</h1>
+    <form method="post" enctype="multipart/form-data">
+        {{ form|crispy }}
+        {% csrf_token %}
+        <p><input type="submit" value="Post"></p>
+    </form>
+</div>
 
 {% endblock %}

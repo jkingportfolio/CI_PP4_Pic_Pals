@@ -1,18 +1,20 @@
 <!-- edit profile page to be created here-->
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 
 {% block title %}Edit profile{% endblock %}
 
 {% block content %}
 
+<div class="container" style="margin-top: 50px">
 <h1>Edit profile</h1>
 <p>
     Please edit your profile using the form below.
 </p>
-<div class="form-group">
+
     <form method="post" enctype="multipart/form-data">
-        {{ user_form.as_p }}
-        {{ profile_form.as_p }}
+        {{ user_form|crispy }}
+        {{ profile_form|crispy }}
         {% csrf_token %}
         <p><input type="submit" value="Update profile"></p>
     </form>

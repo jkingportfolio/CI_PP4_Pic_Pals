@@ -54,8 +54,6 @@
                 {% if request.user.is_authenticated %}
                 Logged in as: {{ request.user.username }}.
                 <a href="{% url 'logout' %}">Log out</a>
-                {% else %}
-                <a href="{% url 'register' %}">Register</a>
                 {% endif %}
             </span>
         </div>
