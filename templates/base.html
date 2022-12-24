@@ -28,6 +28,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
           <div class="collapse navbar-collapse" id="navbarText">
+            {% if request.user.is_authenticated %}
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
                     <a class="nav-link" href="{% url 'dashboard' %}">My
@@ -47,13 +48,13 @@
                         href="{% url 'site_users' %}">People</a>
                 </li>
             </ul>
+            {% endif %}
             <span class="navbar-text">
                 {% if request.user.is_authenticated %}
                 Logged in as: {{ request.user.username }}.
                 <a href="{% url 'logout' %}">Log out</a>
                 {% else %}
                 <a href="{% url 'register' %}">Register</a>
-                <a href="{% url 'login' %}">Log in</a>
                 {% endif %}
             </span>
           </div>

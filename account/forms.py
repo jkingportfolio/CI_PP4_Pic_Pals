@@ -1,4 +1,5 @@
 from django import forms
+from django.forms import ModelForm, TextInput
 from django.contrib.auth.models import User
 from .models import Profile
 
@@ -10,11 +11,15 @@ class LoginDetails(forms.Form):
 
 class Registration(forms.ModelForm):
     password = forms.CharField(label='Password', widget=forms.PasswordInput())
-    password_confirm = forms.CharField(label='Password', widget=forms.PasswordInput())
+    password_confirm = forms.CharField(label='Password Confirm', widget=forms.PasswordInput())
 
     class Meta:
         model = User
         fields = ['username', 'first_name', 'email']
+
+    widgets = {
+
+    }
 
     def reset_password_confirm(self):
         clear = self.cleaned_data
