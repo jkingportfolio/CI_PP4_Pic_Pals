@@ -17,9 +17,6 @@ class Registration(forms.ModelForm):
         model = User
         fields = ['username', 'first_name', 'email']
 
-    widgets = {
-
-    }
 
     def reset_password_confirm(self):
         clear = self.cleaned_data

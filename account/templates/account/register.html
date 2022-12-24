@@ -1,14 +1,21 @@
 <!-- user register page to be created here-->
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 
 {% block title %}Sign Up{% endblock %}
 
 {% block content %}
-
-<h1>Please sign up below</h1>
-<form method="post">
-    {{ user_form.as_p }}
-    {% csrf_token %}
-<p><input type="submit" value="Create account"></p>
+<div class="container text-center" style="margin-top: 50px"></div>
+    <div class="container text-right">
+        <h1>Please sign up below</h1>
+    <form method="post">
+        <div class="form-group">
+        {{ user_form|crispy }}
+        {% csrf_token %}
+        </div>
+    </form>
+    <p><input type="submit" value="Create account"></p>
+    </div>
+</div>
 
 {% endblock %}

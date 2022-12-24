@@ -1,5 +1,6 @@
 <!-- login page to be created here-->
 {% extends "base.html" %}
+{% load crispy_forms_tags %}
 
 {% block title %}Log in{% endblock %}
 
@@ -7,17 +8,17 @@
 
 <h1>Welcome to Pic Pals</h1>
 <p>Please sign in below</p>
-<div class="form-group">
+<div>
     <form method="post">
-        {{ form.as_p }}
+        {{ form|crispy }}
         {% csrf_token %}
-    <p><input type="submit" value="Log in"></p>
+        <p><input type="submit" value="Log in"></p>
     </form>
 </div>
 
 <div>
     <a href="{ url 'register'}">
-    Not a member? Sign up here!
+        Not a member? Sign up here!
     </a>
 </div>
 
