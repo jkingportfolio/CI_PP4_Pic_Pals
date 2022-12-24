@@ -9,6 +9,7 @@
 
 <div class='row card-group site-margin'>
     {% for user in users %}
+      {% if user != request.user %}
       <div class="col-4 user-list-margin">
         <div class="card h-100">
           <div class="card-body">
@@ -25,6 +26,7 @@
           </div>
         </div>
       </div>
+      {% endif %}
     {% endfor %}
     </div>
 
