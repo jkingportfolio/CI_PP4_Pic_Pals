@@ -10,11 +10,12 @@
         <h1>Please sign up below</h1>
     <form method="post">
         <div class="form-group">
-        {{ user_form|crispy }}
         {% csrf_token %}
+        {{ user_form|crispy }}
         </div>
+        <p><input type="submit" value="Create account"></p>
     </form>
-    <p><input type="submit" value="Create account"></p>
+    
     </div>
 </div>
 

@@ -17,7 +17,6 @@ class Registration(forms.ModelForm):
         model = User
         fields = ['username', 'first_name', 'email']
 
-
     def reset_password_confirm(self):
         clear = self.cleaned_data
         if clear['password'] != clear['password_confirm']:

@@ -39,7 +39,7 @@ def dashboard(request):
     user_profile = Profile.objects.get(user=user_object)
     user = request.user
     user_posts = Post.objects.filter(user=user)
-    return render(request, 'account/dashboard.html', {'user_profile': user_profile, 'user_posts':user_posts})
+    return render(request, 'account/dashboard.html', {'user_profile': user_profile, 'user_posts': user_posts})
 
 
 # User registration view
@@ -51,6 +51,7 @@ def register(request):
             new_user.set_password(user_form.cleaned_data['password'])
             new_user.save()
             Profile.objects.create(user=new_user)
+            print('account created')
             return render(request, 'account/register_success.html', {'new_user': new_user})
     else:
         user_form = Registration()
