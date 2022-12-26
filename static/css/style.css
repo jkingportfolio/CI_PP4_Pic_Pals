@@ -1,7 +1,20 @@
+a { color: inherit; }
+
+.post-spacing {
+    margin-bottom: 20px
+}
+
 .post {
     border: solid;
     margin-bottom: 10px;
     max-width: 80%;
+}
+
+.profile-button {
+    width: 250px;
+    margin-bottom: 10px;
+    /* outline-color: red; !important */
+    background-image: linear-gradient(to right, #2f234b, #E0CBDC); !important
 }
 
 .post-image-resize {
@@ -20,9 +33,9 @@
 }
 
 .post-pic {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
+    margin: auto;
+    border: solid 1px grey
 }
 
 body{
@@ -49,4 +62,8 @@ footer{
 
 .post-detail {
     justify-content: center;
+}
+
+.profile-user-name {
+    font-size: 30px;
 }

@@ -11,7 +11,7 @@
 
   <div class="row">
     <div class="container text-center">
-      <div class="row text-center" style="margin-top: 30px">
+      <div class="col text-center" style="margin-top: 30px">
         <div class="col">
           {% if user.profile.profile_pic %}
           <div>
@@ -22,23 +22,25 @@
               alt="Profile Picture" class="profile-pic"><br>
             {% endif %}
           </div>
-          <div class="col">
-            Column
+          <div class="col profile-user-name">
+            {{ request.user.username }}
           </div>
           <div class="col">
-            <a href="{% url 'posts:create_post' %}" class="btn btn-primary"
-              role="button">Add post</a>
-            <a href="{% url 'edit_profile' %}" class="btn btn-primary" href="#"
-              role="button">Edit Profile</a>
-            <a href="{% url 'password_change' %}" class="btn btn-primary"
-              role="button">Change Password</a>
+            <div class="row-4">
+              <a href="{% url 'posts:create_post' %}" class="btn btn-primary profile-button"
+                role="button">Add post</a>
+              <a href="{% url 'edit_profile' %}" class="btn btn-primary profile-button"
+                href="#" role="button">Edit Profile</a>
+              <a href="{% url 'password_change' %}" class="btn btn-primary profile-button"
+                role="button">Change Password</a>
+            </div>
           </div>
         </div>
       </div>
     </div>
-    <div class='row card-group' style="margin-top: 30px">
+    <div class='row card-group' style="margin: auto">
       {% for post in user_posts %}
-      <div class="col-12 col-md-6 col-lg-4">
+      <div class="col-12 col-md-6 col-lg-4 post-spacing">
         <div class="card h-100">
           <div class="card-body">
             <a href="{{ user.get_absolute_url }}">
@@ -59,7 +61,7 @@
         </div>
       </div>
       {% endfor %}
-</div>
+    </div>
 
 
     {% endblock %}
