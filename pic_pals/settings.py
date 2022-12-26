@@ -176,4 +176,9 @@ MESSAGE_TAGS = {
         messages.ERROR: 'alert-danger',
  }
 
+
+# Crispy templates pack
 CRISPY_TEMPLATE_PACK = 'bootstrap4'
+
+# Set to true to log use rout on closing the browser
+SESSION_EXPIRE_AT_BROWSER_CLOSE = True
