@@ -8,17 +8,19 @@
   <div class="col-12 col-md-6 col-lg-4 post-detail-container">
     <div class="card h-100">
       <div class="card-body">
-        <div class="post-spacing">
+        <div class="row">
+        <div class="col">
           <a href="{{ post.get_absolute_url }}" class="post-spacing">
             <img src="{{ user.profile.profile_pic.url }}" class="post-avatar">
             {{ post.user }}
           </a>
         </div>
-        {% if request.user.is_authenticated %}
-        <div>
+        {% if request.user == post.user %}
+        <div class="col">
           <a href="{% url 'posts:post_delete' post.id %}">Delete</a>
-        </div> 
-        {% endif %}  
+        </div>
+        {% endif %}
+        </div>
       </div>
       <div>
         <img src="{{ post.image.url }}" class="post-pic">
@@ -58,54 +60,41 @@
       {% endwith %}
       <div class="container"
         style="border: solid 1px black; margin-bottom:10px;">
-        {% for comment in comments %}
-        <div class="row">
-          <div class="col-10">
-            <img src="{{ comment.user.profile.profile_pic.url }}"
-              class="post-avatar">
-            {{ comment.user }}
+        <div style="border: solid 1px black;">
+          {% for comment in comments %}
+
+          <div class="row">
+            <div class="col-10">
+              <img src="{{ comment.user.profile.profile_pic.url }}"
+                class="post-avatar">
+              {{ comment.user }}
+            </div>
+            {% if request.user == comment.user %}
+            <div class="col-2">
+              <a href="{% url 'posts:comment_delete' comment.id %}">
+                <img src="/static/images/delete.png" class="delete-btn">
+              </a>
+            </div>
+            {% endif %}
           </div>
-          {% if request.user == comment.user %}
-          <div class="col-2">            
-            <a href="{% url 'posts:comment_delete' comment.id %}">
-              <img src="/static/images/delete.png" class="delete-btn">
-            </a>
+
+          <div class="row">
+            <div class="col-12">
+              {{ comment.created }}
+              {{ comment.comment_body|linebreaks }}
+              {{ comment.created_on }}
+            </div>
           </div>
-          {% endif %}
+          {% empty %}
+          <p>There are no comments</p>
+          {% endfor %}
         </div>
-        <div class="row">
-          <div class="col-12">
-            {{ comment.created }}
-            {{ comment.comment_body|linebreaks }}
-          </div>
-        </div>
-        {% empty %}
-        <p>There are no comments</p>
-        {% endfor %}
       </div>
     </div>
+    <div>
+      {% include "post/comment_form.html" %}
+    </div>
   </div>
-</div>
-</div>
-<div>
-  {% include "post/comment_form.html" %}
-</div>
 </div>
 
 {% endblock %}
-
-<div>
-  Container
-  <div>
-    row
-    <div>
-      Profile pic
-    </div>
-    <div>
-      Delete button
-    </div>
-  </div>
-  <div>
-    Comment
-  </div>
-</div>

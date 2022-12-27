@@ -33,4 +33,4 @@ class EditUser(forms.ModelForm):
 class EditProfile(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ['profile_pic', 'dob']
+        fields = ['profile_pic', 'dob', 'bio']
