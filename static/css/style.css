@@ -16,12 +16,6 @@ a {
     margin-bottom: 20px
 }
 
-.post {
-    border: solid;
-    margin-bottom: 10px;
-    max-width: 80%;
-}
-
 .profile-button {
     width: 165px;
     margin-bottom: 10px;
@@ -35,8 +29,8 @@ a {
 }
 
 .profile-pic {
-    width: 200px;
-    height: 200px;
+    width: 175px;
+    height: 175px;
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid black;
@@ -44,8 +38,19 @@ a {
 
 .post-pic {
     width: 100%;
-    margin: auto;
+    height: auto;
+    margin: 0 auto;
     border: solid 1px grey
+}
+
+
+.post-avatar {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid black;
+
 }
 
 body{
@@ -76,7 +81,7 @@ footer{
 
 .profile-user-name {
     font-size: 30px;
-    margin: 20px
+    margin: 10px
 }
 
 .profile-section {

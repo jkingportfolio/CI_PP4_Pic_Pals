@@ -8,7 +8,6 @@
 {% block content %}
 
 <div class="container form-style">
-
   <div class="row">
     <div class="container text-center">
       <div class="col text-center">
@@ -27,12 +26,14 @@
           </div>
           <div class="col">
             <div class="row-4">
-              <a href="{% url 'posts:create_post' %}" class="btn btn-dark profile-button"
-                role="button">Add post</a>
-              <a href="{% url 'edit_profile' %}" class="btn btn-dark profile-button"
-                href="#" role="button">Edit Profile</a>
-              <a href="{% url 'password_change' %}" class="btn btn-dark profile-button"
-                role="button">Change Password</a>
+              <a href="{% url 'posts:create_post' %}"
+                class="btn btn-dark profile-button" role="button">Add post</a>
+              <a href="{% url 'edit_profile' %}"
+                class="btn btn-dark profile-button" href="#" role="button">Edit
+                Profile</a>
+              <a href="{% url 'password_change' %}"
+                class="btn btn-dark profile-button" role="button">Change
+                Password</a>
             </div>
           </div>
         </div>
@@ -42,14 +43,24 @@
       {% for post in user_posts %}
       <div class="col-12 col-md-6 col-lg-4 post-spacing">
         <div class="card h-100">
+
           <div class="card-body">
-            <a href="{{ user.get_absolute_url }}">
-              {{ post.user }}
-            </a>
-            <a href="{{ post.get_absolute_url }}">
-              <img src="{{ post.image.url }}" class="post-pic">
-            </a>
+            <div class="post-spacing">
+              <a href="{{ user.get_absolute_url }}" class="post-spacing">
+                <img src="{{ user_profile.profile_pic.url }}"
+                  class="post-avatar">
+                {{ post.user }}
+              </a>
+            </div>
+            <div>
+              <div>
+                <a href="{{ post.get_absolute_url }}">
+                  <img src="{{ post.image.url }}" class="post-pic">
+                </a>
+              </div>
+            </div>
           </div>
+
           <div class="card-footer">
             <small class="text-muted">Posted:
               {{ post.created_date }}</small><br>
