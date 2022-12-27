@@ -23,6 +23,8 @@ a {
     margin-top: 5px
 }
 
+.post-det
+
 .auto-margin {
     margin: auto;
 }
@@ -96,7 +98,13 @@ a {
 }
 
 .post-detail {
+
     justify-content: center;
+}
+
+.post-detail-container {
+    width: 100%;
+    margin: auto;
 }
 
 .profile-user-name {
