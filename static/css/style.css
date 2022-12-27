@@ -21,6 +21,7 @@ a {
     margin-bottom: 10px;
 }
 
+
 .post-image-resize {
     display: block;
     width: 150px;
@@ -31,7 +32,7 @@ a {
 .profile-pic {
     width: 175px;
     height: 175px;
-    object-fit: cover;
+    object-fit: scale-down;
     border-radius: 50%;
     border: 2px solid black;
 }
@@ -97,4 +98,20 @@ footer{
     background-color: rgba(0, 0, 0, 0.2);
 }
 
+.center-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
 
+  /* Media queries*/
+
+  @media only screen and (max-width: 400px) {
+    .profile-pic {
+        width: 75px;
+        height: 75px;
+        object-fit: contain;
+        border-radius: 50%;
+        border: 2px solid black;
+}
