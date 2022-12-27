@@ -57,7 +57,16 @@ a {
 }
 
 .user-name-font {
-    font-family: 'Bebas Neue', cursive;
+    font-size: 40px
+}
+
+.user-info-pos {
+    padding: 10px 0 0 20px;
+}
+
+.user-info-font {
+
+    font-size: 20px;
 }
 
 
@@ -164,4 +173,8 @@ a {
         object-fit: contain;
         border-radius: 50%;
         border: 2px solid black;
+    }
 }
+
+
+/* Add media queries for font size/positioning for follow count on info bar*/
