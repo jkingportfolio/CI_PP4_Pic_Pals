@@ -1,7 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
+
 body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
+    font-family: 'Bebas Neue', cursive;
 }
 footer{
     margin-top: auto;
@@ -51,6 +54,10 @@ a {
 .like-button {
     height: 40px;
     width: 40px
+}
+
+.user-name-font {
+    font-family: 'Bebas Neue', cursive;
 }
 
 
