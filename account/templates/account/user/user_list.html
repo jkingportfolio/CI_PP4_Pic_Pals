@@ -6,30 +6,36 @@
 {% block title %}List of users{% endblock %}
 
 {% block content %}
+<div class="container form-style">
+  <div class="row">
+    <div class="container text-center">
+      <h1>Pic Pal users</h1>
+      <div class="row">
+        <div class='row card-group auto-margin'>
+          {% for user in users %}
+          {% if user != request.user %}
+          <div class="col-12 col-md-6 col-lg-4 text-center user-list-margin user-card mx-auto">
+            <div class="card h-100">
+              <div class="card-body">
+                <a href="{{ user.get_absolute_url }}">
+                  {% if user.profile.profile_pic %}
+                  <img src="{{ user.profile.profile_pic.url }}"
+                    alt="Profile Picture" class="profile-pic"><br>
+                  {% else %}
+                  <img src="{% static 'images/default_profile_pic.png' %}"
+                    alt="Profile Picture" class="profile-pic"><br>
+                  {% endif %}
 
-<div class='row card-group site-margin text-center'>
-    {% for user in users %}
-      {% if user != request.user %}
-      <div class="col-12 col-md-6 col-lg-4 user-list-margin text-center">
-        <div class="card h-100" style="width:250px">
-          <div class="card-body text-center">
-            {% if user.profile.profile_pic %}
-            <img src="{{ user.profile.profile_pic.url }}"
-                alt="Profile Picture" class="profile-pic"><br>
-            {% else %}
-            <img src="{% static 'images/default_profile_pic.png' %}"
-                alt="Profile Picture" class="profile-pic"><br>
-            {% endif %}
-            <a href="{{ user.get_absolute_url }}">
-                {{ user.get_username }}
-            </a>
+                  {{ user.get_username }}
+                </a>
+              </div>
+            </div>
           </div>
+          {% endif %}
+          {% endfor %}
         </div>
       </div>
-      {% endif %}
-    {% endfor %}
     </div>
+  </div>
 
-
-{% endblock %}
-
+  {% endblock %}

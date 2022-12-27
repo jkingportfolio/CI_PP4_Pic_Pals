@@ -5,32 +5,32 @@
 
 {% block content %}
 <div class="container form-style">
-  <div class="row"></div>
-  <div class="container text-center">
-    <h1>Latest Posts</h1>
-    <div class='row card-group auto-margin'>
-      {% for post in all_posts %}
-      <div class="col-12 col-md-6 col-lg-4 post-spacing">
-        <div class="card h-100">
-          <div class="card-body">
-            <a href="{{ user.get_absolute_url }}">
-              {{ post.user }}
-            </a>
-            <a href="{{ post.get_absolute_url }}">
-              <img src="{{ post.image.url }}" class="post-pic">
-            </a>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Posted:
-              {{ post.created_date }}</small><br>
-            <small class="text-muted">Likes: {{ post.likes }}</small>
+  <div class="row">
+    <div class="container text-center">
+      <h1>Latest Posts</h1>
+      <div class='row card-group auto-margin'>
+        {% for post in all_posts %}
+        <div class="col-12 col-md-6 col-lg-4 post-spacing">
+          <div class="card h-100">
+            <div class="card-body">
+              <a href="{{ user.get_absolute_url }}">
+                {{ post.user }}
+              </a>
+              <a href="{{ post.get_absolute_url }}">
+                <img src="{{ post.image.url }}" class="post-pic">
+              </a>
+            </div>
+            <div class="card-footer">
+              <small class="text-muted">Posted:
+                {{ post.created_date }}</small><br>
+              <small class="text-muted">Likes: {{ post.likes }}</small>
+            </div>
           </div>
         </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
   </div>
-</div>
 </div>
 
 {% endblock %}

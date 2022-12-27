@@ -1,4 +1,7 @@
-a { color: inherit; }
+a { 
+    color: inherit;
+    text-decoration: none;
+}
 
 .btn:focus, .btn:active {
     outline: none !important;
@@ -63,8 +66,8 @@ footer{
 }
 
 .user-card {
-    width: 150px;
-    height: 150px;
+    width: 250px;
+    height: auto;
 }
 
 .post-detail {
