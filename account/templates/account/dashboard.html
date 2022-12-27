@@ -7,30 +7,47 @@
 
 {% block content %}
 
-<div class="container form-style">
+<div class="container profile-style">
   <div class="row">
     <div class="container text-center">
       <div class="col text-center">
         <div class="col profile-section">
-          {% if user.profile.profile_pic %}
           <div>
-            <img src="{{ user.profile.profile_pic.url }}" alt="Profile Picture"
-              class="profile-pic"><br>
-            {% else %}
-            <img src="{% static 'images/default_profile_pic.png' %}"
-              alt="Profile Picture" class="profile-pic"><br>
-            {% endif %}
+            <div class="row">
+              <div class="col">
+                <div class="col-7 profile-user-name">
+                  {{ request.user.username }}
+                </div>
+                {% if user.profile.profile_pic %}
+                <div>
+                  <img src="{{ user.profile.profile_pic.url }}"
+                    alt="Profile Picture" class="profile-pic"><br>
+                  {% else %}
+                  <img src="{% static 'images/default_profile_pic.png' %}"
+                    alt="Profile Picture" class="profile-pic"><br>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="row user-info-font">
+                <p>Post count: {{ user_post_count }}</p>
+              </div>
+              <div class="row user-info-font">
+                <p>Following: {{ user_following_count }}</p>
+              </div>
+              <div class="row user-info-font">
+                <p>Followers: {{ user_followers_count }}</p>
+              </div>
+            </div>
+
+            <div class="btm-margin">
+              {% if user.profile.bio %}
+              {{ user_profile.bio }}
+              {% else %}
+              {% endif %}
+            </div>
           </div>
-          <div class="col profile-user-name">
-            {{ request.user.username }}
-          </div>
-          <div class="btm-margin">
-            {% if user.profile.bio %}
-            {{ user_profile.bio }}
-            {% else %}
-            {% endif %}
-          </div>
-          
           <div class="col">
             <div class="row-4">
               <a href="{% url 'posts:create_post' %}"
