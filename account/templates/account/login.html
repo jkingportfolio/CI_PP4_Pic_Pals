@@ -6,21 +6,22 @@
 
 {% block content %}
 
-<h1>Welcome to Pic Pals</h1>
-<p>Please sign in below</p>
-<div>
-    <form method="post">
-        {{ form|crispy }}
-        {% csrf_token %}
-        <p><input type="submit" value="Log in"></p>
-    </form>
-</div>
+<div class="container form-style"> 
+    <h1>Welcome to Pic Pals</h1>
+    <p>Please sign in below</p>
+    <div>
+        <form method="post">
+            {{ form|crispy }}
+            {% csrf_token %}
+            <p><input type="submit" value="Log in"></p>
+        </form>
+    </div>
 
-<div>
-    <a href="{ url 'register'}">
-        Not a member? Sign up here!
-    </a>
+    <div>
+        <a href="{ url 'register'}">
+            Not a member? Sign up here!
+        </a>
+    </div>
 </div>
-
 
 {% endblock %}

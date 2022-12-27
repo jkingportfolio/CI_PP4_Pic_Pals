@@ -27,9 +27,3 @@ class Follow(models.Model):
     def __str__(self):
         return f'{self.user} follows {self.following}'
 
-
-# Dynamic user following field
-
-# user_model = get_user_model()
-# user_model.add_to_class(
-#     'accounts_following', models.ManyToManyField('self', through=Follow, related_name='followers', symmetrical=False))

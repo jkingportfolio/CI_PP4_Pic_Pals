@@ -1,5 +1,12 @@
 a { color: inherit; }
 
+.btn:focus, .btn:active {
+    outline: none !important;
+    box-shadow: none !important;
+  }
+
+
+
 .post-spacing {
     margin-bottom: 20px
 }
@@ -11,10 +18,8 @@ a { color: inherit; }
 }
 
 .profile-button {
-    width: 250px;
+    width: 165px;
     margin-bottom: 10px;
-    /* outline-color: red; !important */
-    background-image: linear-gradient(to right, #2f234b, #E0CBDC); !important
 }
 
 .post-image-resize {
@@ -66,4 +71,20 @@ footer{
 
 .profile-user-name {
     font-size: 30px;
+    margin: 20px
 }
+
+.profile-section {
+    margin-bottom: 20px;
+}
+
+.form-style {
+    margin-top: 40px;
+    max-width: 800px;
+}
+
+.footer-bg-colour{
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+

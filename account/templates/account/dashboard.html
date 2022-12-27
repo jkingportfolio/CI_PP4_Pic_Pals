@@ -7,12 +7,12 @@
 
 {% block content %}
 
-<div class="container">
+<div class="container form-style">
 
   <div class="row">
     <div class="container text-center">
-      <div class="col text-center" style="margin-top: 30px">
-        <div class="col">
+      <div class="col text-center">
+        <div class="col profile-section">
           {% if user.profile.profile_pic %}
           <div>
             <img src="{{ user.profile.profile_pic.url }}" alt="Profile Picture"
@@ -27,11 +27,11 @@
           </div>
           <div class="col">
             <div class="row-4">
-              <a href="{% url 'posts:create_post' %}" class="btn btn-primary profile-button"
+              <a href="{% url 'posts:create_post' %}" class="btn btn-dark profile-button"
                 role="button">Add post</a>
-              <a href="{% url 'edit_profile' %}" class="btn btn-primary profile-button"
+              <a href="{% url 'edit_profile' %}" class="btn btn-dark profile-button"
                 href="#" role="button">Edit Profile</a>
-              <a href="{% url 'password_change' %}" class="btn btn-primary profile-button"
+              <a href="{% url 'password_change' %}" class="btn btn-dark profile-button"
                 role="button">Change Password</a>
             </div>
           </div>
@@ -49,9 +49,9 @@
             <a href="{{ post.get_absolute_url }}">
               <img src="{{ post.image.url }}" class="post-pic">
             </a>
-            <p class="card-text">
+            <!-- <p class="card-text">
               {{ post.caption }}
-            </p>
+            </p> -->
           </div>
           <div class="card-footer">
             <small class="text-muted">Posted:

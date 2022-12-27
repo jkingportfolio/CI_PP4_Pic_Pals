@@ -28,7 +28,6 @@
         <img src="/static/images/not_liked.png">
       </a>
       {% endif %}
-        <p>Likes: {{ post.likes }}</p>
         {% if post.likes == 0 %}
         <p>No likes</p>
         {% elif post.likes == 1 %}
@@ -37,6 +36,7 @@
         <p>Liked by {{ post.likes }} people</p>
         {% endif %}
       </a>
+      <hr>
       <div>
         {% with comments.count as total_comments %}
         <h2>

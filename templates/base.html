@@ -36,6 +36,7 @@
                 <a class="navbar-brand" href="/">
                     <img src="{% static '/images/logo.png' %}">
                 </a>
+                {% if request.user.is_authenticated %}
                 <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarText"
                     aria-controls="navbarText" aria-expanded="false"
@@ -43,7 +44,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse" id="navbarText">
-                    {% if request.user.is_authenticated %}
+                    
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
                             <a class="nav-link" href="{% url 'dashboard' %}">My
@@ -88,16 +89,16 @@
             <section class="mb-4">
                 <!-- Linkedin -->
                 <a href="https://uk.linkedin.com/in/jamie-king-25938123"
-                    class="btn text-white btn-floating m-1"
-                    style="background-color: #0082ca;" role="button"
+                    class="btn text-white btn-floating m-1 btn-dark"
+                    role="button"
                     target="_blank"
                     aria-label="Visit my Linkedin page (opens in new tab)">
                     <i class="fab fa-linkedin-in" aria-hidden="true"></i>
                 </a>
                 <!-- Github -->
                 <a href="https://github.com/jkingportfolio"
-                    class="btn text-white btn-floating m-1"
-                    style="background-color: #333333;" role="button"
+                    class="btn text-white btn-floating m-1 btn-dark"
+                    role="button"
                     target="_blank"
                     aria-label="Visit my Github page (opens in new tab)"><i
                         class="fab fa-github" aria-hidden="true"></i>
@@ -105,8 +106,7 @@
             </section>
             <!-- Section: Social media -->
         </div>
-        <div class="text-center p-3"
-            style="background-color: rgba(0, 0, 0, 0.2);">
+        <div class="text-center p-3 footer-bg-colour">
             Created by Jamie King
         </div>
     </footer>
