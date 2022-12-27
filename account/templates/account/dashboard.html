@@ -24,6 +24,9 @@
           <div class="col profile-user-name">
             {{ request.user.username }}
           </div>
+          <div style="border 1px solid">
+            {{ user_profile.bio }}
+          </div>
           <div class="col">
             <div class="row-4">
               <a href="{% url 'posts:create_post' %}"

@@ -6,7 +6,7 @@ from .models import Profile, Follow
 
 @admin.register(Profile)
 class ProfileAdmin(admin.ModelAdmin):
-    fields = ['user', 'dob', 'profile_pic']
+    fields = ['user', 'dob', 'profile_pic', 'bio']
     raw_id_fields = ['user']
 
 @admin.register(Follow)

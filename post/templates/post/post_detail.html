@@ -14,6 +14,11 @@
             {{ post.user }}
           </a>
         </div>
+        {% if request.user.is_authenticated %}
+        <div>
+          <a href="{% url 'posts:post_delete' post.id %}">Delete</a>
+        </div> 
+        {% endif %}  
       </div>
       <div>
         <img src="{{ post.image.url }}" class="post-pic">

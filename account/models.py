@@ -9,7 +9,7 @@ class Profile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     dob = models.DateField(blank=True, null=True)
     profile_pic = CloudinaryField(blank=True)
-    # bio = models.CharField(max_length=5000, blank=True)
+    bio = models.CharField(max_length=5000, blank=True)
     # location with google maps api to potentially be future implemented
 
     def __str__(self):
