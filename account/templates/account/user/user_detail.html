@@ -19,13 +19,13 @@
       {% endif %}
       
       {% if user.username != request.user.username %}
-      {% if user_following_status %}
-      <a href="{% url 'follow_user' user %}" class="btn btn-primary"
-        role="button">Unfollow</a>
-      {% else %}
-      <a href="{% url 'follow_user' user %}" class="btn btn-primary"
-        role="button">Follow</a>
-      {% endif %}
+        {% if user_following_status %}
+        <a href="{% url 'follow_user' user %}" class="btn btn-primary"
+          role="button">Unfollow</a>
+        {% else %}
+        <a href="{% url 'follow_user' user %}" class="btn btn-primary"
+          role="button">Follow</a>
+        {% endif %}
       {% endif %}
     </div>
     <div class="col" style="border: solid">

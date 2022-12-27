@@ -5,7 +5,9 @@ a { color: inherit; }
     box-shadow: none !important;
   }
 
-
+.auto-margin {
+    margin: auto;
+}
 
 .post-spacing {
     margin-bottom: 20px
