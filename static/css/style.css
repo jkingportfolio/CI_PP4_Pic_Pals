@@ -12,6 +12,10 @@ a {
     text-decoration: none;
 }
 
+.error-text {
+    color: red;
+}
+
 .button-margin {
     margin-top: 5px
 }
