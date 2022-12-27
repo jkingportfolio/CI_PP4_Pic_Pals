@@ -35,6 +35,10 @@ a {
     margin-top: 30px
 }
 
+.btm-margin {
+    margin-bottom: 30px;
+}
+
 .post-spacing {
     margin-bottom: 20px
 }
@@ -67,7 +71,7 @@ a {
 
 .profile-style {
     margin-top: 20px;
-    max-width: 800px;
+    max-width: 850px;
 }
 
 .post-pic {

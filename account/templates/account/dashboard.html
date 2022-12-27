@@ -24,9 +24,13 @@
           <div class="col profile-user-name">
             {{ request.user.username }}
           </div>
-          <div style="border 1px solid">
+          <div class="btm-margin">
+            {% if user.profile.bio %}
             {{ user_profile.bio }}
+            {% else %}
+            {% endif %}
           </div>
+          
           <div class="col">
             <div class="row-4">
               <a href="{% url 'posts:create_post' %}"
