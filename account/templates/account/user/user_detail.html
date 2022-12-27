@@ -19,13 +19,13 @@
         {% endif %}
 
         {% if user.username != request.user.username %}
-          {% if user_following_status %}
-          <a href="{% url 'follow_user' user %}" class="btn btn-primary"
-            role="button">Unfollow</a>
-          {% else %}
-          <a href="{% url 'follow_user' user %}" class="btn btn-primary"
-            role="button">Follow</a>
-          {% endif %}
+        {% if user_following_status %}
+        <a href="{% url 'follow_user' user %}" class="btn btn-primary"
+          role="button">Unfollow</a>
+        {% else %}
+        <a href="{% url 'follow_user' user %}" class="btn btn-primary"
+          role="button">Follow</a>
+        {% endif %}
         {% endif %}
       </div>
       <div class="col" style="border: solid">
@@ -46,25 +46,35 @@
       </div>
     </div>
   </div>
-  <div class='row card-group site-margin mx-auto'>
+  <div class='row card-group auto-margin'>
     {% for post in user_posts %}
-    <div class="col-12 col-md-6 col-lg-4">
+    <div class="col-12 col-md-6 col-lg-4 post-spacing">
       <div class="card h-100">
         <div class="card-body">
-          <a href="{{ post.get_absolute_url }}">
-            <img src="{{ post.image.url }}" class="post-pic">
-          </a>
-          <p class="card-text">
-            {{ post.caption }}
-          </p>
+          <div class="post-spacing">
+            <a href="{{ post.get_absolute_url }}" class="post-spacing">
+              <img src="{{ user.profile.profile_pic.url }}"
+                class="post-avatar">
+              {{ post.user }}
+            </a>
+          </div>
+          <div>
+            <div>
+              <a href="{{ post.get_absolute_url }}">
+                <img src="{{ post.image.url }}" class="post-pic">
+              </a>
+            </div>
+          </div>
         </div>
         <div class="card-footer">
+          <small class="text-muted">Posted:
+            {{ post.created_date }}</small><br>
           <small class="text-muted">Likes: {{ post.likes }}</small>
         </div>
       </div>
     </div>
     {% endfor %}
-  </div>
+</div>
 </div>
 
 {% endblock %}
