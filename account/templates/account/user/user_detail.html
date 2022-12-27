@@ -6,7 +6,7 @@
 {% block title %} {{ user.get_username }} {% endblock %}
 
 {% block content %}
-<div class="container form-style">
+<div class="container profile-style">
   <div class="container">
     <div class="row">
       <div class="col-7 text-center">
@@ -24,13 +24,13 @@
             alt="Profile Picture" class="profile-pic"><br>
           {% endif %}
         </div>
-        <div class="row">
+        <div class="row button-margin">
           {% if user.username != request.user.username %}
           {% if user_following_status %}
-          <a href="{% url 'follow_user' user %}" class="btn btn-primary profile-button auto-margin"
+          <a href="{% url 'follow_user' user %}" class="btn btn-dark profile-button auto-margin"
             role="button">Unfollow</a>
           {% else %}
-          <a href="{% url 'follow_user' user %}" class="btn btn-primary profile-button auto-margin"
+          <a href="{% url 'follow_user' user %}" class="btn btn-dark profile-button auto-margin"
             role="button">Follow</a>
           {% endif %}
           {% endif %}
@@ -48,8 +48,7 @@
         </div>
       </div>
     </div>
-  </div>
-    </div>
+
     <!-- List of users posts -->
     <div class='row card-group auto-margin'>
       {% for post in user_posts %}

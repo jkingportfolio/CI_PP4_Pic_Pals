@@ -1,15 +1,34 @@
+body{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+footer{
+    margin-top: auto;
+}
+
 a { 
     color: inherit;
     text-decoration: none;
 }
 
-.btn:focus, .btn:active {
-    outline: none !important;
-    box-shadow: none !important;
-  }
+.button-margin {
+    margin-top: 5px
+}
+
+.delete-btn {
+    height: 30px;
+    width: 30px;
+    float: right;
+    margin-top: 5px
+}
 
 .auto-margin {
     margin: auto;
+}
+
+.top-margin {
+    margin-top: 30px
 }
 
 .post-spacing {
@@ -17,8 +36,13 @@ a {
 }
 
 .profile-button {
-    width: 165px;
+    width: 160px;
     margin-bottom: 10px;
+}
+
+.like-button {
+    height: 40px;
+    width: 40px
 }
 
 
@@ -37,6 +61,11 @@ a {
     border: 2px solid black;
 }
 
+.profile-style {
+    margin-top: 20px;
+    max-width: 800px;
+}
+
 .post-pic {
     width: 100%;
     height: auto;
@@ -51,16 +80,6 @@ a {
     object-fit: cover;
     border-radius: 50%;
     border: 2px solid black;
-
-}
-
-body{
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-}
-footer{
-    margin-top: auto;
 }
 
 .site-margin {
@@ -107,7 +126,7 @@ footer{
 
   /* Media queries*/
 
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 571px) {
     .profile-pic {
         width: 75px;
         height: 75px;
