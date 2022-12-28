@@ -6,92 +6,136 @@
 {% block title %}Dashboard{% endblock %}
 
 {% block content %}
-
-<div class="container profile-style">
-  <div class="row">
-    <div class="container text-center">
-      <div class="col text-center">
-        <div class="col profile-section">
+<div>
+  <div class="container profile-style">
+    <div class="container">
+      <div class="row">
+        <div class="col-7 text-center">
+          <div class="row">
+            <p class="col text-center user-name-font">
+              {{ request.user.username }}
+            </p>
+          </div>
+          <div class="row center-image">
+            {% if user.profile.profile_pic %}
+            <img src="{{ user.profile.profile_pic.url }}" alt="Profile Picture"
+              class="profile-pic"><br>
+            {% else %}
+            <img src="{% static 'images/default_profile_pic.png' %}"
+              alt="Profile Picture" class="profile-pic"><br>
+            {% endif %}
+          </div>
+          <div class="row button-margin">
+            {% if user.username != request.user.username %}
+            {% if user_following_status %}
+            <a href="{% url 'follow_user' user %}"
+              class="btn btn-dark profile-button auto-margin"
+              role="button">Unfollow</a>
+            {% else %}
+            <a href="{% url 'follow_user' user %}"
+              class="btn btn-dark profile-button auto-margin"
+              role="button">Follow</a>
+            {% endif %}
+            {% endif %}
+          </div>
+        </div>
+        <div class="col-5 user-info-pos">
+          <div class="row user-info-font">
+            <p>Post count: {{ user_post_count }}</p>
+          </div>
+          <div class="row user-info-font">
+            <p>Following: {{ user_following_count }}</p>
+          </div>
+          <div class="row user-info-font">
+            <p>Followers: {{ user_followers_count }}</p>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="row-4">
+          <a href="{% url 'posts:create_post' %}"
+            class="btn btn-dark profile-button" role="button">Add post</a>
+          <a href="{% url 'edit_profile' %}"
+            class="btn btn-dark profile-button" href="#" role="button">Edit
+            Profile</a>
+          <a href="{% url 'password_change' %}"
+            class="btn btn-dark profile-button" role="button">Change
+            Password</a>
+        </div>
+      </div>
+      <div>
+        {% if user.profile.bio|length > 0 %}
+        <hr>
+        {{ user.profile.bio }}
+        {% endif %}
+        <hr>
+      </div>
+    </div>
+  </div>
+</div>
+<div class='row card-group auto-margin'>
+  {% for post in user_posts %}
+  <div class="col-12 col-md-6 col-lg-4 post-spacing">
+    <div class="card h-100">
+      <div class="card-body">
+        <div class="post-spacing">
+          <a href="{{ post.get_absolute_url }}" class="post-spacing">
+            <img src="{{ user.profile.profile_pic.url }}"
+              class="post-avatar">
+            {{ post.user }}
+          </a>
+        </div>
+        <div>
           <div>
-            <div class="row">
-              <div class="col">
-                <div class="col-7 profile-user-name">
-                  {{ request.user.username }}
-                </div>
-                {% if user.profile.profile_pic %}
-                <div>
-                  <img src="{{ user.profile.profile_pic.url }}"
-                    alt="Profile Picture" class="profile-pic"><br>
-                  {% else %}
-                  <img src="{% static 'images/default_profile_pic.png' %}"
-                    alt="Profile Picture" class="profile-pic"><br>
-                  {% endif %}
-                </div>
-              </div>
-            </div>
-            <div class="col-5">
-              <div class="row user-info-font">
-                <p>Post count: {{ user_posts_count }}</p>
-              </div>
-              <div class="row user-info-font">
-                <p>Following: {{ user_following_count }}</p>
-              </div>
-              <div class="row user-info-font">
-                <p>Followers: {{ user_followers_count }}</p>
-              </div>
-            </div>
-
-            <div class="btm-margin">
-              {% if user.profile.bio %}
-              {{ user_profile.bio }}
-              {% else %}
-              {% endif %}
-            </div>
-          </div>
-          <div class="col">
-            <div class="row-4">
-              <a href="{% url 'posts:create_post' %}"
-                class="btn btn-dark profile-button" role="button">Add post</a>
-              <a href="{% url 'edit_profile' %}"
-                class="btn btn-dark profile-button" href="#" role="button">Edit
-                Profile</a>
-              <a href="{% url 'password_change' %}"
-                class="btn btn-dark profile-button" role="button">Change
-                Password</a>
-            </div>
+            <a href="{{ post.get_absolute_url }}">
+              <img src="{{ post.image.url }}" class="post-pic">
+            </a>
           </div>
         </div>
       </div>
+      <div class="card-footer">
+        <small class="text-muted">Posted:
+          {{ post.created_date }}</small><br>
+        <small class="text-muted">Likes: {{ post.likes }}</small>
+      </div>
     </div>
-    <div class='row card-group auto-margin'>
-      {% for post in user_posts %}
-      <div class="col-12 col-md-6 col-lg-4 post-spacing">
-        <div class="card h-100">
-          <div class="card-body">
-            <div class="post-spacing">
-              <a href="{{ user.get_absolute_url }}" class="post-spacing">
-                <img src="{{ user_profile.profile_pic.url }}"
-                  class="post-avatar">
-                {{ post.user }}
-              </a>
-            </div>
-            <div>
-              <div>
-                <a href="{{ post.get_absolute_url }}">
-                  <img src="{{ post.image.url }}" class="post-pic">
-                </a>
-              </div>
-            </div>
-          </div>
-          <div class="card-footer">
-            <small class="text-muted">Posted:
-              {{ post.created_date }}</small><br>
-            <small class="text-muted">Likes: {{ post.likes }}</small>
+  </div>
+{% endfor %}
+
+{% endblock %}
+
+<div class='row card-group auto-margin'>
+  {% for post in user_posts %}
+  <div class="col-12 col-md-6 col-lg-4 post-spacing">
+    <div class="card h-100">
+      <div class="card-body">
+        <div class="post-spacing">
+          <a href="{{ post.get_absolute_url }}" class="post-spacing">
+            <img src="{{ user.profile.profile_pic.url }}"
+              class="post-avatar">
+            {{ post.user }}
+          </a>
+        </div>
+        <div>
+          <div>
+            <a href="{{ post.get_absolute_url }}">
+              <img src="{{ post.image.url }}" class="post-pic">
+            </a>
           </div>
         </div>
       </div>
-      {% endfor %}
+      <div class="card-footer">
+        <small class="text-muted">Posted:
+          {{ post.created_date }}</small><br>
+        <small class="text-muted">Likes: {{ post.likes }}</small>
+      </div>
     </div>
-
-
-    {% endblock %}
+  </div>
+  {% empty %}
+  <p>
+    NO POSTS YET
+  </p>
+  {% endfor %}
+</div>
+</div>
+</div>

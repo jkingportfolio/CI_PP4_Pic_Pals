@@ -162,7 +162,7 @@ ABSOLUTE_URL_OVERRIDES = {
 # Email server configuration
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
 # EMAIL_HOST = 'smtp.gmail.com'
-# EMAIL_HOST_USER = 'my_email_timed_out'
+# EMAIL_HOST_USER = 'pic.pals.pp4@gmail.com'
 # EMAIL_HOST_PASSWORD = 'GOOGLE_CREDS'
 # EMAIL_PORT = 587
 # EMAIL_USE_TLS = True
