@@ -124,13 +124,8 @@ def user_detail(request, username):
     print(f'This user has {user_followers_count} followers.')    
     print(f'user_detail user_followers_list is: {user_followers_list}')
     user_follow_status = False
-    if Follow.objects.filter(user=request.user, followed_account=user.username).exists():
+    if Follow.objects.filter(user=request.user, followed_account=user).exists():
         user_follow_status = True
-    # try:
-    #     user_follow_status = Follow.objects.filter(user=request.user, followed_account=user.username).exists()
-    # except Follow.DoesNotExist:
-    #     user_follow_status = False
-    # print(user_follow_status)
     context = {
         'user': user,
         'user_posts': user_posts,
@@ -165,10 +160,3 @@ def follow_user(request, user_name):
         else:
             messages.success(request, 'Follow added successfully')
             return redirect(request.META.get('HTTP_REFERER'))
-
-
-
-
-
-
-

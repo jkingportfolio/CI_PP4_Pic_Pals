@@ -25,17 +25,17 @@
             alt="Profile Picture" class="profile-pic"><br>
           {% endif %}
         </div>
-        <div class="row button-margin">
+        <div class="row button-margin">          
           {% if user.username != request.user.username %}
-          {% if user_following_status %}
-          <a href="{% url 'follow_user' user %}"
-            class="btn btn-dark profile-button auto-margin"
-            role="button">Unfollow</a>
-          {% else %}
-          <a href="{% url 'follow_user' user %}"
-            class="btn btn-dark profile-button auto-margin"
-            role="button">Follow</a>
-          {% endif %}
+            {% if user_follow_status %}
+            <a href="{% url 'follow_user' user %}"
+              class="btn btn-dark profile-button auto-margin"
+              role="button">Unfollow</a>
+            {% else %}
+            <a href="{% url 'follow_user' user %}"
+              class="btn btn-dark profile-button auto-margin"
+              role="button">Follow</a>
+            {% endif %}
           {% endif %}
         </div>
       </div>

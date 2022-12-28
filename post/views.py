@@ -121,7 +121,7 @@ def comment_delete(request, id):
 # @login_required
 # def followed_feed(request):
 #     current_user = request.user
-#     followed_accounts = Follow.objects.filter(user=current_user)
+#     followed_accounts = Follow.objects.filter(user=user)
 #     user_following_feed = []
 #     feed_posts = []
 #     for account in followed_accounts:
@@ -134,10 +134,6 @@ def comment_delete(request, id):
 #     }
 #     print(user_following_feed)
 #     return render(request, 'post/feed.html', context)
-
-# @login_required
-# def followed_feed(request):
-#     return Post.objects.filter(user__following__user__id=self.request.user.id)
 
 """
 View to return all posts by latest
