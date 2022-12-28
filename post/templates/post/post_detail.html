@@ -70,7 +70,7 @@
               {{ comment.user }}
             </div>
             {% if request.user == comment.user %}
-            <div class="col-2">
+            <div class="col-2 comment-delete-btn">
               <a href="{% url 'posts:comment_delete' comment.id %}">
                 <img src="/static/images/delete.png" class="delete-btn">
               </a>
@@ -78,7 +78,7 @@
             {% endif %}
           </div>
 
-          <div class="row">
+          <div class="row comment-body">
             <div class="col-12">
               {{ comment.created }}
               {{ comment.comment_body|linebreaks }}
