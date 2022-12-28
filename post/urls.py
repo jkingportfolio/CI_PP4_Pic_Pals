@@ -12,7 +12,7 @@ urlpatterns = [
     path('post/<str:id>/delete/', views.post_delete, name='post_delete'),
     path('post-detail/<str:id>/comment/', views.post_comment, name='post_comment'),
     path('post-detail/<str:id>/comment/delete/', views.comment_delete, name='comment_delete'),
-    # path('feed/', views.followed_feed, name='followed_feed'),
-    path('feed/', views.latest_posts, name='latest_posts'),
+    path('feed/', views.followed_feed, name='followed_feed'),
+    # path('feed/', views.latest_posts, name='latest_posts'),
     ]
     

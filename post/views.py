@@ -118,31 +118,35 @@ def comment_delete(request, id):
     return redirect(request.META.get('HTTP_REFERER'), {'comment': comment})
 
 
-# @login_required
-# def followed_feed(request):
-#     current_user = request.user
-#     followed_accounts = Follow.objects.filter(user=user)
-#     user_following_feed = []
-#     feed_posts = []
-#     for account in followed_accounts:
-#         user_following_feed.append(account)
-#     for usernames in user_following_feed:
-#         feed_lists = Post.objects.filter(user=usernames)
-#         feed_posts.append(feed_lists)
-#     context = {
-#         'feed_posts': feed_posts
-#     }
-#     print(user_following_feed)
-#     return render(request, 'post/feed.html', context)
-
-"""
-View to return all posts by latest
-""" 
 @login_required
-def latest_posts(request):
-    all_posts = Post.objects.all()
-    post_count = all_posts.count()
-    return render(request, 'post/feed.html', {'all_posts': all_posts, 'post_count': post_count})
+def followed_feed(request):
+    user_following_feed = []
+    followed_user_posts = []
+    current_user = request.user
+    followed_accounts_current_user = Follow.objects.filter(user=current_user)
+    print(followed_accounts_current_user)
+    for account in followed_accounts_current_user:
+        print(account.followed_account)
+        user_following_feed.append(account.followed_account)
+    print(user_following_feed)
+    for followed_user in user_following_feed:
+        followed_user_posts.append(Post.objects.filter(user=followed_user.user))
+    print(followed_user_posts)
+
+    context = {
+        'followed_user_posts': followed_user_posts,
+    }
+    # print(user_following_feed)
+    return render(request, 'post/feed.html', context)
+
+# """
+# View to return all posts by latest
+# """ 
+# @login_required
+# def latest_posts(request):
+#     all_posts = Post.objects.all()
+#     post_count = all_posts.count()
+#     return render(request, 'post/feed.html', {'all_posts': all_posts, 'post_count': post_count})
 
 
         
