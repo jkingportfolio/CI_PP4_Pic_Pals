@@ -116,18 +116,18 @@ def user_detail(request, username):
     user_post_count = user_posts.count()
     user_followers = Follow.objects.filter(followed_account=user)
     user_followers_count = user_followers.count()
-    user_following_count = Follow.objects.filter(user=user).count()
     user_following_list = Follow.objects.filter(user=user)
+    user_following_count = Follow.objects.filter(user=user).count()
+    user_followers_list = Follow.objects.filter(followed_account=user)    
     print(f'This user is following users: {user_following_list}')
     print(f'This user follows {user_following_count} users.')
-    print(f'This user has {user_followers_count} followers.')
-    user_followers_list = Follow.objects.filter(followed_account=user)
+    print(f'This user has {user_followers_count} followers.')    
     print(f'user_detail user_followers_list is: {user_followers_list}')
-    try:
-        user_follow_status = Follow.objects.filter(user=request.user, followed_account=user.username).exists()
-    except Follow.DoesNotExist:
-        user_follow_status = False
-    print(user_follow_status)
+    # try:
+    #     user_follow_status = Follow.objects.filter(user=request.user, followed_account=user.username).exists()
+    # except Follow.DoesNotExist:
+    #     user_follow_status = False
+    # print(user_follow_status)
     context = {
         'user': user,
         'user_posts': user_posts,
@@ -136,7 +136,7 @@ def user_detail(request, username):
         'user_followers_count': user_followers_count,
         'user_followers_list': user_followers_list,
         'user_following_count': user_following_count,
-        'user_follow_status': user_follow_status,
+        # 'user_follow_status': user_follow_status,
     }
     return render(request, 'account/user/user_detail.html', context)
 

@@ -48,10 +48,14 @@
         </div>
       </div>
     </div>
-    <div style="border: solid 1px black">
+    <div>
+      {% if user.profile.bio|length > 0 %}
       <hr>
-      BIO SECTION
+      {{ user.profile.bio }}
       <hr>
+      {% else %}
+      None
+      {% endif %}
     </div>
     <!-- List of users posts -->
     <div class='row card-group auto-margin'>
