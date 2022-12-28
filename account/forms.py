@@ -3,12 +3,16 @@ from django.forms import ModelForm, TextInput
 from django.contrib.auth.models import User
 from .models import Profile
 
-
+"""
+A class for a login details
+""" 
 class LoginDetails(forms.Form):
     username = forms.CharField()
     password = forms.CharField(widget=forms.PasswordInput())
 
-
+"""
+A class for a password when registering
+""" 
 class Registration(forms.ModelForm):
     password = forms.CharField(label='Password', widget=forms.PasswordInput())
     password_confirm = forms.CharField(label='Password Confirm', widget=forms.PasswordInput())
@@ -23,13 +27,19 @@ class Registration(forms.ModelForm):
             raise forms.ValidationError('Password re entry does not match.')
         return clear['password_confirm']
 
-# Edit attributes from the built in Django model
+ 
+"""
+A class for updating user details from the built in Django model
+""" 
 class EditUser(forms.ModelForm):
     class Meta:
         model = User
         fields = ['first_name', 'last_name', 'email']
 
-# Edit attributes from the custom user profile model
+
+"""
+A class for updating user profile details
+""" 
 class EditProfile(forms.ModelForm):
     class Meta:
         model = Profile

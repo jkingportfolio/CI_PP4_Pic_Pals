@@ -3,8 +3,11 @@ from django.conf import settings
 from cloudinary.models import CloudinaryField
 from django.contrib.auth import get_user_model
 from post.models import Post
-# Create your models here.
 
+
+"""
+Class for creating a users profile
+""" 
 class Profile(models.Model):
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
     dob = models.DateField(blank=True, null=True)
@@ -15,7 +18,9 @@ class Profile(models.Model):
     def __str__(self):
         return f'Profile of {self.user.username}'
 
-
+"""
+Class for creating follow objects
+""" 
 class Follow(models.Model):
     user = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='user')
     followed_account = models.ForeignKey('auth.User', on_delete=models.CASCADE, related_name='follow_account')

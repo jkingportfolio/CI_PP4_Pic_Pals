@@ -7,7 +7,10 @@ from django.http import HttpResponseRedirect
 from account.models import Follow
 
 
-# Create your views here.
+
+"""
+View to create a post
+""" 
 @login_required
 def create_post(request):
     if request.method == 'POST':
@@ -23,7 +26,9 @@ def create_post(request):
         form = PostImageForm()
     return render(request, 'post/create_post.html', {'form': form})
 
-
+"""
+View to display post details
+""" 
 @login_required()
 def post_detail(request, id):
     user = request.user
@@ -44,7 +49,9 @@ def post_detail(request, id):
     }
     return render(request, 'post/post_detail.html', context)
 
-
+"""
+View to return all current users posts
+""" 
 @login_required()
 def current_user_posts(request):
     user = request.user
@@ -52,7 +59,9 @@ def current_user_posts(request):
     post_count = user_posts.count()
     return render(request, 'post/user_posts.html', {'user_posts': user_posts, 'post_count': post_count})
 
-
+"""
+View to like a post
+""" 
 @login_required
 def post_like(request, post):
     user = request.user
@@ -68,7 +77,9 @@ def post_like(request, post):
     post.save()
     return redirect(request.META.get('HTTP_REFERER'))
 
-
+"""
+View to delete a post of the currently logged in user
+""" 
 @login_required
 def post_delete(request, id):
     post = Post.objects.get(id=id)
@@ -77,7 +88,9 @@ def post_delete(request, id):
         return redirect('/', {'post': post})
     return redirect(request.META.get('HTTP_REFERER'))
 
-
+"""
+View to add a comment to a post
+""" 
 @login_required
 def post_comment(request, id):
     user = request.user
@@ -93,6 +106,10 @@ def post_comment(request, id):
                                                        'form': form,
                                                        'comment': comment})
 
+
+"""
+View to delete a comment created but the currently logged in user
+""" 
 @login_required
 def comment_delete(request, id):
     comment = Comment.objects.get(id=id)
@@ -122,6 +139,9 @@ def comment_delete(request, id):
 # def followed_feed(request):
 #     return Post.objects.filter(user__following__user__id=self.request.user.id)
 
+"""
+View to return all posts by latest
+""" 
 @login_required
 def latest_posts(request):
     all_posts = Post.objects.all()

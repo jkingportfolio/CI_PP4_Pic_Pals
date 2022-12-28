@@ -6,8 +6,10 @@ from django.urls import reverse
 from django.db.models.signals import post_save
 import uuid
 
-# Create your models here.
 
+"""
+Class for creating a post object
+""" 
 class Post(models.Model):
     id = models.UUIDField(primary_key=True, default=uuid.uuid4)
     created_date = models.DateTimeField(auto_now_add=True)
@@ -23,6 +25,9 @@ class Post(models.Model):
         return reverse('posts:post_detail', args=[str(self.id)])
 
 
+"""
+Class for creating a like object
+""" 
 class Like(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_likes")
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name="post_likes")
@@ -31,6 +36,9 @@ class Like(models.Model):
         return f'{self.user} liked {self.post}'
 
 
+"""
+Class for creating a comment object
+""" 
 class Comment(models.Model):
     post = models.ForeignKey(Post, on_delete=models.CASCADE, related_name='comments')
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_comment")

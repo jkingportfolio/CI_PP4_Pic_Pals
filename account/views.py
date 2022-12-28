@@ -12,7 +12,10 @@ from django.contrib import messages
 # Create your views here.
 
 
-# User login view
+
+"""
+View to log in a user
+"""
 def user_login(request):
     if request.method == 'POST':
         form = LoginDetails(request.POST)
@@ -32,7 +35,10 @@ def user_login(request):
     return render(request, 'account/login.html', {'form': form})
 
 
-# User registration view
+
+"""
+View to register an account
+"""
 def register(request):
     if request.method == 'POST':
         user_form = Registration(request.POST)
@@ -48,7 +54,9 @@ def register(request):
     return render(request, 'account/register.html', {'user_form': user_form})
 
 
-# Logged in user dashboard view  
+"""
+View of logged in users dashboard
+""" 
 @login_required
 def dashboard(request):
     user_object = User.objects.get(username=request.user.username)
@@ -58,7 +66,9 @@ def dashboard(request):
     return render(request, 'account/dashboard.html', {'user_profile': user_profile, 'user_posts': user_posts})
 
 
-# Edit user profile view
+"""
+View to edit profile of logged in user
+""" 
 @login_required()
 def edit_profile(request):
     if request.method == 'POST':
@@ -75,13 +85,19 @@ def edit_profile(request):
         profile_form = EditProfile(instance=request.user)
     return render(request, 'account/edit_profile.html', {'user_form': user_form, 'profile_form': profile_form})
 
-# Return list of all pic pals users
+
+"""
+View that returns all registered users
+""" 
 @login_required
 def site_users(request):
     users = User.objects.all()
     return render(request, 'account/user/user_list.html', {'users': users})
 
-#Return all details of user
+
+"""
+View to return all details of a user (viewing, not logged in as)
+""" 
 @login_required
 def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
@@ -114,7 +130,10 @@ def user_detail(request, username):
     }
     return render(request, 'account/user/user_detail.html', context)
 
-# Follow a user
+
+"""
+View to follow a user
+""" 
 @login_required
 def follow_user(request, user_name):
     user_to_follow = User.objects.get(username=user_name)
