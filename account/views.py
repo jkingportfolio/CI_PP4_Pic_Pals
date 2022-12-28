@@ -101,7 +101,7 @@ View that returns all registered users
 """ 
 @login_required
 def site_users(request):
-    users = User.objects.all()
+    users = User.objects.all().order_by('username')
     return render(request, 'account/user/user_list.html', {'users': users})
 
 
