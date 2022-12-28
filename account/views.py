@@ -32,16 +32,6 @@ def user_login(request):
     return render(request, 'account/login.html', {'form': form})
 
 
-# Logged in user dashboard view  
-@login_required
-def dashboard(request):
-    user_object = User.objects.get(username=request.user.username)
-    user_profile = Profile.objects.get(user=user_object)
-    user = request.user
-    user_posts = Post.objects.filter(user=user)
-    return render(request, 'account/dashboard.html', {'user_profile': user_profile, 'user_posts': user_posts})
-
-
 # User registration view
 def register(request):
     if request.method == 'POST':
@@ -56,6 +46,16 @@ def register(request):
     else:
         user_form = Registration()
     return render(request, 'account/register.html', {'user_form': user_form})
+
+
+# Logged in user dashboard view  
+@login_required
+def dashboard(request):
+    user_object = User.objects.get(username=request.user.username)
+    user_profile = Profile.objects.get(user=user_object)
+    user = request.user
+    user_posts = Post.objects.filter(user=user)
+    return render(request, 'account/dashboard.html', {'user_profile': user_profile, 'user_posts': user_posts})
 
 
 # Edit user profile view
@@ -75,12 +75,46 @@ def edit_profile(request):
         profile_form = EditProfile(instance=request.user)
     return render(request, 'account/edit_profile.html', {'user_form': user_form, 'profile_form': profile_form})
 
-
+# Return list of all pic pals users
 @login_required
 def site_users(request):
     users = User.objects.all()
     return render(request, 'account/user/user_list.html', {'users': users})
 
+#Return all details of user
+@login_required
+def user_detail(request, username):
+    user = get_object_or_404(User, username=username, is_active=True)
+    print(f'user_detail user is: {user}')
+    user_posts = Post.objects.filter(user=user)
+    user_post_count = user_posts.count()
+    user_followers = Follow.objects.filter(followed_account=user)
+    user_followers_count = user_followers.count()
+    user_following_count = Follow.objects.filter(user=user).count()
+    user_following_list = Follow.objects.filter(user=user)
+    print(f'This user is following users: {user_following_list}')
+    print(f'This user follows {user_following_count} users.')
+    print(f'This user has {user_followers_count} followers.')
+    user_followers_list = Follow.objects.filter(followed_account=user)
+    print(f'user_detail user_followers_list is: {user_followers_list}')
+    try:
+        user_follow_status = Follow.objects.filter(user=request.user, followed_account=user.username).exists()
+    except Follow.DoesNotExist:
+        user_follow_status = False
+    print(user_follow_status)
+    context = {
+        'user': user,
+        'user_posts': user_posts,
+        'user_post_count': user_post_count,
+        'user_followers': user_followers,
+        'user_followers_count': user_followers_count,
+        'user_followers_list': user_followers_list,
+        'user_following_count': user_following_count,
+        'user_follow_status': user_follow_status,
+    }
+    return render(request, 'account/user/user_detail.html', context)
+
+# Follow a user
 @login_required
 def follow_user(request, user_name):
     user_to_follow = User.objects.get(username=user_name)
@@ -100,55 +134,7 @@ def follow_user(request, user_name):
             messages.success(request, 'Follow added successfully')
             return redirect(request.META.get('HTTP_REFERER'))
 
-# @login_required
-# def follow_status(request, username):
-#     user_obj = get_object_or_404(User, username=username, is_active=True)
-#     print(user_obj)
-#     user_to_follow = User.objects.get(username=user_name)
-#     print(user_to_follow)
-#     follow_status, created = Follow.objects.get_or_create(user=get_user, following=user_to_follow)
-#     following, create = Follow.objects.get_or_create(user=user_obj.id)
-#     # check_user_followers = Follow.objects.filter(following=user_obj)
 
-#     is_followed = False
-#     if Follow.objects.filter(following=user_obj):
-#         is_followed = True
-#     context = {
-#         # 'user_obj': user_obj,
-#         # 'followers': check_user_followers,
-#         # 'following': following,
-#         'is_followed': is_followed
-#     }
-#     return redirect(request.META.get('HTTP_REFERER'), context)
-
-@login_required
-def user_detail(request, username):
-    user = get_object_or_404(User, username=username, is_active=True)
-    user_posts = Post.objects.filter(user=user)
-    user_post_count = user_posts.count()
-    user_following = Follow.objects.filter(user=user)
-    user_following_count = user_following.count()
-    user_followers_count = Follow.objects.filter(followed_account=user).count()
-    print(user_followers_count)
-    user_following_status = Follow.objects.filter(followed_account=user)
-    print(f'This is the user following status {user_following_status}')
-    user_following_status = False
-    print(f'initial status set to: {user_following_status}')
-    if user_following_status is None:
-        user_following_status = False
-        print(f'Then set to: {user_following_status}')
-    else:
-        user_following_status = True
-    print(f'Finally set to {user_following_status}')    
-    context = {
-        'user': user,
-        'user_posts': user_posts,
-        'user_post_count': user_post_count,
-        'user_following': user_following,
-        'user_following_count': user_following_count,
-        'user_following_status': user_following_status,
-    }
-    return render(request, 'account/user/user_detail.html', context)
 
 
 
