@@ -11,4 +11,4 @@ class ProfileAdmin(admin.ModelAdmin):
 
 @admin.register(Follow)
 class PostAdmin(admin.ModelAdmin):
-    list_display = ['created', 'user', 'following']
+    list_display = ['created', 'user', 'followed_account']

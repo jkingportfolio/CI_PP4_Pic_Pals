@@ -84,12 +84,12 @@ def site_users(request):
 @login_required
 def follow_user(request, user_name):
     user_to_follow = User.objects.get(username=user_name)
-    print(f'Away to follow: {user_to_follow}')
+    print(f'{request.user} Is away to follow: {user_to_follow}')
     current_user = request.user
     print(f'Logged in as: {current_user}')
     get_user = User.objects.get(username=current_user)
-    print('Get user: {get_user}')
-    follow_status, created = Follow.objects.get_or_create(user=get_user, following=user_to_follow)
+    print(f'Get user: {get_user}')
+    follow_status, created = Follow.objects.get_or_create(user=get_user, followed_account=user_to_follow)
     if user_to_follow.username != current_user.username:
         if not created:
             print(follow_status)
@@ -128,14 +128,18 @@ def user_detail(request, username):
     user_post_count = user_posts.count()
     user_following = Follow.objects.filter(user=user)
     user_following_count = user_following.count()
-    user_followers_count = Follow.objects.filter(following=user).count()
-    user_following_status = Follow.objects.filter(following=user)
+    user_followers_count = Follow.objects.filter(followed_account=user).count()
+    print(user_followers_count)
+    user_following_status = Follow.objects.filter(followed_account=user)
     print(f'This is the user following status {user_following_status}')
+    user_following_status = False
+    print(f'initial status set to: {user_following_status}')
     if user_following_status is None:
         user_following_status = False
+        print(f'Then set to: {user_following_status}')
     else:
         user_following_status = True
-    print(user_following_status)    
+    print(f'Finally set to {user_following_status}')    
     context = {
         'user': user,
         'user_posts': user_posts,

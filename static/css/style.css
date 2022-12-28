@@ -1,10 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
 body{
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    font-family: 'Bebas Neue', cursive;
+    font-family: 'Do Hyeon', sans-serif;
 }
 footer{
     margin-top: auto;
@@ -57,6 +56,7 @@ a {
 }
 
 .user-name-font {
+    margin-bottom: 0;
     font-size: 40px
 }
 
@@ -152,6 +152,7 @@ a {
     margin-left: auto;
     margin-right: auto;
     width: 50%;
+    padding-bottom: 10px;
   }
 
 .profile-post-container {
