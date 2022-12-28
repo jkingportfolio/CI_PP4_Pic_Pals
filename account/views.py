@@ -155,8 +155,8 @@ def follow_user(request, user_name):
         if not created:
             print(follow_status)
             follow_status.delete()
-            messages.success(request, 'Unfollowed added successfully')
+            messages.success(request, f'Unfollowed {user_to_follow} successfully')
             return redirect(request.META.get('HTTP_REFERER'))
         else:
-            messages.success(request, 'Follow added successfully')
+            messages.success(request, f'Followed {user_to_follow} successfully')
             return redirect(request.META.get('HTTP_REFERER'))
