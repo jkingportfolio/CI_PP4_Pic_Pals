@@ -18,6 +18,9 @@
           </div>
           {% if request.user == post.user %}
           <div class="col del-post-btn">
+            <a href="{% url 'posts:edit_post' post.id %}">Edit</a>
+          </div>
+          <div class="col del-post-btn">
             <a href="{% url 'posts:post_delete' post.id %}">Delete</a>
           </div>
           {% endif %}
@@ -95,5 +98,7 @@
     </div>
   </div>
 </div>
+
+
 
 {% endblock %}

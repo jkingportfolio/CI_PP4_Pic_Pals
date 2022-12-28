@@ -1,0 +1,19 @@
+<!-- edit post page to be created here-->
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+
+{% block title %}Edit post{% endblock %}
+
+{% block content %}
+
+<div class="container form-style">
+    <h1>Update post</h1>
+    <!-- <form method="post" enctype="multipart/form-data"> -->
+    <form method="post">
+        {% csrf_token %}
+        {{ form|crispy }}
+        <p><input type="submit" value="Update"></p>
+    </form>
+</div>
+
+{% endblock %}
