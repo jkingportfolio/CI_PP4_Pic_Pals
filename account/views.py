@@ -63,7 +63,17 @@ def dashboard(request):
     user_profile = Profile.objects.get(user=user_object)
     user = request.user
     user_posts = Post.objects.filter(user=user)
-    return render(request, 'account/dashboard.html', {'user_profile': user_profile, 'user_posts': user_posts})
+    user_posts_count = user_posts.count()
+    user_followers_count = Follow.objects.filter(followed_account=user).count()
+    user_following_count = Follow.objects.filter(user=user).count()
+    context = {
+        'user_profile': user_profile,
+        'user_posts': user_posts,
+        'user_posts_count': user_posts_count,
+        'user_followers_count': user_followers_count,
+        'user_following_count': user_following_count,
+    }
+    return render(request, 'account/dashboard.html', context)
 
 
 """
