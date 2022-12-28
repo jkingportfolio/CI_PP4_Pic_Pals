@@ -49,6 +49,10 @@ a {
     margin-bottom: 20px
 }
 
+.post-detail-size {
+    max-width: 500px;
+}
+
 .profile-button {
     width: 160px;
     margin-bottom: 10px;
@@ -59,13 +63,21 @@ a {
     width: 40px
 }
 
+.like-btn-margin {
+    margin-top: 10px;
+}
+
+.del-post-btn {
+    text-align: end;
+}
+
 .user-name-font {
     margin-bottom: 0;
     font-size: 40px
 }
 
 .user-info-pos {
-    padding: 10px 0 0 20px;
+    padding: 10px 0px 0px 0px;
 }
 
 .user-info-font {
@@ -179,6 +191,11 @@ a {
     padding-bottom: 10px;
 }
 
+.user-btns {
+    text-align: center;
+    margin-top: 10px;
+}
+
 
   /* Media queries*/
 
@@ -190,6 +207,8 @@ a {
         border-radius: 50%;
         border: 2px solid black;
     }
+
+
 }
 
 

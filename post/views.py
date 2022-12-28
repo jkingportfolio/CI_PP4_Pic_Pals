@@ -124,14 +124,16 @@ def followed_feed(request):
     followed_user_posts = []
     current_user = request.user
     followed_accounts_current_user = Follow.objects.filter(user=current_user)
+    # posts = Post.objects.all()
     print(followed_accounts_current_user)
     for account in followed_accounts_current_user:
         print(account.followed_account)
-        user_following_feed.append(account.followed_account)
+        user_following_feed.append(account.followed_account.username)
     print(user_following_feed)
-    for followed_user in user_following_feed:
-        followed_user_posts.append(Post.objects.filter(user=followed_user.user))
-    print(followed_user_posts)
+    followed_user_posts = Post.objects.filter(user__in=user_following_feed)
+    # for followed_user in user_following_feed:
+    #     followed_user_posts.append(Post.objects.filter(user=followed_user.user))
+    # print(followed_user_posts)
 
     context = {
         'followed_user_posts': followed_user_posts,

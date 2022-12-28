@@ -4,22 +4,23 @@
 {% block title %}{{ image.title }}{% endblock %}
 
 {% block content %}
-<div class="container top-margin">
+<div class="container top-margin post-detail-size">
   <div class="col-12 col-md-6 col-lg-4 post-detail-container">
     <div class="card h-100">
       <div class="card-body">
         <div class="row">
-        <div class="col">
-          <a href="{{ post.get_absolute_url }}" class="post-spacing">
-            <img src="{{ user.profile.profile_pic.url }}" class="post-avatar">
-            {{ post.user }}
-          </a>
-        </div>
-        {% if request.user == post.user %}
-        <div class="col">
-          <a href="{% url 'posts:post_delete' post.id %}">Delete</a>
-        </div>
-        {% endif %}
+          <div class="col">
+            <a href="{{ post.get_absolute_url }}" class="post-spacing">
+              <img src="{{ user.profile.profile_pic.url }}"
+                class="post-avatar">
+              {{ post.user }}
+            </a>
+          </div>
+          {% if request.user == post.user %}
+          <div class="col del-post-btn">
+            <a href="{% url 'posts:post_delete' post.id %}">Delete</a>
+          </div>
+          {% endif %}
         </div>
       </div>
       <div>
@@ -33,7 +34,7 @@
       </div>
     </div>
   </div>
-  <div>
+  <div class="like-btn-margin">
     {% if liked_by_user %}
     <a href="{% url 'posts:like' post.id %}">
       <img src="/static/images/like.png" class="like-button">
@@ -58,11 +59,9 @@
         {{ total_comments }} comment{{ total_comments|pluralize }}
       </h2>
       {% endwith %}
-      <div class="container"
-        style="border: solid 1px black; margin-bottom:10px;">
-        <div style="border: solid 1px black;">
+      <div class="container">
+        <div>
           {% for comment in comments %}
-
           <div class="row">
             <div class="col-10">
               <img src="{{ comment.user.profile.profile_pic.url }}"
@@ -77,12 +76,12 @@
             </div>
             {% endif %}
           </div>
-
           <div class="row comment-body">
             <div class="col-12">
               {{ comment.created }}
               {{ comment.comment_body|linebreaks }}
               {{ comment.created_on }}
+              <hr>
             </div>
           </div>
           {% empty %}
