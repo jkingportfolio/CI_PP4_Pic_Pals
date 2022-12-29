@@ -177,7 +177,8 @@ View to delete a comment created but the currently logged in user
 @login_required
 def comment_delete(request, id):
     comment = Comment.objects.get(id=id)
-    if request.user == comment.user:
+    post = comment.post
+    if request.user == comment.user or request.user == post.user:
         comment.delete()
     return redirect(request.META.get('HTTP_REFERER'), {'comment': comment})
 

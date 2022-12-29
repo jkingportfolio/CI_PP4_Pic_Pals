@@ -10,10 +10,13 @@
 
 
 <div class="container form-style">
-  <div class="input-group flex-nowrap">
-    <span class="input-group-text" id="addon-wrapping">@</span>
-    <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="addon-wrapping">
-  </div>
+  <form>
+    <div class="input-group flex-nowrap">
+      <span class="input-group-text" id="addon-wrapping">@</span>
+      <input type="text" class="form-control" placeholder="Username"
+        aria-label="Username" aria-describedby="addon-wrapping">
+    </div>
+  </form>
   <div class="row">
     <div class="container text-center">
       <h1>Pic Pal users</h1>
@@ -21,7 +24,8 @@
         <div class='row card-group auto-margin'>
           {% for user in users %}
           {% if user != request.user %}
-          <div class="col-12 col-md-6 col-lg-4 text-center user-list-margin user-card mx-auto">
+          <div
+            class="col-12 col-md-6 col-lg-4 text-center user-list-margin user-card mx-auto">
             <div class="card h-100">
               <div class="card-body">
                 <a href="{{ user.get_absolute_url }}">

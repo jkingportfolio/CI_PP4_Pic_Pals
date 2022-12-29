@@ -80,7 +80,7 @@
               {{ comment.user }}
             </div>
             </a>
-            {% if request.user == comment.user %}
+            {% if request.user == comment.user or request.user == post.user %}
             <div class="col-2 comment-delete-btn">
               <a href="{% url 'posts:comment_delete' comment.id %}">
                 <img src="/static/images/delete.png" class="delete-btn">
