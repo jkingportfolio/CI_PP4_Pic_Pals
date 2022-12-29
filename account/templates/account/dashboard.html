@@ -25,17 +25,17 @@
             alt="Profile Picture" class="profile-pic"><br>
           {% endif %}
         </div>
-        <div class="row button-margin">          
+        <div class="row button-margin">
           {% if user.username != request.user.username %}
-            {% if user_follow_status %}
-            <a href="{% url 'follow_user' user %}"
-              class="btn btn-dark profile-button auto-margin"
-              role="button">Unfollow</a>
-            {% else %}
-            <a href="{% url 'follow_user' user %}"
-              class="btn btn-dark profile-button auto-margin"
-              role="button">Follow</a>
-            {% endif %}
+          {% if user_follow_status %}
+          <a href="{% url 'follow_user' user %}"
+            class="btn btn-dark profile-button auto-margin"
+            role="button">Unfollow</a>
+          {% else %}
+          <a href="{% url 'follow_user' user %}"
+            class="btn btn-dark profile-button auto-margin"
+            role="button">Follow</a>
+          {% endif %}
           {% endif %}
         </div>
       </div>
@@ -78,14 +78,19 @@
           <div class="card-body">
             <div class="post-spacing">
               <a href="{{ post.get_absolute_url }}" class="post-spacing">
+                {% if user.profile.profile_pic %}
                 <img src="{{ user.profile.profile_pic.url }}"
                   class="post-avatar">
+                {% else %}
+                <img src="{% static 'images/default_profile_pic.png' %}"
+                  alt="Profile Picture" class="post-avatar">
+                {% endif %}
                 {{ post.user }}
               </a>
             </div>
-            <div>
-              <div>
-                <a href="{{ post.get_absolute_url }}">
+            <div class="card-img-size">
+              <div class="card-h-100">
+                <a href="{{ post.get_absolute_url }}" class="card-h-100">
                   <img src="{{ post.image.url }}" class="post-pic">
                 </a>
               </div>
