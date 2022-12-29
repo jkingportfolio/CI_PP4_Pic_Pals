@@ -1,6 +1,8 @@
 <!-- individual post page to be created here-->
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block title %}{{ image.title }}{% endblock %}
 
 {% block content %}
@@ -67,8 +69,13 @@
           {% for comment in comments %}
           <div class="row">
             <div class="col-10">
+              {% if comment.user.profile.profile_pic %}
               <img src="{{ comment.user.profile.profile_pic.url }}"
                 class="post-avatar">
+              {% else %}
+              <img src="{% static 'images/default_profile_pic.png' %}"
+                alt="Profile Picture" class="post-avatar">
+              {% endif %}
               {{ comment.user }}
             </div>
             {% if request.user == comment.user %}
