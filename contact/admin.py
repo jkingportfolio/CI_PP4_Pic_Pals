@@ -7,9 +7,7 @@ class ContactAdmin(admin.ModelAdmin):
     Admin Class for Contact Model
     """
     list_display = (
-        'message_date'
         'name',
         'reason',
-        'message',
-        'email'
+        'email',
         )

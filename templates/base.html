@@ -38,6 +38,7 @@
                 <a class="navbar-brand" href="/">
                     <img src="{% static '/images/logo.png' %}">
                 </a>
+                <a href="{% url 'contact:contact' %}">Contact Test</a>
                 {% if request.user.is_authenticated %}
                 <button class="navbar-toggler" type="button"
                     data-bs-toggle="collapse" data-bs-target="#navbarText"
@@ -77,7 +78,6 @@
             </div>
         </nav>
     </header>
-
     {% include 'messages.html' %}
     <main class="flex-shrink-0 main-bg">
         {% block content %}
