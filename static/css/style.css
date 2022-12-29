@@ -85,6 +85,9 @@ a {
     font-size: 20px;
 }
 
+.form-btn-pos {
+    margin-top: 10px;
+}
 
 .post-image-resize {
     display: block;
