@@ -7,14 +7,13 @@
 
 {% block content %}
 
-
-
 <div class="container form-style">
-  <form>
+  <form action="{% url 'search_users' %}"
+  method="get">
     <div class="input-group flex-nowrap">
       <span class="input-group-text" id="addon-wrapping">@</span>
       <input type="text" class="form-control" placeholder="Username"
-        aria-label="Username" aria-describedby="addon-wrapping">
+        aria-label="Username" aria-describedby="addon-wrapping" name="p">
     </div>
   </form>
   <div class="row">
@@ -36,7 +35,6 @@
                   <img src="{% static 'images/default_profile_pic.png' %}"
                     alt="Profile Picture" class="profile-pic"><br>
                   {% endif %}
-
                   {{ user.get_username }}
                 </a>
               </div>

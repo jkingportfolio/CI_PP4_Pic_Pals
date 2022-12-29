@@ -198,3 +198,4 @@ def followed_feed(request):
         'followed_user_posts': followed_user_posts,
     }
     return render(request, 'post/feed.html', context)
+    

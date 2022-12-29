@@ -12,16 +12,18 @@ from django.contrib import messages
 # Create your views here.
 
 
-
 """
 View to log in a user
 """
+
+
 def user_login(request):
     if request.method == 'POST':
         form = LoginDetails(request.POST)
         if form.is_valid():
             clear_form = form.cleaned_data
-            user = authenticate(request, username=clear_form['username'], password=clear_form['password'])
+            user = authenticate(
+                request, username=clear_form['username'], password=clear_form['password'])
             if user is not None:
                 if user.is_active:
                     login(request, user)
@@ -35,10 +37,11 @@ def user_login(request):
     return render(request, 'account/login.html', {'form': form})
 
 
-
 """
 View to register an account
 """
+
+
 def register(request):
     if request.method == 'POST':
         user_form = Registration(request.POST)
@@ -56,7 +59,9 @@ def register(request):
 
 """
 View of logged in users dashboard
-""" 
+"""
+
+
 @login_required
 def dashboard(request):
     user_object = User.objects.get(username=request.user.username)
@@ -78,12 +83,15 @@ def dashboard(request):
 
 """
 View to edit profile of logged in user
-""" 
+"""
+
+
 @login_required()
 def edit_profile(request):
     if request.method == 'POST':
         user_form = EditUser(instance=request.user, data=request.POST)
-        profile_form = EditProfile(instance=request.user.profile, data=request.POST, files=request.FILES)
+        profile_form = EditProfile(
+            instance=request.user.profile, data=request.POST, files=request.FILES)
         if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
             profile_form.save()
@@ -98,7 +106,9 @@ def edit_profile(request):
 
 """
 View that returns all registered users
-""" 
+"""
+
+
 @login_required
 def site_users(request):
     users = User.objects.all().order_by('username')
@@ -107,7 +117,9 @@ def site_users(request):
 
 """
 View to return all details of a user (viewing, not logged in as)
-""" 
+"""
+
+
 @login_required
 def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
@@ -118,10 +130,10 @@ def user_detail(request, username):
     user_followers_count = user_followers.count()
     user_following_list = Follow.objects.filter(user=user)
     user_following_count = Follow.objects.filter(user=user).count()
-    user_followers_list = Follow.objects.filter(followed_account=user)    
+    user_followers_list = Follow.objects.filter(followed_account=user)
     print(f'This user is following users: {user_following_list}')
     print(f'This user follows {user_following_count} users.')
-    print(f'This user has {user_followers_count} followers.')    
+    print(f'This user has {user_followers_count} followers.')
     print(f'user_detail user_followers_list is: {user_followers_list}')
     user_follow_status = False
     if Follow.objects.filter(user=request.user, followed_account=user).exists():
@@ -141,7 +153,9 @@ def user_detail(request, username):
 
 """
 View to follow a user
-""" 
+"""
+
+
 @login_required
 def follow_user(request, user_name):
     user_to_follow = User.objects.get(username=user_name)
@@ -150,13 +164,28 @@ def follow_user(request, user_name):
     print(f'Logged in as: {current_user}')
     get_user = User.objects.get(username=current_user)
     print(f'Get user: {get_user}')
-    follow_status, created = Follow.objects.get_or_create(user=get_user, followed_account=user_to_follow)
+    follow_status, created = Follow.objects.get_or_create(
+        user=get_user, followed_account=user_to_follow)
     if user_to_follow.username != current_user.username:
         if not created:
             print(follow_status)
             follow_status.delete()
-            messages.success(request, f'Unfollowed {user_to_follow} successfully')
+            messages.success(
+                request, f'Unfollowed {user_to_follow} successfully')
             return redirect(request.META.get('HTTP_REFERER'))
         else:
-            messages.success(request, f'Followed {user_to_follow} successfully')
+            messages.success(
+                request, f'Followed {user_to_follow} successfully')
             return redirect(request.META.get('HTTP_REFERER'))
+
+
+@login_required
+def search_users(request):
+    query = request.GET.get('p')
+    print(query)
+    user_search_results = User.objects.filter(username__icontains=query)
+    context = {
+            'user_search_results': user_search_results,
+    }
+    
+    return render(request, "account/user/user_search.html", context)
