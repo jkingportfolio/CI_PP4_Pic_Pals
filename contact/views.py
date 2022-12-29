@@ -1,6 +1,7 @@
 from django.shortcuts import render
 from .forms import ContactForm
 
+
 def contact(request):
     contact_form = ContactForm()
     form_submit = False
@@ -28,4 +29,3 @@ def contact(request):
 
     return render(request, 'contact/contact.html', context)
 
-    # /workspace/CI_PP4_Pic_Pals/contact/templates/contact.html

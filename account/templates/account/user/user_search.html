@@ -31,9 +31,9 @@
                         <div class="card h-100">
                             <div class="card-body">
                                 <a
-                                    href="{{ user_search_results.user.get_absolute_url }}">
-                                    {% if user_search_results.profile.profile_pic %}
-                                    <img src="{{ user_search_results.user.profile.profile_pic.url }}"
+                                    href="{{ user.get_absolute_url }}">
+                                    {% if user.profile.profile_pic %}
+                                    <img src="{{ user.profile.profile_pic.url }}"
                                         alt="Profile Picture"
                                         class="profile-pic"><br>
                                     {% else %}

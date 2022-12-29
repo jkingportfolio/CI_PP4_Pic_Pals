@@ -42,5 +42,4 @@ class Contact(models.Model):
         """
         Returns contact name and date as a string
         """
-        return self.name
         return f'Message from {self.name} on {self.message_date}'
