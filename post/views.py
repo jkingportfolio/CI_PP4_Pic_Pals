@@ -32,22 +32,6 @@ def create_post(request):
 View to edit post caption of logged in user
 """
 
-
-# @login_required()
-# def edit_post(request, id):
-#     post = Post.objects.get(id=id)
-#     if request.user == post.user:
-#         post_form = EditPost()
-#         if post_form.is_valid():
-#             post_form.save()
-#             post.save()
-#             messages.success(request, 'Post caption updated successfully')
-#         else:
-#             messages.error(request, 'Error updating post caption.')
-#     else:
-#         post_form = EditPost()
-#     return render(request, 'post/edit_post.html', {'post_form': post_form})
-
 @login_required()
 def edit_post(request, id):
     post = Post.objects.get(id=id)
@@ -142,6 +126,7 @@ def post_delete(request, id):
     post = Post.objects.get(id=id)
     if request.user == post.user:
         post.delete()
+        messages.success(request, 'Post deleted successfully.')
         return redirect('/', {'post': post})
     return redirect(request.META.get('HTTP_REFERER'))
 
@@ -178,6 +163,7 @@ def comment_delete(request, id):
     post = comment.post
     if request.user == comment.user or request.user == post.user:
         comment.delete()
+        messages.success(request, 'Comment deleted successfully.')
     return redirect(request.META.get('HTTP_REFERER'), {'comment': comment})
 
 

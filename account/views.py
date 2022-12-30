@@ -27,6 +27,7 @@ def user_login(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
+                    messages.success(request, f'{user.username} successfully logged in!')
                     return HttpResponse(('Login authenticated'))
                 else:
                     return HttpResponse(('Account disabled'))
@@ -50,7 +51,11 @@ def register(request):
             new_user.set_password(user_form.cleaned_data['password'])
             new_user.save()
             Profile.objects.create(user=new_user)
-            return render(request, 'account/register_success.html', {'new_user': new_user})
+            messages.success(request, f'Welcome {new_user.username}!')
+            context = {
+                'new_user': new_user,
+            }
+            return render(request, 'account/register_success.html', context)
     else:
         user_form = Registration()
     return render(request, 'account/register.html', {'user_form': user_form})
