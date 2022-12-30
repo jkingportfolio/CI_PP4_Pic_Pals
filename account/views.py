@@ -123,7 +123,7 @@ def site_users(request):
 View to return all details of a user (viewing, not logged in as)
 """
 
-
+# check user followers var if used, duplicate?
 @login_required
 def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
@@ -173,6 +173,24 @@ def follow_user(request, user_name):
                 request, f'Followed {user_to_follow} successfully')
             return redirect(request.META.get('HTTP_REFERER'))
 
+
+@login_required
+def following_list(request, username):
+    # # code to generate list of following accounts
+    user = get_object_or_404(User, username=username, is_active=True)
+    print(f'User who owns following list: {user.username}')
+    user_following_list = Follow.objects.filter(user=user)
+    print(f'Following list: {user_following_list}')
+    context = {
+        'user': user,
+        'user_following_list': user_following_list
+    }
+    return render(request, 'account/user/following_list.html', context)
+
+
+# @login_required
+# def following_list(request):
+#     # code to generate list of following accounts
 
 @login_required
 def search_users(request):

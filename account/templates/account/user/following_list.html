@@ -1,0 +1,40 @@
+<!-- user following page to be created here-->
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}List of users{% endblock %}
+
+{% block content %}
+You got here
+<div class="container form-style">
+  <div class="row">
+    <div class="container text-center top-margin">
+      <h1>{{user.get_username}} follows...</h1>
+      <div class="row">
+        <div class='row card-group auto-margin'>
+          {% for followed_user in user_following_list %}
+          <div
+            class="col-12 col-md-6 col-lg-4 text-center user-list-margin user-card mx-auto">
+            <div class="card h-100">
+              <div class="card-body">
+                <a href="{{ followed_user.followed_account.get_absolute_url }}">
+                  {% if followed_user.followed_account.profile.profile_pic %}
+                  <img src="{{ followed_user.followed_account.profile.profile_pic.url }}"
+                    alt="Profile Picture" class="profile-pic"><br>
+                  {% else %}
+                  <img src="{% static 'images/default_profile_pic.png' %}"
+                    alt="Profile Picture" class="profile-pic"><br>
+                  {% endif %}
+                  {{ followed_user.followed_account.get_username }}
+                </a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}

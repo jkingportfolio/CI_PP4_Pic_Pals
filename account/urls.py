@@ -20,5 +20,6 @@ urlpatterns = [
     path('users/', views.site_users, name='site_users'),
     path('users/search/', views.search_users, name='search_users'),
     path('users/<username>/', views.user_detail, name='user_detail'),
-    path('follow-user/<str:user_name>', views.follow_user, name='follow_user'),
+    path('follow-user/<str:user_name>/', views.follow_user, name='follow_user'),
+    path('users/<username>/following/', views.following_list, name='following_list'),
 ]

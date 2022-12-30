@@ -6,98 +6,100 @@
 {% block title %} {{ user.get_username }} {% endblock %}
 
 {% block content %}
-  <div class="container profile-style">
-    <div class="container">
-      <div class="row">
-        <div class="col-7 text-center">
-          <div class="row">
-            <p class="col text-center user-name-font">
-              {{ user.username }}
-            </p>
-          </div>
-          <div class="row center-image">
-            {% if user.profile.profile_pic %}
-            <img src="{{ user.profile.profile_pic.url }}" alt="Profile Picture"
-              class="profile-pic"><br>
-            {% else %}
-            <img src="{% static 'images/default_profile_pic.png' %}"
-              alt="Profile Picture" class="profile-pic"><br>
-            {% endif %}
-          </div>
-          <div class="row button-margin">
-            {% if user.username != request.user.username %}
-              {% if user_follow_status %}
-                <a href="{% url 'follow_user' user %}"
-                  class="btn btn-dark profile-button auto-margin"
-                  role="button">Unfollow</a>
-              {% else %}
-                <a href="{% url 'follow_user' user %}"
-                  class="btn btn-dark profile-button auto-margin"
-                  role="button">Follow</a>
-              {% endif %}
-            {% endif %}
-          </div>
+<div class="container profile-style">
+  <div class="container">
+    <div class="row">
+      <div class="col-7 text-center">
+        <div class="row">
+          <p class="col text-center user-name-font">
+            {{ user.username }}
+          </p>
         </div>
-        <div class="col-5 user-info-pos">
-          <div class="row user-info-font">
-            <p>Post count: {{ user_post_count }}</p>
-          </div>
-          <div class="row user-info-font">
-            <p>Following: {{ user_following_count }}</p>
-          </div>
-          <div class="row user-info-font">
-            <p>Followers: {{ user_followers_count }}</p>
-          </div>
+        <div class="row center-image">
+          {% if user.profile.profile_pic %}
+          <img src="{{ user.profile.profile_pic.url }}" alt="Profile Picture"
+            class="profile-pic"><br>
+          {% else %}
+          <img src="{% static 'images/default_profile_pic.png' %}"
+            alt="Profile Picture" class="profile-pic"><br>
+          {% endif %}
+        </div>
+        <div class="row button-margin">
+          {% if user.username != request.user.username %}
+          {% if user_follow_status %}
+          <a href="{% url 'follow_user' user %}"
+            class="btn btn-dark profile-button auto-margin"
+            role="button">Unfollow</a>
+          {% else %}
+          <a href="{% url 'follow_user' user %}"
+            class="btn btn-dark profile-button auto-margin"
+            role="button">Follow</a>
+          {% endif %}
+          {% endif %}
         </div>
       </div>
-      <div>
-        {% if user.profile.bio|length > 0 %}
-        <hr>
-        {{ user.profile.bio }}
-        {% endif %}
-        <hr>
-      </div>
-      <!-- List of users posts -->
-      <div class='row card-group auto-margin'>
-        {% for post in user_posts %}
-        <div class="col-12 col-md-6 col-lg-4 post-spacing">
-          <div class="card h-100">
-            <div class="card-body">
-              <div class="post-spacing">
-                <a href="{{ post.get_absolute_url }}" class="post-spacing">
-                  {% if user.profile.profile_pic %}
-                  <img src="{{ user.profile.profile_pic.url }}"
-                    class="post-avatar">
-                    {% else %}
-                    <img src="{% static 'images/default_profile_pic.png' %}"
-                    alt="Profile Picture" class="post-avatar">
-                  {% endif %}
-                  {{ post.user }}
-                </a>
-              </div>
-              <div class="card-img-size">
-                <div class="card-h-100">
-                  <a href="{{ post.get_absolute_url }}" class="card-h-100">
-                    <img src="{{ post.image.url }}" class="post-pic">
-                  </a>
-                </div>
-              </div>
-            </div>
-            <div class="card-footer">
-              <small class="text-muted">Posted:
-                {{ post.created_date }}</small><br>
-              <small class="text-muted">Likes: {{ post.likes }}</small>
-            </div>
-          </div>
+      <div class="col-5 user-info-pos">
+        <div class="row user-info-font">
+          <p>Post count: {{ user_post_count }}</p>
         </div>
-        {% empty %}
-        <p>
-          NO POSTS YET
-        </p>
-        {% endfor %}
+        <a href="{% url 'following_list' user %}">
+        <div class="row user-info-font">
+          <p>Following: {{ user_following_count }}</p>
+        </div>
+        </a>
+        <div class="row user-info-font">
+          <p>Followers: {{ user_followers_count }}</p>
+        </div>
       </div>
     </div>
+    <div>
+      {% if user.profile.bio|length > 0 %}
+      <hr>
+      {{ user.profile.bio }}
+      {% endif %}
+      <hr>
+    </div>
+    <!-- List of users posts -->
+    <div class='row card-group auto-margin'>
+      {% for post in user_posts %}
+      <div class="col-12 col-md-6 col-lg-4 post-spacing">
+        <div class="card h-100">
+          <div class="card-body">
+            <div class="post-spacing">
+              <a href="{{ post.get_absolute_url }}" class="post-spacing">
+                {% if user.profile.profile_pic %}
+                <img src="{{ user.profile.profile_pic.url }}"
+                  class="post-avatar">
+                {% else %}
+                <img src="{% static 'images/default_profile_pic.png' %}"
+                  alt="Profile Picture" class="post-avatar">
+                {% endif %}
+                {{ post.user }}
+              </a>
+            </div>
+            <div class="card-img-size">
+              <div class="card-h-100">
+                <a href="{{ post.get_absolute_url }}" class="card-h-100">
+                  <img src="{{ post.image.url }}" class="post-pic">
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="card-footer">
+            <small class="text-muted">Posted:
+              {{ post.created_date }}</small><br>
+            <small class="text-muted">Likes: {{ post.likes }}</small>
+          </div>
+        </div>
+      </div>
+      {% empty %}
+      <p>
+        NO POSTS YET
+      </p>
+      {% endfor %}
+    </div>
   </div>
+</div>
 
 
-  {% endblock %}
+{% endblock %}
