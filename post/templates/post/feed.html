@@ -1,24 +1,38 @@
 <!-- create followed accounts feed here-->
 {% extends "base.html" %}
 
+{% load static %}
+
 {% block title %}User feed{% endblock %}
 
 {% block content %}
 <div class="container form-style">
   <div class="row">
-    <div class="container text-center">
-      <h1>Latest Posts</h1>
+    <div class="container">
+      <h1 class="text-center btm-margin">Followed accounts latest posts</h1>
       <div class='row card-group auto-margin'>
         {% for post in followed_user_posts %}
         <div class="col-12 col-md-6 col-lg-4 post-spacing">
           <div class="card h-100">
             <div class="card-body">
-              <a href="{{ user.get_absolute_url }}">
-                {{ post.user }}
-              </a>
-              <a href="{{ post.get_absolute_url }}">
-                <img src="{{ post.image.url }}" class="post-pic">
-              </a>
+              <div class="post-spacing">
+                <a href="{{ post.get_absolute_url }}" class="post-spacing">
+                  {% if user.profile.profile_pic %}
+                  <img src="{{ user.profile.profile_pic.url }}" class="post-avatar">
+                  {% else %}
+                  <img src="{% static 'images/default_profile_pic.png' %}"
+                    alt="Profile Picture" class="post-avatar">
+                  {% endif %}
+                  {{ post.user }}
+                </a>
+              </div>
+              <div class="card-img-size">
+                <div class="card-h-100">
+                  <a href="{{ post.get_absolute_url }}" class="card-h-100">
+                    <img src="{{ post.image.url }}" class="post-pic">
+                  </a>
+                </div>
+              </div>
             </div>
             <div class="card-footer">
               <small class="text-muted">Posted:
@@ -27,10 +41,12 @@
             </div>
           </div>
         </div>
+        {% empty %}
+        <div>
+          <p>
+            NO POSTS YET
+          </p>
+        </div>
         {% endfor %}
       </div>
-    </div>
-  </div>
-</div>
-
-{% endblock %}
+      {% endblock %}

@@ -44,14 +44,14 @@
           <p>Post count: {{ user_posts_count }}</p>
         </div>
         <a href="{% url 'following_list' user %}">
-        <div class="row user-info-font">
-          <p>Following: {{ user_following_count }}</p>
-        </div>
+          <div class="row user-info-font">
+            <p>Following: {{ user_following_count }}</p>
+          </div>
         </a>
         <a href="{% url 'followers_list' user %}">
-        <div class="row user-info-font">
-          <p>Followers: {{ user_followers_count }}</p>
-        </div>
+          <div class="row user-info-font">
+            <p>Followers: {{ user_followers_count }}</p>
+          </div>
         </a>
       </div>
     </div>
@@ -109,10 +109,12 @@
       </div>
       {% empty %}
       <p>
-        NO POSTS YET
+        <div>
+          NO POSTS YET
       </p>
-      {% endfor %}
     </div>
+    {% endfor %}
   </div>
+</div>
 </div>
 {% endblock %}
