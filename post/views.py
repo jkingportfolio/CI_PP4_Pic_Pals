@@ -35,11 +35,9 @@ View to edit post caption of logged in user
 @login_required()
 def edit_post(request, id):
     post = Post.objects.get(id=id)
-
     if not request.user == post.user:
         messages.error(request, 'Sorry, you do not have permission to do that.')
         return redirect(reverse('dashboard'))
-
     if request.method == 'POST':
         post_form = EditPost(request.POST, instance=post)
         if post_form.is_valid():

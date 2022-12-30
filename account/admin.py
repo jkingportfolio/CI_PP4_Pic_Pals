@@ -8,7 +8,7 @@ Admin class for a users profile object
 """ 
 @admin.register(Profile)
 class ProfileAdmin(admin.ModelAdmin):
-    fields = ['user', 'dob', 'profile_pic', 'bio']
+    fields = ['user', 'date_of_birth', 'profile_pic', 'bio']
     raw_id_fields = ['user']
 
 """

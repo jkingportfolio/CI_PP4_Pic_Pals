@@ -43,4 +43,4 @@ A class for updating user profile details
 class EditProfile(forms.ModelForm):
     class Meta:
         model = Profile
-        fields = ['profile_pic', 'dob', 'bio']
+        fields = ['profile_pic', 'date_of_birth', 'bio']
