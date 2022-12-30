@@ -11,7 +11,7 @@
     <div class="card h-100">
       <div class="card-body">
         <div class="row">
-          <div class="col">
+          <div class="col-6">
             <div class="row post-max-content">
               <a href="{{ user.get_absolute_url }}">
                 {% if user.profile.profile_pic %}
@@ -27,13 +27,11 @@
               </a>
             </div>
           </div>
-          <div class="col">
-          </div>
           {% if request.user == post.user %}
-          <div class="col del-post-btn">
+          <div class="col-3 del-post-btn">
             <a href="{% url 'posts:edit_post' post.id %}">Edit</a>
           </div>
-          <div class="col del-post-btn">
+          <div class="col-3 del-post-btn">
             <a href="{% url 'posts:post_delete' post.id %}">Delete</a>
           </div>
           {% endif %}
