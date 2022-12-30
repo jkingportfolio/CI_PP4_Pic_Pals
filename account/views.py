@@ -176,7 +176,6 @@ def follow_user(request, user_name):
 
 @login_required
 def following_list(request, username):
-    # # code to generate list of following accounts
     user = get_object_or_404(User, username=username, is_active=True)
     print(f'User who owns following list: {user.username}')
     user_following_list = Follow.objects.filter(user=user)
@@ -187,10 +186,18 @@ def following_list(request, username):
     }
     return render(request, 'account/user/following_list.html', context)
 
+@login_required
+def follower_list(request, username):
+    user = get_object_or_404(User, username=username, is_active=True)
+    print(f'User who owns followers list: {user.username}')
+    user_followers_list = Follow.objects.filter(followed_account=user)
+    print(f'Followers list: {user_followers_list}')
+    context = {
+        'user': user,
+        'user_followers_list': user_followers_list
+    }
+    return render(request, 'account/user/followers_list.html', context)
 
-# @login_required
-# def following_list(request):
-#     # code to generate list of following accounts
 
 @login_required
 def search_users(request):

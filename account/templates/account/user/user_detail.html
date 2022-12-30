@@ -47,9 +47,11 @@
           <p>Following: {{ user_following_count }}</p>
         </div>
         </a>
+        <a href="{% url 'followers_list' user %}">
         <div class="row user-info-font">
           <p>Followers: {{ user_followers_count }}</p>
         </div>
+        </a>
       </div>
     </div>
     <div>

@@ -1,0 +1,39 @@
+<!-- user followers page to be created here-->
+{% extends "base.html" %}
+
+{% load static %}
+
+{% block title %}Followers list{% endblock %}
+
+{% block content %}
+<div class="container form-style">
+  <div class="row">
+    <div class="container text-center top-margin">
+      <h1>{{user.get_username}} is followed by...</h1>
+      <div class="row">
+        <div class='row card-group auto-margin'>
+          {% for follower in user_followers_list %}
+          <div
+            class="col-12 col-md-6 col-lg-4 text-center user-list-margin user-card mx-auto">
+            <div class="card h-100">
+              <div class="card-body">
+                <a href="{{ follower.user.get_absolute_url }}">
+                  {% if follower.user.profile.profile_pic %}
+                  <img src="{{ follower.user.profile.profile_pic.url }}"
+                    alt="Profile Picture" class="profile-pic"><br>
+                  {% else %}
+                  <img src="{% static 'images/default_profile_pic.png' %}"
+                    alt="Profile Picture" class="profile-pic"><br>
+                  {% endif %}
+                  {{ follower.user.get_username }}
+                </a>
+              </div>
+            </div>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+
+  {% endblock %}
