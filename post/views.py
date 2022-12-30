@@ -58,7 +58,6 @@ def edit_post(request, id):
 
     if request.method == 'POST':
         post_form = EditPost(request.POST, instance=post)
-        print(post_form)
         if post_form.is_valid():
             post_form.save()
             post.save()
@@ -90,7 +89,6 @@ def post_detail(request, id):
         liked_by_user = False
     else:
         liked_by_user = True
-    print(liked_by_user)
     context = {
         'post': post,
         'comments': comments,
@@ -191,7 +189,6 @@ def followed_feed(request):
     followed_accounts_current_user = Follow.objects.filter(user=current_user)
     for account in followed_accounts_current_user:
         user_following_feed.append(account.followed_account.username)
-    print(user_following_feed)
     followed_user_posts = Post.objects.filter(
         user__username__in=user_following_feed)
     context = {

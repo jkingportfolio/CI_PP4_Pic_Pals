@@ -1,5 +1,6 @@
 from django.shortcuts import render
 from .forms import ContactForm
+from django.contrib import messages
 
 
 def contact(request):
@@ -21,6 +22,7 @@ def contact(request):
         contact_form = ContactForm(request.POST)
         if contact_form.is_valid():
             contact_form.save()
+            messages.success(request, 'Thank you for your message!')
             form_submit = True
     context = {
         'contact_form': contact_form,

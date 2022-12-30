@@ -50,7 +50,6 @@ def register(request):
             new_user.set_password(user_form.cleaned_data['password'])
             new_user.save()
             Profile.objects.create(user=new_user)
-            print('account created')
             return render(request, 'account/register_success.html', {'new_user': new_user})
     else:
         user_form = Registration()
@@ -123,7 +122,6 @@ View to return all details of a user (viewing, not logged in as)
 @login_required
 def user_detail(request, username):
     user = get_object_or_404(User, username=username, is_active=True)
-    print(f'user_detail user is: {user}')
     user_posts = Post.objects.filter(user=user)
     user_post_count = user_posts.count()
     user_followers = Follow.objects.filter(followed_account=user)
@@ -131,10 +129,6 @@ def user_detail(request, username):
     user_following_list = Follow.objects.filter(user=user)
     user_following_count = Follow.objects.filter(user=user).count()
     user_followers_list = Follow.objects.filter(followed_account=user)
-    print(f'This user is following users: {user_following_list}')
-    print(f'This user follows {user_following_count} users.')
-    print(f'This user has {user_followers_count} followers.')
-    print(f'user_detail user_followers_list is: {user_followers_list}')
     user_follow_status = False
     if Follow.objects.filter(user=request.user, followed_account=user).exists():
         user_follow_status = True
@@ -159,16 +153,12 @@ View to follow a user
 @login_required
 def follow_user(request, user_name):
     user_to_follow = User.objects.get(username=user_name)
-    print(f'{request.user} Is away to follow: {user_to_follow}')
     current_user = request.user
-    print(f'Logged in as: {current_user}')
     get_user = User.objects.get(username=current_user)
-    print(f'Get user: {get_user}')
     follow_status, created = Follow.objects.get_or_create(
         user=get_user, followed_account=user_to_follow)
     if user_to_follow.username != current_user.username:
         if not created:
-            print(follow_status)
             follow_status.delete()
             messages.success(
                 request, f'Unfollowed {user_to_follow} successfully')
@@ -182,7 +172,6 @@ def follow_user(request, user_name):
 @login_required
 def search_users(request):
     query = request.GET.get('p')
-    print(query)
     user_search_results = User.objects.filter(username__icontains=query)
     context = {
             'user_search_results': user_search_results,
