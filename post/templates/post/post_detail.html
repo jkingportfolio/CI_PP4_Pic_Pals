@@ -12,9 +12,15 @@
       <div class="card-body">
         <div class="row">
           <div class="col">
+            <a href="{{ user.get_absolute_url }}">
+            {% if user.profile.profile_pic %}
             <a href="{{ post.get_absolute_url }}" class="post-spacing">
               <img src="{{ post.user.profile.profile_pic.url }}"
                 class="post-avatar">
+                {% else %}
+                <img src="{% static 'images/default_profile_pic.png' %}"
+                  alt="Profile Picture" class="post-avatar"><br>
+                {% endif %}
               {{ post.user }}
             </a>
           </div>
