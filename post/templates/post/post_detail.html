@@ -12,17 +12,22 @@
       <div class="card-body">
         <div class="row">
           <div class="col">
-            <a href="{{ user.get_absolute_url }}">
-            {% if user.profile.profile_pic %}
-            <a href="{{ post.get_absolute_url }}" class="post-spacing">
-              <img src="{{ post.user.profile.profile_pic.url }}"
-                class="post-avatar">
-                {% else %}
-                <img src="{% static 'images/default_profile_pic.png' %}"
-                  alt="Profile Picture" class="post-avatar"><br>
-                {% endif %}
-              {{ post.user }}
-            </a>
+            <div class="row post-max-content">
+              <a href="{{ user.get_absolute_url }}">
+                {% if user.profile.profile_pic %}
+                <a href="{{ post.get_absolute_url }}" class="post-spacing">
+                  <img src="{{ post.user.profile.profile_pic.url }}"
+                    class="post-avatar">
+                  {% else %}
+                  <img src="{% static 'images/default_profile_pic.png' %}"
+                    alt="Profile Picture" class="post-avatar">
+                  {% endif %}
+                  {{ post.user }}
+                </a>
+              </a>
+            </div>
+          </div>
+          <div class="col">
           </div>
           {% if request.user == post.user %}
           <div class="col del-post-btn">
@@ -66,7 +71,7 @@
     <hr>
     <div>
       {% with comments.count as total_comments %}
-      <h2>
+      <h2 class="comment-title">
         {{ total_comments }} comment{{ total_comments|pluralize }}
       </h2>
       {% endwith %}
@@ -74,21 +79,20 @@
         <div>
           {% for comment in comments %}
           <div class="row">
-            <div class="col-10">
+            <div class="row-12">
               <a href="{{ comment.user.get_absolute_url }}">
-              {% if comment.user.profile.profile_pic %}
-              <img src="{{ comment.user.profile.profile_pic.url }}"
-                class="post-avatar">
-              {% else %}
-              <img src="{% static 'images/default_profile_pic.png' %}"
-                alt="Profile Picture" class="post-avatar">
-              {% endif %}
-              {{ comment.user }}
-            </div>
-            </a>
-            {% if request.user == comment.user or request.user == post.user %}
-            <div class="col-2 comment-delete-btn">
-              <a href="{% url 'posts:comment_delete' comment.id %}">
+                {% if comment.user.profile.profile_pic %}
+                <img src="{{ comment.user.profile.profile_pic.url }}"
+                  class="post-avatar">
+                {% else %}
+                <img src="{% static 'images/default_profile_pic.png' %}"
+                  alt="Profile Picture" class="post-avatar">
+                {% endif %}
+                {{ comment.user }}
+              </a>
+              {% if request.user == comment.user or request.user == post.user %}
+              <a href="{% url 'posts:comment_delete' comment.id %}"
+                class="comment-delete-btn">
                 <img src="/static/images/delete.png" class="delete-btn">
               </a>
             </div>
@@ -99,8 +103,8 @@
               {{ comment.created }}
               {{ comment.comment_body|linebreaks }}
               {{ comment.created_on }}
-              <hr>
             </div>
+            <hr>
           </div>
           {% empty %}
           <p>There are no comments</p>

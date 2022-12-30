@@ -53,6 +53,10 @@ a {
     max-width: 500px;
 }
 
+.post-max-content {
+    width: max-content;
+}
+
 .profile-button {
     width: 160px;
     margin-bottom: 10px;
@@ -69,6 +73,7 @@ a {
 
 .del-post-btn {
     text-align: end;
+    margin: auto;
 }
 
 .user-name-font {
@@ -195,7 +200,11 @@ a {
 .comment-delete-btn {
     position: relative;
     right: 10px;
-    top: 2px;
+    top: -5px;
+}
+
+.comment-title {
+    text-decoration: underline;
 }
 
 .comment-body {
