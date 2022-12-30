@@ -24,10 +24,19 @@ def contact(request):
             contact_form.save()
             messages.success(request, 'Thank you for your message!')
             form_submit = True
-    context = {
-        'contact_form': contact_form,
-        'form_submit': form_submit
-    }
-
+            context = {
+                'contact_form': contact_form,
+                'form_submit': form_submit
+            }
+            return render(request, 'contact/contact_success.html', context)
+    else:
+        contact_form = ContactForm(initial={
+                    'name': request.user.first_name,
+                    'email': request.user.email,
+                }
+            )
+        context = {
+                'contact_form': contact_form,
+            }
     return render(request, 'contact/contact.html', context)
 
