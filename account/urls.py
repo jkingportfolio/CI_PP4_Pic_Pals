@@ -1,6 +1,14 @@
+"""
+A module for urls
+"""
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd Party
 from django.urls import path, include
 from django.contrib.auth import views as auth_views
+# Internal
 from . import views
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 urlpatterns = [
     # Using djangos prefab authentication views
@@ -23,4 +31,5 @@ urlpatterns = [
     path('follow-user/<str:user_name>/', views.follow_user, name='follow_user'),
     path('users/<username>/following/', views.following_list, name='following_list'),
     path('users/<username>/followers/', views.follower_list, name='followers_list'),
-]
+    ]
+

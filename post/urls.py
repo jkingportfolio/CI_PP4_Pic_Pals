@@ -1,6 +1,15 @@
+"""
+A module for urls
+"""
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd Party
 from django.urls import path
 from django.contrib.auth import views as auth_views
+# Internal
 from . import views
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
 
 app_name = 'posts'
 
@@ -15,4 +24,3 @@ urlpatterns = [
     path('feed/', views.followed_feed, name='followed_feed'),
     path('post/edit-post/<str:id>', views.edit_post, name='edit_post'),
     ]
-    
