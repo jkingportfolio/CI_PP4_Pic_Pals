@@ -41,8 +41,13 @@
         <img src="{{ post.image.url }}" class="post-pic">
       </div>
       <div class="card-footer">
+        {% if post.caption_edited %}
+        <small class="text-muted">Caption (edited on {{post.caption_edited_time}}):
+          <br>{{ post.caption }}</small><br>
+        {% else %}
         <small class="text-muted">Caption:
           {{ post.caption }}</small><br>
+        {% endif %}
         <small class="text-muted">Posted:
           {{ post.created_date|date:"d M Y" }}</small><br>
       </div>

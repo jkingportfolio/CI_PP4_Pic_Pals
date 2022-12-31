@@ -17,6 +17,7 @@ class Post(models.Model):
     image = CloudinaryField('image', default='placeholder')
     caption = models.TextField(default='Please enter caption.')
     caption_edited = models.BooleanField(default=False)
+    caption_edited_time = models.DateTimeField(blank=True, null=True)
     likes = models.IntegerField(default=0)
 
     class Meta:

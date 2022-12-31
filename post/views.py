@@ -5,6 +5,7 @@ from .models import Post, Like, Comment
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 from account.models import Follow
+import datetime
 
 
 """
@@ -44,6 +45,7 @@ def edit_post(request, id):
         if post_form.is_valid():
             post_form.save()
             post.caption_edited = True
+            post.caption_edited_time = datetime.datetime.now()
             print(f'The status of this post edit is now: {post.caption_edited}')
             post.save()
             messages.success(request, 'Post caption updated successfully.')
