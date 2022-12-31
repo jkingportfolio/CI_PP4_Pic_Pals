@@ -35,6 +35,7 @@ View to edit post caption of logged in user
 @login_required()
 def edit_post(request, id):
     post = Post.objects.get(id=id)
+    print(f'The edit status of this post is currently: {post.caption_edited}')
     if not request.user == post.user:
         messages.error(request, 'Sorry, you do not have permission to do that.')
         return redirect(reverse('dashboard'))
@@ -42,8 +43,10 @@ def edit_post(request, id):
         post_form = EditPost(request.POST, instance=post)
         if post_form.is_valid():
             post_form.save()
+            post.caption_edited = True
+            print(f'The status of this post edit is now: {post.caption_edited}')
             post.save()
-            messages.success(request, 'Post caption updated successfully')
+            messages.success(request, 'Post caption updated successfully.')
         else:
             messages.error(request, 'Error updating post caption.')
     else:

@@ -16,6 +16,7 @@ class Post(models.Model):
     user = models.ForeignKey(settings.AUTH_USER_MODEL, related_name='user_post', on_delete=models.CASCADE)
     image = CloudinaryField('image', default='placeholder')
     caption = models.TextField(default='Please enter caption.')
+    caption_edited = models.BooleanField(default=False)
     likes = models.IntegerField(default=0)
 
     class Meta:
