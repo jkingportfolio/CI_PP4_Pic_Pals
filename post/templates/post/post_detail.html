@@ -32,7 +32,12 @@
             <a href="{% url 'posts:edit_post' post.id %}">Edit</a>
           </div>
           <div class="col-3 del-post-btn">
-            <a href="{% url 'posts:post_delete' post.id %}">Delete</a>
+            <button id="post-delete-id">
+              <a href="{% url 'posts:post_delete' post.id %}">
+                Delete
+              </a>
+            </button>
+
           </div>
           {% endif %}
         </div>
@@ -42,7 +47,8 @@
       </div>
       <div class="card-footer">
         {% if post.caption_edited %}
-        <small class="text-muted">Caption (edited on {{post.caption_edited_time}}):
+        <small class="text-muted">Caption (edited on
+          {{post.caption_edited_time}}):
           <br>{{ post.caption }}</small><br>
         {% else %}
         <small class="text-muted">Caption:
