@@ -12,7 +12,7 @@ from .models import Post, Like, Comment
 class PostAdmin(admin.ModelAdmin):
     """
     Admin class for a post
-    """ 
+    """
     list_display = ['image', 'created_date']
     list_filter = ['created_date']
 
