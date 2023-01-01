@@ -1,23 +1,29 @@
+"""
+A module for views of the account app
+"""
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.http import HttpResponse
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
-from .forms import LoginDetails, Registration, Profile, EditUser, EditProfile
 from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
-from .models import Profile, Follow
-from post.models import Post
 from django.contrib import messages
-
-# Create your views here.
-
-
-"""
-View to log in a user
-"""
+# Internal
+from .models import Profile, Follow
+from .forms import LoginDetails, Registration, Profile, EditUser, EditProfile
+from post.models import Post
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 def user_login(request):
+    """
+    A function based view for the authenticating and 
+    logging in a user with the user of a form requesting
+    username and password
+    """
     if request.method == 'POST':
         form = LoginDetails(request.POST)
         if form.is_valid():
@@ -38,12 +44,11 @@ def user_login(request):
     return render(request, 'account/login.html', {'form': form})
 
 
-"""
-View to register an account
-"""
-
-
 def register(request):
+    """
+    A function based view for the register page with
+    a form to take the new users details
+    """
     if request.method == 'POST':
         user_form = Registration(request.POST)
         if user_form.is_valid():
@@ -61,13 +66,13 @@ def register(request):
     return render(request, 'account/register.html', {'user_form': user_form})
 
 
-"""
-View of logged in users dashboard
-"""
-
-
 @login_required
 def dashboard(request):
+    """
+    A function based view for the logged in users profile 
+    page with a list of their posts, button to add a post, account
+    stats and options to update profile and change password
+    """
     user_object = User.objects.get(username=request.user.username)
     user_profile = Profile.objects.get(user=user_object)
     user = request.user
@@ -85,13 +90,12 @@ def dashboard(request):
     return render(request, 'account/dashboard.html', context)
 
 
-"""
-View to edit profile of logged in user
-"""
-
-
 @login_required()
 def edit_profile(request):
+    """
+    A function based view for the edit profile page with form 
+    to input new profile details
+    """
     if request.method == 'POST':
         user_form = EditUser(instance=request.user, data=request.POST)
         profile_form = EditProfile(
@@ -108,24 +112,24 @@ def edit_profile(request):
     return render(request, 'account/edit_profile.html', {'user_form': user_form, 'profile_form': profile_form})
 
 
-"""
-View that returns all registered users
-"""
-
-
 @login_required
 def site_users(request):
+    """
+    A function based view for the people page which will return a list of 
+    all pic pals users and a search bar for the ability to search for users
+    """
     users = User.objects.all().order_by('username')
     return render(request, 'account/user/user_list.html', {'users': users})
 
 
-"""
-View to return all details of a user (viewing, not logged in as)
-"""
-
 # check user followers var if used, duplicate?
 @login_required
 def user_detail(request, username):
+    """
+    A fucntion based view for the user page of another user
+    which will display all users posts, profile stat and the
+    ability to follow the account
+    """
     user = get_object_or_404(User, username=username, is_active=True)
     user_posts = Post.objects.filter(user=user)
     user_post_count = user_posts.count()
@@ -150,13 +154,12 @@ def user_detail(request, username):
     return render(request, 'account/user/user_detail.html', context)
 
 
-"""
-View to follow a user
-"""
-
-
 @login_required
 def follow_user(request, user_name):
+    """
+    A function based view to allow a user to follow and
+    unfollow another pic pal user
+    """
     user_to_follow = User.objects.get(username=user_name)
     current_user = request.user
     get_user = User.objects.get(username=current_user)
@@ -176,6 +179,10 @@ def follow_user(request, user_name):
 
 @login_required
 def following_list(request, username):
+    """
+    A function based view for the following list page which will
+    display a list of all users the current user follows
+    """
     user = get_object_or_404(User, username=username, is_active=True)
     print(f'User who owns following list: {user.username}')
     user_following_list = Follow.objects.filter(user=user)
@@ -188,6 +195,10 @@ def following_list(request, username):
 
 @login_required
 def follower_list(request, username):
+    """
+    A function based view for the follower list page which will
+    display a list of all users the current user is followed by
+    """
     user = get_object_or_404(User, username=username, is_active=True)
     print(f'User who owns followers list: {user.username}')
     user_followers_list = Follow.objects.filter(followed_account=user)
@@ -201,6 +212,10 @@ def follower_list(request, username):
 
 @login_required
 def search_users(request):
+    """
+    A function based view for the ability to search for users from
+    the people page
+    """
     query = request.GET.get('p')
     user_search_results = User.objects.filter(username__icontains=query)
     context = {

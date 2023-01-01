@@ -1,20 +1,27 @@
+"""
+A module for views of the post app
+"""
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.shortcuts import render, get_object_or_404, redirect, reverse
-from .forms import PostImageForm, PostCommentForm, EditPost
 from django.contrib.auth.decorators import login_required
-from .models import Post, Like, Comment
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from account.models import Follow
 import datetime
-
-
-"""
-View to create a post
-"""
+# Internal
+from .models import Post, Like, Comment
+from .forms import PostImageForm, PostCommentForm, EditPost
+from account.models import Follow
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 @login_required
 def create_post(request):
+    """
+    A function based view for the create post page in which
+    a user can upload an image alongside a caption
+    """
     if request.method == 'POST':
         form = PostImageForm(request.POST, request.FILES)
         if form.is_valid():
@@ -29,12 +36,12 @@ def create_post(request):
     return render(request, 'post/create_post.html', {'form': form})
 
 
-"""
-View to edit post caption of logged in user
-"""
-
 @login_required()
 def edit_post(request, id):
+    """
+    A function based view to display a form to allow the owner
+    of a post to edit the caption of the post
+    """
     post = Post.objects.get(id=id)
     if not request.user == post.user:
         messages.error(request, 'Sorry, you do not have permission to do that.')
@@ -58,13 +65,12 @@ def edit_post(request, id):
     return render(request, 'post/edit_post.html', context)
 
 
-"""
-View to display post details
-"""
-
-
 @login_required()
 def post_detail(request, id):
+    """
+    A function based view to display a post and allow users
+    the chance to add a comment
+    """
     user = request.user
     post = get_object_or_404(Post, id=id)
     comments = post.comments.filter(visible=True)
@@ -83,26 +89,24 @@ def post_detail(request, id):
     return render(request, 'post/post_detail.html', context)
 
 
-"""
-View to return all current users posts
-"""
-
-
 @login_required()
 def current_user_posts(request):
+    """
+    A function based view to view a list of all the current
+    users posts
+    """
     user = request.user
     user_posts = Post.objects.filter(user=user)
     post_count = user_posts.count()
     return render(request, 'post/user_posts.html', {'user_posts': user_posts, 'post_count': post_count})
 
 
-"""
-View to like a post
-"""
-
-
 @login_required
 def post_like(request, post):
+    """
+    A function based view to allow the ability to 
+    like an unlike a post
+    """
     user = request.user
     post = Post.objects.get(id=post)
     like_status = Like.objects.filter(post=post, user=user).first()
@@ -117,13 +121,12 @@ def post_like(request, post):
     return redirect(request.META.get('HTTP_REFERER'))
 
 
-"""
-View to delete a post of the currently logged in user
-"""
-
-
 @login_required
 def post_delete(request, id):
+    """
+    A function based view to allow a user to delete their
+    own posts
+    """
     post = Post.objects.get(id=id)
     if request.user == post.user:
         post.delete()
@@ -132,13 +135,12 @@ def post_delete(request, id):
     return redirect(request.META.get('HTTP_REFERER'))
 
 
-"""
-View to add a comment to a post
-"""
-
-
 @login_required
 def post_comment(request, id):
+    """
+    A function based view to allow a user to add a comment
+    to a post
+    """
     user = request.user
     post = get_object_or_404(Post, id=id)
     comment = None
@@ -153,13 +155,12 @@ def post_comment(request, id):
                                                        'comment': comment})
 
 
-"""
-View to delete a comment created but the currently logged in user
-"""
-
-
 @login_required
 def comment_delete(request, id):
+    """
+    A function based view to allow a user to delete their comment
+    and any comment if the user owns the post
+    """
     comment = Comment.objects.get(id=id)
     post = comment.post
     if request.user == comment.user or request.user == post.user:
@@ -170,6 +171,10 @@ def comment_delete(request, id):
 
 @login_required
 def followed_feed(request):
+    """
+    A function based view to display the current users feed
+    which consists of all posts of the accounts followed
+    """
     user_following_feed = []
     followed_user_posts = []
     current_user = request.user

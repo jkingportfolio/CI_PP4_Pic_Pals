@@ -1,9 +1,21 @@
+"""
+A module for views of the contact app
+"""
+# Imports
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+# 3rd party:
 from django.shortcuts import render
-from .forms import ContactForm
 from django.contrib import messages
+# Internal
+from .forms import ContactForm
+# ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
 def contact(request):
+    """
+    A function based view for the contact page with form to get
+    contact details and reason for contacting
+    """
     contact_form = ContactForm()
     form_submit = False
     if request.method == 'GET':
@@ -39,4 +51,3 @@ def contact(request):
                 'contact_form': contact_form,
             }
     return render(request, 'contact/contact.html', context)
-
