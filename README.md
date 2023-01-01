@@ -17,7 +17,6 @@ The Pic Pals Social website has been developed to provide users the chance to po
     2. [User Requirements and Expectations](#user-requirements-and-expectations)
     3. [User Stories](#user-stories)
     4. [Site Owner Stories](#site-owner-stories)
-    5. [User Manual](#user-manual)
 3. [Technical Design](#technical-design)
     1. [Structure](#structure)
     2. [Flowchart](#flowchart)
@@ -79,68 +78,58 @@ The Pic Pals Social website has been developed to provide users the chance to po
 
 ### User stories
 
-1. As a user, I want to 
-2. As a user, I want to 
-3. As a user, I want to 
-4. As a user, I want to 
-5. As a user, I want to 
-6. As a user, I want to 
-7. As a user, I want to 
-8. As a user, I want to 
-9. As a user, I want to 
-10. As a user, I want to 
-11. As a user, I want to 
-12. As a user, I want to 
-13. As a user, I want to 
-14. As a user, I want to 
+1. As a user, I want to use the navigation bar so that i can seamlessly navigate around the app.
+2. As a user, I want to see a visual indicator of having like a post so that i can tell if I have previously like that post.
+3. As a user, I want to like and unlike posts so that *i can show my appreciation of another users post.
+4. As a user, I want to delete my posts so that i can permanently remove posts I do not wish to keep
+5. As a user, I want to edit my posts so that i can correct spelling mistakes or hashtags I may have enter into comments.
+6. As a user, I want to view post comments so that i can fulfill the aim of the app
+7. As a user, I want to comment on other posts so that i can interact with other users
+8. As a user, I want to manage my posts so that i can add, edit or delete posts as needed.
+9. As a user, I want to request a password so that i can log back into my account if i have forgotten my password.
+10. As a user, I want to log in so that i can access my account, view my profile, pictures and other users pictures.
+11. As a user, I want to log out so that other users using the same device cannot access my account.
+12. As a new user, I want to register an account with Pic Pals so that i can become a member and use the app as intended.
+13. As a user, I want to change my password so that i can secure my account.
+14. As a user, I want to have a profile page so that I and other users can view my list of posts
+15. As a user, I want to update my profile so that my profile can stay up to date with my latest information.
+16. As a user, I want to add a profile picture so that my followers can easily recognize my posts or comments
+17. As a user, I want to view the Home Page so that i can understand what the website is about, create an account or log in.
+18. As a user, I want to view how many likes a post has so that i can gauge how popular a post is
+19. As a user, I want to add a bio to my profile page so that other members can learn more about me
+20. As a user, I want to follow other accounts so that i can view their posts on my feed
+21. As a user, I want to fill in a help form so that i can enquire about issues I may have regarding the app
+22. As a user, I want to change my email address so that i can maintain the same account if I change email address
+23. As a user, I want to receive feedback so that i can confirm the help form submission was successful or not.
+24. As a user, I want to scroll through the latest images on my feed so that i can keep up to date with accounts I follow
+25. As a user, I want to browse my list of followed accounts so that i can view that particular user account
+26. As a user, I want to see a visual indicator of following an account so that i can tell if I currently follow that account.
+
 
 
 ### Site Owner Stories
 
-15. As the site owner, I would want users to 
-16. As the site owner, I would want to 
-17. As the site owner, I would want to 
-18. As the site owner, I would want to 
-19. As the site owner, I would want 
-20. As the site owner, I would want 
-21. As the site owner, I would want 
-22. As the site owner, I would want 
+29. As the site owner, I would want to validate users data entries on sign up **so that users can create a log in which meets the requirements.
+30. As the site owner, I would want to ensure only logged in users can post from their account and edit their profile so that data privacy is ensured.
+31. As the site owner, I would want to have the ability to remove posts so that i can keep the app clean and friendly
+32. As the site owner, I would want the site to be fully responsive so that user can use it across multiple devices and create a good user experience.
+33. As the site owner, I would want to use the app search function so that i can search for particular posts by hashtags or search for users by their user name.
+34. As the site owner, I would want 404 and 500 error pages so that users do not have to use the back navigation button if an error occurs.
 
-### User Manual
 
-<details><summary>Click here for app use instructions</summary>
-
-#### Overview
-
-Pic Pals is for users who wish “” and also for “”.
-
-#### Welcome Page
-
-Purpose: To greet users.
-
-Description: On the Welcome page users are 
-
-- Yes 
-- No
-
-Operation: User keyboard input. Selecting Yes will take the user to the Main Screen whilst selecting No will exit the app.
-
-#### Main Page
-
-Purpose: To provide users with a range of options.
-
-Description: On the Main page users are be provided with 4 options.
-
-- Login 
-- Create an account
-- Continue as guest
-- Return to main menu
-
-Operation: User keyboard input.
-
-</details>
 
 ## Technical Design
+
+### Colours
+
+The colour scheme used in this project was chosen with simplicity in mind 
+
+<details>
+<summary>Colour Pallete</summary>
+<img src="docs/flowcharts/flow-chart.png">
+</details>
+
+### Fonts
 
 ### Structure
 
@@ -166,7 +155,9 @@ This project uses Object Orientated Programming to interact and manipulate the f
 ## Technologies Used
 
 ### Coding Languages
-- Python 3 - Used to create the command line based app.
+- HTML
+- CSS
+- Python 3
 
 ### Frameworks and Tools
 - Git - Used for version control.
@@ -174,7 +165,7 @@ This project uses Object Orientated Programming to interact and manipulate the f
 - Gitpod - Used to develop and test code.
 - Heroku Platform - Used to deploy the live project.
 - PEP8 - Used to validate code against Python conventions.
-- <> - <>
+- Django - <>
 
 ## Libraries
 
