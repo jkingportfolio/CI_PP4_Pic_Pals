@@ -48,36 +48,34 @@ The Pic Pals Social website has been developed to provide users the chance to po
 
 ### User Goals
 
-- 
-- 
-- 
-- 
-- 
--
-- 
+- To be able to share pictures on the pic pals site
+- To be able to comment on other users posts
+- To be able to use CRUD functionality whilst logged onto the site 
 
 ### Site Owner Goals
 
-- 
-- 
-- 
-- 
-- 
-- 
+- To provide a platform in which users can share pictures
+- To provide an enjoyable user experience which would make users wish to return to the site
+- To have the ability to be given feedback via a contact form
+- To have the ability to connect with site users via GitHub and LinkedIn via links in the sites footer
 
 ## User Experience
 
 ### Target Audience
 
-- 
-- 
+- People who enjoy photography and would like to share their images
+- People who enjoy photography and would like to view other peoples images
+- People who wish to find an easy way to share images with family and friends
+- People who are looking for a way to interact with other people over the internet
 
 ### User Requirements and Expectations
 
-- 
-- 
-- 
-- 
+- A great site which provides a high level of interactiveness between users
+- Links and functions to act as expected
+- Notification to provide feedback on expected function outcomes
+- Simple "to the point" content that a user can easily digest
+- Accessibility for impaired users
+- Responsiveness to allow pleasant use across devices of different screen sizes 
 
 ### User stories
 
