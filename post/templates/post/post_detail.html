@@ -13,9 +13,9 @@
         <div class="row">
           <div class="col-6">
             <div class="row post-max-content">
-              <a href="{{ user.get_absolute_url }}">
-                {% if user.profile.profile_pic %}
-                <a href="{{ post.get_absolute_url }}" class="post-spacing">
+              <a href="{{ post.user.get_absolute_url }}">
+                {% if post.user.profile.profile_pic %}
+                <a href="{{ post.user.get_absolute_url }}" class="post-spacing">
                   <img src="{{ post.user.profile.profile_pic.url }}"
                     class="post-avatar">
                   {% else %}
