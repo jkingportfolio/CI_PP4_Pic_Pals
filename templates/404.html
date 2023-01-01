@@ -1,5 +1,3 @@
-<!-- 404 error page to be created here-->
-
 {% extends "base.html" %}
 
 {% load static %}
@@ -8,6 +6,20 @@
 
 {% block content %}
 
-404 Error
+<div class="container form-style">
+    <h1>
+        404 Error
+    </h1>
+    <h3>
+        Oops, it seems that page does not exist.
+    </h3>
+    <div class="del-post-btn">
+        <button>
+            <a href="{% url 'dashboard' %}">
+                Return home
+            </a>
+        </button>
+    </div>
+</div>
 
 {% endblock %}

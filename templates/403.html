@@ -1,13 +1,25 @@
-<!-- 403 error page to be created here-->
-
 {% extends "base.html" %}
 
 {% load static %}
 
-{% block title %}404 Error{% endblock %}
+{% block title %}403 Error{% endblock %}
 
 {% block content %}
 
-403 Error
+<div class="container form-style">
+    <h1>
+        403 Error
+    </h1>
+    <h3>
+        Forbidden, it seems you do not have access to this page.
+    </h3>
+    <div class="del-post-btn">
+        <button>
+            <a href="{% url 'dashboard' %}">
+                Return home
+            </a>
+        </button>
+    </div>
+</div>
 
 {% endblock %}

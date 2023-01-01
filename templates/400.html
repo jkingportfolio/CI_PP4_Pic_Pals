@@ -1,13 +1,25 @@
-<!-- 400 error page to be created here-->
-
 {% extends "base.html" %}
 
 {% load static %}
 
-{% block title %}404 Error{% endblock %}
+{% block title %}400 Error{% endblock %}
 
 {% block content %}
 
-400 Error
+<div class="container form-style">
+    <h1>
+        400 Error
+    </h1>
+    <h3>
+        Oops, thats an error.
+    </h3>
+    <div class="del-post-btn">
+        <button>
+            <a href="{% url 'dashboard' %}">
+                Return home
+            </a>
+        </button>
+    </div>
+</div>
 
 {% endblock %}

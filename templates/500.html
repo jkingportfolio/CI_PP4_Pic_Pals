@@ -1,13 +1,25 @@
-<!-- 404 error page to be created here-->
-
 {% extends "base.html" %}
 
 {% load static %}
 
-{% block title %}404 Error{% endblock %}
+{% block title %}500 Error{% endblock %}
 
 {% block content %}
 
-500 Error
+<div class="container form-style">
+    <h1>
+        500 - Server Error
+    </h1>
+    <h3>
+        Oops, something went wrong!
+    </h3>
+    <div class="del-post-btn">
+        <button>
+            <a href="{% url 'dashboard' %}">
+                Return home
+            </a>
+        </button>
+    </div>
+</div>
 
 {% endblock %}
