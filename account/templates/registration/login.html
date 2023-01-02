@@ -1,4 +1,3 @@
-<!-- login page to be created here-->
 {% extends "base.html" %}
 
 {% block title %}Log in{% endblock %}
@@ -18,7 +17,7 @@
                 {% csrf_token %}
             </div>
             <input type="hidden" name="next" value="{{ next }}" />
-            <p><input type="submit" value="Log in"></p>
+            <p><input class="btn btn-success" type="submit" value="Log in"></p>
         </form>
         <div>
             <div>

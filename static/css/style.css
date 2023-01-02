@@ -217,6 +217,10 @@ a {
     margin-top: 10px;
 }
 
+.edit-post-btn {
+    width: auto;
+}
+
 .card-image-div {
     height: 250px;
 }

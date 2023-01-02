@@ -29,7 +29,7 @@
             </div>
           </div>
           {% if request.user == post.user %}
-          <div class="col-3 del-post-btn">
+          <div class="col-3 btn btn-dark edit-post-btn">
             <a href="{% url 'posts:edit_post' post.id %}">
               Edit
             </a>
@@ -38,7 +38,7 @@
               <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
                 <!-- <a href="{% url 'posts:post_delete' post.id %}"> -->
                   Delete
-                <!-- </a>                 -->
+                <!-- </a>  -->
               </button>
           </div>
           {% endif %}
@@ -50,7 +50,7 @@
       <div class="card-footer">
         {% if post.caption_edited %}
         <small class="text-muted">Caption (edited on
-          {{post.caption_edited_time}}):
+          {{post.caption_edited_time|date:"d M Y"}}) :
           <br>{{ post.caption }}</small><br>
         {% else %}
         <small class="text-muted">Caption:
