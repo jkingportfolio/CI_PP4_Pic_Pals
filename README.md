@@ -18,9 +18,12 @@ The Pic Pals Social website has been developed to provide users the chance to po
     3. [User Stories](#user-stories)
     4. [Site Owner Stories](#site-owner-stories)
 3. [Technical Design](#technical-design)
-    1. [Structure](#structure)
-    2. [Flowchart](#flowchart)
-    3. [Data Models](#data-models)
+    1. [Colours](#colours)
+    2. [Fonts](#fonts)
+    3. [Structure](#structure)
+    4. [Database](#database)
+    5. [Data Models](#data-models)
+    6. [Wireframes](#wireframes)
 4. [Technologies Used](#technologies-used)
     1. [Coding Languages](#coding-languages)
     2. [Frameworks and Tools](#frameworks-and-tools)
@@ -122,7 +125,7 @@ The Pic Pals Social website has been developed to provide users the chance to po
 
 ### Colours
 
-The colour scheme used in this project was chosen with simplicity in mind 
+The colour scheme used in this project was chosen with simplicity in mind. The colour scheme is used through out all pages to ensure contrast readabilit and an overall good user experience. 
 
 <details>
 <summary>Colour Pallete</summary>
@@ -135,12 +138,12 @@ The colour scheme used in this project was chosen with simplicity in mind
 
 This app was designed using Code Institutes <> Template. The template creates a <>. 
 
-### Flowchart
+### Database
 
 A flowchart was created during the design process to help identify functions that would be required in the Python files.
 
 <details>
-<summary>Flow Chart</summary>
+<summary>Database diagram</summary>
 <img src="docs/flowcharts/flow-chart.png">
 </details>
 
@@ -152,20 +155,36 @@ This project uses Object Orientated Programming to interact and manipulate the f
 - Lists and dictionaries - This project uses list and dictionaries to aid the storage of data from the Google Sheets file to variables and vice versa. Using list comprehension dictionaries are used to validate if a new user name is not already in use, the user input for ordering an item exists and to store/view order records.
 - Google Sheets API - Google Sheets was used in this project to store all required data outwidth the container and provide a level of security in user name and passwords.
 
+### Wireframes
+
 ## Technologies Used
 
 ### Coding Languages
 - HTML
 - CSS
 - Python 3
+- Javascript
 
 ### Frameworks and Tools
 - Git - Used for version control.
 - GitHub - Used to deploy the projects code.
 - Gitpod - Used to develop and test code.
 - Heroku Platform - Used to deploy the live project.
-- PEP8 - Used to validate code against Python conventions.
-- Django - <>
+- Django - Used to 
+- Am i Responsive
+- Balsamiq
+- Boostrap 5
+- Cloudinary
+- Font Awesome
+- Graphviz
+- Google Fonts
+- Validation
+    - WC3 Validator
+    - Jigsaw W3 Validator
+    - Jshint
+    - PEP8 - Used to validate code against Python conventions.
+    - Lighthouse
+    - WAVE Validator
 
 ## Libraries
 
