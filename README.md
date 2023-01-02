@@ -249,25 +249,25 @@ Balsamiq was used to create wireframes of the sites pages
 - Javascript
 
 ### Frameworks and Tools
+- Django 3.2.16 - Used to rapidly develop the site.
 - Git - Used for version control.
 - GitHub - Used to deploy the projects code.
 - Gitpod - Used to develop and test code.
 - Heroku Platform - Used to deploy the live project.
-- Django - Used to 
-- Am i Responsive
-- Balsamiq
-- Boostrap 5
-- Cloudinary
-- Font Awesome
-- Graphviz
-- Google Fonts
+- Am i Responsive - Used to create a mock up image of the site on different screen sizes.
+- Balsamiq - Used to produce wireframes of the site.
+- Boostrap 5 - Used to develop the layout of the site.
+- Cloudinary - Used to store post images.
+- Font Awesome - Used to produce icons on the site.
+- Graphviz - Used to generate pydot file / database diagram image.
+- Google Fonts - Used to import the sites font family.
 - Validation
-    - WC3 Validator
-    - Jigsaw W3 Validator
-    - Jshint
+    - WC3 Validator - Used to validate the HTML code of the site.
+    - Jigsaw W3 Validator- Used to validate the CSS of the site.
+    - Jshint - Used to validate the Javascript of the site.
     - PEP8 - Used to validate code against Python conventions.
-    - Lighthouse
-    - WAVE Validator
+    - Chrome dev tools (Lighthouse) - Used to measure site performance, SEO and accessiblity
+    - WAVE Validator - Used to evaluate site accessibility
 
 ## Libraries
 
