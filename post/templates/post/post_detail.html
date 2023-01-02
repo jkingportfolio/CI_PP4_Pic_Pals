@@ -15,7 +15,8 @@
             <div class="row post-max-content">
               <a href="{{ post.user.get_absolute_url }}">
                 {% if post.user.profile.profile_pic %}
-                <a href="{{ post.user.get_absolute_url }}" class="post-spacing">
+                <a href="{{ post.user.get_absolute_url }}"
+                  class="post-spacing">
                   <img src="{{ post.user.profile.profile_pic.url }}"
                     class="post-avatar">
                   {% else %}
@@ -29,14 +30,16 @@
           </div>
           {% if request.user == post.user %}
           <div class="col-3 del-post-btn">
-            <a href="{% url 'posts:edit_post' post.id %}">Edit</a>
+            <a href="{% url 'posts:edit_post' post.id %}">
+              Edit
+            </a>
           </div>
           <div class="col-3 del-post-btn">
-            <button id="post-delete-id">
-              <a href="{% url 'posts:post_delete' post.id %}">
-                Delete
-              </a>
-            </button>
+              <button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                <!-- <a href="{% url 'posts:post_delete' post.id %}"> -->
+                  Delete
+                <!-- </a>                 -->
+              </button>
           </div>
           {% endif %}
         </div>
@@ -124,6 +127,27 @@
       {% include "post/comment_form.html" %}
     </div>
   </div>
+
+  
+  <!-- Post delete modal -->
+  <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="staticBackdropLabel">Delete post</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          Are you sure you want to delete this post?
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" class="btn btn-primary">Delete post</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
 </div>
 
 
