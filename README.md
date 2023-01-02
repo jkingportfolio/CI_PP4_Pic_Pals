@@ -162,34 +162,83 @@ The site consists of the following sections:
 
 #### Database
 
+The site uses a backend database built with the Django framework and the use of ElephantSQL Postgres for the deployed site.
+
 <details>
 <summary>Database diagram</summary>
 <img src="docs/database/database-diagram.png">
 </details>
 
+The following data models were created to represent the database model structure for the site.
 
+#### Data Models
 
+##### User Model
 
-This app was designed using Code Institutes <> Template. The template creates a <>. 
+- The User model contains information about the user. It is part of the built in Django allauth library
 
-### Database
+##### Profile Model
 
-A flowchart was created during the design process to help identify functions that would be required in the Python files.
+- The Profile model object contains additional information on the user and consist of the following fields
+    - user (AUTH_USER_MODEL)
+    - date_of_birth (DateField)
+    - profile_pic (CloudinaryField)
+    - bio (Charfield)
 
-<details>
-<summary>Database diagram</summary>
-<img src="docs/flowcharts/flow-chart.png">
-</details>
+##### Follow Model
 
-### Data Models
+- The Follow model object represents a follow connection between users which is not symetrical and consists of the following fields
+    - user (ForeignKey - auth.User)
+    - followed_account (ForeignKey - auth.User)
+    - created (DateTimeField)
 
-This project uses Object Orientated Programming to interact and manipulate the following:
+##### Post Model
 
-- Classes - This project uses two classes. The first class called 'User' is used to create an instance of a new user based on inputs and append the details to a Google Sheets file. The second class called 'Order' is used to create an instance of an order based on inputs and then display the receipt of the order and append the order details to a Google Sheets file.
-- Lists and dictionaries - This project uses list and dictionaries to aid the storage of data from the Google Sheets file to variables and vice versa. Using list comprehension dictionaries are used to validate if a new user name is not already in use, the user input for ordering an item exists and to store/view order records.
-- Google Sheets API - Google Sheets was used in this project to store all required data outwidth the container and provide a level of security in user name and passwords.
+- The Post model object represents a users post and consists of the following fields
+    - id (UUIDFiel)
+    - created_date (DateTimeField)
+    - user (ForeignKey)
+    - image (CloudinaryField)
+    - caption (TextField)
+    - caption_edited (BooleanField)
+    - caption_edited_time (DateTimeField)
+    - likes (IntegerField)
+
+##### Like Model
+
+- The Like model object represents a user has liked an individual post contains and consists of the following fields
+    - user (ForeignKey - User)
+    - post (Foreign Key - Post)
+
+##### Comment Model
+
+- The Comment model object represents a comment a user has posted on an individual post contains and consists of the following fields
+    - post (ForeignKey - Post)
+    - user (ForeignKey - User)
+    - comment_body (TextField)
+    - created_on (DateTimeField)
+    - updated (BooleanField)
+
+##### Contact Model
+
+- The Contact model object represents a contact message from the user to the admin and and consists of the following fields
+    - reason (CharField)
+    - name - Charfield
+    - email - EmailField
+    - message_body (TextField)
+    - message_date (DateTimeField)
 
 ### Wireframes
+
+Balsamiq was used to create wireframes of the sites pages
+
+<details>
+<summary>Wireframes</summary>
+<img src="docs/wireframes/1.png">
+<img src="docs/wireframes/2.png">
+<img src="docs/wireframes/3.png">
+<img src="docs/wireframes/4.png">
+</details>
 
 ## Technologies Used
 
