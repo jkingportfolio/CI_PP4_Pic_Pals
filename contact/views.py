@@ -19,9 +19,7 @@ def contact(request):
     contact_form = ContactForm()
     form_submit = False
     if request.method == 'GET':
-        if not request.user.is_authenticated:
-            contact_form = ContactForm()
-        elif request.user.profile:
+        if request.user.is_authenticated:
             contact_form = ContactForm(
                 initial={
                     'name': request.user.first_name,
