@@ -178,60 +178,60 @@ The following data models were created to represent the database model structure
 
 #### Data Models
 
-##### User Model
+#### User Model
 
-- The User model contains information about the user. It is part of the built in Django allauth library
+The User model contains information about the user. It is part of the built in Django allauth library
 
-##### Profile Model
+#### Profile Model
 
-- The Profile model object contains additional information on the user and consist of the following fields
-    - user (AUTH_USER_MODEL)
-    - date_of_birth (DateField)
-    - profile_pic (CloudinaryField)
-    - bio (Charfield)
+The Profile model object contains additional information on the user and consist of the following fields
+- user (AUTH_USER_MODEL)
+- date_of_birth (DateField)
+- profile_pic (CloudinaryField)
+- bio (Charfield)
 
-##### Follow Model
+#### Follow Model
 
-- The Follow model object represents a follow connection between users which is not symetrical and consists of the following fields
-    - user (ForeignKey - auth.User)
-    - followed_account (ForeignKey - auth.User)
-    - created (DateTimeField)
+The Follow model object represents a follow connection between users which is not symetrical and consists of the following fields
+- user (ForeignKey - auth.User)
+- followed_account (ForeignKey - auth.User)
+- created (DateTimeField)
 
-##### Post Model
+#### Post Model
 
-- The Post model object represents a users post and consists of the following fields
-    - id (UUIDFiel)
-    - created_date (DateTimeField)
-    - user (ForeignKey)
-    - image (CloudinaryField)
-    - caption (TextField)
-    - caption_edited (BooleanField)
-    - caption_edited_time (DateTimeField)
-    - likes (IntegerField)
+The Post model object represents a users post and consists of the following fields
+- id (UUIDFiel)
+- created_date (DateTimeField)
+- user (ForeignKey)
+- image (CloudinaryField)
+- caption (TextField)
+- caption_edited (BooleanField)
+- caption_edited_time (DateTimeField)
+- likes (IntegerField)
 
-##### Like Model
+#### Like Model
 
-- The Like model object represents a user has liked an individual post contains and consists of the following fields
-    - user (ForeignKey - User)
-    - post (Foreign Key - Post)
+The Like model object represents a user has liked an individual post contains and consists of the following fields
+- user (ForeignKey - User)
+- post (Foreign Key - Post)
 
-##### Comment Model
+#### Comment Model
 
-- The Comment model object represents a comment a user has posted on an individual post contains and consists of the following fields
-    - post (ForeignKey - Post)
-    - user (ForeignKey - User)
-    - comment_body (TextField)
-    - created_on (DateTimeField)
-    - updated (BooleanField)
+The Comment model object represents a comment a user has posted on an individual post contains and consists of the following fields
+- post (ForeignKey - Post)
+- user (ForeignKey - User)
+- comment_body (TextField)
+- created_on (DateTimeField)
+- updated (BooleanField)
 
-##### Contact Model
+#### Contact Model
 
-- The Contact model object represents a contact message from the user to the admin and and consists of the following fields
-    - reason (CharField)
-    - name - Charfield
-    - email - EmailField
-    - message_body (TextField)
-    - message_date (DateTimeField)
+The Contact model object represents a contact message from the user to the admin and and consists of the following fields
+- reason (CharField)
+- name - Charfield
+- email - EmailField
+- message_body (TextField)
+- message_date (DateTimeField)
 
 ### Wireframes
 
@@ -245,6 +245,7 @@ Balsamiq was used to create wireframes of the sites pages
 <img src="docs/wireframes/4.png">
 </details>
 
+
 ## Technologies Used
 
 ### Coding Languages
@@ -254,29 +255,30 @@ Balsamiq was used to create wireframes of the sites pages
 - Javascript
 
 ### Frameworks and Tools
-!!! ADD LINKS !!!
+
 - [Django 3.2.16](https://www.djangoproject.com/) - Used to rapidly develop the site.
-- Psycopg2 - Used as a PostgreSQL adaptor
-- Gunicorn - 
-- Git - Used for version control.
-- GitHub - Used to deploy the projects code.
-- Gitpod - Used to develop and test code.
-- Heroku Platform - Used to deploy the live project.
-- Crispy Forms - Used to format forms.
-- Am i Responsive - Used to create a mock up image of the site on different screen sizes.
-- Balsamiq - Used to produce wireframes of the site.
-- Boostrap 5 - Used to develop the layout of the site.
-- Cloudinary - Used to store post images.
-- Font Awesome - Used to produce icons on the site.
-- Graphviz - Used to generate pydot file / database diagram image.
-- Google Fonts - Used to import the sites font family.
+- [Psycopg2](https://pypi.org/project/psycopg2/) - Used as a PostgreSQL adaptor
+- [Gunicorn](https://gunicorn.org/) - Used for being a pure-Python HTTP server for WSGI applications
+- [Git](https://git-scm.com/) - Used for version control.
+- [GitHub](https://github.com/) - Used to deploy the projects code.
+- [Gitpod](https://www.gitpod.io/) - Used to develop and test code.
+- [Heroku Platform](https://id.heroku.com/) - Used to deploy the live project.
+- [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to format forms.
+- [Am i Responsive](https://ui.dev/amiresponsive) - Used to create a mock up image of the site on different screen sizes.
+- [Balsamiq](https://balsamiq.com/) - Used to produce wireframes of the site.
+- [Boostrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Used to develop the layout of the site.
+- [Cloudinary](https://cloudinary.com/) - Used to store post images.
+- [Font Awesome](https://fontawesome.com/) - Used to produce icons on the site.
+- [Graphviz](https://dreampuf.github.io/GraphvizOnline) - Used to generate pydot file / database diagram image.
+- [Google Fonts](https://fonts.google.com/) - Used to import the sites font family.
+- [Affinity Designer](https://affinity.serif.com/en-gb/) - Used to create the logo and delete buttons.
 - Validation
-    - WC3 Validator - Used to validate the HTML code of the site.
-    - Jigsaw W3 Validator- Used to validate the CSS of the site.
-    - Jshint - Used to validate the Javascript of the site.
-    - PEP8 - Used to validate code against Python conventions.
-    - Chrome dev tools (Lighthouse) - Used to measure site performance, SEO and accessiblity
-    - WAVE Validator - Used to evaluate site accessibility
+    - [WC3 Validator](https://validator.w3.org/) - Used to validate the HTML code of the site.
+    - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)- Used to validate the CSS of the site.
+    - [Jshint](https://jshint.com/) - Used to validate the Javascript of the site.
+    - [Pycodestyle](https://pypi.org/project/pycodestyle/) - Used to validate code against Python conventions.
+    - [Chrome dev tools (Lighthouse)](https://www.djangoproject.com/) - Used to measure site performance, SEO and accessiblity
+    - [WAVE Validator](https://www.djangoproject.com/) - Used to evaluate site accessibility
 
 ## Libraries
 
