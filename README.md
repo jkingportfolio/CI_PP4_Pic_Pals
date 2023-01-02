@@ -150,20 +150,20 @@ Google fonts was used to decided on the font for the website. 'Do Hyeon' with a 
 User experience was one of the main driving factors in this project. A simple, clear and easy to navigate app was the desired outcome. To acheive this at the top of each page is a Nav Bar with links to the right hand side or in the form of a hamburger toggle button if using a small screen device in which all links will be listed vertically. At the bottom of each page the developers social links can be found to allow further networking with users of the site.
 
 The site consists of the following sections:
-    - Home page in which a logged in user will be displayed their profile and if no user is logged in will display the log in form, reset password and register a new account buttons
-    - Reset Password page where a user can request a link to reset their password
-    - Register page where new users can register an acocunt with pic pals
-    - My Profile page where a logged in user can view all their posts, edit their profile, change their password and view stats on their followers and accounts followed.
-    - My posts where a list of all currently logged in users posts will be displayed as cards
-    - Feed page where posts of all currently "followed" accounts will be show, posts will be displayed in order by date of most recent.
-    - People page where a list of all current pic pal users can be found along with  a search bar to search for profile.
-    - Contact where users can contact the site admin by filling out the form displayed on the page
-    - Post detail page where a more in depth view of a post will be shown, this will include a like button, like count and comments section. Also if the current user owns the post they will have additional options to edit the caption or delete the post.
-    - Contact page with a contact form which allows users to create a contact object in which the admin can view on the django admin dashboard
-    - Add post page where a logged in user can create a new post
-    - Edit profile page where a logged in user can edit information in the form which will update their profile information on save
-    - Change Password page where a logged in user can change their password
-    - Reset Password page where a user can request a one time email to reset their password if they have forgotten it (please refer to known bugs regarding this page)
+- Home page in which a logged in user will be displayed their profile and if no user is logged in will display the log in form, reset password and register a new account buttons
+- Reset Password page where a user can request a link to reset their password
+- Register page where new users can register an acocunt with pic pals
+- My Profile page where a logged in user can view all their posts, edit their profile, change their password and view stats on their followers and accounts followed.
+- My posts where a list of all currently logged in users posts will be displayed as cards
+- Feed page where posts of all currently "followed" accounts will be show, posts will be displayed in order by date of most recent.
+- People page where a list of all current pic pal users can be found along with  a search bar to search for profile.
+- Contact where users can contact the site admin by filling out the form displayed on the page
+- Post detail page where a more in depth view of a post will be shown, this will include a like button, like count and comments section. Also if the current user owns the post they will have additional options to edit the caption or delete the post.
+- Contact page with a contact form which allows users to create a contact object in which the admin can view on the django admin dashboard
+- Add post page where a logged in user can create a new post
+- Edit profile page where a logged in user can edit information in the form which will update their profile information on save
+- Change Password page where a logged in user can change their password
+- Reset Password page where a user can request a one time email to reset their password if they have forgotten it (please refer to known bugs regarding this page)
 
 #### Database
 
@@ -277,8 +277,8 @@ Balsamiq was used to create wireframes of the sites pages
     - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)- Used to validate the CSS of the site.
     - [Jshint](https://jshint.com/) - Used to validate the Javascript of the site.
     - [Pycodestyle](https://pypi.org/project/pycodestyle/) - Used to validate code against Python conventions.
-    - [Chrome dev tools (Lighthouse)](https://www.djangoproject.com/) - Used to measure site performance, SEO and accessiblity
-    - [WAVE Validator](https://www.djangoproject.com/) - Used to evaluate site accessibility
+    - [Chrome dev tools (Lighthouse)](https://developer.chrome.com/docs/lighthouse/overview/) - Used to measure site performance, SEO and accessiblity
+    - [WAVE Validator](https://wave.webaim.org/) - Used to evaluate site accessibility
 
 ## Libraries
 
@@ -300,7 +300,7 @@ Balsamiq was used to create wireframes of the sites pages
 
 ## Features
 
-In its entirety the website consists of one main page, with a mock terminal within that page to run The Taco Trailer app.
+In its entirety the website consists of a variety of features across the many site pages as listed below.
 
 ### Existing features
 
