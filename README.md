@@ -90,7 +90,7 @@ The Pic Pals Social website has been developed to provide users the chance to po
 2. As a user, I want to see a visual indicator of having like a post so that i can tell if I have previously like that post.
 3. As a user, I want to like and unlike posts so that *i can show my appreciation of another users post.
 4. As a user, I want to delete my posts so that i can permanently remove posts I do not wish to keep
-5. As a user, I want to edit my posts so that i can correct spelling mistakes or hashtags I may have enter into comments.
+5. As a user, I want to edit my posts so that i can correct spelling mistakes or I may have enter into the post caption.
 6. As a user, I want to view post comments so that i can fulfill the aim of the app
 7. As a user, I want to comment on other posts so that i can interact with other users
 8. As a user, I want to manage my posts so that i can add, edit or delete posts as needed.
@@ -117,12 +117,12 @@ The Pic Pals Social website has been developed to provide users the chance to po
 
 ### Site Owner Stories
 
-29. As the site owner, I would want to validate users data entries on sign up **so that users can create a log in which meets the requirements.
-30. As the site owner, I would want to ensure only logged in users can post from their account and edit their profile so that data privacy is ensured.
-31. As the site owner, I would want to have the ability to remove posts so that i can keep the app clean and friendly
-32. As the site owner, I would want the site to be fully responsive so that user can use it across multiple devices and create a good user experience.
-33. As the site owner, I would want to use the app search function so that i can search for particular posts by hashtags or search for users by their user name.
-34. As the site owner, I would want 404 and 500 error pages so that users do not have to use the back navigation button if an error occurs.
+27. As the site owner, I would want to validate users data entries on sign up **so that users can create a log in which meets the requirements.
+28. As the site owner, I would want to ensure only logged in users can post from their account and edit their profile so that data privacy is ensured.
+29. As the site owner, I would want to have the ability to remove posts so that i can keep the app clean and friendly
+30. As the site owner, I would want the site to be fully responsive so that user can use it across multiple devices and create a good user experience.
+31. As the site owner, I would want to use the app search function so that i can search for particular posts by hashtags or search for users by their user name.
+32. As the site owner, I would want 404 and 500 error pages so that users do not have to use the back navigation button if an error occurs.
 
 
 
@@ -306,7 +306,206 @@ In its entirety the website consists of a variety of features across the many si
 
 #### FEATURE NAME 
 
-<FEATURE DESCTRIPTION>
+<Authentication>
+
+<details>
+<details>
+<summary>Authentication image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Bio-Section>
+
+<details>
+<summary>Bio section image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Change Password>
+
+<details>
+<summary>Change password image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Post comment>
+
+<details>
+<summary>Post comment image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Contact>
+
+<details>
+<summary>Contact image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Create Post>
+
+<details>
+<summary>Create Post image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Delete Post>
+
+<details>
+<summary>Delete Post image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Edit Post>
+
+<details>
+<summary>Edit image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Edit Profile>
+
+<details>
+<summary>Edit Profile image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Error Pages>
+
+<details>
+<summary>Error Pages image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Feed>
+
+<details>
+<summary>Feed image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Follow / Unfollow user>
+
+<details>
+<summary>Follow / Unfollow user image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Follow / Unfollow button>
+
+<details>
+<summary>Follow / Unfollow button image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Followed List>
+
+<details>
+<summary>Followed list image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Followers List>
+
+<details>
+<summary>Followers list image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Home Page>
+
+<details>
+<summary>Home page image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Input Validation>
+
+<details>
+<summary>Input validation image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Like count>
+
+<details>
+<summary>Like count image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Like / Unlike button>
+
+<details>
+<summary>Like / Unlike Button image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Register>
+
+<details>
+<summary>Register image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Reset Password>
+
+<details>
+<summary>Reset Password image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Responsiveness>
+
+<details>
+<summary>Responsiveness image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+<Site Feedback>
 
 <details>
 <summary>Welcome message image</summary>
@@ -314,6 +513,17 @@ In its entirety the website consists of a variety of features across the many si
 </details>
 
 - Covered in user stories: X & X
+
+<User Search>
+
+<details>
+<summary>User Search image</summary>
+<img src="docs/images/features/landing-page.png">
+</details>
+
+- Covered in user stories: X & X
+
+</details>
 
 ## Validation
 
