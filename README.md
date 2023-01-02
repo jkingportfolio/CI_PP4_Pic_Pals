@@ -30,8 +30,13 @@ The Pic Pals Social website has been developed to provide users the chance to po
     3. [Libraries](#libraries)
 5. [Features](#features)
     1. [Existing Features](#existing-features)
-    2. [Future Implementations](#future-implementations)
-6. [Python Valiadation](#python-validation)
+6. [Validation](#validation)
+    1. [HTML](#html-validation)
+    2. [CSS](#css-validation)
+    3. [Javascript](#javascript-validation)
+    4. [Python](#python-validation)
+    5. [Chrome Dev Tools Lighthouse](#chrome-dev-tools-lighthouse-validation)
+    6. [WAVE Validation](#wave-validation)
 7. [Testing](#testing)
     1. [Device Testing](#device-testing)
     2. [Browser Compatibility](#browser-compatibility)
@@ -249,11 +254,15 @@ Balsamiq was used to create wireframes of the sites pages
 - Javascript
 
 ### Frameworks and Tools
-- Django 3.2.16 - Used to rapidly develop the site.
+!!! ADD LINKS !!!
+- [Django 3.2.16](https://www.djangoproject.com/) - Used to rapidly develop the site.
+- Psycopg2 - Used as a PostgreSQL adaptor
+- Gunicorn - 
 - Git - Used for version control.
 - GitHub - Used to deploy the projects code.
 - Gitpod - Used to develop and test code.
 - Heroku Platform - Used to deploy the live project.
+- Crispy Forms - Used to format forms.
 - Am i Responsive - Used to create a mock up image of the site on different screen sizes.
 - Balsamiq - Used to produce wireframes of the site.
 - Boostrap 5 - Used to develop the layout of the site.
@@ -304,32 +313,45 @@ In its entirety the website consists of one main page, with a mock terminal with
 
 - Covered in user stories: X & X
 
-## Future implementations
-
-In the future as my skills grow I would like to implement the following features:
-
-- <IMPLEMENTATION DESCRIPTION / REASON>.
-- <IMPLEMENTATION DESCRIPTION / REASON>.
 ## Validation
+
 ### HTML Validation
 
-[PEP-8 Validation](http://pep8online.com/) was used to validate the Python code used in the app.
+[W3C Validation](https://validator.w3.org/) was used to validate the HTML code used in the project.
 
 <details>
-<summary>Python file - run.py</summary>
-<img src="docs/images/validation/pep8-validation-run.png">
-</details>
 
+<summary>HTML file - xxx.html</summary>
+<img src="docs/images/validation/w3c.png">
+
+<summary>HTML file - xxxx.html</summary>
+<img src="docs/images/validation/w3c.png">
+
+<summary>HTML file - xxx.html</summary>
+<img src="docs/images/validation/w3c.png">
+
+<summary>HTML file - xxxx.html</summary>
+<img src="docs/images/validation/w3c.png">
+
+</details>
 
 ### CSS Validation
 
-[PEP-8 Validation](http://pep8online.com/) was used to validate the Python code used in the app.
+[W3C Validation](https://validator.w3.org/) was used to validate the CSSL code used in the project.
 
 <details>
-<summary>Python file - run.py</summary>
-<img src="docs/images/validation/pep8-validation-run.png">
+<summary>CSS file - style.css</summary>
+<img src="docs/images/validation/style-css.png">
 </details>
 
+### JavaScript Validation
+
+[JSHint](https://jshint.com/) was used to validate the Javascript code used in the app.
+
+<details>
+<summary>Javascript file - script.js</summary>
+<img src="docs/images/validation/jshint-validation.png">
+</details>
 
 ### Python Validation
 
@@ -340,31 +362,24 @@ In the future as my skills grow I would like to implement the following features
 <img src="docs/images/validation/pep8-validation-run.png">
 </details>
 
-### JavaScript Validation
 
-[PEP-8 Validation](http://pep8online.com/) was used to validate the Python code used in the app.
-
-<details>
-<summary>Python file - run.py</summary>
-<img src="docs/images/validation/pep8-validation-run.png">
-</details>
 
 ### Chrome Dev Tools Lighthouse Validation
 
-[PEP-8 Validation](http://pep8online.com/) was used to validate the Python code used in the app.
+[Chrome Dev Tools lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to validate the performance of the app.
 
 <details>
-<summary>Python file - run.py</summary>
-<img src="docs/images/validation/pep8-validation-run.png">
+<summary>PAGE NAME</summary>
+<img src="docs/images/validation/cdtl-page-name.png">
 </details>
 
 ### WAVE Validation
 
-[PEP-8 Validation](http://pep8online.com/) was used to validate the Python code used in the app.
+[WAVE Validation](http://pep8online.com/) was used to validate the accessiblity of the app.
 
 <details>
-<summary>Python file - run.py</summary>
-<img src="docs/images/validation/pep8-validation-run.png">
+<summary>PAGE NAMEy</summary>
+<img src="docs/images/validation/wave-page-name.png">
 </details>
 
 ## Testing
@@ -588,7 +603,6 @@ The source of where I learned how to produce a GitHub fork and clone was from th
 
 I would like to also thank the following:
 - My wife and family for their support and feedback whilst doing this project
-- My fellow Code Institute students whom I have bounced ideas and problems back and forth with via Slack
 - [Andy Guttridge](https://github.com/andy-guttridge) for his help through out the project
 - Code Institute tutor support who helped with an issue i had with having to reset my database.
 - My Code Institute mentor Mo Shami for his guidance through this project.
