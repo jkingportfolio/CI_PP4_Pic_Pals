@@ -13,7 +13,11 @@ from django.contrib.auth.models import User
 from django.contrib import messages
 # Internal
 from .models import Profile, Follow
-from .forms import LoginDetails, Registration, Profile, EditUser, EditProfile
+from .forms import (LoginDetails,
+                    Registration,
+                    Profile,
+                    EditUser,
+                    EditProfile)
 from post.models import Post
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
