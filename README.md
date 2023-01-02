@@ -29,7 +29,6 @@ The Pic Pals Social website has been developed to provide users the chance to po
     2. [Frameworks and Tools](#frameworks-and-tools)
     3. [Libraries](#libraries)
 5. [Features](#features)
-    1. [Existing Features](#existing-features)
 6. [Validation](#validation)
     1. [HTML](#html-validation)
     2. [CSS](#css-validation)
@@ -302,13 +301,8 @@ Balsamiq was used to create wireframes of the sites pages
 
 In its entirety the website consists of a variety of features across the many site pages as listed below.
 
-### Existing features
+### Authentication
 
-#### FEATURE NAME 
-
-<Authentication>
-
-<details>
 <details>
 <summary>Authentication image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -316,7 +310,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Bio-Section>
+### Bio-Section
 
 <details>
 <summary>Bio section image</summary>
@@ -325,7 +319,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Change Password>
+### Change Password
 
 <details>
 <summary>Change password image</summary>
@@ -334,7 +328,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Post comment>
+### Post comment
 
 <details>
 <summary>Post comment image</summary>
@@ -343,7 +337,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Contact>
+### Contact
 
 <details>
 <summary>Contact image</summary>
@@ -352,7 +346,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Create Post>
+### Create Post
 
 <details>
 <summary>Create Post image</summary>
@@ -361,7 +355,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Delete Post>
+### Delete Post
 
 <details>
 <summary>Delete Post image</summary>
@@ -370,7 +364,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Edit Post>
+### Edit Post
 
 <details>
 <summary>Edit image</summary>
@@ -379,7 +373,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Edit Profile>
+### Edit Profile
 
 <details>
 <summary>Edit Profile image</summary>
@@ -388,7 +382,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Error Pages>
+### Error Pages
 
 <details>
 <summary>Error Pages image</summary>
@@ -397,7 +391,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Feed>
+### Feed
 
 <details>
 <summary>Feed image</summary>
@@ -406,7 +400,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Follow / Unfollow user>
+### Follow / Unfollow user
 
 <details>
 <summary>Follow / Unfollow user image</summary>
@@ -415,7 +409,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Follow / Unfollow button>
+### Follow / Unfollow button 
 
 <details>
 <summary>Follow / Unfollow button image</summary>
@@ -424,7 +418,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Followed List>
+### Followed List
 
 <details>
 <summary>Followed list image</summary>
@@ -433,7 +427,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Followers List>
+### Followers List
 
 <details>
 <summary>Followers list image</summary>
@@ -442,7 +436,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Home Page>
+### Home Page
 
 <details>
 <summary>Home page image</summary>
@@ -451,7 +445,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Input Validation>
+### Input Validation
 
 <details>
 <summary>Input validation image</summary>
@@ -460,7 +454,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Like count>
+### Like count
 
 <details>
 <summary>Like count image</summary>
@@ -469,7 +463,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Like / Unlike button>
+### Like / Unlike button
 
 <details>
 <summary>Like / Unlike Button image</summary>
@@ -478,7 +472,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Register>
+### Register
 
 <details>
 <summary>Register image</summary>
@@ -487,7 +481,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Reset Password>
+### Reset Password
 
 <details>
 <summary>Reset Password image</summary>
@@ -496,7 +490,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Responsiveness>
+### Responsiveness
 
 <details>
 <summary>Responsiveness image</summary>
@@ -505,7 +499,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<Site Feedback>
+### Site Feedback
 
 <details>
 <summary>Welcome message image</summary>
@@ -514,7 +508,7 @@ In its entirety the website consists of a variety of features across the many si
 
 - Covered in user stories: X & X
 
-<User Search>
+### User Search
 
 <details>
 <summary>User Search image</summary>
@@ -522,8 +516,6 @@ In its entirety the website consists of a variety of features across the many si
 </details>
 
 - Covered in user stories: X & X
-
-</details>
 
 ## Validation
 
