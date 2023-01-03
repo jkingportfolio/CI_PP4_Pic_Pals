@@ -308,7 +308,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 28
 
 ### Bio-Section
 
@@ -317,7 +317,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 19
 
 ### Change Password
 
@@ -326,7 +326,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 13
 
 ### Post comment
 
@@ -335,7 +335,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 6 & 7
 
 ### Contact
 
@@ -344,7 +344,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 21
 
 ### Create Post
 
@@ -353,7 +353,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 8
 
 ### Delete Post
 
@@ -362,7 +362,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 4, 8 & 29
 
 ### Edit Post
 
@@ -371,7 +371,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 5 & 8
 
 ### Edit Profile
 
@@ -380,7 +380,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 15 & 22
 
 ### Error Pages
 
@@ -389,7 +389,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 32
 
 ### Feed
 
@@ -398,7 +398,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 24
 
 ### Follow / Unfollow user
 
@@ -407,7 +407,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 20
 
 ### Follow / Unfollow button 
 
@@ -416,7 +416,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 2 & 26
 
 ### Followed List
 
@@ -425,7 +425,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 25
 
 ### Followers List
 
@@ -434,7 +434,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: X ADD USER STORY
 
 ### Home Page
 
@@ -443,7 +443,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 17
 
 ### Input Validation
 
@@ -452,7 +452,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 27
 
 ### Like count
 
@@ -461,7 +461,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 18
 
 ### Like / Unlike button
 
@@ -470,7 +470,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 2 & 3
 
 ### Register
 
@@ -479,7 +479,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 12
 
 ### Reset Password
 
@@ -488,7 +488,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 9
 
 ### Responsiveness
 
@@ -497,7 +497,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 30
 
 ### Site Feedback
 
@@ -506,7 +506,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 23
 
 ### User Search
 
@@ -515,7 +515,7 @@ In its entirety the website consists of a variety of features across the many si
 <img src="docs/images/features/landing-page.png">
 </details>
 
-- Covered in user stories: X & X
+- Covered in user stories: 31
 
 ## Validation
 
