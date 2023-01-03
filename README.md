@@ -652,12 +652,9 @@ The website was tested on the following web browsers:
 
 ### Manual Testing
 
-<details>
 <summary>See Testing User Stories</summary>
 
 #### Testing User Stories Users
-
-<details>
 
 To avoid unnecessary repetition of images, only the feature being referred to will have screenshots. Information on how to navigate to the feature referred to will be described within its relevant table reference. 
 
@@ -1210,7 +1207,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 </details>
 
 
-</details>
+
 
 
 ### Automated Testing
