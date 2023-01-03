@@ -86,7 +86,7 @@ The Pic Pals Social website has been developed to provide users the chance to po
 ### User stories
 
 1. As a user, I want to use the navigation bar so that i can seamlessly navigate around the app.
-2. As a user, I want to see a visual indicator of having like a post so that i can tell if I have previously like that post.
+2. As a user, I want to see a visual indicators for example of having liked a post / followed a user so that i can tell if I have previously like that post.
 3. As a user, I want to like and unlike posts so that *i can show my appreciation of another users post.
 4. As a user, I want to delete my posts so that i can permanently remove posts I do not wish to keep
 5. As a user, I want to edit my posts so that i can correct spelling mistakes or I may have enter into the post caption.
@@ -678,7 +678,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 
 
-2. As a user, I want to see a visual indicator of having like a post so that i can tell if I have previously like that post.
+2. As a user, I want to see a visual indicators for example of having liked a post / followed a user so that i can tell if I have previously like that post.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -688,7 +688,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 2</summary>
 
 <details>
-<summary>Feature - Like / Unlike Button</summary>
+<summary>Feature - Like / Follow Button</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -790,7 +790,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 8</summary>
 
 <details>
-<summary>Feature - Delete Post</summary>
+<summary>Feature - Edit Post / Delete Post</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -824,7 +824,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 10</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Log in</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -841,7 +841,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 11</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Log out</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -858,7 +858,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 12</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Register</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -875,7 +875,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 13</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Change Password</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -892,7 +892,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 14</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Profile Page</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -909,7 +909,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 15</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Edit profile</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -926,7 +926,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 16</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Profile picture</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -943,7 +943,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 17</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Home Page</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -960,7 +960,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 18</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Like count</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -977,7 +977,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 19</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Bio Section</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -994,7 +994,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 20</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Follow</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -1011,7 +1011,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 21</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Contact</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -1028,7 +1028,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 22</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Edit profile</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -1045,7 +1045,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 23</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Site feedback</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -1062,7 +1062,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 24</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Feed</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -1079,7 +1079,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 25</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Followed List</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -1096,7 +1096,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 26</summary>
 
 <details>
-<summary>Feature - Quit</summary>
+<summary>Feature - Follow / Unfollow button</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -1117,7 +1117,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 16</summary>
 
 <details>
-<summary>Feature - Admin Dashboard</summary>
+<summary>Feature - Input Validation</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
 </details>
@@ -1133,7 +1133,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 16</summary>
 
 <details>
-<summary>Feature - Admin Dashboard</summary>
+<summary>Feature - Authentication</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
 </details>
@@ -1149,7 +1149,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 16</summary>
 
 <details>
-<summary>Feature - Admin Dashboard</summary>
+<summary>Feature - Delete post</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
 </details>
@@ -1165,7 +1165,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 16</summary>
 
 <details>
-<summary>Feature - Admin Dashboard</summary>
+<summary>Feature - Responsiveness</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
 </details>
@@ -1181,7 +1181,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 16</summary>
 
 <details>
-<summary>Feature - Admin Dashboard</summary>
+<summary>Feature - User Search</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
 </details>
@@ -1197,7 +1197,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Screenshots User Story 16</summary>
 
 <details>
-<summary>Feature - Admin Dashboard</summary>
+<summary>Feature - Error pages</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
 </details>
