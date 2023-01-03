@@ -17,7 +17,7 @@ class Profile(models.Model):
     A class for creating a users profile
     """
     user = models.OneToOneField(settings.AUTH_USER_MODEL, on_delete=models.CASCADE)
-    date_of_birth = models.DateField(blank=True, null=True)
+    date_of_birth = models.DateField(blank=True, null=True, help_text='MM/DD/YYYY')
     profile_pic = CloudinaryField(blank=True)
     bio = models.CharField(max_length=5000, blank=True)
 
