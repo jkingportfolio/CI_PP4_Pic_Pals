@@ -523,6 +523,8 @@ The register feature can be found on the landing page for the site. This feature
 
 ### Reset Password
 
+The reset password feature can be found on the landing page for the site. This feature allowed users to be emailed with a one use token to the email registered to their account. *Please note that this feature works on the CLI only, Google Mail times out, please see known bugs.
+
 <details>
 <summary>Reset Password image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -531,6 +533,8 @@ The register feature can be found on the landing page for the site. This feature
 - Covered in user stories: 9
 
 ### Responsiveness
+
+Throughout the site the feature of being responsive for various device sizes can be shown whilst navigating the site.
 
 <details>
 <summary>Responsiveness image</summary>
@@ -541,6 +545,8 @@ The register feature can be found on the landing page for the site. This feature
 
 ### Site Feedback
 
+Site feedback features are presented at various times in the form of Successfull html pages and Django messages.
+
 <details>
 <summary>Welcome message image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -549,6 +555,8 @@ The register feature can be found on the landing page for the site. This feature
 - Covered in user stories: 23
 
 ### User Search
+
+The user search bar feature can be found on the People page of the site. At the top of the People page a search bar can be used to search for users by username.
 
 <details>
 <summary>User Search image</summary>
