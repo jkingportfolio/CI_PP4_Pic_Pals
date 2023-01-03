@@ -663,7 +663,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Nav Bar  | Log in and scroll to the top of any page  | Nav Bar to be displayed along the top of the page or via a hamburger toggle if on a smaller screen    | Works as expected |
 
 <details>
 <summary>Screenshots User Story 1</summary>
@@ -682,7 +682,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Like Button  | Log in and navigate to a post detail page via feed or a users profile by clicking on the post. Below the post click on the heart icon to like or unlike the post  | Post heart indicator to visually reflect the current users status with regards to liking the post and the total like tally to plus or minus one like dependant on if the click is a like or unlike  | Works as expected |
+|  Follow Button  | Log in and navigate to a users profile page via followed users list, following users list or clicking on the users name on a post detail. Below the users profile picute click on the follow button to follow or unfollow the user.  | User to follow or unfollow the account of the currently viewed profile | Works as expected |
 
 <details>
 <summary>Screenshots User Story 2</summary>
@@ -695,11 +696,11 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 </details>
 
-3. As a user, I want to like and unlike posts so that *i can show my appreciation of another users post.
+3. As a user, I want to like and unlike posts so that i can show my appreciation of another users post.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Like Button  | Log in and navigate to a post detail page via feed or a users profile by clicking on the post. Below the post click on the heart icon to like or unlike the post  | Post heart indicator to visually reflect the current users status with regards to liking the post and the total like tally to plus or minus one like dependant on if the click is a like or unlike | Works as expected |
 
 <details>
 <summary>Screenshots User Story 3</summary>
@@ -716,7 +717,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Delete Post  | Log in and navigate to the post detail by clicking on the post in question. At the top of the post card click on the delete button, click ok on the confirmation modal to delete the post. | Post to be deleted | Works as expected |
 
 <details>
 <summary>Screenshots User Story 4</summary>
@@ -733,7 +734,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+| Edit Post  | Log in and navigate to the post detail by clicking on the post in question. At the top of the post card click on the edit button, the edit post form will show, update the caption field to the desired caption and click update to save changes and redirect back to the post detail page.  | Caption for the post to be updated | Works as expected |
 
 <details>
 <summary>Screenshots User Story 5</summary>
@@ -750,7 +751,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Comment on post  | Log in and navigate to a post detail page via feed or a users profile by clicking on the post. Below the post image view the comments.  | User to be able to read all comments on the post or be made aware of no comments if there are none | Works as intended |
 
 <details>
 <summary>Screenshots User Story 6</summary>
@@ -767,7 +768,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Comment on post  | Log in and navigate to a post detail page via feed or a users profile by clicking on the post. Below the post image fill in the comment form and click on the add comment button.  | User to fill in the comment form and when submitted will be added to the comments like for the post. | Works as expected |
 
 <details>
 <summary>Screenshots User Story 7</summary>
@@ -784,7 +785,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Edit Post  | Log in and navigate to the post detail by clicking on the post in question. At the top of the post card click on the edit button, the edit post form will show, update the caption field to the desired caption and click update to save changes and redirect back to the post detail page.  | Caption for the post to be updated    | Works as expected |
+|  Delete Post  | Log in and navigate to the post detail by clicking on the post in question. At the top of the post card click on the delete button, click ok on the confirmation modal to delete the post. | Post to be deleted | Works as expected |
 
 <details>
 <summary>Screenshots User Story 8</summary>
@@ -801,7 +803,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Reset Password  | Navigate to the pic pals site and click on the Reset Password button located below the log in section. Fill in the form with the email used when creating your pic pals account and submit the form. Navigate to your email inbox and find the email from Pic Pals. Click on the link which will direct you to a form on pic pals to enter a new password. Confrim the password and submit the form.  | User will reset their password allowing them to log into their account | Works as intended *See known bugs |
 
 <details>
 <summary>Screenshots User Story 9</summary>
@@ -818,7 +820,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Log in  | Naviagte to the pic pals site and from the landing page enter your username and password then click on the log in button.  | User to log in and be redirected to their profile page | Works as expected |
 
 <details>
 <summary>Screenshots User Story 10</summary>
@@ -835,7 +837,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Log out  | From any page whilst logged in click on the log out button located in the right hand corner of the nav bar, or if using a small screen device from the last item in the list from the hamburger menu toggle.  | User to log out successfully and be presented with the logged out page | Works as intended |
 
 <details>
 <summary>Screenshots User Story 11</summary>
@@ -852,7 +854,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Register  | Navigate to the pic pals site and click on the Sign up button located below the log in section. Fill in the form with the required fields for registration and click on the create account button.  | User to create an account with the information provided in the form    | Works as intended |
 
 <details>
 <summary>Screenshots User Story 12</summary>
@@ -869,7 +871,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Change Password  | Log in and navigate to the My profile page by clicking My Profile from the nav bar. Click on the edit profile button located under the Users profile picture. Fill in the form with updated profile detail and click on the update profile button  | Users profile to be updated with the information entered into the edit profile form | Works as expected |
 
 <details>
 <summary>Screenshots User Story 13</summary>
@@ -886,7 +888,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Profile Page  | Create an account with Pic Pals or sign in if already a member, navigate to the My Profile page from the Nav Bar  | User to have their own profile on the site | Works as intended |
 
 <details>
 <summary>Screenshots User Story 14</summary>
@@ -903,7 +905,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Edit Profile  | Log in and navigate to the My profile page via the nav bar. Click on the Edit profile button located below the users profile picture. The user will then be redirected to the edit profile form, fill out new information as intedned and click on the update profile button   | Users profile information to be updated and saved | Works as intended |
 
 <details>
 <summary>Screenshots User Story 15</summary>
@@ -920,13 +922,13 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Profile Picture  | Sign up with pic pals and whilst entering user information upload a picture to be a profile picture, if no image is selected the static default profile picture will be used. If a user already has an account, log in and navigate to the My Profile page from the nav bar. Click on the edit profile button located below the users profile image. Upload the desired image and click on update profile  | User will have a personally selected image as their profile image | Works as intended |
 
 <details>
 <summary>Screenshots User Story 16</summary>
 
 <details>
-<summary>Feature - Profile picture</summary>
+<summary>Feature - Profile Picture</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
 </details>
@@ -937,7 +939,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Home Page  | Navigate to the pic pals landing page  | Users will be presented with a small description of the sites purpose | Works as intended |
 
 <details>
 <summary>Screenshots User Story 17</summary>
@@ -954,7 +956,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+| Like count  | Log in and navigate to any post detail page via one of the methods to do so as explained above. Scroll down to below the post image and the like count will be displayed  | To view the total amount of likes a post has. | Works as expected |
 
 <details>
 <summary>Screenshots User Story 18</summary>
@@ -971,7 +973,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Bio Section  | Log in and navigate to the My profile page via the nav bar. Click on the Edit profile button located below the users profile picture. The user will then be redirected to the edit profile form, fill out out the bio field and click on the update profile button  | Users profile to display their bio field above their posts | Works as intended |
 
 <details>
 <summary>Screenshots User Story 19</summary>
@@ -988,7 +990,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Follow  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 20</summary>
@@ -1005,7 +1007,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Contact  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 21</summary>
@@ -1022,7 +1024,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Edit Profile  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 22</summary>
@@ -1039,7 +1041,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Site Feedback  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 23</summary>
@@ -1056,7 +1058,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Feed  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 24</summary>
@@ -1073,7 +1075,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+| Followed List  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 25</summary>
@@ -1090,7 +1092,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Follow / Unfollow button  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 26</summary>
@@ -1111,7 +1113,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Input Validation  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 16</summary>
@@ -1127,7 +1129,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Authentication  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 16</summary>
@@ -1143,13 +1145,13 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Delete Post  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 16</summary>
 
 <details>
-<summary>Feature - Delete post</summary>
+<summary>Feature - Delete Post</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
 </details>
@@ -1159,7 +1161,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Responsiveness  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 16</summary>
@@ -1175,7 +1177,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  user Search  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 16</summary>
@@ -1191,7 +1193,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Error Pages  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
 <details>
 <summary>Screenshots User Story 16</summary>
@@ -1200,14 +1202,10 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <summary>Feature - Error pages</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
+<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
+<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
 </details>
 </details>
-
-
-
-
-
-
 
 
 </details>
@@ -1218,13 +1216,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <details>
 <summary>See unit testing</summary>
 
-Using Pythons unittest library i wrote a unit test to test for correct operation of users entering passwords.
-
-A new test file was created and imported the unittest library and also the <> module as it is where the function to be tested originates from.
-
-One test function to test for valid user input and one test function to test for invalid user input was created. 
-
-The test ran and was successful.
+Using Djangos Unit tests from Pythons standard library module unittest i wrote a series of unit test to test for correct operation of Classes and functions. The overall report findings were produced using the coverage tool.
 
 <details>
 <summary>Unit testing Code</summary>
