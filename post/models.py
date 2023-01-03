@@ -54,8 +54,6 @@ class Comment(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE, related_name="user_comment")
     comment_body = models.TextField()
     created_on = models.DateTimeField(auto_now=True)
-    updated = models.DateTimeField(auto_now=True)
-    visible = models.BooleanField(default=True)
 
     class Meta:
         ordering = ['created_on']

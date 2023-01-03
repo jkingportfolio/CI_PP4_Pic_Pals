@@ -73,7 +73,7 @@ def post_detail(request, id):
     """
     user = request.user
     post = get_object_or_404(Post, id=id)
-    comments = post.comments.filter(visible=True)
+    comments = post.comments.all()
     form = PostCommentForm()
     liked_by_user = Like.objects.filter(post=post, user=user).first()
     if liked_by_user is None:
