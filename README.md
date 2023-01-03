@@ -638,14 +638,14 @@ The user search bar feature can be found on the People page of the site. At the 
 
 ### Device Testing
 
-As this app is only intended to be used on desktops the website was tested on the following devices:
+This site was tested on the following devices:
 - Windows 10 PC with a 24" MSI Curved gaming monitor
 - Raspberry Pi 4 with a 24" MSI Curved gaming monitor
 
 ### Browser Compatibility
 
 The website was tested on the following web browsers:
-- Google Chrome (Version 104.0.5112.102)
+- Google Chrome (Version 108.0.5359.125)
 - DuckDuckGo
 
 ### Manual Testing
@@ -655,17 +655,30 @@ The website was tested on the following web browsers:
 
 #### Testing User Stories Users
 
+<details>
+
 To avoid unnecessary repetition of images, only the feature being referred to will have screenshots. Information on how to navigate to the feature referred to will be described within its relevant table reference. 
 
-1. As a user, I want to <USER STORY 1>.
+1. As a user, I want to use the navigation bar so that i can seamlessly navigate around the app.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
 |  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
 
-Due to the sheet amount of images required to cover all please see this user story in action via the extensive amount of images within the rest of the Manual Testing images.
+<details>
+<summary>Screenshots User Story 1</summary>
 
-2. As a user, I want <USER STORY 2>.
+<details>
+<summary>Feature - Nav Bar</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+
+
+2. As a user, I want to see a visual indicator of having like a post so that i can tell if I have previously like that post.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -675,6 +688,142 @@ Due to the sheet amount of images required to cover all please see this user sto
 <summary>Screenshots User Story 2</summary>
 
 <details>
+<summary>Feature - Like / Unlike Button</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+3. As a user, I want to like and unlike posts so that *i can show my appreciation of another users post.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 3</summary>
+
+<details>
+<summary>Feature - Like / Unlike Button</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+4. As a user, I want to delete my posts so that i can permanently remove posts I do not wish to keep.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 4</summary>
+
+<details>
+<summary>Feature - Delete Post</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+5. As a user, I want to edit my posts so that i can correct spelling mistakes or hashtags I may have enter into comments.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 5</summary>
+
+<details>
+<summary>Feature - Edit Post</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+6. As a user, I want to view post comments so that i can fulfill the aim of the app.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 6</summary>
+
+<details>
+<summary>Feature - Comment on post</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+7. As a user, I want to comment on other posts so that i can interact with other users.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 7</summary>
+
+<details>
+<summary>Feature - Comment on post</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+8. As a user, I want to manage my posts so that i can add, edit or delete posts as needed.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 8</summary>
+
+<details>
+<summary>Feature - Delete Post</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+9. As a user, I want to request a password so that i can log back into my account if i have forgotten my password.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 9</summary>
+
+<details>
+<summary>Feature - Reset Password</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+10. As a user, I want to log in so that i can access my account, view my profile, pictures and other users pictures.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 10</summary>
+
+<details>
 <summary>Feature - Quit</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
@@ -682,9 +831,283 @@ Due to the sheet amount of images required to cover all please see this user sto
 
 </details>
 
+11. As a user, I want to log out so that other users using the same device cannot access my account.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 11</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+12. As a new user, I want to register an account with Pic Pals so that i can become a member and use the app as intended.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 12</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+13. As a user, I want to change my password so that i can secure my account.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 13</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+14. As a user, I want to have a profile page so that I and other users can view my list of posts.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 14</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+15. As a user, I want to update my profile so that my profile can stay up to date with my latest information.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 15</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+16. As a user, I want to add a profile picture so that my followers can easily recognize my posts or comments.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 16</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+17. As a user, I want to view the Home Page so that i can understand what the website is about, create an account or log in.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 17</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+18. As a user, I want to view how many likes a post has so that i can gauge how popular a post is.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 18</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+19. As a user, I want to add a bio to my profile page so that other members can learn more about me.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 19</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+20. As a user, I want to follow other accounts so that i can view their posts on my feed.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 20</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+21. As a user, I want to fill in a help form so that i can enquire about issues I may have regarding the app.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 21</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+22. As a user, I want to change my email address so that i can maintain the same account if I change email address.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 22</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+23. As a user, I want to receive feedback so that i can confirm the help form submission was successful or not.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 23</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+24. As a user, I want to scroll through the latest images on my feed so that i can keep up to date with accounts I follow.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 24</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+25. As a user, I want to browse my list of followed accounts so that i can view that particular user account.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 25</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+26. As a user, I want to see a visual indicator of following an account so that i can tell if I currently follow that account.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 26</summary>
+
+<details>
+<summary>Feature - Quit</summary>
+<img src="docs/images/image.jpeg ">
+<img src="docs/images/image.jpeg ">
+</details>
+
+</details>
+
+
+
 #### Site Owner
 
-3. As the site owner, I would want to <USER STORY 3>.
+27. As the site owner, I would want to validate users data entries on sign up **so that users can create a log in which meets the requirements.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -697,14 +1120,96 @@ Due to the sheet amount of images required to cover all please see this user sto
 <summary>Feature - Admin Dashboard</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-3.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-4.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-5.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-6.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-7.png">
 </details>
 </details>
+
+28. As the site owner, I would want to ensure only logged in users can post from their account and edit their profile so that data privacy is ensured.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 16</summary>
+
+<details>
+<summary>Feature - Admin Dashboard</summary>
+<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
+<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
 </details>
+</details>
+
+29. As the site owner, I would want to have the ability to remove posts so that i can keep the app clean and friendly.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 16</summary>
+
+<details>
+<summary>Feature - Admin Dashboard</summary>
+<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
+<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
+</details>
+</details>
+
+30. As the site owner, I would want the site to be fully responsive so that user can use it across multiple devices and create a good user experience.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 16</summary>
+
+<details>
+<summary>Feature - Admin Dashboard</summary>
+<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
+<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
+</details>
+</details>
+
+31. As the site owner, I would want to use the app search function so that i can search for particular posts by hashtags or search for users by their user name.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 16</summary>
+
+<details>
+<summary>Feature - Admin Dashboard</summary>
+<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
+<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
+</details>
+</details>
+
+32. As the site owner, I would want 404 and 500 error pages so that users do not have to use the back navigation button if an error occurs.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  <FEATURE>  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+
+<details>
+<summary>Screenshots User Story 16</summary>
+
+<details>
+<summary>Feature - Admin Dashboard</summary>
+<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
+<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
+</details>
+</details>
+
+
+
+
+
+
+
+
 </details>
 
 
