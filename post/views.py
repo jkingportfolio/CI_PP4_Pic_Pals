@@ -54,6 +54,7 @@ def edit_post(request, id):
             post.caption_edited_time = datetime.datetime.now()
             post.save()
             messages.success(request, 'Post caption updated successfully.')
+            return render(request, 'post/post_detail.html', {'post': post})
         else:
             messages.error(request, 'Error updating post caption.')
     else:

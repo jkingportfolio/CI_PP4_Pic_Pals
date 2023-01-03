@@ -303,6 +303,8 @@ In its entirety the website consists of a variety of features across the many si
 
 ### Authentication
 
+Authentication is a feature of the Pic Pals site, users will have to be authenticated whilst attempting to log in or else they will not be able to use any functionality of the site or view any information that pic pals users have posted.
+
 <details>
 <summary>Authentication image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -311,6 +313,8 @@ In its entirety the website consists of a variety of features across the many si
 - Covered in user stories: 28
 
 ### Bio-Section
+
+The bio section is an optional feature to appear on a users profile page. A user can chose to write a little bit about themselves if they so desire. The location of the bio section is just above the users posts.
 
 <details>
 <summary>Bio section image</summary>
@@ -321,6 +325,8 @@ In its entirety the website consists of a variety of features across the many si
 
 ### Change Password
 
+The change password feature can be accessed from the current users profile page. A form will prompt the user to enter their current password followed by their new password and a confirmation of the new password.
+
 <details>
 <summary>Change password image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -329,6 +335,8 @@ In its entirety the website consists of a variety of features across the many si
 - Covered in user stories: 13
 
 ### Post comment
+
+The post comment feature can be accessed from any users post detail page, below the post image is a form to enter a comment. The comment will then be posted alongside the users profile picture and username.
 
 <details>
 <summary>Post comment image</summary>
@@ -339,6 +347,8 @@ In its entirety the website consists of a variety of features across the many si
 
 ### Contact
 
+The contact feature can be found from the nav bar and allows both signed in users and annonymous users to contact the site admin.
+
 <details>
 <summary>Contact image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -347,6 +357,8 @@ In its entirety the website consists of a variety of features across the many si
 - Covered in user stories: 21
 
 ### Create Post
+
+The create post feature can be found from the current logged in users profile page. This will allow a logged in user to post an image to their profile.
 
 <details>
 <summary>Create Post image</summary>
@@ -357,6 +369,8 @@ In its entirety the website consists of a variety of features across the many si
 
 ### Delete Post
 
+The delete post feature can be found above the image on the post detail page of a currently logged in user. The delete post button will only be visible to owners of that post to avoid other users deleting posts they do not own.
+
 <details>
 <summary>Delete Post image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -365,6 +379,8 @@ In its entirety the website consists of a variety of features across the many si
 - Covered in user stories: 4, 8 & 29
 
 ### Edit Post
+
+The edit post feature can be found above the image on the post detail page of a currently logged in user and allows the captoion of the post to be updated. The edit post button will only be visible to owners of that post to avoid other users editing posts they do not own.
 
 <details>
 <summary>Edit image</summary>
@@ -375,6 +391,8 @@ In its entirety the website consists of a variety of features across the many si
 
 ### Edit Profile
 
+The edit profile feature can be found on the profile page of the current logged in user beside the Add post button. Clicking the edit profile button will redirect to a form in which the user can update their details.
+
 <details>
 <summary>Edit Profile image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -383,6 +401,8 @@ In its entirety the website consists of a variety of features across the many si
 - Covered in user stories: 15 & 22
 
 ### Error Pages
+
+The error pages features will display 400, 403, 404 and 500 error pages and allow the user to easily navigate back to the site.
 
 <details>
 <summary>Error Pages image</summary>
@@ -393,6 +413,8 @@ In its entirety the website consists of a variety of features across the many si
 
 ### Feed
 
+The feed feature can be found from the Nav Bar. The feed feature will display the posts of all followed users by the current user in a list sorted by latest to oldest.
+
 <details>
 <summary>Feed image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -401,6 +423,8 @@ In its entirety the website consists of a variety of features across the many si
 - Covered in user stories: 24
 
 ### Follow / Unfollow user
+
+The follow / unfollow user feature allows users to follow or unfollow other users, if a user is followed their posts will appear in current users feed.
 
 <details>
 <summary>Follow / Unfollow user image</summary>
@@ -411,6 +435,8 @@ In its entirety the website consists of a variety of features across the many si
 
 ### Follow / Unfollow button 
 
+The follow / unfollow user button feature can be found on the profile of any user just below their profile picture. The button text will reflect the current status of the user as FOLLOW or UNFOLLOW.
+
 <details>
 <summary>Follow / Unfollow button image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -419,6 +445,8 @@ In its entirety the website consists of a variety of features across the many si
 - Covered in user stories: 2 & 26
 
 ### Followed List
+
+The followed list feature can be accessed from the currently logged in users profile. This feature will display a list of all users that the current user follows.
 
 <details>
 <summary>Followed list image</summary>
@@ -429,6 +457,8 @@ In its entirety the website consists of a variety of features across the many si
 
 ### Followers List
 
+The followers list feature can be accessed from the currently logged in users profile. This feature will display a list of all users that the current user is followed by.
+
 <details>
 <summary>Followers list image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -437,6 +467,8 @@ In its entirety the website consists of a variety of features across the many si
 - Covered in user stories: X ADD USER STORY
 
 ### Home Page
+
+The home page feature displays upon initial arrival to the pic pals site and will allow users to log into Pic Pals, Rest password, Register an account and Contact the admin.
 
 <details>
 <summary>Home page image</summary>
@@ -447,6 +479,8 @@ In its entirety the website consists of a variety of features across the many si
 
 ### Input Validation
 
+Input Validation as a feature is used throughout the site for form inputs.
+
 <details>
 <summary>Input validation image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -455,6 +489,8 @@ In its entirety the website consists of a variety of features across the many si
 - Covered in user stories: 27
 
 ### Like count
+
+The like count feature can be found under a post image in the post details page. The total number of likes on the current post will be displayed.
 
 <details>
 <summary>Like count image</summary>
@@ -465,6 +501,8 @@ In its entirety the website consists of a variety of features across the many si
 
 ### Like / Unlike button
 
+The like / unlike button feature can be found under a post image in the post details page. A user can click on the like button and it will add / subtract a like based on the users current like status for that post.
+
 <details>
 <summary>Like / Unlike Button image</summary>
 <img src="docs/images/features/landing-page.png">
@@ -473,6 +511,8 @@ In its entirety the website consists of a variety of features across the many si
 - Covered in user stories: 2 & 3
 
 ### Register
+
+The register feature can be found on the landing page for the site. This feature allows users to register and create an account with pic pals via a form.
 
 <details>
 <summary>Register image</summary>
