@@ -42,13 +42,15 @@ The Pic Pals Social website has been developed to provide users the chance to po
     3. [Manual Testing](#manual-testing)
     4. [Automated Testing](#automated-testing)
 8. [Bugs](#bugs)
-9. [Deployment](#deployment)
-10. [Credits](#credits)
+9. [Configuration](#configuration)
+    1. [Google emails](#google-emails)
+10. [Deployment](#deployment)
+11. [Credits](#credits)
     1. [Tutorial](#tutorials)
     2. [Code](#code)
     3. [Literature](#literature)
     4. [Misc](#misc)
-11. [Acknowledgements](#acknowledgements)
+12. [Acknowledgements](#acknowledgements)
 
 ## Project Goals
 
@@ -1243,6 +1245,28 @@ During the project I encountered a number of bugs some of which were solved some
 | | |
 |  | |
 | | |
+
+## Configuration
+
+### Google emails
+
+To set up the project to send emails and to use a Google account as an SMTP server, the following steps are required:
+
+1. Create an email account at google.com, login, click you user icon and then on 'Manage Your Google Account'
+2. Click on the Security tab
+3. Turn on 2-step verification and follow the steps to enable
+4. Click on App passwords, click on Select app and choose Other
+5. Give your app a name and click on 'Generate'
+<br>![App password](docs/images/gmail-app-password.png)
+6. A 16 digit password will be generated, note the password down
+7. Set the below variables within the settings.py file to successfully send emails
+<br><code>EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'</code>
+<br><code>EMAIL_HOST = 'smtp.gmail.com'</code>
+<br><code>EMAIL_HOST_USER = os.environ.get('EMAIL_HOST_USER')</code>
+<br><code>EMAIL_HOST_PASSWORD = os.environ.get('EMAIL_HOST_PASSWORD')</code>
+<br><code>EMAIL_PORT = '587'</code>
+<br><code>EMAIL_USE_TLS = True</code>
+8. Set up the variables EMAIL_HOST_USER and EMAIL_HOST_PASSWORD in your Render application Config vars
 
 ## Deployment
 
