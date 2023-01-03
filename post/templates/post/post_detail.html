@@ -22,10 +22,10 @@
                   <a href="{{ post.user.get_absolute_url }}"
                     class="post-spacing">
                     <img src="{{ post.user.profile.profile_pic.url }}"
-                      class="post-avatar">
+                      alt="User profile picture" class="post-avatar">
                     {% else %}
                     <img src="{% static 'images/default_profile_pic.png' %}"
-                      alt="Profile Picture" class="post-avatar">
+                      alt="Default profile picture" class="post-avatar">
                     {% endif %}
                     {{ post.user }}
                   </a>
@@ -49,7 +49,7 @@
         </div>
       </div>
       <div>
-        <img src="{{ post.image.url }}" class="post-pic">
+        <img src="{{ post.image.url }}" alt="Post image" class="post-pic">
       </div>
       <div class="card-footer">
         {% if post.caption_edited %}
@@ -68,11 +68,11 @@
   <div class="like-btn-margin">
     {% if liked_by_user %}
     <a href="{% url 'posts:like' post.id %}">
-      <img src="/static/images/like.png" class="like-button">
+      <img src="/static/images/like.png" alt="Like post icon" class="like-button">
     </a>
     {% else %}
     <a href="{% url 'posts:like' post.id %}">
-      <img src="/static/images/not_liked.png" class="like-button">
+      <img src="/static/images/not_liked.png" alt="Unlike post icon" class="like-button">
     </a>
     {% endif %}
     {% if post.likes == 0 %}
@@ -98,17 +98,17 @@
               <a href="{{ comment.user.get_absolute_url }}">
                 {% if comment.user.profile.profile_pic %}
                 <img src="{{ comment.user.profile.profile_pic.url }}"
-                  class="post-avatar">
+                  alt="User profile picture" class="post-avatar">
                 {% else %}
                 <img src="{% static 'images/default_profile_pic.png' %}"
-                  alt="Profile Picture" class="post-avatar">
+                  alt="Default profile picture" class="post-avatar">
                 {% endif %}
                 {{ comment.user }}
               </a>
               {% if request.user == comment.user or request.user == post.user %}
               <a href="{% url 'posts:comment_delete' comment.id %}"
                 class="comment-delete-btn">
-                <img src="/static/images/delete.png" class="delete-btn">
+                <img src="/static/images/delete.png" alt="Delete comment icon" class="delete-btn">
               </a>
             </div>
             {% endif %}

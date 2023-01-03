@@ -34,11 +34,11 @@
                                     href="{{ user.get_absolute_url }}">
                                     {% if user.profile.profile_pic %}
                                     <img src="{{ user.profile.profile_pic.url }}"
-                                        alt="Profile Picture"
+                                        alt="User profile picture"
                                         class="profile-pic"><br>
                                     {% else %}
                                     <img src="{% static 'images/default_profile_pic.png' %}"
-                                        alt="Profile Picture"
+                                        alt="Default profile picture"
                                         class="profile-pic"><br>
                                     {% endif %}
                                     {{ user.username }}

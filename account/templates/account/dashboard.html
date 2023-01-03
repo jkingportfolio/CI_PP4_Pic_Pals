@@ -18,11 +18,11 @@
         </div>
         <div class="row center-image">
           {% if user.profile.profile_pic %}
-          <img src="{{ user.profile.profile_pic.url }}" alt="Profile Picture"
+          <img src="{{ user.profile.profile_pic.url }}" alt="User profile picture"
             class="profile-pic"><br>
           {% else %}
           <img src="{% static 'images/default_profile_pic.png' %}"
-            alt="Profile Picture" class="profile-pic"><br>
+            alt="Default profile picture" class="profile-pic"><br>
           {% endif %}
         </div>
         <div class="row button-margin">
@@ -84,10 +84,10 @@
               <a href="{{ post.get_absolute_url }}" class="post-spacing">
                 {% if user.profile.profile_pic %}
                 <img src="{{ user.profile.profile_pic.url }}"
-                  class="post-avatar">
+                  alt="User profile picture" class="post-avatar">
                 {% else %}
                 <img src="{% static 'images/default_profile_pic.png' %}"
-                  alt="Profile Picture" class="post-avatar">
+                  alt="Default profile picture" class="post-avatar">
                 {% endif %}
                 {{ post.user }}
               </a>
@@ -95,7 +95,7 @@
             <div class="card-img-size">
               <div class="card-h-100">
                 <a href="{{ post.get_absolute_url }}" class="card-h-100">
-                  <img src="{{ post.image.url }}" class="post-pic">
+                  <img src="{{ post.image.url }}" alt="Post image" class="post-pic">
                 </a>
               </div>
             </div>

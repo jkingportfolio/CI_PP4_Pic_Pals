@@ -7,6 +7,7 @@
 <head>
     <title>Pic Pals</title>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="description"
         content="Pic pals is a social site in which users can share images">
@@ -33,7 +34,7 @@
         <nav class="navbar navbar-expand-lg navbar-light bg-light ">
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
-                    <img src="{% static 'images/logo.png' %}">
+                    <img src="{% static 'images/logo.png' %}" alt="pic pals logo">
                 </a>
                 {% if request.user.is_authenticated %}
                 <button class="navbar-toggler" type="button"
