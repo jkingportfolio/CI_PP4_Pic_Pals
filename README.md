@@ -134,7 +134,7 @@ The colour scheme used in this project was chosen with simplicity in mind. The c
 !!! DECIDE ON A COLOUR PALETTE !!!
 
 <details>
-<summary>Colour Pallete</summary>
+<summary>Colour Palete</summary>
 <img src="docs/colours/colour-palette.png">
 </details>
 
