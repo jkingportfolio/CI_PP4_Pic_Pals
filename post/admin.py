@@ -21,7 +21,7 @@ class PostAdmin(admin.ModelAdmin):
 class LikeAdmin(admin.ModelAdmin):
     """
     Admin class for a like object
-    """ 
+    """
     list_display = (
         'user',
         'post'
@@ -32,7 +32,7 @@ class LikeAdmin(admin.ModelAdmin):
 class CommentAdmin(admin.ModelAdmin):
     """
         Admin class for a comment object
-    """ 
+    """
     list_display = (
         'created_on',
         'user',

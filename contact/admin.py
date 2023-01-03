@@ -16,5 +16,5 @@ class ContactAdmin(admin.ModelAdmin):
     list_display = (
         'name',
         'reason',
-        'email',
+        'email'
         )

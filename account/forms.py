@@ -25,7 +25,8 @@ class Registration(forms.ModelForm):
     A class for a password when registering
     """
     password = forms.CharField(label='Password', widget=forms.PasswordInput())
-    password_confirm = forms.CharField(label='Password Confirm', widget=forms.PasswordInput())
+    password_confirm = forms.CharField(label='Password Confirm',
+                                       widget=forms.PasswordInput())
 
     class Meta:
         model = User

@@ -1235,13 +1235,11 @@ During the project I encountered a number of bugs some of which were solved some
 
 | Bug           | Fix           |
 | ------------- | ------------- |
-| | |
-| | | 
-|  | |
-|   | |
-| | |
-|  | |
-| | |
+| Like button acting globally and not on a user basis | |
+| Delete post confirmation modal would still delete post when cancelled | | 
+| Reset password wont send an email via Google Mail | |
+| Follow button would not update to reflect the current follow status  | |
+| Post cards would be the height of the largest image in the lists row leaving whitespace below images in cards that are shorter | |
 
 ## Configuration
 

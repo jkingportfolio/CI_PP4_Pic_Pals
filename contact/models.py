@@ -8,6 +8,7 @@ A module for models in the contact app
 from django.db import models
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
+
 class Contact(models.Model):
     """
     A class for the contact model
@@ -38,7 +39,6 @@ class Contact(models.Model):
     message_date = models.DateTimeField(
         auto_now=True
         )
-
 
     class Meta:
         verbose_name = 'Message'

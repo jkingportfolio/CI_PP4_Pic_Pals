@@ -24,7 +24,7 @@ from post.models import Post
 
 def user_login(request):
     """
-    A function based view for the authenticating and 
+    A function based view for the authenticating and
     logging in a user with the user of a form requesting
     username and password
     """
@@ -33,11 +33,13 @@ def user_login(request):
         if form.is_valid():
             clear_form = form.cleaned_data
             user = authenticate(
-                request, username=clear_form['username'], password=clear_form['password'])
+                request, username=clear_form['username'],
+                password=clear_form['password'])
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    messages.success(request, f'{user.username} successfully logged in!')
+                    messages.success(request,
+                                     f'{user.username} successfully logged in!')
                     return HttpResponse(('Login authenticated'))
                 else:
                     return HttpResponse(('Account disabled'))
@@ -73,7 +75,7 @@ def register(request):
 @login_required
 def dashboard(request):
     """
-    A function based view for the logged in users profile 
+    A function based view for the logged in users profile
     page with a list of their posts, button to add a post, account
     stats and options to update profile and change password
     """
@@ -97,13 +99,15 @@ def dashboard(request):
 @login_required()
 def edit_profile(request):
     """
-    A function based view for the edit profile page with form 
+    A function based view for the edit profile page with form
     to input new profile details
     """
     if request.method == 'POST':
-        user_form = EditUser(instance=request.user, data=request.POST)
-        profile_form = EditProfile(
-            instance=request.user.profile, data=request.POST, files=request.FILES)
+        user_form = EditUser(instance=request.user,
+                             data=request.POST)
+        profile_form = EditProfile(instance=request.user.profile,
+                                   data=request.POST,
+                                   files=request.FILES)
         if user_form.is_valid() and profile_form.is_valid():
             user_form.save()
             profile_form.save()
@@ -113,13 +117,14 @@ def edit_profile(request):
     else:
         user_form = EditUser(instance=request.user)
         profile_form = EditProfile(instance=request.user)
-    return render(request, 'account/edit_profile.html', {'user_form': user_form, 'profile_form': profile_form})
+    return render(request, 'account/edit_profile.html',
+                  {'user_form': user_form, 'profile_form': profile_form})
 
 
 @login_required
 def site_users(request):
     """
-    A function based view for the people page which will return a list of 
+    A function based view for the people page which will return a list of
     all pic pals users and a search bar for the ability to search for users
     """
     users = User.objects.all().order_by('username')
@@ -143,7 +148,8 @@ def user_detail(request, username):
     user_following_count = Follow.objects.filter(user=user).count()
     user_followers_list = Follow.objects.filter(followed_account=user)
     user_follow_status = False
-    if Follow.objects.filter(user=request.user, followed_account=user).exists():
+    if Follow.objects.filter(
+            user=request.user, followed_account=user).exists():
         user_follow_status = True
     context = {
         'user': user,
@@ -197,6 +203,7 @@ def following_list(request, username):
     }
     return render(request, 'account/user/following_list.html', context)
 
+
 @login_required
 def follower_list(request, username):
     """
@@ -223,7 +230,7 @@ def search_users(request):
     query = request.GET.get('p')
     user_search_results = User.objects.filter(username__icontains=query)
     context = {
-            'user_search_results': user_search_results,
+        'user_search_results': user_search_results,
     }
-    
+
     return render(request, "account/user/user_search.html", context)

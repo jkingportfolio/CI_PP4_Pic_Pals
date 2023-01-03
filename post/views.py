@@ -44,7 +44,8 @@ def edit_post(request, id):
     """
     post = Post.objects.get(id=id)
     if not request.user == post.user:
-        messages.error(request, 'Sorry, you do not have permission to do that.')
+        messages.error(
+            request, 'Sorry, you do not have permission to do that.')
         return redirect(reverse('dashboard'))
     if request.method == 'POST':
         post_form = EditPost(request.POST, instance=post)
@@ -99,7 +100,9 @@ def current_user_posts(request):
     user = request.user
     user_posts = Post.objects.filter(user=user)
     post_count = user_posts.count()
-    return render(request, 'post/user_posts.html', {'user_posts': user_posts, 'post_count': post_count})
+    return render(request, 'post/user_posts.html',
+                  {'user_posts': user_posts,
+                   'post_count': post_count})
 
 
 @login_required
@@ -188,4 +191,3 @@ def followed_feed(request):
         'followed_user_posts': followed_user_posts,
     }
     return render(request, 'post/feed.html', context)
-    
