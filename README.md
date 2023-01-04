@@ -1108,11 +1108,11 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 #### Site Owner
 
-27. As the site owner, I would want to validate users data entries on sign up **so that users can create a log in which meets the requirements.
+27. As the site owner, I would want to validate users data entries on sign up so that users can create a log in which meets the requirements.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Input Validation  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Input Validation  | User to enter data into one of the many forms form fields | Whilst user entering data into a form fields, if the users input does not meet the requirements a prompt will indicate the relevant issue with the users input | Works as intended |
 
 <details>
 <summary>Screenshots User Story 16</summary>
@@ -1128,7 +1128,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Authentication  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Authentication  | User to log in via the login page and make a post from the My Profile page  | User to be authenticated via Djangos auth_user and the login view to ensure only a user logged in can post a post from that particular account | Works as expected |
 
 <details>
 <summary>Screenshots User Story 16</summary>
@@ -1144,7 +1144,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Delete Post  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Delete Post  | Admin to log into the admin site of the app and from their go to the posts object and delete the required post database entry  | Admin to log into the admin site and have the ability to delete a post of any user as this profile is a super user | Works as intended |
 
 <details>
 <summary>Screenshots User Story 16</summary>
@@ -1160,7 +1160,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Responsiveness  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Responsiveness  | Allow users to use the site on their own device regardless of the size  | The site is functional and works as intended on a range of device screen sizes  | Works as intended |
 
 <details>
 <summary>Screenshots User Story 16</summary>
@@ -1172,11 +1172,11 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 </details>
 </details>
 
-31. As the site owner, I would want to use the app search function so that i can search for particular posts by hashtags or search for users by their user name.
+31. As the site owner, I would want to use the app search function so that i can search for particular users by their user name.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  user Search  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  User Search  | Log in as admin, navigate to the People page via the Nav Bar located at the top of the page. At the top of the page will be the search bar, enter the username and press enter.  | The searched for users profile will list, additionally if other users username has the same text they will show. If no user is found with that user name a message will display stating that no user with that username exists | Works as intended |
 
 <details>
 <summary>Screenshots User Story 16</summary>
@@ -1192,7 +1192,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Error Pages  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Error Pages  | User to attempt to navigate to a page that doesnt exist or use the site whilst there is a server error. This will display the relevant Error page and return home button  | Error page of the relevant error to display informing the user of the error and allowing them to redirect with the use of a button and not having to click the browser back buttons | Works as intended |
 
 <details>
 <summary>Screenshots User Story 16</summary>
