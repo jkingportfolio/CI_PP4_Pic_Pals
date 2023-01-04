@@ -1269,46 +1269,50 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 
 This project was deployed to Heroku in the project's early stages to allow continual responsive testing. This was achieved via the following steps:
 
-The website was deployed using Heroku by "following these steps:
+The website was deployed with Heroku by following these steps:
 
 1. Use the "pip freeze -> requiremnts.txt" command in the terminal to save any libraries that need to be installed in the file.
-2. Navigate to https://www.heroku.com/ and login or create an account. 
-3. Click the "new" button in the upper right corner and select "create new app".
+2. The app uses Cloudinary to host the post images therefore a Cloudinary account will be required. 
+3. Log in to [Cloudinary](https://cloudinary.com/) or create an account for free.
+4. Navigate to the Dashboard on Cloudinary
+5. Copy and store the value of the 'API Environment Variable" beginning at cloudinary:// until the end, this will be used in the Heroku Config Vars. 
+6. The app also uses ElephantSQL to host the database
+7. Log in to [ElephantSQL](https://www.elephantsql.com/) or create an account for free.
+8. Click on Create a new instance
+9. Set up your plan. Give the 'plan' the desired name, select the Tiny Turtle (free) plan and leave tags blank.
+10. Select region and chose the nearest data centre to your location.
+11. Click 'review' and if happy with the details presented click on the create instance button.
+12. From the instances section click on the instance with the name that was just created.
+13. Get the ElephantSQL database URL from the instance details page and copy, this will be used in the Heroku Config Vars
+6. Navigate to https://www.heroku.com/ and login or create an account. 
+7. Click the "new" button in the upper right corner and select "create new app".
 <details>
 <summary>Screenshot</summary>
 <img src="docs/images/deployment/new-app.png">
 </details>
 
-4. Choose an app name and your region and click "Create app".
+8. Choose an app name and your region and click "Create app".
 <details>
 <summary>Screenshot</summary>
 <img src="docs/images/deployment/app-name.png">
 </details>
 
-5. Under Config Vars store any sensitive data you saved in .json file. Name 'Key' field, copy the .json file and paste it to 'Value' field. Also add a key 'PORT' and value '8000'.
+9. Reveal Config Vars and store the required config var names and values as below:
+
+- `CLOUDINARY_URL`: *your cloudinary URL as obtained above*
+- `DATABASE_URL`: *your ElephantSQL postgres database URL as obtained above*
+- `PORT`: `8000`
+- `SECRET_KEY`: *your secret key*
+
 <details>
 <summary>Screenshot</summary>
 <img src="docs/images/deployment/config-vars.png">
 </details>
 
-6. Go to the "settings" tab, add the Python build pack and then the node.js build pack (please note they need to be in the correct order of Python above node.js).
-<details>
-<summary>Screenshot</summary>
-<img src="docs/images/deployment/settings.png">
-</details>
-<details>
-<summary>Screenshot</summary>
-<img src="docs/images/deployment/add-buildpack.png">
-</details>
-<details>
-<summary>Screenshot</summary>
-<img src="docs/images/deployment/build-pack-order.png">
-</details>
-
-7. Go to the "deploy" tab and pick GitHub as a deployment method.
-8. Search for a repository to connect to and select the branch you would like to build the app from.
-9. If preferred enable automatic deploys and then deploy branch.
-10. Wait for the app to build and then click on the "View" link which will redirect you to the deployed link.
+11. Go to the "deploy" tab and pick GitHub as a deployment method.
+12. Search for a repository to connect to and select the branch you would like to build the app from.
+13. If preferred enable automatic deploys and then deploy branch.
+14. Wait for the app to build and then click on the "View" link which will redirect you to the deployed link.
 
 ### Forking the GitHub Repository
 
