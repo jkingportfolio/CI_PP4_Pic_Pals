@@ -109,7 +109,7 @@ The Pic Pals Social website has been developed to provide users the chance to po
 20. As a user, I want to follow other accounts so that i can view their posts on my feed
 21. As a user, I want to fill in a help form so that i can enquire about issues I may have regarding the app
 22. As a user, I want to change my email address so that i can maintain the same account if I change email address
-23. As a user, I want to receive feedback so that i can confirm the help form submission was successful or not.
+23. As a user, I want to receive feedback so that i can confirm the contact form submission was successful or not.
 24. As a user, I want to scroll through the latest images on my feed so that i can keep up to date with accounts I follow
 25. As a user, I want to browse my list of followed accounts so that i can view that particular user account
 26. As a user, I want to see a visual indicator of following an account so that i can tell if I currently follow that account.
@@ -989,7 +989,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Follow  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Follow  | Log in and navigate to the People page of the site located in the Nav Bar, scroll or use the search bar to find the account whom is wished to follow. Click on the follow button located under the profiles profile picture.  | User will follow the desired account, a django message will confirm the follow and the button will change from a "follow" button to an "unfollow" button.    | Works as intended |
 
 <details>
 <summary>Screenshots User Story 20</summary>
@@ -1006,7 +1006,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Contact  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Contact  | Click on the contact link in the nav bar which will be located at the end of the list, or if not signed in will appear on the right hand side of the nav bar. Fill in the forms fields and click on the submit button  | User form will be submitted and a django message will confirm this.   | Works as intended |
 
 <details>
 <summary>Screenshots User Story 21</summary>
@@ -1023,7 +1023,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Edit Profile  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Edit Profile  | Log in and navigate to the My Profile page by clicking on the link in the nav bar. Click on the edit profile button located below the user profile picture. Type in the desired email address in the email field and click submit.  | Users profile will update to be that of the newly entered email address | Works as intended |
 
 <details>
 <summary>Screenshots User Story 22</summary>
@@ -1036,11 +1036,11 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 </details>
 
-23. As a user, I want to receive feedback so that i can confirm the help form submission was successful or not.
+23. As a user, I want to receive feedback so that i can confirm the contact form submission was successful or not.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Site Feedback  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Site Feedback  | Navigate to one of the forms in the site for example the contact form> Fill in the form and submit it to be presented with the success / unsuccessfully message feedback  | User to complete an operation for example submitting a contact form and be presented with feedback as to if the form was submitted. | Works as intended. |
 
 <details>
 <summary>Screenshots User Story 23</summary>
@@ -1057,7 +1057,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Feed  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Feed  | Log in and navigate to the feed page which can be accessed via the nav bar by clicking on the Feed link. Scroll through the image list that is made up of followed accounts posts.  | User will be presented with a list of all followed users posts in order of date created from newest to oldest. | Works as expected |
 
 <details>
 <summary>Screenshots User Story 24</summary>
@@ -1074,7 +1074,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Followed List  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+| Followed List  | Log in and navigate to the My Profile page, this can be accessed from clickin on the My Post link in the nav bar. Within the Profile info panel at the top of the page click on the FOLLOW count. This will then display a list of followed accounts.  | User to be displayed with a list of all users they currently follow. | Works as expected |
 
 <details>
 <summary>Screenshots User Story 25</summary>
@@ -1091,7 +1091,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Follow / Unfollow button  | <ACTION>  | <EXPECTED>    | <ACTUAL> |
+|  Follow / Unfollow button  | Log in and navigate to a users profile page via the People link in the Nav Bar. Below the users profile picture locate the follow button which will indicate if the user is currently followed. If a user is followed the button will display UNFOLLOW and if not followed will display FOLLOW  | Follow button indicator to visually reflect the current following status by showing the relevant message on the button  | Works as expected |
 
 <details>
 <summary>Screenshots User Story 26</summary>
