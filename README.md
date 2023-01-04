@@ -129,6 +129,8 @@ The Pic Pals Social website has been developed to provide users the chance to po
 
 ## Technical Design
 
+An Agile approach to creating this app has been applied. Githubs projects was used to track user stories and implement ideas based on their level of importance for allowing use of the app with no loss of functionality or user experience.
+
 ### Colours
 
 The colour scheme used in this project was chosen with simplicity in mind. The colour scheme is used through out all pages to ensure contrast readability and an overall good user experience. 
@@ -1239,7 +1241,7 @@ During the project I encountered a number of bugs some of which were solved some
 
 | Bug           | Fix           |
 | ------------- | ------------- |
-| Like button acting globally and not on a user basis | |
+| Like button acting globally and not on a user basis |  |
 | Delete post confirmation modal would still delete post when cancelled | | 
 | Reset password wont send an email via Google Mail | |
 | Follow button would not update to reflect the current follow status  | |
