@@ -283,20 +283,24 @@ Balsamiq was used to create wireframes of the sites pages
 
 ## Libraries
 
-### Python Libraries
+### Installed Libraries
 
-- os - Used to determine operating system and clear CLI.
-- time - Used to create a delay effect.
-- datetime - Used to get current time stamp and assign times to orders.
-- <> - <>
-
-### Third Party Libraries
-
-- <NAME> - JUSTIFICATION: I used this library to <>.
-- <NAME> - JUSTIFICATION: I used this library to <>.
-- <NAME> - JUSTIFICATION: I used this library to <>.
-- <NAME> - JUSTIFICATION: I used this library to <>.
-- <NAME> - JUSTIFICATION: I used this library to <>..
+| Package       | Version        |
+| ------------- | ------------- |
+| asgiref | 3.5.2 |
+| cloudinary | 1.30.0 |
+| dj-database-url | 0.5.0 |
+| dj3-cloudinary-storage | 0.0.6 |
+| Django | 3.2.16 |
+| django-crispy-forms | 1.14.0 |
+| django-extensions | 3.2.1 |
+| gunicorn | 20.1.0 |
+| psycopg2 | 2.9.5 |
+| pydot | 1.4.2 |
+| pyparsing | 3.0.9 |
+| pytz  | 2022.6 |
+| sqlparse | 0.4.3 |
+| whitenoise | 6.2.0 |
 
 
 ## Features
@@ -1240,6 +1244,7 @@ During the project I encountered a number of bugs some of which were solved some
 | Reset password wont send an email via Google Mail | |
 | Follow button would not update to reflect the current follow status  | |
 | Post cards would be the height of the largest image in the lists row leaving whitespace below images in cards that are shorter | |
+| Static files not showing | By installing and using whitenoise 
 
 ## Configuration
 
