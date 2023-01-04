@@ -1243,16 +1243,14 @@ During the project I encountered a number of bugs some of which were solved some
 | Bug           | Fix           |
 | ------------- | ------------- |
 | Django urls not working | As i had used app name spaces i hadnt included the app name followed by : therefore Django couldnt find the templates. All instances referring to Django urls with name spaces were updated to the correct format and the bug was resolved.|
-
 | Databse migration error | id column in database was edited after creation, after talking with tutor support it wasa deemed the best way to fix this issue was to reset my database, delete all existing migrations and then migrate the database again. After migration the database worked as intended and the bug was resolved |
-
 | Images not uploading to Cloudinary | Post images were not being sent and stored on cloudinary, a simple mismatch of variable names was the cause and upon updating the bug was resolved. |
-
 | Static files not showing | Static files would not be loaded by the browser, after searching online i came across a similar issue and the method of fixing this bug was to install the third party library called whitenoise. Upon installation of whitenoise and adding it to the middelware in my settings static files were now loaded in the browser and the bug was resolved | 
 | Follow button would not update to reflect the current follow status | When initially created the filter for the follow object was checking if a follow object for that user existed and not if an object between the request user and the user of the viewing profile existed therefore the button would always state unfollowed aslong as at least one user followed that account. The filter was updated to filtered the relationship between the request user and the user of the profile and the bug was resolved  |
 | Delete post confirmation modal would still delete post when cancelled | The achor for tag was intially wrapped around the delete button therefore no matter what was pressed on the modal it would still redirect to the delete post page and delete the post, to fix this the anchor was moved to wrap around the ok button of the modal which provided the intended outcome and the bug was resolved.| 
 | Reset password wont send an email via Google Mail | At present i have no fix for this, the google mail server just continues to time out. As this function can still be tested using the django email backend setting and returning the one time link via the command line i have decided to keep this feature in my project but class it as a known bug as it does not affect the functioning of the program. |
 | Post cards would be the height of the largest image in the lists row leaving whitespace below images in cards that are shorter | This was down to simple CSS styling of the class being allocated to the wrong divs. Once this was moved and updated all posts then had the same height and the image was resized within the card with white space above and below to maintain the correct image ratio thus resolving the bug. |
+| Post created without image | There was no requirement for the image field in the post form which could allow a user to post an empty post. Once the field was set to be required the b ug was resolved |
 
 
 ## Configuration
