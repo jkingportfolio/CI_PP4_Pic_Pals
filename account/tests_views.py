@@ -46,5 +46,4 @@ from .models import Profile, Follow
 #         self.client.login(username='test_user', password='test_password')
 #         response = self.client.get('')
 #         self.assertEqual(response.status_code, 200)
-#         self.assertTemplateUsed(response, 'account/user/user_detail.html')
 

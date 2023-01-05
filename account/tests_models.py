@@ -49,26 +49,27 @@ class TestFollowModels(TestCase):
         test_user = User.objects.create_user(
             username='test_user',
             password='test_password')
-        test_user_profile = Profile.objects.create(user=test_user)
+        # test_user_profile = Profile.objects.create(user=test_user)
         test_user.save()
-        test_user_profile.save()
+        # test_user_profile.save()
 
         test_followed_account = User.objects.create_user(
             username='test_followed_account',
             password='test_password')
-        test_followed_account_profile = Profile.objects.create(user=test_followed_account) 
+        # test_followed_account_profile = Profile.objects.create(user=test_followed_account) 
         test_followed_account.save()
-        test_followed_account_profile.save()
+        # test_followed_account_profile.save()
 
         test_follow = Follow.objects.create(
             user=test_user, followed_account=test_followed_account)
+        test_follow.save()
 
     def tearDown(self):
         """
         Delete test user and Follow object
         """
         User.objects.all().delete()
-        Profile.objects.all().delete()
+        # Profile.objects.all().delete()
         Follow.objects.all().delete()
 
     def test_follow_str_method(self):
