@@ -129,7 +129,18 @@ The Pic Pals Social website has been developed to provide users the chance to po
 
 ## Technical Design
 
-An Agile approach to creating this app has been applied. Githubs projects was used to track user stories and implement ideas based on their level of importance for allowing use of the app with no loss of functionality or user experience.
+### Agile design
+
+An Agile approach to creating this app has been applied. Githubs projects was used to track user stories and implement ideas based on their level of importance for allowing use of the app with no loss of functionality or user experience. Three categories were created indicating their level of importance, those were:
+- MUST HAVE
+- SHOULD HAVE
+- COULD HAVE
+
+By taking using AGILE methodology in this project i was able to deliver a site which had all required functionality and some more. Due to the time limit on this project i was not able to incorporate all intial listed features, but this is where an AGILE approach allows. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation
+
+### CRUD Functionality
+
+Blurp about CRUD
 
 ### Colours
 
@@ -267,7 +278,7 @@ Balsamiq was used to create wireframes of the sites pages
 - [Gitpod](https://www.gitpod.io/) - Used to develop and test code.
 - [Heroku Platform](https://id.heroku.com/) - Used to deploy the live project.
 - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to format forms.
-- [Am i Responsive](https://ui.dev/amiresponsive) - Used to create a mock up image of the site on different screen sizes.
+- [Website Mockup Generator](https://websitemockupgenerator.com/) - Used to create a mock up image of the site on different screen sizes.
 - [Balsamiq](https://balsamiq.com/) - Used to produce wireframes of the site.
 - [Boostrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Used to develop the layout of the site.
 - [Cloudinary](https://cloudinary.com/) - Used to store post images.
