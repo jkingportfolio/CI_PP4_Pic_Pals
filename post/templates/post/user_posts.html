@@ -44,14 +44,14 @@
       </div>
     </div>
     {% empty %}
-    <p class="h1">
-      No posts yet.
+    <p class="h2 text-center top-margin">
+      Looks like you have no posts!
     </p>
-    <p>
+    <button aria-label="Add post button" class="form-btn text-center auto-margin top-margin btn btn-success">
       <a href="{% url 'posts:create_post' %}">
         Add a post
       </a>
-    </p>
+    </button>
     {% endfor %}
   </div>
 

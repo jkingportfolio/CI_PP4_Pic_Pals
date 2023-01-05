@@ -7,7 +7,11 @@
 <div class="container form-style">
     <h1>Thank you for visiting Pic Pals</h1>
     <p>You have successfully logged out.</p>
-    <a class="btn btn-dark" href="{% url 'login' %}">Log back in</a>
+    <button aria-label="Login button" class="form-btn btn btn-success">
+        <a href="{% url 'login' %}">
+            Log in
+        </a>
+    </button>
 </div>
 
 {% endblock %}

@@ -22,16 +22,17 @@ def contact(request):
         contact_form = ContactForm(request.POST)
         if contact_form.is_valid():
             contact_form.save()
-            messages.success(request, 'Thank you for your message!')
+            messages.success(request, 'Thank you for your message!'
+                             ' We will be in touch soon!')
             form_submit = True
             context = {
                 'contact_form': contact_form,
                 'form_submit': form_submit
             }
-            return render(request, 'contact/contact_success.html', context)
+            return render(request, 'account/dashboard.html', context)
     else:
         contact_form = ContactForm()
         context = {
-                'contact_form': contact_form,
-            }
+            'contact_form': contact_form,
+        }
     return render(request, 'contact/contact.html', context)

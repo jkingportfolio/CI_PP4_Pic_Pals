@@ -12,6 +12,11 @@
         {{ form|crispy }}
         {% csrf_token %}
         <p><input type="submit" value="Post" class="form-btn-pos"></p>
+        <button aria-label="Cancel button" class="form-btn">
+            <a href="/">
+                Cancel
+            </a>
+        </button>
     </form>
 </div>
 
