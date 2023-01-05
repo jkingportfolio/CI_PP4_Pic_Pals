@@ -194,9 +194,7 @@ def following_list(request, username):
     display a list of all users the current user follows
     """
     user = get_object_or_404(User, username=username, is_active=True)
-    print(f'User who owns following list: {user.username}')
     user_following_list = Follow.objects.filter(user=user)
-    print(f'Following list: {user_following_list}')
     context = {
         'user': user,
         'user_following_list': user_following_list
@@ -211,9 +209,7 @@ def follower_list(request, username):
     display a list of all users the current user is followed by
     """
     user = get_object_or_404(User, username=username, is_active=True)
-    print(f'User who owns followers list: {user.username}')
     user_followers_list = Follow.objects.filter(followed_account=user)
-    print(f'Followers list: {user_followers_list}')
     context = {
         'user': user,
         'user_followers_list': user_followers_list
