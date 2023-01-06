@@ -112,6 +112,7 @@ def edit_profile(request):
             user_form.save()
             profile_form.save()
             messages.success(request, 'Profile updated successfully')
+            return redirect('/')
         else:
             messages.error(request, 'Error updating profile.')
     else:
