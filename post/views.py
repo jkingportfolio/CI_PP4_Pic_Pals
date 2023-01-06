@@ -55,9 +55,11 @@ def edit_post(request, id):
             post.caption_edited_time = datetime.datetime.now()
             post.save()
             messages.success(request, 'Post caption updated successfully.')
-            return render(request, 'post/post_detail.html', {'post': post})
+            # The below works but causes issues, page  rendered is correct but not url
+            # return render(request, 'post/post_detail.html', {'post': post})
         else:
             messages.error(request, 'Error updating post caption.')
+            return render(request, 'post/post_detail.html', context)
     else:
         post_form = EditPost(instance=post)
     context = {

@@ -7,6 +7,7 @@ A module for forms
 from django import forms
 from django.forms import ModelForm, TextInput
 from django.contrib.auth.models import User
+from crispy_forms.helper import FormHelper
 # Internal
 from .models import Profile
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -52,6 +53,10 @@ class EditProfile(forms.ModelForm):
     """
     A class for updating user profile details
     """
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.helper = FormHelper(self)
+
     class Meta:
         model = Profile
         fields = ['profile_pic', 'date_of_birth', 'bio']

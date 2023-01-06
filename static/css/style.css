@@ -241,6 +241,26 @@ a {
     font-size: xx-large;
 }
 
+#scrollBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 15px;
+    border: none;
+    outline: none;
+    background-color: rgba(255, 128, 128, 1);
+    color: black;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 50%;
+  }
+  
+#scrollBtn:hover {
+background-color: grey;
+}
+
   /* Media queries*/
 
   @media only screen and (max-width: 571px) {
