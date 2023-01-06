@@ -33,7 +33,7 @@ class Contact(models.Model):
     email = models.EmailField(
         max_length=70
         )
-    message_body = models.TextField(
+    message = models.TextField(
         max_length=500
         )
     message_date = models.DateTimeField(
