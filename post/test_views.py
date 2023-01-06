@@ -6,7 +6,7 @@ A module for testing views of the post app
 # 3rd party:
 from django.test import TestCase
 # Internal
-from .models import Post, Like, Comment
+from .views import *
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
