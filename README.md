@@ -1,7 +1,7 @@
 # pic-pals
 Developer: Jamie King
 
-![Mockup image](docs/images/features/landing-page.png)
+![Mockup image](readme/mockup.png)
 
 The Pic Pals Social website has been developed to provide users the chance to post images online and have the ability to view other users posts also. 
 
