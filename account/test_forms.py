@@ -19,7 +19,9 @@ class TestContactForms(TestCase):
         Create test user & profile
          """
         test_user = User.objects.create_user(
-            username='test_user', password='test_password')
+            username='test_user',
+            password='test_password'
+            )
 
         Profile.objects.create(user=test_user)
 
