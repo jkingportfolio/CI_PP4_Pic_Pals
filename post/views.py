@@ -157,6 +157,7 @@ def post_comment(request, id):
         comment.user = user
         comment.post = post
         comment.save()
+        messages.success(request, 'Comment posted successfully.')
     return redirect(request.META.get('HTTP_REFERER'), {'post': post,
                                                        'form': form,
                                                        'comment': comment})
