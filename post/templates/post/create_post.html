@@ -11,13 +11,13 @@
     <form method="post" enctype="multipart/form-data">
         {{ form|crispy }}
         {% csrf_token %}
-        <p><input type="submit" value="Post" class="form-btn-pos"></p>
-        <button aria-label="Cancel button" class="form-btn">
-            <a href="/">
-                Cancel
-            </a>
-        </button>
+        <p><input type="submit" value="Post" class="form-btn form-btn-pos"></p>
     </form>
+    <button aria-label="Cancel button" class="form-btn">
+        <a href="/">
+            Cancel
+        </a>
+    </button>
 </div>
 
 {% endblock %}
