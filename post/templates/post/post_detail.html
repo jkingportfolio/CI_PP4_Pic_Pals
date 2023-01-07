@@ -34,9 +34,12 @@
             </div>
           </div>
           {% if request.user == post.user %}
-          <div class="col-3 btn btn-dark edit-post-btn">
+          <div class="col-3">
             <a href="{% url 'posts:edit_post' post.id %}">
-              Edit
+              <button class=" btn btn-dark edit-post-btn">
+                Edit
+              </button>
+              
             </a>
           </div>
           <div class="col-3 del-post-btn">

@@ -28,6 +28,7 @@ class TestContactForms(TestCase):
         Delete test user
         """
         User.objects.all().delete()
+        Profile.objects.all().delete()
 
     def test_login_form(self):
         """
