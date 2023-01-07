@@ -253,10 +253,31 @@ Balsamiq was used to create wireframes of the sites pages
 
 <details>
 <summary>Wireframes</summary>
-<img src="docs/wireframes/1.png">
-<img src="docs/wireframes/2.png">
-<img src="docs/wireframes/3.png">
-<img src="docs/wireframes/4.png">
+<img src="readme/wireframes/dashboard.html.png">
+<img src="readme/wireframes/contact.html.png">
+<img src="readme/wireframes/contact_success.html.png">
+<img src="readme/wireframes/register.html.png">
+<img src="readme/wireframes/register_success.png">
+<img src="readme/wireframes/password_reset_form.png">
+<img src="readme/wireframes/password_reset_done.html.png">
+<img src="readme/wireframes/password_reset_email.html.png">
+<img src="readme/wireframes/password_reset_confirm.html.png">
+<img src="readme/wireframes/reset_password_error.html.png">
+<img src="readme/wireframes/reset_password_done.html.png">
+<img src="readme/wireframes/user_detail.html (my_profile).png">
+<img src="readme/wireframes/edit_profile.html.png">
+<img src="readme/wireframes/create_post.html.png">
+<img src="readme/wireframes/post_detail.html.png">
+<img src="readme/wireframes/edit_post.html.png">
+<img src="readme/wireframes/password_change_form.html.png">
+<img src="readme/wireframes/password_change_done.html.png">
+<img src="readme/wireframes/following.html.png">
+<img src="readme/wireframes/followers.html.png">
+<img src="readme/wireframes/feed.html (my_posts).png">
+<img src="readme/wireframes/feed.html.png">
+<img src="readme/wireframes/user_list.html.png">
+<img src="readme/wireframes/user_detail.html.png">
+<img src="readme/wireframes/logged_out.html.png">
 </details>
 
 
