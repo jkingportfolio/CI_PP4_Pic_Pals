@@ -30,6 +30,6 @@ urlpatterns = [
          name='comment_delete'),
     path('feed/', views.followed_feed,
          name='followed_feed'),
-    path('post/edit-post/<str:id>', views.edit_post,
+    path('edit-post/<str:id>', views.edit_post,
          name='edit_post'),
 ]
