@@ -7,25 +7,59 @@
 {% block content %}
 
 <div class="container form-style">
-<h1>Edit profile</h1>
-<p>
-    Please edit your profile using the form below.
-</p>
+    <h1>Edit profile</h1>
+    <p>
+        Please edit your profile using the form below.
+    </p>
 
     <form method="post" enctype="multipart/form-data">
         {{ user_form|crispy }}
         {{ profile_form|crispy }}
         {% csrf_token %}
-        <p><input type="submit" value="Update profile" class="form-btn form-btn-pos"></p>
+        <p>
+            <button type="button" class="form-btn form-btn-pos"
+                data-bs-toggle="modal" data-bs-target="#staticBackdrop"
+                aria-label="Delete post button">
+                Update
+            </button>
+        </p>
+
+        <!-- Edit profile confirm modal -->
+        <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
+            data-bs-keyboard="false" tabindex="-1"
+            aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">
+                            Update profile
+                        </h5>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        Are you sure you want to update your profile with the new information?
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-danger"
+                            data-bs-dismiss="modal"
+                            aria-label="Close">No</button>
+                        <button type="submit" class="btn btn-success">
+                            Update
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
     </form>
-    <button aria-label="Cancel button" class="form-btn">
-        <a href="/">
+    <a href="/">
+        <button aria-label="Cancel button" class="form-btn">
             Cancel
-        </a>
-    </button>
+        </button>
+    </a>
 </div>
-
-
 
 
 {% endblock %}
