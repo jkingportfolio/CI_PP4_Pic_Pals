@@ -38,8 +38,7 @@ def user_login(request):
             if user is not None:
                 if user.is_active:
                     login(request, user)
-                    messages.success(request,
-                                     f'{user.username} successfully logged in!')
+                    messages.success(request, f'{user.username} successfully logged in!')
                     return HttpResponse(('Login authenticated'))
                 else:
                     return HttpResponse(('Account disabled'))
