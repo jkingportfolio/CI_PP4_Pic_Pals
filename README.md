@@ -1319,29 +1319,59 @@ The website was deployed with Heroku by following these steps:
 2. The app uses Cloudinary to host the post images therefore a Cloudinary account will be required. 
 3. Log in to [Cloudinary](https://cloudinary.com/) or create an account for free.
 4. Navigate to the Dashboard on Cloudinary
+<details>
+<summary>Screenshot</summary>
+<img src="readme/deployment/cloudinary-dashboard.png">
+</details>
+
 5. Copy and store the value of the 'API Environment Variable" beginning at cloudinary:// until the end, this will be used in the Heroku Config Vars. 
 6. The app also uses ElephantSQL to host the database
 7. Log in to [ElephantSQL](https://www.elephantsql.com/) or create an account for free.
 8. Click on Create a new instance
+<details>
+<summary>Screenshot</summary>
+<img src="readme/deployment/elephant-sql-instance.png">
+</details>
+
 9. Set up your plan. Give the 'plan' the desired name, select the Tiny Turtle (free) plan and leave tags blank.
+<details>
+<summary>Screenshot</summary>
+<img src="readme/deployment/elephant-sql-plan.png">
+</details>
+
 10. Select region and chose the nearest data centre to your location.
+<details>
+<summary>Screenshot</summary>
+<img src="readme/deployment/elephant-sql-region.png">
+</details>
+
 11. Click 'review' and if happy with the details presented click on the create instance button.
+<details>
+<summary>Screenshot</summary>
+<img src="readme/deployment/elephant-sql-create.png">
+</details>
+
 12. From the instances section click on the instance with the name that was just created.
 13. Get the ElephantSQL database URL from the instance details page and copy, this will be used in the Heroku Config Vars
-6. Navigate to https://www.heroku.com/ and login or create an account. 
-7. Click the "new" button in the upper right corner and select "create new app".
 <details>
 <summary>Screenshot</summary>
-<img src="docs/images/deployment/new-app.png">
+<img src="readme/deployment/elephant-sql-url.png">
 </details>
 
-8. Choose an app name and your region and click "Create app".
+14. Navigate to https://www.heroku.com/ and login or create an account. 
+15. Click the "new" button in the upper right corner and select "create new app".
 <details>
 <summary>Screenshot</summary>
-<img src="docs/images/deployment/app-name.png">
+<img src="readme/deployment/new-app.png">
 </details>
 
-9. Reveal Config Vars and store the required config var names and values as below:
+16. Choose an app name and your region and click "Create app".
+<details>
+<summary>Screenshot</summary>
+<img src="readme/deployment/app-name.png">
+</details>
+
+17. Reveal Config Vars and store the required config var names and values as below:
 
 - `CLOUDINARY_URL`: *your cloudinary URL as obtained above*
 - `DATABASE_URL`: *your ElephantSQL postgres database URL as obtained above*
@@ -1350,13 +1380,13 @@ The website was deployed with Heroku by following these steps:
 
 <details>
 <summary>Screenshot</summary>
-<img src="docs/images/deployment/config-vars.png">
+<img src="readme/deployment/config-vars.png">
 </details>
 
-11. Go to the "deploy" tab and pick GitHub as a deployment method.
-12. Search for a repository to connect to and select the branch you would like to build the app from.
-13. If preferred enable automatic deploys and then deploy branch.
-14. Wait for the app to build and then click on the "View" link which will redirect you to the deployed link.
+18. Go to the "deploy" tab and pick GitHub as a deployment method.
+19. Search for a repository to connect to and select the branch you would like to build the app from.
+20. If preferred enable automatic deploys and then deploy branch.
+21. Wait for the app to build and then click on the "View" link which will redirect you to the deployed link.
 
 ### Forking the GitHub Repository
 
