@@ -40,3 +40,8 @@ class FollowAdmin(admin.ModelAdmin):
         'user',
         'followed_account'
         )
+    list_filter = (
+        'created',
+        'user',
+        'followed_account'
+    )

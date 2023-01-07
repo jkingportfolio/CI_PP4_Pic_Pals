@@ -13,8 +13,12 @@ class PostAdmin(admin.ModelAdmin):
     """
     Admin class for a post
     """
-    list_display = ['image', 'created_date']
-    list_filter = ['created_date']
+    list_display = (
+        'image',
+        'created_date')
+    list_filter = (
+        'created_date',
+    )
 
 
 @admin.register(Like)
@@ -25,6 +29,10 @@ class LikeAdmin(admin.ModelAdmin):
     list_display = (
         'user',
         'post'
+    )
+
+    list_filter = (
+        'user',
     )
 
 
@@ -38,4 +46,7 @@ class CommentAdmin(admin.ModelAdmin):
         'user',
         'post',
         'comment_body'
-        )
+    )
+    list_filter = (
+        'user',
+    )

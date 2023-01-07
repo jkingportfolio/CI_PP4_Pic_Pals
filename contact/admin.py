@@ -18,3 +18,8 @@ class ContactAdmin(admin.ModelAdmin):
         'reason',
         'email'
         )
+    
+    list_filter = (
+        'name',
+        'email',
+    )
