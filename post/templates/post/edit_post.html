@@ -14,7 +14,7 @@
         {{ form|crispy }}
         <p><input type="submit" value="Update" class="form-btn-pos"></p>
         <button aria-label="Cancel button" class="form-btn">
-            <a href="/">
+            <a href="{{ post.get_absolute_url }}">
                 Cancel
             </a>
         </button>
@@ -22,3 +22,5 @@
 </div>
 
 {% endblock %}
+
+return redirect(reverse('posts:post_detail', args=[post.id]))
