@@ -20,7 +20,7 @@ class Contact(models.Model):
         LOGIN = "1", "Login issue"
         REPORT_POST = "2", "Report a post"
         GENERAL = "3", "General Enquiry"
-        # (...)
+        DELETE_ACCOUNT = "4", "Delete Account"
 
     reason = models.CharField(
         max_length=2,
