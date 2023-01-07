@@ -15,16 +15,16 @@ class ProfileAdmin(admin.ModelAdmin):
     """
     list_display = (
         'user',
-        'date_of_birth',
-        'profile_pic',
-        'bio'
+        'date_of_birth'
         )
-    search_fields = [
+    search_fields = (
         'user',
-        'date_of_birth',
-        'profile_pic',
-        'bio'
-        ]           
+        'date_of_birth'
+        ) 
+    list_filter = (
+        'user',
+        'date_of_birth'
+    )          
     raw_id_fields = [
         'user'
         ]
