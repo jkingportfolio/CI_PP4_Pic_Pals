@@ -21,5 +21,6 @@ class ContactAdmin(admin.ModelAdmin):
     
     list_filter = (
         'name',
+        'reason',
         'email',
     )

@@ -29,7 +29,7 @@ a {
 .form-btn {
     border-radius: 3px;
     border: solid 1px grey;
-    width: 100px;
+    width: 120px;
 }
 
 .delete-btn {
@@ -260,6 +260,8 @@ a {
 form div {
     margin-bottom: 15px;
 }
+
+
   /* Media queries*/
 
   @media only screen and (max-width: 571px) {

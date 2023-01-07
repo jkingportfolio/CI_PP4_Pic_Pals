@@ -16,9 +16,9 @@
         {{ user_form|crispy }}
         {{ profile_form|crispy }}
         {% csrf_token %}
-        <p><input type="submit" value="Update profile" class="form-btn-pos"></p>
+        <p><input type="submit" value="Update profile" class="form-btn form-btn-pos"></p>
     </form>
-    <button aria-label="Cancel button">
+    <button aria-label="Cancel button" class="form-btn">
         <a href="/">
             Cancel
         </a>
