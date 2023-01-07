@@ -8,10 +8,10 @@
 <div class="container form-style">
     <h1>Registered Successfully</h1>
     <p>{{ new_user.username }} welcome to Pic Pals!</p>
-    <button aria-label="Login button" class="form-btn btn btn-success">
-        <a href="{% url 'login' %}">
+    <a href="{% url 'login' %}">
+        <button aria-label="Login button" class="form-btn btn btn-success">
             Log in
-        </a>
-    </button>
+        </button>
+    </a>
 </div>
 {% endblock %}
