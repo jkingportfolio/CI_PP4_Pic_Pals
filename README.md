@@ -141,7 +141,9 @@ An Agile approach to creating this app has been applied. Githubs projects was us
 - SHOULD HAVE
 - COULD HAVE
 
-By taking using AGILE methodology in this project i was able to deliver a site which had all required functionality and some more. Due to the time limit on this project i was not able to incorporate all intial listed features, but this is where an AGILE approach is great for app design. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation
+By taking using AGILE methodology in this project i was able to deliver a site which had all required functionality and some more. Due to the time limit on this project i was not able to incorporate all intial listed features, but this is where an AGILE approach is great for app design. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation.
+
+The GitHub project can be found [here](https://github.com/users/jkingportfolio/projects/8)
 
 ### CRUD Functionality
 
@@ -193,10 +195,8 @@ The site consists of the following sections:
 
 The site uses a backend database built with the Django framework and the use of ElephantSQL Postgres for the deployed site.
 
-<details>
-<summary>Database diagram</summary>
-<img src="readme/misc/database diagram.pdf">
-</details>
+The database pdf file can be view [here]
+(https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/readme/misc/database%20diagram.pdf)
 
 The following data models were created to represent the database model structure for the site.
 
@@ -317,7 +317,7 @@ Balsamiq was used to create wireframes of the sites pages
 - [Graphviz](https://dreampuf.github.io/GraphvizOnline) - Used to generate pydot file / database diagram image.
 - [Google Fonts](https://fonts.google.com/) - Used to import the sites font family.
 - [Affinity Designer](https://affinity.serif.com/en-gb/) - Used to create the logo and delete buttons.
-- Validation
+- [Validation](#validation)
     - [WC3 Validator](https://validator.w3.org/) - Used to validate the HTML code of the site.
     - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)- Used to validate the CSS of the site.
     - [Jshint](https://jshint.com/) - Used to validate the Javascript of the site.
@@ -358,7 +358,7 @@ Authentication is a feature of the Pic Pals site, users will have to be authenti
 
 <details>
 <summary>Authentication image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/authentication.png">
 </details>
 
 - Covered in user stories: 28
@@ -369,7 +369,7 @@ The bio section is an optional feature to appear on a users profile page. A user
 
 <details>
 <summary>Bio section image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/bio-section.png">
 </details>
 
 - Covered in user stories: 19
@@ -380,7 +380,7 @@ The change password feature can be accessed from the current users profile page.
 
 <details>
 <summary>Change password image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/change-password.png">
 </details>
 
 - Covered in user stories: 13
@@ -391,7 +391,7 @@ The post comment feature can be accessed from any users post detail page, below 
 
 <details>
 <summary>Post comment image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/post-comment.png">
 </details>
 
 - Covered in user stories: 6 & 7
@@ -402,7 +402,7 @@ The contact feature can be found from the nav bar and allows both signed in user
 
 <details>
 <summary>Contact image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/contact.png">
 </details>
 
 - Covered in user stories: 21
@@ -413,7 +413,7 @@ The create post feature can be found from the current logged in users profile pa
 
 <details>
 <summary>Create Post image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/create-post.png">
 </details>
 
 - Covered in user stories: 8
@@ -424,7 +424,8 @@ The delete post feature can be found above the image on the post detail page of 
 
 <details>
 <summary>Delete Post image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/delete-post-1.png">
+<img src="readme/features/delete-post-2.png">
 </details>
 
 - Covered in user stories: 4, 8 & 29
@@ -435,7 +436,8 @@ The edit post feature can be found above the image on the post detail page of a 
 
 <details>
 <summary>Edit image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/edit-post.png">
+<img src="readme/features/edit-post-1.png">
 </details>
 
 - Covered in user stories: 5 & 8
@@ -446,7 +448,7 @@ The edit profile feature can be found on the profile page of the current logged 
 
 <details>
 <summary>Edit Profile image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/edit-profile.png">
 </details>
 
 - Covered in user stories: 15 & 22
@@ -468,7 +470,7 @@ The feed feature can be found from the Nav Bar. The feed feature will display th
 
 <details>
 <summary>Feed image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/feed.png">
 </details>
 
 - Covered in user stories: 24
@@ -479,7 +481,7 @@ The follow / unfollow user feature allows users to follow or unfollow other user
 
 <details>
 <summary>Follow / Unfollow user image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/follow.png">
 </details>
 
 - Covered in user stories: 20
@@ -490,7 +492,7 @@ The follow / unfollow user button feature can be found on the profile of any use
 
 <details>
 <summary>Follow / Unfollow button image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/follow-button.png">
 </details>
 
 - Covered in user stories: 2 & 26
@@ -501,7 +503,7 @@ The followed list feature can be accessed from the currently logged in users pro
 
 <details>
 <summary>Followed list image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/following.png">
 </details>
 
 - Covered in user stories: 25
@@ -512,7 +514,7 @@ The followers list feature can be accessed from the currently logged in users pr
 
 <details>
 <summary>Followers list image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/followers.png">
 </details>
 
 - Covered in user stories: X ADD USER STORY
@@ -523,7 +525,7 @@ The home page feature displays upon initial arrival to the pic pals site and wil
 
 <details>
 <summary>Home page image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/home.png">
 </details>
 
 - Covered in user stories: 17
@@ -534,7 +536,7 @@ Input Validation as a feature is used throughout the site for form inputs.
 
 <details>
 <summary>Input validation image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/input-validation.png">
 </details>
 
 - Covered in user stories: 27
@@ -545,7 +547,7 @@ The like count feature can be found under a post image in the post details page.
 
 <details>
 <summary>Like count image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/like-button.png">
 </details>
 
 - Covered in user stories: 18
@@ -556,7 +558,7 @@ The like / unlike button feature can be found under a post image in the post det
 
 <details>
 <summary>Like / Unlike Button image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/like-button.png">
 </details>
 
 - Covered in user stories: 2 & 3
@@ -567,7 +569,7 @@ The register feature can be found on the landing page for the site. This feature
 
 <details>
 <summary>Register image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/register.png">
 </details>
 
 - Covered in user stories: 12
@@ -578,7 +580,7 @@ The reset password feature can be found on the landing page for the site. This f
 
 <details>
 <summary>Reset Password image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/reset-password.png">
 </details>
 
 - Covered in user stories: 9
@@ -600,7 +602,8 @@ Site feedback features are presented at various times in the form of Successfull
 
 <details>
 <summary>Welcome message image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/site-feedback-1.png">
+<img src="readme/features/site-feedback-2.png">
 </details>
 
 - Covered in user stories: 23
@@ -611,7 +614,7 @@ The user search bar feature can be found on the People page of the site. At the 
 
 <details>
 <summary>User Search image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/user-search.png">
 </details>
 
 - Covered in user stories: 31
