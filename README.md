@@ -639,7 +639,7 @@ The user search bar feature can be found on the People page of the site. At the 
 
 <details>
 <summary>CSS file - style.css</summary>
-<img src="docs/images/validation/style-css.png">
+<img src="readme/validation/css/css-validation.png">
 </details>
 
 ### JavaScript Validation
