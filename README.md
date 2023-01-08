@@ -423,7 +423,7 @@ The create post feature can be found from the current logged in users profile pa
 The delete post feature can be found above the image on the post detail page of a currently logged in user. The delete post button will only be visible to owners of that post to avoid other users deleting posts they do not own.
 
 <details>
-<summary>Delete Post image</summary>
+<summary>Delete Post images</summary>
 <img src="readme/features/delete-post-1.png">
 <img src="readme/features/delete-post-2.png">
 </details>
@@ -435,7 +435,7 @@ The delete post feature can be found above the image on the post detail page of 
 The edit post feature can be found above the image on the post detail page of a currently logged in user and allows the captoion of the post to be updated. The edit post button will only be visible to owners of that post to avoid other users editing posts they do not own.
 
 <details>
-<summary>Edit image</summary>
+<summary>Edit post images</summary>
 <img src="readme/features/edit-post.png">
 <img src="readme/features/edit-post-1.png">
 </details>
@@ -591,7 +591,7 @@ Throughout the site the feature of being responsive for various device sizes can
 
 <details>
 <summary>Responsiveness image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/misc/mockup.png">
 </details>
 
 - Covered in user stories: 30
@@ -601,7 +601,7 @@ Throughout the site the feature of being responsive for various device sizes can
 Site feedback features are presented at various times in the form of Successfull html pages and Django messages.
 
 <details>
-<summary>Welcome message image</summary>
+<summary>Feedback images</summary>
 <img src="readme/features/site-feedback-1.png">
 <img src="readme/features/site-feedback-2.png">
 </details>
@@ -660,6 +660,8 @@ The user search bar feature can be found on the People page of the site. At the 
 </details>
 
 ### Python Validation
+
+At the time of creating this 
 
 [PEP-8 Validation](http://pep8online.com/) was used to validate the Python code used in the app.
 

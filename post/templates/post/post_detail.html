@@ -70,12 +70,12 @@
   <div class="like-btn-margin">
     {% if liked_by_user %}
     <a href="{% url 'posts:like' post.id %}">
-      <img src="/static/images/like.png" alt="Like post icon"
+      <img src="{% static 'images/like' %}" alt="Like post icon"
         class="like-button">
     </a>
     {% else %}
     <a href="{% url 'posts:like' post.id %}">
-      <img src="/static/images/not_liked.png" alt="Unlike post icon"
+      <img src="{% static 'images/not_liked.png' %}" alt="Unlike post icon"
         class="like-button">
     </a>
     {% endif %}
