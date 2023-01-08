@@ -18,6 +18,8 @@ The Pic Pals Social website has been developed to provide users the chance to po
     3. [User Stories](#user-stories)
     4. [Site Owner Stories](#site-owner-stories)
 3. [Technical Design](#technical-design)
+    1. [Agile Design](#agile-design)
+    2. [CRUD Functionality](#crud-functionality)
     1. [Colours](#colours)
     2. [Fonts](#fonts)
     3. [Structure](#structure)
@@ -45,6 +47,9 @@ The Pic Pals Social website has been developed to provide users the chance to po
 9. [Configuration](#configuration)
     1. [Google emails](#google-emails)
 10. [Deployment](#deployment)
+    1. [Heroku](#heroku)
+    2. [Forking GitHub Repo](#forking-the-github-repository)
+    3. [Clone a GitHub Repo](#clone-a-github-repository)
 11. [Credits](#credits)
     1. [Tutorial](#tutorials)
     2. [Code](#code)
@@ -179,7 +184,7 @@ The site consists of the following sections:
 - Change Password page where a logged in user can change their password
 - Reset Password page where a user can request a one time email to reset their password if they have forgotten it (please refer to known bugs regarding this page)
 
-#### Database
+### Database
 
 The site uses a backend database built with the Django framework and the use of ElephantSQL Postgres for the deployed site.
 
@@ -190,7 +195,7 @@ The site uses a backend database built with the Django framework and the use of 
 
 The following data models were created to represent the database model structure for the site.
 
-#### Data Models
+### Data Models
 
 #### User Model
 
@@ -315,9 +320,9 @@ Balsamiq was used to create wireframes of the sites pages
     - [Chrome dev tools (Lighthouse)](https://developer.chrome.com/docs/lighthouse/overview/) - Used to measure site performance, SEO and accessiblity
     - [WAVE Validator](https://wave.webaim.org/) - Used to evaluate site accessibility
 
-## Libraries
+### Libraries
 
-### Installed Libraries
+#### Installed Libraries
 
 | Package       | Version        |
 | ------------- | ------------- |
@@ -693,7 +698,7 @@ The website was tested on the following web browsers:
 
 <summary>See Testing User Stories</summary>
 
-#### Testing User Stories Users
+#### Testing User Stories - Users
 
 To avoid unnecessary repetition of images, only the feature being referred to will have screenshots. Information on how to navigate to the feature referred to will be described within its relevant table reference. 
 
@@ -1145,7 +1150,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 
 
-#### Site Owner
+#### Testing User Stories - Site Owner
 
 27. As the site owner, I would want to validate users data entries on sign up so that users can create a log in which meets the requirements.
 
@@ -1246,9 +1251,6 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 </details>
 
 
-
-
-
 ### Automated Testing
 
 <details>
@@ -1295,8 +1297,8 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 2. Click on the Security tab
 3. Turn on 2-step verification and follow the steps to enable
 4. Click on App passwords, click on Select app and choose Other
-5. Give your app a name and click on 'Generate'
-<br>![App password](docs/images/gmail-app-password.png)
+5. Give your app a name and click on 'Generate'<br>
+![App password](readme/misc/gmail-app-password.png)
 6. A 16 digit password will be generated, note the password down
 7. Set the below variables within the settings.py file to successfully send emails
 <br><code>EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'</code>
@@ -1437,6 +1439,8 @@ The use of reference books were used throughout the creation of this project and
 - <TITLE> by <AUTHOR>, published by <PUBLISHER>
 - <TITLE> by <AUTHOR>, published by <PUBLISHER>
 - <TITLE> by <AUTHOR>, published by <PUBLISHER>
+
+
 ### Misc
 
 The source of where I learned how to produce a GitHub fork and clone was from the following pages of the GitHub Documentation. Although I did not use a fork or clone in this project it is something I hope to implement to future projects now I have the knowledge to do so.
