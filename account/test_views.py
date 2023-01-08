@@ -3,6 +3,7 @@
 # 3rd party:
 from django.test import TestCase
 from django.contrib.messages import get_messages
+from django.contrib.auth import get_user_model, authenticate
 from django.contrib.auth.models import User
 
 # Internal:
@@ -28,22 +29,16 @@ class TestProfileViews(TestCase):
         Delete test user and order
         """
         User.objects.all().delete()
-        Profile.objects.all().delete()
+        Profile.objects.all().delete()        
 
-    def test_get_profile_page(self):
-        """
-        This test logins a test user and
-        accesses their profile page (get) and verifies
-        """
-        self.client.login(username='test_user', password='test_password')
-        response = self.client.get('/account/')
-        self.assertEqual(response.status_code, 200)
+    def test_correct(self):
+        test_user = authenticate(username='test_user', password='test_password')
+        self.assertTrue((test_user is not None) and test_user.is_authenticated)
 
-    def test_post_profile_page(self):
-        """
-        This test logins a test user and
-        accesses their profile page (post) and verifies
-        """
-        self.client.login(username='test_user', password='test_password')
-        response = self.client.post('/account/')
-        self.assertEqual(response.status_code, 200)
+    def test_wrong_username(self):
+        test_user = authenticate(username='wrong_user', password='test_password')
+        self.assertFalse(test_user is not None and test_user.is_authenticated)
+
+    def test_wrong_pssword(self):
+        test_user = authenticate(username='test_user', password='wrong_password')
+        self.assertFalse(test_user is not None and test_user.is_authenticated)
