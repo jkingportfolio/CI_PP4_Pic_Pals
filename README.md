@@ -1,7 +1,7 @@
 # pic-pals
 Developer: Jamie King
 
-![Mockup image](readme/mockup.png)
+![Mockup image](readme//misc/mockup.png)
 
 The Pic Pals Social website has been developed to provide users the chance to post images online and have the ability to view other users posts also. 
 
@@ -185,7 +185,7 @@ The site uses a backend database built with the Django framework and the use of 
 
 <details>
 <summary>Database diagram</summary>
-<img src="docs/database/database-diagram.png">
+<img src="readme/misc/database diagram.pdf">
 </details>
 
 The following data models were created to represent the database model structure for the site.
