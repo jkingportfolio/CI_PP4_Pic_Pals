@@ -1,7 +1,7 @@
 # pic-pals
 Developer: Jamie King
 
-![Mockup image](readme//misc/mockup.png)
+![Mockup image](readme/misc/mockup.png)
 
 The Pic Pals Social website has been developed to provide users the chance to post images online and have the ability to view other users posts also. 
 
@@ -141,11 +141,16 @@ An Agile approach to creating this app has been applied. Githubs projects was us
 - SHOULD HAVE
 - COULD HAVE
 
-By taking using AGILE methodology in this project i was able to deliver a site which had all required functionality and some more. Due to the time limit on this project i was not able to incorporate all intial listed features, but this is where an AGILE approach allows. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation
+By taking using AGILE methodology in this project i was able to deliver a site which had all required functionality and some more. Due to the time limit on this project i was not able to incorporate all intial listed features, but this is where an AGILE approach is great for app design. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation
 
 ### CRUD Functionality
 
-Blurp about CRUD
+Pic Pals handles data with full CRUD Functionality:
+<br>
+- Create -  User can create, account, profile, post, comment, like and follow objects.
+- Read - Users can view the posts of other users and also the profiles of these users.
+- Update - Users can update their profile, password, posted posts, follow status of other users and the like status of a post via the interactive forms and buttons on the site.
+- Delete - Users can delete posts, comments and follow objects via the interactive buttons on the site.
 
 ### Colours
 
