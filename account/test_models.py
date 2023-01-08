@@ -1,6 +1,3 @@
-"""
-A module for testing views of the account app
-"""
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
@@ -21,7 +18,7 @@ class TestAccountModels(TestCase):
          This setup creates a test user,
          and test user profile
          """
-        testuser = User.objects.create_user(
+        test_user = User.objects.create_user(
             username='test_user',
             password='test_password',
             email='test_user@test.com'
@@ -37,8 +34,8 @@ class TestAccountModels(TestCase):
         """
         This test tests the users profile
         """
-        testuser = User.objects.get(username='test_user')
-        profile = Profile.objects.create(user=testuser)
+        test_user = User.objects.get(username='test_user')
+        profile = Profile.objects.create(user=test_user)
         self.assertEqual(str(profile), f'Profile of {profile.user.username}')
 
 # FAILS
