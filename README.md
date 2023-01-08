@@ -648,7 +648,7 @@ The user search bar feature can be found on the People page of the site. At the 
 
 <details>
 <summary>Javascript file - script.js</summary>
-<img src="docs/images/validation/jshint-validation.png">
+<img src="readme/validation/jshint/js-hint-validation.png">
 </details>
 
 ### Python Validation
