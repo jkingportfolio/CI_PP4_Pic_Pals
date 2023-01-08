@@ -9,7 +9,7 @@ from .forms import LoginDetails, Registration, EditUser
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-class TestContactForms(TestCase):
+class TestAccountForms(TestCase):
     """
     A class for testing contact forms
     """

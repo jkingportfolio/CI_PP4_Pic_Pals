@@ -14,7 +14,7 @@ from .models import Profile, Follow
 # PASSES
 
 
-class TestProfileModels(TestCase):
+class TestAccountModels(TestCase):
 
     def setUp(self):
         """
