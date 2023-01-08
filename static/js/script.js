@@ -1,6 +1,6 @@
 let scrollbutton = document.getElementById("scrollBtn");
 
-window.onscroll = function() {scrollFunction()};
+window.onscroll = function() {scrollFunction();};
 
 
 function scrollFunction() {
