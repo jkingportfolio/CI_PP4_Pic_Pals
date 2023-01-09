@@ -70,7 +70,7 @@
   <div class="like-btn-margin">
     {% if liked_by_user %}
     <a href="{% url 'posts:like' post.id %}">
-      <img src="{% static 'images/like' %}" alt="Like post icon"
+      <img src="{% static 'images/like.png' %}" alt="Like post icon"
         class="like-button">
     </a>
     {% else %}
@@ -139,7 +139,7 @@
                 {{ comment.user }}
               </a>
               {% if request.user == comment.user or request.user == post.user %}
-              <img src="/static/images/delete.png" alt="Delete comment icon"
+              <img src="{% static 'images/delete.png' %}" alt="Delete comment icon"
                 class="delete-btn" data-bs-toggle="modal"
                 data-bs-target="#delete-modal-{{ comment.id }}">
             </div>
