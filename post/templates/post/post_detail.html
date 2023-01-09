@@ -99,7 +99,7 @@
           {% for comment in comments %}
           <!-- FOR LOOP MAKES MODAL DELETE FIRST COMMENT -->
           <!-- comment delete modal -->
-          <div class="modal fade" id="commentDelete" data-bs-backdrop="static"
+          <div class="modal fade" id="delete-modal-{{ comment.id }}" data-bs-backdrop="static"
             data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="commentDeleteLabel" aria-hidden="true">
             <div class="modal-dialog">
@@ -117,7 +117,7 @@
                   <button type="button" class="btn btn-secondary"
                     data-bs-dismiss="modal" aria-label="Close">Close</button>
                   <a href="{% url 'posts:comment_delete' comment.id %}">
-                    <button type="button" class="btn btn-primary"
+                    <button type="button" class="btn btn-primary" data-bs-target="#delete-modal-{{ comment.id }}"
                       aria-label="Delete Post">Delete comment</button>
                   </a>
                 </div>
@@ -139,7 +139,7 @@
               {% if request.user == comment.user or request.user == post.user %}
               <img src="/static/images/delete.png" alt="Delete comment icon"
                 class="delete-btn" data-bs-toggle="modal"
-                data-bs-target="#commentDelete">
+                data-bs-target="#delete-modal-{{ comment.id }}">
             </div>
             {% endif %}
           </div>
