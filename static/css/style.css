@@ -23,7 +23,8 @@ a {
 }
 
 .button-margin {
-    margin-top: 5px
+    margin-top: 5px;
+    padding: 0 20%;
 }
 
 .form-btn {
@@ -84,16 +85,16 @@ a {
 
 .user-name-font {
     margin-bottom: 0;
-    font-size: 40px
+    font-size: 5vw
 }
 
 .user-info-pos {
+    text-align: center;
     padding: 10px 0px 0px 0px;
 }
 
 .user-info-font {
-
-    font-size: 20px;
+    font-size: 5vw;
 }
 
 .form-btn-pos {
@@ -189,7 +190,6 @@ a {
     display: block;
     margin-left: auto;
     margin-right: auto;
-    width: 50%;
     padding-bottom: 10px;
 }
 
@@ -259,16 +259,29 @@ form div {
     margin-bottom: 15px;
 }
 
+.right-border {
+    border-right: solid 1px rgba(0, 0, 0, 0.2);
+}
+
 
   /* Media queries*/
 
   @media only screen and (max-width: 571px) {
     .profile-pic {
-        width: 75px;
-        height: 75px;
-        object-fit: contain;
-        border-radius: 50%;
-        border: 2px solid black;
+        width: 100px;
+        height: 100px;
+    }
+
+
+}
+
+@media only screen and (min-width: 770px) {
+    .user-info-font {
+        font-size: 40px;
+    }
+
+    .user-name-font {
+        font-size: 40px;
     }
 
 

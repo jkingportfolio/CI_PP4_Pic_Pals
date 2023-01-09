@@ -99,8 +99,8 @@
           {% for comment in comments %}
           <!-- FOR LOOP MAKES MODAL DELETE FIRST COMMENT -->
           <!-- comment delete modal -->
-          <div class="modal fade" id="delete-modal-{{ comment.id }}" data-bs-backdrop="static"
-            data-bs-keyboard="false" tabindex="-1"
+          <div class="modal fade" id="delete-modal-{{ comment.id }}"
+            data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="commentDeleteLabel" aria-hidden="true">
             <div class="modal-dialog">
               <div class="modal-content">
@@ -111,13 +111,15 @@
                     data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
-                  Are you sure you want to delete this comment? {{ comment.comment_body }}
+                  Are you sure you want to delete this comment?
+                  {{ comment.comment_body }}
                 </div>
                 <div class="modal-footer">
                   <button type="button" class="btn btn-secondary"
                     data-bs-dismiss="modal" aria-label="Close">Close</button>
                   <a href="{% url 'posts:comment_delete' comment.id %}">
-                    <button type="button" class="btn btn-primary" data-bs-target="#delete-modal-{{ comment.id }}"
+                    <button type="button" class="btn btn-primary"
+                      data-bs-target="#delete-modal-{{ comment.id }}"
                       aria-label="Delete Post">Delete comment</button>
                   </a>
                 </div>
@@ -161,8 +163,6 @@
       {% include "post/comment_form.html" %}
     </div>
   </div>
-
-
   <!-- Post delete modal -->
   <div class="modal fade" id="postDelete" data-bs-backdrop="static"
     data-bs-keyboard="false" tabindex="-1" aria-labelledby="postDeleteLabel"
@@ -188,9 +188,6 @@
       </div>
     </div>
   </div>
-
-
-
 </div>
 
 
