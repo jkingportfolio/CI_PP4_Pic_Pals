@@ -224,7 +224,7 @@ The Follow model object represents a follow connection between users which is no
 #### Post Model
 
 The Post model object represents a users post and consists of the following fields
-- id (UUIDFiel)
+- id (UUIDField)
 - created_date (DateTimeField)
 - user (ForeignKey)
 - image (CloudinaryField)
@@ -246,15 +246,14 @@ The Comment model object represents a comment a user has posted on an individual
 - user (ForeignKey - User)
 - comment_body (TextField)
 - created_on (DateTimeField)
-- updated (BooleanField)
 
 #### Contact Model
 
 The Contact model object represents a contact message from the user to the admin and and consists of the following fields
 - reason (CharField)
 - name - Charfield
-- email - EmailField
-- message_body (TextField)
+- email - (EmailField)
+- message (TextField)
 - message_date (DateTimeField)
 
 ### Wireframes
