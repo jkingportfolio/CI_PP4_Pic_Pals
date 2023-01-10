@@ -7,19 +7,13 @@
 {% block content %}
 
 <div class="container form-style">
-    <h1>
-        404 Error
-    </h1>
-    <h3>
-        Oops, it seems that page does not exist.
-    </h3>
-    <div class="del-post-btn">
-        <button aria-label="Home button">
-            <a href="{% url 'dashboard' %}">
-                Return home
-            </a>
+    <h1>404 Error</h1>
+    <h5>Oops, it seems that page does not exist.</h5>
+    <a href="{% url 'dashboard' %}">
+        <button aria-label="Home button" class="form-btn btn btn-success">
+            Return Home
         </button>
-    </div>
+    </a>
 </div>
 
 {% endblock %}

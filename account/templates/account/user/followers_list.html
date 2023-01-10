@@ -6,10 +6,10 @@
 {% block title %}Followers list{% endblock %}
 
 {% block content %}
-<div class="container form-style">
+<div class="container form-style text-center">
+  <h1>{{user.get_username}} is followed by...</h1>
   <div class="row">
-    <div class="container text-center top-margin">
-      <h1>{{user.get_username}} is followed by...</h1>
+    <div class="container top-margin">      
       <div class="row">
         <div class='row card-group auto-margin'>
           {% for follower in user_followers_list %}
