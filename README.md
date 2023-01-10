@@ -658,6 +658,8 @@ The user search bar feature can be found on the People page of the site. At the 
 <img src="readme/validation/jshint/js-hint-validation.png">
 </details>
 
+In addition to this there are two scripts which are in templates, these have been e
+
 ### Python Validation
 
 At the time of creating this 
@@ -1428,26 +1430,22 @@ You can make a local clone of a repository via the following steps:
 
 ### Tutorials
 
-- <TUTORIAL NAME/DESCRIPTION> - [LINK NAME](Link URL)
-- <TUTORIAL NAME/DESCRIPTION> - [LINK NAME](Link URL)
-- <TUTORIAL NAME/DESCRIPTION> - [LINK NAME](Link URL)
-- <TUTORIAL NAME/DESCRIPTION> - [LINK NAME](Link URL)
+- Real Python Django redirects tutorial - [The Ultimate Guide to Django Redirects](#https://realpython.com/django-redirects/)
+- Sending user_logged_in signals - [Django rest auth user_logged_in signal](#https://stackoverflow.com/questions/43300305/django-rest-auth-user-logged-in-signal)
+- Using django extensions to generate a database diagram - [Medium - Visualize database in Django](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
 ### Code
 
  Code from external sources were used as a basis and built on top of in this project, they are credited below:
 
- - <CODE NAME/DESCRIPTION> - [LINK NAME](Link URL)
- - <CODE NAME/DESCRIPTION> - [LINK NAME](Link URL)
- - <CODE NAME/DESCRIPTION> - [LINK NAME](Link URL)
+ - Code snippet on how to dynamically add the follow field to User used in the account apps models.py file was taken from the book Django 4 By Example - [Django 4 By Example](#https://www.packtpub.com/product/django-4-by-example-fourth-edition/9781801813051)
+ - Scroll to top Javascript function to allow users to click and auto scroll to top of page was used from the W3Schools site - [W3Schools](#https://www.w3schools.com/howto/howto_js_scroll_to_top.asp)
 
 ### Literature
 
 The use of reference books were used throughout the creation of this project and are credited below:
 
-- <TITLE> by <AUTHOR>, published by <PUBLISHER>
-- <TITLE> by <AUTHOR>, published by <PUBLISHER>
-- <TITLE> by <AUTHOR>, published by <PUBLISHER>
+- Django 4 By Example - Fourth Edition by Antonio Melé, published by Packt Publishing
 
 
 ### Misc
@@ -1462,7 +1460,7 @@ The source of where I learned how to produce a GitHub fork and clone was from th
 
 I would like to also thank the following:
 - My wife and family for their support and feedback whilst doing this project
-- [Andy Guttridge](https://github.com/andy-guttridge) for his help through out the project
+- [Andy Guttridge](https://github.com/andy-guttridge) for his huge help through out the project!
 - Code Institute tutor support who helped with an issue i had with having to reset my database.
 - My Code Institute mentor Mo Shami for his guidance through this project.
 

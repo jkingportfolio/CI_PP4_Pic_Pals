@@ -7,7 +7,6 @@ A module for forms
 from django import forms
 from django.forms import ModelForm, TextInput
 from django.contrib.auth.models import User
-from crispy_forms.helper import FormHelper
 # Internal
 from .models import Profile
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -57,7 +56,7 @@ class EditProfile(forms.ModelForm):
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
         self.fields['date_of_birth'].widget=forms.DateInput(attrs={'placeholder': 'MM/DD/YYYY'})
-        self.helper = FormHelper(self)
+        self.fields['bio'].widget=forms.TextInput(attrs={'placeholder': 'Write a little about yourself.'})
 
     class Meta:
         model = Profile
