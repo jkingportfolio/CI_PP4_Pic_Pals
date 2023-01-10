@@ -53,8 +53,10 @@ class EditProfile(forms.ModelForm):
     """
     A class for updating user profile details
     """
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
+        self.fields['date_of_birth'].widget=forms.DateInput(attrs={'placeholder': 'MM/DD/YYYY'})
         self.helper = FormHelper(self)
 
     class Meta:
