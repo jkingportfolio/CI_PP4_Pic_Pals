@@ -23,16 +23,19 @@
                 alt="User profile picture" class="post-avatar">
               {% else %}
               <img src="{% static 'images/default_profile_pic.png' %}"
-                    alt="Default profile picture" class="post-avatar">
+                alt="Default profile picture" class="post-avatar">
               {% endif %}
               {{ post.user }}
             </a>
           </div>
           <div>
-            <div>
-              <a href="{{ post.get_absolute_url }}">
-                <img src="{{ post.image.url }}" alt="Post image" class="post-pic">
-              </a>
+            <div class="card-img-size">
+              <div class="card-h-100">
+                <a href="{{ post.get_absolute_url }}">
+                  <img src="{{ post.image.url }}" alt="Post image"
+                    class="post-pic">
+                </a>
+              </div>
             </div>
           </div>
         </div>
@@ -47,14 +50,15 @@
     <p class="h2 text-center top-margin">
       Looks like you have no posts!
     </p>
-    <button aria-label="Add post button" class="form-btn text-center auto-margin top-margin btn btn-success">
+    <button aria-label="Add post button"
+      class="form-btn text-center auto-margin top-margin btn btn-success">
       <a href="{% url 'posts:create_post' %}">
         Add a post
       </a>
     </button>
     {% endfor %}
   </div>
-  </div>
+</div>
 
 
-  {% endblock %}
+{% endblock %}
