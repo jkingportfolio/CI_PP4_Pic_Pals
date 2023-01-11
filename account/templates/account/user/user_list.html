@@ -8,9 +8,8 @@
 {% block content %}
 
 <div class="container form-style">
-  <form action="{% url 'search_users' %}"
-  method="get">
-  <h4>Search for user</h4>
+  <form action="{% url 'search_users' %}" method="get">
+    <h4>Search for user</h4>
     <div class="input-group flex-nowrap">
       <span class="input-group-text" id="addon-wrapping">@</span>
       <input type="text" class="form-control" placeholder="Username"
@@ -47,5 +46,6 @@
       </div>
     </div>
   </div>
+</div>
 
-  {% endblock %}
+{% endblock %}

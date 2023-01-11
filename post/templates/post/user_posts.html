@@ -50,12 +50,12 @@
     <p class="h2 text-center top-margin">
       Looks like you have no posts!
     </p>
-    <button aria-label="Add post button"
-      class="form-btn text-center auto-margin top-margin btn btn-success">
-      <a href="{% url 'posts:create_post' %}">
-        Add a post
+    <div class="div-btn-control">
+      <a href="{% url 'posts:create_post' %}" aria-label="Add post button"
+          class="a-btn text-center form-btn margin-btm btn-hover text-center">
+          Add a post
       </a>
-    </button>
+  </div>
     {% endfor %}
   </div>
 </div>

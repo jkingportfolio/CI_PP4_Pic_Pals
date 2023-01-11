@@ -16,10 +16,11 @@
           <div class="card h-100">
             <div class="card-body">
               <div class="post-spacing">
-                <a href="{{ post.user.get_absolute_url }}" class="post-spacing">
+                <a href="{{ post.user.get_absolute_url }}"
+                  class="post-spacing">
                   {% if post.user.profile.profile_pic %}
-                  <img src="{{ post.user.profile.profile_pic.url }}" 
-                  alt="User profile picture" class="post-avatar">
+                  <img src="{{ post.user.profile.profile_pic.url }}"
+                    alt="User profile picture" class="post-avatar">
                   {% else %}
                   <img src="{% static 'images/default_profile_pic.png' %}"
                     alt="Default profile picture" class="post-avatar">
@@ -30,7 +31,8 @@
               <div class="card-img-size">
                 <div class="card-h-100">
                   <a href="{{ post.get_absolute_url }}" class="card-h-100">
-                    <img src="{{ post.image.url }}" alt="Post image" class="post-pic">
+                    <img src="{{ post.image.url }}" alt="Post image"
+                      class="post-pic">
                   </a>
                 </div>
               </div>
@@ -44,12 +46,16 @@
         </div>
         {% empty %}
         <div>
-          <img src="{% static 'images/no-posts.png' %}"
-          alt="No posts image" class="no-posts-image">
+          <img src="{% static 'images/no-posts.png' %}" alt="No posts image"
+            class="no-posts-image">
           <p class="no-posts">
             NO POSTS YET
           </p>
         </div>
         {% endfor %}
       </div>
-      {% endblock %}
+    </div>
+  </div>
+</div>
+
+{% endblock %}

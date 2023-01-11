@@ -12,13 +12,15 @@
                 {% csrf_token %}
                 {{ contact_form | crispy }}
             </div>
-            <p><input type="submit" value="Submit" class="form-btn form-btn-pos"></p>
-            <button aria-label="Cancel button" class="form-btn">
-                <a href="/">
-                    Cancel
-                </a>
-            </button>
+            <p><input type="submit" value="Submit"
+                    class="form-btn form-btn-pos btn-hover"></p>
         </form>
+        <div class="div-btn-control">
+            <a href="/" aria-label="Cancel button"
+                class="a-btn text-center form-btn margin-btm btn-hover">
+                Cancel
+            </a>
+        </div>
     </div>
 </div>
 
