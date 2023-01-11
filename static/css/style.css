@@ -4,7 +4,9 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Do Hyeon', sans-serif;
+    background-color: #F9F7F1 !important
 }
+
 footer {
     margin-top: auto;
 }
