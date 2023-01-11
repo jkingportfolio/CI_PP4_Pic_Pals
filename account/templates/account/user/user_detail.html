@@ -7,14 +7,13 @@
 
 {% block content %}
 <div class="container profile-style">
+  <p class="text-center user-name-font">
+    {{ user.username }}
+  </p>
+  <hr class="hr-styled">
   <div class="container">
     <div class="row">
       <div class="col-6 text-center right-border">
-        <div class="row ">
-          <p class="col text-center user-name-font">
-            {{ user.username }}
-          </p>
-        </div>
         <div class="center-image">
           {% if user.profile.profile_pic %}
           <img src="{{ user.profile.profile_pic.url }}"
@@ -59,7 +58,7 @@
       <hr>
       {{ user.profile.bio }}
       {% endif %}
-      <hr>
+      <hr class="hr-styled">
     </div>
     <!-- List of users posts -->
     <div class='row card-group auto-margin'>
