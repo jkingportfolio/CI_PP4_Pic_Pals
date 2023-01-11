@@ -346,7 +346,6 @@ Balsamiq was used to create wireframes of the sites pages
 | pyparsing | 3.0.9 |
 | pytz  | 2022.6 |
 | sqlparse | 0.4.3 |
-| whitenoise | 6.2.0 |
 
 
 ## Features
