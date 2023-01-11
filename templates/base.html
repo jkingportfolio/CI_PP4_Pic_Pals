@@ -72,13 +72,12 @@
                     </ul>
                     {% endif %}
                     {% if request.user.is_authenticated %}
-                    <span class="navbar-text">                        
+                    <span class="nav-item">                        
                         Logged in as: {{ request.user.username }} |
                         <a href="{% url 'logout' %}">Log out</a>
                         {% else %}
-                        <a class="nav-link"
-                            href="{% url 'contact:contact' %}">Contact</a>
-                    
+                        <a class="navbar-text nav-btn"
+                            href="{% url 'contact:contact' %}">Contact</a>                    
                     {% endif %}
                 </span>
                 </div>

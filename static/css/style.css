@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Do+Hyeon&display=swap');
+
 body {
     min-height: 100vh;
     display: flex;
@@ -11,7 +12,7 @@ footer {
     margin-top: auto;
 }
 
-a { 
+a {
     color: inherit;
     text-decoration: none;
 }
@@ -145,7 +146,7 @@ a {
     height: 100%;
     margin: 0 auto;
     border: solid 1px grey;
-    object-fit: contain;    
+    object-fit: contain;
 }
 
 .card-h-100 {
@@ -273,7 +274,7 @@ a {
     padding: 15px;
     border-radius: 50%;
 }
-  
+
 form div {
     margin-bottom: 15px;
 }
@@ -297,10 +298,21 @@ form div {
     color: inherit;
 }
 
+.nav-btn:hover {
+    color: #EFEFEF;
+}
 
-  /* Media queries*/
+.hr-login {
+    border: 0;
+    height: 1px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 
-  @media only screen and (max-width: 571px) {
+}
+
+
+/* Media queries*/
+
+@media only screen and (max-width: 571px) {
     .profile-pic {
         width: 100px;
         height: 100px;
