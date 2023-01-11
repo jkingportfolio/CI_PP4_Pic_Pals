@@ -195,8 +195,10 @@ The site consists of the following sections:
 
 The site uses a backend database built with the Django framework and the use of ElephantSQL Postgres for the deployed site.
 
-The database pdf file can be view [here]
-(https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/readme/misc/database%20diagram.pdf)
+<details>
+<summary>Database Diagram image</summary>
+<img src="readme/misc/database-diagram.png">
+</details>
 
 The following data models were created to represent the database model structure for the site.
 
