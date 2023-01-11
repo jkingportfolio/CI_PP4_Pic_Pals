@@ -44,7 +44,9 @@
         </div>
         {% empty %}
         <div>
-          <p>
+          <img src="{% static 'images/no-posts.png' %}"
+          alt="No posts image" class="no-posts-image">
+          <p class="no-posts">
             NO POSTS YET
           </p>
         </div>

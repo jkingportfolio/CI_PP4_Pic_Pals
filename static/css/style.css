@@ -238,7 +238,7 @@ a {
 
 .no-posts {
     text-align: center;
-    font-size: xx-large;
+    font-size: 5vw;
 }
 
 #scrollBtn {
@@ -265,6 +265,11 @@ form div {
     border-right: solid 1px rgba(0, 0, 0, 0.2);
 }
 
+.no-posts-image {
+    width: 100px;
+    height: auto;
+}
+
 
   /* Media queries*/
 
@@ -273,8 +278,6 @@ form div {
         width: 100px;
         height: 100px;
     }
-
-
 }
 
 @media only screen and (min-width: 770px) {
@@ -286,5 +289,7 @@ form div {
         font-size: 40px;
     }
 
-
+    .no-posts {
+        font-size: 40px !important;
+    }
 }

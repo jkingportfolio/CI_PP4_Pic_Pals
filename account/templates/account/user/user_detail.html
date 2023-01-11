@@ -17,8 +17,8 @@
         </div>
         <div class="center-image">
           {% if user.profile.profile_pic %}
-          <img src="{{ user.profile.profile_pic.url }}" alt="User profile picture"
-            class="profile-pic"><br>
+          <img src="{{ user.profile.profile_pic.url }}"
+            alt="User profile picture" class="profile-pic"><br>
           {% else %}
           <img src="{% static 'images/default_profile_pic.png' %}"
             alt="Default profile picture" class="profile-pic"><br>
@@ -43,14 +43,14 @@
           <p>Post count: {{ user_post_count }}</p>
         </div>
         <a href="{% url 'following_list' user %}">
-        <div class="row user-info-font">
-          <p>Following: {{ user_following_count }}</p>
-        </div>
+          <div class="row user-info-font">
+            <p>Following: {{ user_following_count }}</p>
+          </div>
         </a>
         <a href="{% url 'followers_list' user %}">
-        <div class="row user-info-font">
-          <p>Followers: {{ user_followers_count }}</p>
-        </div>
+          <div class="row user-info-font">
+            <p>Followers: {{ user_followers_count }}</p>
+          </div>
         </a>
       </div>
     </div>
@@ -82,7 +82,8 @@
             <div class="card-img-size">
               <div class="card-h-100">
                 <a href="{{ post.get_absolute_url }}" class="card-h-100">
-                  <img src="{{ post.image.url }}" alt="Post image" class="post-pic">
+                  <img src="{{ post.image.url }}" alt="Post image"
+                    class="post-pic">
                 </a>
               </div>
             </div>
@@ -95,13 +96,15 @@
         </div>
       </div>
       {% empty %}
-      <p class="no-posts">
-        NO POSTS YET
-      </p>
+      <div class="text-center">
+        <img src="{% static 'images/no-posts.png' %}" alt="No posts image"
+          class="no-posts-image">
+        <p class="no-posts">
+          NO POSTS YET
+        </p>
+      </div>
       {% endfor %}
     </div>
   </div>
 </div>
-
-
 {% endblock %}
