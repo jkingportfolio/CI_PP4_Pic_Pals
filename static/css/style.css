@@ -16,6 +16,10 @@ a {
     text-decoration: none;
 }
 
+.margin-btm {
+    margin-bottom: 15px;
+}
+
 .bio-text {
     text-align: left;
 }
@@ -32,7 +36,9 @@ a {
 .form-btn {
     border-radius: 3px;
     border: solid 1px grey;
+    background-color: #EFEFEF;
     width: 120px;
+    text-align: center;
 }
 
 .delete-btn {
@@ -268,6 +274,11 @@ form div {
 .no-posts-image {
     width: 100px;
     height: auto;
+}
+
+.a-btn {
+    padding: 8px 8px;
+    /* background-color: #EFEFEF; */
 }
 
 
