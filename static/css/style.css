@@ -24,6 +24,10 @@ a {
     margin-bottom: 15px;
 }
 
+.no-margin-btm {
+    margin-bottom: 0;
+}
+
 .bio-text {
     text-align: left;
 }
@@ -40,7 +44,6 @@ a {
 .form-btn {
     border-radius: 3px;
     border: solid 1px grey;
-    background-color: #EFEFEF;
     width: 120px;
     text-align: center;
 }
@@ -287,6 +290,7 @@ form div {
 .a-btn {
     padding: 1px 6px;
     display: inline-block;
+    background-color: #EFEFEF;
 }
 
 .a-btn:hover {
