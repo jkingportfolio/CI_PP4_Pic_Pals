@@ -17,7 +17,7 @@
         {{ profile_form|crispy }}
         {% csrf_token %}
         <p>
-            <button type="button" class="form-btn form-btn-pos"
+            <button type="button" class="form-btn form-btn-pos btn-hover"
                 data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                 aria-label="Edit post button">
                 Update
@@ -55,11 +55,12 @@
         </div>
 
     </form>
-    <a href="/">
-        <button aria-label="Cancel button" class="form-btn">
+    <div class="div-btn-control">
+        <a href="/" aria-label="Cancel button"
+            class="a-btn text-center form-btn margin-btm btn-hover">
             Cancel
-        </button>
-    </a>
+        </a>
+    </div>
 </div>
 
 <script>
