@@ -16,10 +16,6 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    background-color: #E5E5E5;
-}
-
 .btn-hover:hover {
     background-color: #E5E5E5;
 }
