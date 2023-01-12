@@ -72,6 +72,10 @@ a {
     margin-bottom: 30px;
 }
 
+.error-page-margin {
+    margin: 3rem 0;
+}
+
 .post-spacing {
     margin-bottom: 20px
 }

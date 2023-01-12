@@ -6,14 +6,15 @@
 
 {% block content %}
 
-<div class="container form-style">
-    <h1>404 Error</h1>
-    <h5>Oops, it seems that page does not exist.</h5>
-    <a href="{% url 'dashboard' %}">
-        <button aria-label="Home button" class="form-btn btn btn-success">
+<div class="container form-style text-center">
+    <h1 class="error-page-margin">404 Error</h1>
+    <h5 class="error-page-margin">Oops, it seems that page does not exist.</h5>
+    <div class="div-btn-control  auto-margin">
+        <a href="{% url 'dashboard' %}" aria-label="Home button"
+            class="a-btn text-center form-btn margin-btm btn-hover">
             Return Home
-        </button>
-    </a>
+        </a>
+    </div>
 </div>
 
 {% endblock %}
