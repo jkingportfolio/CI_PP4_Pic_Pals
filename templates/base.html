@@ -36,7 +36,7 @@
             <div class="container-fluid">
                 <a class="navbar-brand" href="/">
                     <img src="{% static 'images/logo.png' %}"
-                        alt="pic pals logo"  class="heartbeat flicker-3">
+                        alt="pic pals logo" class="heartbeat flicker-3">
                 </a>
                 {% if request.user.is_authenticated %}
                 <button class="navbar-toggler" type="button"
@@ -64,7 +64,6 @@
                             <a class="nav-link"
                                 href="{% url 'site_users' %}">People</a>
                         </li>
-
                         <li class="nav-item">
                             <a class="nav-link"
                                 href="{% url 'contact:contact' %}">Contact</a>
@@ -83,7 +82,7 @@
                             href="{% url 'contact:contact' %}">Contact</a>
                     </span>
                     {% endif %}
-                </div>
+                </div>                
             </div>
         </nav>
     </header>

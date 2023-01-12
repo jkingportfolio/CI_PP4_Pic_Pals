@@ -1,4 +1,3 @@
-<!-- list of logged in users posts page to be created here-->
 {% extends "base.html" %}
 
 {% load static %}
@@ -38,29 +37,28 @@
               </div>
             </div>
           </div>
-        </div>
-        <div class="card-footer">
-          <small class="text-muted">Posted:
-            {{ post.created_date }}</small><br>
-          <small class="text-muted">Likes: {{ post.likes }}</small>
+          <div class="card-footer">
+            <small class="text-muted">Posted:
+              {{ post.created_date }}</small><br>
+            <small class="text-muted">Likes: {{ post.likes }}</small>
+          </div>
         </div>
       </div>
-    </div>
-    {% empty %}
-    <div>
-      <p class="h2 text-center">
-        Looks like you have no posts!
-      </p>
-      <div class="div-btn-control auto-margin top-margin">
-        <a href="{% url 'posts:create_post' %}" aria-label="Add post button"
-          class="a-btn text-center form-btn margin-btm btn-hover">
-          Add a post
-        </a>
+      {% empty %}
+      <div>
+        <p class="h2 text-center">
+          Looks like you have no posts!
+        </p>
+        <div class="div-btn-control auto-margin top-margin">
+          <a href="{% url 'posts:create_post' %}" aria-label="Add post button"
+            class="a-btn text-center form-btn margin-btm btn-hover">
+            Add a post
+          </a>
+        </div>
+        {% endfor %}
       </div>
-      {% endfor %}
     </div>
   </div>
-</div>
 
 
-{% endblock %}
+  {% endblock %}
