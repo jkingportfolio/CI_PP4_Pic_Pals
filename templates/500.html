@@ -6,19 +6,14 @@
 
 {% block content %}
 
-<div class="container form-style">
-    <h1>
-        500 - Server Error
-    </h1>
-    <h3>
-        Oops, something went wrong!
-    </h3>
-    <div class="del-post-btn">
-        <button aria-label="Home button">
-            <a href="{% url 'dashboard' %}">
-                Return home
-            </a>
-        </button>
+<div class="container form-style text-center">
+    <h1 class="error-page-margin">500 Error</h1>
+    <h5 class="error-page-margin">Oops, something went wrong!</h5>
+    <div class="div-btn-control  auto-margin">
+        <a href="{% url 'dashboard' %}" aria-label="Home button"
+            class="a-btn text-center form-btn margin-btm btn-hover">
+            Return Home
+        </a>
     </div>
 </div>
 

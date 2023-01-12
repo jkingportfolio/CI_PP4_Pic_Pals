@@ -6,19 +6,15 @@
 
 {% block content %}
 
-<div class="container form-style">
-    <h1>
-        403 Error
-    </h1>
-    <h3>
-        Forbidden, it seems you do not have access to this page.
-    </h3>
-    <div class="del-post-btn">
-        <button aria-label="Home button">
-            <a href="{% url 'dashboard' %}">
-                Return home
-            </a>
-        </button>
+<div class="container form-style text-center">
+    <h1 class="error-page-margin">403 Error</h1>
+    <h5 class="error-page-margin">Forbidden, it seems you do not have access to
+        this page.</h5>
+    <div class="div-btn-control  auto-margin">
+        <a href="{% url 'dashboard' %}" aria-label="Home button"
+            class="a-btn text-center form-btn margin-btm btn-hover">
+            Return Home
+        </a>
     </div>
 </div>
 
