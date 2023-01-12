@@ -47,16 +47,18 @@
       </div>
     </div>
     {% empty %}
-    <p class="h2 text-center top-margin">
-      Looks like you have no posts!
-    </p>
-    <div class="div-btn-control">
-      <a href="{% url 'posts:create_post' %}" aria-label="Add post button"
-          class="a-btn text-center form-btn margin-btm btn-hover text-center">
+    <div>
+      <p class="h2 text-center">
+        Looks like you have no posts!
+      </p>
+      <div class="div-btn-control auto-margin top-margin">
+        <a href="{% url 'posts:create_post' %}" aria-label="Add post button"
+          class="a-btn text-center form-btn margin-btm btn-hover">
           Add a post
-      </a>
-  </div>
-    {% endfor %}
+        </a>
+      </div>
+      {% endfor %}
+    </div>
   </div>
 </div>
 
