@@ -4,7 +4,7 @@ A module for views of the contact app
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
-from django.shortcuts import render
+from django.shortcuts import render, redirect
 from django.contrib import messages
 # Internal
 from .forms import ContactForm
@@ -25,11 +25,7 @@ def contact(request):
             messages.success(request, 'Thank you for your message!'
                              ' We will be in touch soon!')
             form_submit = True
-            context = {
-                'contact_form': contact_form,
-                'form_submit': form_submit
-            }
-            return render(request, 'account/dashboard.html', context)
+            return redirect('dashboard')
     else:
         contact_form = ContactForm()
         context = {
