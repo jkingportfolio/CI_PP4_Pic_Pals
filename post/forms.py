@@ -14,6 +14,10 @@ class PostImageForm(forms.ModelForm):
     """
     A class for posting a post with an image and caption
     """
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['caption'].widget=forms.Textarea(attrs={'placeholder': 'Write a little about this image.'})
+
     class Meta:
         model = Post
         fields = ['image', 'caption']
@@ -32,6 +36,12 @@ class EditPost(forms.ModelForm):
     """
     A class for updating user post
     """
+    def __init__(self, *args, **kwargs):
+        super().__init__(*args, **kwargs)
+        self.fields['caption'].widget=forms.Textarea(attrs={'placeholder': 'Write a little about this image.'})
+        
     class Meta:
         model = Post
         fields = ['caption']
+
+        

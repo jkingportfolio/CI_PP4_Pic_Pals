@@ -20,7 +20,7 @@ class Post(models.Model):
                              related_name='user_post',
                              on_delete=models.CASCADE)
     image = CloudinaryField('image', blank=False)
-    caption = models.TextField(default='Please enter caption.')
+    caption = models.TextField(blank=True)
     caption_edited = models.BooleanField(default=False)
     caption_edited_time = models.DateTimeField(blank=True, null=True)
     likes = models.IntegerField(default=0)
