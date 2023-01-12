@@ -61,6 +61,10 @@ a {
     margin-right: 5px;
 }
 
+.sm-top-margin {
+    margin-top: 3px;
+}
+
 .div-btn-control {
     width: 120px;
 }
