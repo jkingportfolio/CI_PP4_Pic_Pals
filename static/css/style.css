@@ -105,7 +105,7 @@ a {
 
 .user-name-font {
     margin-bottom: 0;
-    font-size: 5vw
+    font-size: min(5vw, 36px);
 }
 
 .user-info-pos {
@@ -114,7 +114,6 @@ a {
 }
 
 .user-info-font {
-    /* font-size: 5vw; */
     font-size: min(5vw, 36px);
 }
 
@@ -131,7 +130,6 @@ a {
 
 .profile-pic {
     width: 100%;
-    /* height: 175px; */
     object-fit: scale-down;
     border-radius: 50%;
     border: 2px solid black;
@@ -259,7 +257,7 @@ a {
 
 .no-posts {
     text-align: center;
-    font-size: 5vw;
+    font-size: min(5vw, 36px);
 }
 
 #scrollBtn {
