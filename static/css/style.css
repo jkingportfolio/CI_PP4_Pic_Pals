@@ -49,8 +49,24 @@ a {
     text-align: center;
 }
 
+.inline-block {
+    display: inline-block;
+}
+
+.float-right {
+    float: right;
+}
+
+.post-detail-button {
+    margin-right: 5px;
+}
+
 .div-btn-control {
     width: 120px;
+}
+
+.absol-pos {
+    position: absolute;
 }
 
 .delete-btn {
@@ -105,6 +121,7 @@ a {
 .del-post-btn {
     text-align: end;
     margin: auto;
+    width: 100px;
 }
 
 .user-name-font {

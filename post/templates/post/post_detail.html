@@ -10,9 +10,9 @@
   <div class="col-12 col-md-6 col-lg-4 post-detail-container">
     <div class="card h-100">
       <div class="card-body">
-        <div class="row">
-          <div class="col-6">
-            <div class="row post-max-content">
+        <div>
+          <div class="inline-block">
+            <div>
               {% if request.user == post.user %}
               <a href="{% url 'dashboard' %}">
                 {% else %}
@@ -34,18 +34,17 @@
             </div>
           </div>
           {% if request.user == post.user %}
-          <div class="col-3">
-            <a href="{% url 'posts:edit_post' post.id %}">
-              <button class=" btn btn-dark edit-post-btn">
-                Edit
-              </button>
-            </a>
-          </div>
-          <div class="col-3 del-post-btn">
+          <div class="inline-block float-right">
             <button type="button" class="btn btn-danger" data-bs-toggle="modal"
               data-bs-target="#postDelete" aria-label="Delete post button">
               Delete
             </button>
+          </div>
+          <div class="inline-block float-right post-detail-button">
+            <a href="{% url 'posts:edit_post' post.id %}"
+              aria-label="Edit button" class="btn btn-dark edit-post-btn">
+              Edit
+            </a>
           </div>
           {% endif %}
         </div>
@@ -97,8 +96,6 @@
       <div class="container">
         <div>
           {% for comment in comments %}
-          <!-- FOR LOOP MAKES MODAL DELETE FIRST COMMENT -->
-          <!-- comment delete modal -->
           <div class="modal fade" id="delete-modal-{{ comment.id }}"
             data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="commentDeleteLabel" aria-hidden="true">
@@ -139,8 +136,9 @@
                 {{ comment.user }}
               </a>
               {% if request.user == comment.user or request.user == post.user %}
-              <img src="{% static 'images/delete.png' %}" alt="Delete comment icon"
-                class="delete-btn" data-bs-toggle="modal"
+              <img src="{% static 'images/delete.png' %}"
+                alt="Delete comment icon" class="delete-btn"
+                data-bs-toggle="modal"
                 data-bs-target="#delete-modal-{{ comment.id }}">
             </div>
             {% endif %}
