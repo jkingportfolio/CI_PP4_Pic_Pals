@@ -25,14 +25,6 @@ a {
     margin-bottom: 15px;
 }
 
-.no-margin-btm {
-    margin-bottom: 0;
-}
-
-.bio-text {
-    text-align: left;
-}
-
 .error-text {
     color: red;
 }
@@ -69,10 +61,6 @@ a {
     width: 120px;
 }
 
-.absol-pos {
-    position: absolute;
-}
-
 .delete-btn {
     height: 30px;
     width: 30px;
@@ -104,10 +92,6 @@ a {
     max-width: 500px;
 }
 
-.post-max-content {
-    width: max-content;
-}
-
 .profile-button {
     width: 160px;
     margin-bottom: 10px;
@@ -120,12 +104,6 @@ a {
 
 .like-btn-margin {
     margin-top: 10px;
-}
-
-.del-post-btn {
-    text-align: end;
-    margin: auto;
-    width: 100px;
 }
 
 .user-name-font {
@@ -144,13 +122,6 @@ a {
 
 .form-btn-pos {
     margin-top: 10px;
-}
-
-.post-image-resize {
-    display: block;
-    width: 150px;
-    height: auto;
-    margin: auto;
 }
 
 .profile-pic {
@@ -192,10 +163,6 @@ a {
     border: 2px solid black;
 }
 
-.site-margin {
-    margin: 50px;
-}
-
 .user-list-margin {
     margin-bottom: 25px;
 }
@@ -212,15 +179,6 @@ a {
 .post-detail-container {
     width: 100%;
     margin: auto;
-}
-
-.profile-user-name {
-    font-size: 30px;
-    margin: 10px
-}
-
-.profile-section {
-    margin-bottom: 20px;
 }
 
 .form-style {
@@ -240,21 +198,6 @@ a {
     padding-top: 25px;
 }
 
-.profile-post-container {
-    width: 200px;
-    height: 200px;
-    background-color: #0a0a23;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.comment-delete-btn {
-    position: relative;
-    right: 10px;
-    top: -5px;
-}
-
 .comment-title {
     text-decoration: underline;
 }
@@ -271,10 +214,6 @@ a {
 
 .edit-post-btn {
     width: auto;
-}
-
-.card-image-div {
-    height: 250px;
 }
 
 .asteriskField {
@@ -332,7 +271,7 @@ form div {
     border: 0;
     height: 1px;
     background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
-
+}
 
 /* Media queries*/
 
