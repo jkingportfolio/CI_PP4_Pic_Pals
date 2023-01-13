@@ -20,7 +20,16 @@
             <h1>Search Results</h1>
             {% if not user_search_results %}
             <div>
-                <h2>No users with that username exists.</h2>
+                <h2 class="h2 text-center">No users with that username exists.
+                </h2>
+                <div
+                    class="div-btn-control auto-margin text-center">
+                    <a href="{% url 'site_users' %}"
+                        aria-label="Return button"
+                        class="a-btn text-center form-btn margin-btm btn-hover">
+                        Return to users
+                    </a>
+                </div>
             </div>
             {% else %}
             <div class="row">
@@ -30,8 +39,7 @@
                         class="col-12 col-md-6 col-lg-4 text-center user-list-margin user-card mx-auto">
                         <div class="card h-100">
                             <div class="card-body">
-                                <a
-                                    href="{{ user.get_absolute_url }}">
+                                <a href="{{ user.get_absolute_url }}">
                                     {% if user.profile.profile_pic %}
                                     <img src="{{ user.profile.profile_pic.url }}"
                                         alt="User profile picture"
@@ -52,12 +60,5 @@
             {% endif %}
         </div>
     </div>
-    <div class=" text-center">
-        <a href="{% url 'site_users' %}">
-            <button class="btn btn-dark edit-post-btn">
-              Return
-            </button>              
-          </a>
-    </div>
 </div>
-    {% endblock %}
+{% endblock %}
