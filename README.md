@@ -726,87 +726,88 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 <summary>Screenshots</summary>
 <details>
 <summary>Landing page</summary>
-<img src="readme/validation/light_house/landing-lighthouse/">
+<img src="readme/validation/light_house/landing-lighthouse.png">
 </details>
 
 <details>
 <summary>Contact page</summary>
-<img src="readme/validation/light_house/contact-lighthouse/">
+<img src="readme/validation/light_house/contact-lighthouse.png">
 </details>
 
 <details>
 <summary>Reset Password page</summary>
-<img src="readme/validation/light_house/password-reset-lighthouse/">
+<img src="readme/validation/light_house/password-reset-lighthouse.png">
 </details>
 
 <details>
 <summary>Sign up page</summary>
-<img src="readme/validation/light_house/signup-lighthouse/">
+<img src="readme/validation/light_house/signup-lighthouse.png">
 </details>
 
 <details>
 <summary>Profile page</summary>
-<img src="readme/validation/light_house/lighthouse/">
+<img src="readme/validation/light_house/lighthouse.png">
 </details>
 
 <details>
 <summary>Followers page</summary>
-<img src="readme/validation/light_house/followed-by-lighthouse/">
+<img src="readme/validation/light_house/followed-by-lighthouse.png">
 </details>
 
 <details>
 <summary>Following page</summary>
-<img src="readme/validation/light_house/following-lighthouse/">
+<img src="readme/validation/light_house/following-lighthouse.png">
 </details>
 
 <details>
 <summary>Add post page</summary>
-<img src="readme/validation/light_house/create-post-lighthouse/">
+<img src="readme/validation/light_house/create-post-lighthouse.png">
 </details>
 
 <details>
 <summary>Edit profile page</summary>
-<img src="readme/validation/light_house/edit-profile-lighthouse/">
+<img src="readme/validation/light_house/edit-profile-lighthouse.png">
 </details>
 
 <details>
 <summary>Change password page</summary>
-<img src="readme/validation/light_house/change-password-lighthouse/">
+<img src="readme/validation/light_house/change-password-lighthouse.png">
 </details>
 
 <details>
 <summary>Post detail page</summary>
-<img src="readme/validation/light_house/post-detail-lighthouse/">
+<img src="readme/validation/light_house/post-detail-lighthouse.png">
 </details>
 
 <details>
 <summary>Edit post page</summary>
-<img src="readme/validation/light_house/edit-post-lighthouse/">
+<img src="readme/validation/light_house/edit-post-lighthouse.png">
 </details>
+
 
 <details>
 <summary>My posts page</summary>
-<img src="readme/validation/light_house/my-posts-lighthouse/">
+<img src="readme/validation/light_house/my-posts-lighthouse.png">
 </details>
 
 <details>
 <summary>Feed page</summary>
-<img src="readme/validation/light_house/feed-lighthouse/">
+<img src="readme/validation/light_house/feed-lighthouse.png">
 </details>
 
 <details>
 <summary>Other users page</summary>
-<img src="readme/validation/light_house/other-user-lighthouse/">
+<img src="readme/validation/light_house/other-user-lighthouse.png">
 </details>
 
 <details>
 <summary>People page</summary>
-<img src="readme/validation/light_house/people-lighthouse/">
+<img src="readme/validation/light_house/people-lighthouse.png">
 </details>
 
 <details>
 <summary>User search results page</summary>
-<img src="readme/validation/light_house/search-results-lighthouse/">
+<img src="readme/validation/light_house/search-results-lighthouse.png">
 </details>
 
 </details>
