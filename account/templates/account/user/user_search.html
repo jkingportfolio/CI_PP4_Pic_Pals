@@ -1,4 +1,3 @@
-<!-- user list page to be created here-->
 {% extends "base.html" %}
 
 {% load static %}
@@ -6,6 +5,7 @@
 {% block title %}Search results{% endblock %}
 
 {% block content %}
+
 <div class="container form-style">
     <form action="{% url 'search_users' %}" method="get">
         <div class="input-group flex-nowrap">
@@ -22,10 +22,8 @@
             <div>
                 <h2 class="h2 text-center">No users with that username exists.
                 </h2>
-                <div
-                    class="div-btn-control auto-margin text-center">
-                    <a href="{% url 'site_users' %}"
-                        aria-label="Return button"
+                <div class="div-btn-control auto-margin text-center">
+                    <a href="{% url 'site_users' %}" aria-label="Return button"
                         class="a-btn text-center form-btn margin-btm btn-hover">
                         Return to users
                     </a>
@@ -62,9 +60,10 @@
     </div>
     <div class="div-btn-control auto-margin text-center">
         <a href="{% url 'dashboard' %}" aria-label="Return button"
-          class="btn btn-dark text-center margin-btm">
-          Return Home
+            class="btn btn-dark text-center margin-btm">
+            Return Home
         </a>
-      </div>
+    </div>
 </div>
+
 {% endblock %}

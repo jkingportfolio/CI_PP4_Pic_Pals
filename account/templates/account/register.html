@@ -1,10 +1,11 @@
-<!-- user register page to be created here-->
 {% extends "base.html" %}
+
 {% load crispy_forms_tags %}
 
 {% block title %}Sign Up{% endblock %}
 
 {% block content %}
+
 <div class="container form-style">
     <div class="container text-right">
         <h1>Please sign up below</h1>
@@ -13,7 +14,8 @@
                 {% csrf_token %}
                 {{ user_form|crispy }}
             </div>
-            <p><input type="submit" value="Create account" class="form-btn form-btn-pos"></p>
+            <p><input type="submit" value="Create account"
+                    class="form-btn form-btn-pos"></p>
         </form>
         <div class="div-btn-control">
             <a href="/" aria-label="Cancel button"

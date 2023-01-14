@@ -1,9 +1,11 @@
 {% extends "base.html" %}
+
 {% load crispy_forms_tags %}
 
 {% block title %}Contact us{% endblock %}
 
 {% block content %}
+
 <div class="container form-style">
     <div class="container text-right">
         <h1>Contact us</h1>
@@ -13,7 +15,8 @@
                 {{ contact_form | crispy }}
             </div>
             <p><input type="submit" value="Submit"
-                    class="btn btn-dark text-center btn-hover std-btn-width"></p>
+                    class="btn btn-dark text-center btn-hover std-btn-width">
+            </p>
         </form>
         <div class="div-btn-control">
             <a href="/" aria-label="Cancel button"

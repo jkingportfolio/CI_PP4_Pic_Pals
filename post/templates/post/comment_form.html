@@ -1,5 +1,8 @@
-<!-- create post comment form here -->
 {% load crispy_forms_tags %}
+
+{% block title %} Comment {% endblock %}
+
+{% block content %}
 
 <div class="container">
     <h2>Add a new comment</h2>
@@ -9,3 +12,5 @@
         <p><input type="submit" value="Add comment" class="form-btn-pos"></p>
     </form>
 </div>
+
+{% endblock %}

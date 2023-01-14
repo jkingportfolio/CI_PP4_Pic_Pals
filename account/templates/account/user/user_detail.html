@@ -1,4 +1,3 @@
-<!-- user detail page to be created here-->
 {% extends "base.html" %}
 
 {% load static %}
@@ -6,6 +5,7 @@
 {% block title %} {{ user.get_username }} {% endblock %}
 
 {% block content %}
+
 <div class="container profile-style">
   <p class="text-center user-name-font">
     {{ user.username }}
@@ -60,7 +60,6 @@
       {% endif %}
       <hr class="hr-styled">
     </div>
-    <!-- List of users posts -->
     <div class='row card-group auto-margin'>
       {% for post in user_posts %}
       <div class="col-12 col-md-6 col-lg-4 post-spacing">
@@ -106,4 +105,5 @@
     </div>
   </div>
 </div>
+
 {% endblock %}

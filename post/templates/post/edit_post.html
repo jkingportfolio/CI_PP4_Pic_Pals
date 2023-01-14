@@ -1,5 +1,5 @@
-<!-- edit post page to be created here-->
 {% extends "base.html" %}
+
 {% load crispy_forms_tags %}
 
 {% block title %}Edit post{% endblock %}
@@ -8,20 +8,17 @@
 
 <div class="container form-style">
     <h1>Update post</h1>
-    <!-- <form method="post" enctype="multipart/form-data"> -->
     <form method="post">
         {% csrf_token %}
         {{ form|crispy }}
         <p>
-            <button type="button" class="btn btn-dark text-center btn-hover std-btn-width"
+            <button type="button"
+                class="btn btn-dark text-center btn-hover std-btn-width"
                 data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                 aria-label="Delete post button">
                 Update
             </button>
         </p>
-
-
-        <!-- Edit profile confirm modal -->
         <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static"
             data-bs-keyboard="false" tabindex="-1"
             aria-labelledby="staticBackdropLabel" aria-hidden="true">
@@ -39,20 +36,22 @@
                         Are you sure you want to update the post caption?
                     </div>
                     <div class="modal-footer justify-center">
-                        <button type="submit" class="btn btn-success std-btn-width">
+                        <button type="submit"
+                            class="btn btn-success std-btn-width">
                             Update
                         </button>
-                        <button type="button" class="btn btn-danger std-btn-width"
+                        <button type="button"
+                            class="btn btn-danger std-btn-width"
                             data-bs-dismiss="modal"
                             aria-label="Close">No</button>
                     </div>
                 </div>
             </div>
         </div>
-
     </form>
     <a href="{{ post.get_absolute_url }}">
-        <button aria-label="Cancel button" class="btn btn-dark text-center margin-btm btn-hover std-btn-width">
+        <button aria-label="Cancel button"
+            class="btn btn-dark text-center margin-btm btn-hover std-btn-width">
             Cancel
         </button>
     </a>
