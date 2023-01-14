@@ -17,6 +17,10 @@ a {
     text-decoration: none;
 }
 
+ul {
+    list-style: none !important;
+}
+
 .btn-hover:hover {
     background-color: #E5E5E5;
 }
