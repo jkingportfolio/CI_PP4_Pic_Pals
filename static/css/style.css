@@ -191,10 +191,6 @@ a {
     height: auto;
 }
 
-.post-detail {
-    justify-content: center;
-}
-
 .post-detail-container {
     width: 100%;
     margin: auto;
@@ -270,16 +266,6 @@ form div {
 .no-posts-image {
     width: 100px;
     height: auto;
-}
-
-.a-btn {
-    padding: 1px 6px;
-    display: inline-block;
-    background-color: #EFEFEF;
-}
-
-.a-btn:hover {
-    color: inherit;
 }
 
 .nav-btn:hover {
