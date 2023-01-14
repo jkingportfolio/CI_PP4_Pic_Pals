@@ -55,8 +55,8 @@ class EditProfile(forms.ModelForm):
 
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['date_of_birth'].widget = forms.DateInput(
-            attrs={'placeholder': 'MM/DD/YYYY'}),
+        self.fields['date_of_birth'].widget=forms.DateInput(
+            attrs={'placeholder': 'MM/DD/YYYY'})
         self.fields['bio'].widget = forms.TextInput(
             attrs={'placeholder': 'Write a little about yourself.'})
 
