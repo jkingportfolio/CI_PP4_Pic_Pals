@@ -112,6 +112,10 @@ a {
     width: 130px;
 }
 
+.justify-center {
+    justify-content: center !important;
+}
+
 .like-button {
     height: 40px;
     width: 40px
