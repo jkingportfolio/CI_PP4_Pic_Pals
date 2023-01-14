@@ -723,89 +723,90 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 [Chrome Dev Tools lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to validate the performance of the app.
 
 <details>
+<summary>Screenshots</summary>
 <details>
 <summary>Landing page</summary>
-<img src="readme/validation/landing-lighthouse/">
+<img src="readme/validation/light_house/landing-lighthouse/">
 </details>
 
 <details>
 <summary>Contact page</summary>
-<img src="readme/validation/contact-lighthouse/">
+<img src="readme/validation/light_house/contact-lighthouse/">
 </details>
 
 <details>
 <summary>Reset Password page</summary>
-<img src="readme/validation/password-reset-lighthouse/">
+<img src="readme/validation/light_house/password-reset-lighthouse/">
 </details>
 
 <details>
 <summary>Sign up page</summary>
-<img src="readme/validation/signup-lighthouse/">
+<img src="readme/validation/light_house/signup-lighthouse/">
 </details>
 
 <details>
 <summary>Profile page</summary>
-<img src="readme/validation/lighthouse/">
+<img src="readme/validation/light_house/lighthouse/">
 </details>
 
 <details>
 <summary>Followers page</summary>
-<img src="readme/validation/followed-by-lighthouse/">
+<img src="readme/validation/light_house/followed-by-lighthouse/">
 </details>
 
 <details>
 <summary>Following page</summary>
-<img src="readme/validation/following-lighthouse/">
+<img src="readme/validation/light_house/following-lighthouse/">
 </details>
 
 <details>
 <summary>Add post page</summary>
-<img src="readme/validation/create-post-lighthouse/">
+<img src="readme/validation/light_house/create-post-lighthouse/">
 </details>
 
 <details>
 <summary>Edit profile page</summary>
-<img src="readme/validation/edit-profile-lighthouse/">
+<img src="readme/validation/light_house/edit-profile-lighthouse/">
 </details>
 
 <details>
 <summary>Change password page</summary>
-<img src="readme/validation/change-password-lighthouse/">
+<img src="readme/validation/light_house/change-password-lighthouse/">
 </details>
 
 <details>
 <summary>Post detail page</summary>
-<img src="readme/validation/post-detail-lighthouse/">
+<img src="readme/validation/light_house/post-detail-lighthouse/">
 </details>
 
 <details>
 <summary>Edit post page</summary>
-<img src="readme/validation/edit-post-lighthouse/">
+<img src="readme/validation/light_house/edit-post-lighthouse/">
 </details>
 
 <details>
 <summary>My posts page</summary>
-<img src="readme/validation/my-posts-lighthouse/">
+<img src="readme/validation/light_house/my-posts-lighthouse/">
 </details>
 
 <details>
 <summary>Feed page</summary>
-<img src="readme/validation/feed-lighthouse/">
+<img src="readme/validation/light_house/feed-lighthouse/">
 </details>
 
 <details>
 <summary>Other users page</summary>
-<img src="readme/validation/other-user-lighthouse/">
+<img src="readme/validation/light_house/other-user-lighthouse/">
 </details>
 
 <details>
 <summary>People page</summary>
-<img src="readme/validation/people-lighthouse/">
+<img src="readme/validation/light_house/people-lighthouse/">
 </details>
 
 <details>
 <summary>User search results page</summary>
-<img src="readme/validation/search-results-lighthouse/">
+<img src="readme/validation/light_house/search-results-lighthouse/">
 </details>
 
 </details>
