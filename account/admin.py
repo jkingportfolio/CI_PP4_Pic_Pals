@@ -1,5 +1,5 @@
 """
-A module for admin i nthe account app
+A module for admin in the account app
 """
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

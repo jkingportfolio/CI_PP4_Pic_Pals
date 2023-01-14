@@ -1,5 +1,5 @@
 """
-A module for views of the contact app
+A module for views in the contact app
 """
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

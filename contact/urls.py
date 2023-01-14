@@ -1,5 +1,5 @@
 """
-A module for urls
+A module for urls in the contact app
 """
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~

@@ -1,3 +1,6 @@
+"""
+A module for admin in the contact app
+"""
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
@@ -18,7 +21,6 @@ class ContactAdmin(admin.ModelAdmin):
         'reason',
         'email'
         )
-    
     list_filter = (
         'name',
         'reason',

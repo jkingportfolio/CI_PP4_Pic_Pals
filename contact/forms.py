@@ -1,5 +1,5 @@
 """
-A module for forms
+A module for forms in the contact app
 """
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
