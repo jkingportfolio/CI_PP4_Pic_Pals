@@ -1,5 +1,5 @@
 """
-A module for forms
+A module for forms in the post app
 """
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -14,9 +14,11 @@ class PostImageForm(forms.ModelForm):
     """
     A class for posting a post with an image and caption
     """
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['caption'].widget=forms.Textarea(attrs={'placeholder': 'Write a little about this image.'})
+        self.fields['caption'].widget = forms.Textarea(
+            attrs={'placeholder': 'Write a little about this image.'})
 
     class Meta:
         model = Post
@@ -36,12 +38,12 @@ class EditPost(forms.ModelForm):
     """
     A class for updating user post
     """
+
     def __init__(self, *args, **kwargs):
         super().__init__(*args, **kwargs)
-        self.fields['caption'].widget=forms.Textarea(attrs={'placeholder': 'Write a little about this image.'})
-        
+        self.fields['caption'].widget = forms.Textarea(
+            attrs={'placeholder': 'Write a little about this image.'})
+
     class Meta:
         model = Post
         fields = ['caption']
-
-        

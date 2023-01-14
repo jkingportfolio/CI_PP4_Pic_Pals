@@ -1,5 +1,5 @@
 """
-A module for urls
+A module for urls in the post app
 """
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -9,7 +9,6 @@ from django.contrib.auth import views as auth_views
 # Internal
 from . import views
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
 
 app_name = 'posts'
 

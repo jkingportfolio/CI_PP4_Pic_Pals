@@ -55,8 +55,6 @@ def edit_post(request, id):
             post.caption_edited_time = datetime.datetime.now()
             post.save()
             messages.success(request, 'Post caption updated successfully.')
-            # The below works but causes issues, page  rendered is correct but not url
-            # return render(request, 'post/post_detail.html', {'post': post})
             return redirect(reverse('posts:post_detail', args=[post.id]))
         else:
             messages.error(request, 'Error updating post caption.')
@@ -111,13 +109,13 @@ def current_user_posts(request):
 @login_required
 def post_like(request, post):
     """
-    A function based view to allow the ability to 
+    A function based view to allow the ability to
     like an unlike a post
     """
     user = request.user
     post = Post.objects.get(id=post)
     like_status = Like.objects.filter(post=post, user=user).first()
-    if like_status == None:
+    if like_status is None:
         like = Like.objects.create(post=post, user=user)
         like.save()
         post.likes = post.likes + 1
