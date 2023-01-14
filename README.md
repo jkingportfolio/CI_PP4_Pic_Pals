@@ -703,8 +703,6 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 </details>
 
 
-
-
 ### Chrome Dev Tools Lighthouse Validation
 
 [Chrome Dev Tools lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to validate the performance of the app.
@@ -730,6 +728,7 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 This site was tested on the following devices:
 - Windows 10 PC with a 24" MSI Curved gaming monitor
 - Raspberry Pi 4 with a 24" MSI Curved gaming monitor
+- Xiaomi Redmi Note 10 Pro
 
 ### Browser Compatibility
 
