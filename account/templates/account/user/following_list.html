@@ -1,4 +1,3 @@
-<!-- user following page to be created here-->
 {% extends "base.html" %}
 
 {% load static %}
@@ -9,7 +8,7 @@
 <div class="container form-style text-center">
   <h1>{{user.get_username}} follows...</h1>
   <div class="row">
-    <div class="container top-margin">      
+    <div class="container top-margin">
       <div class="row">
         <div class='row card-group auto-margin'>
           {% for followed_user in user_following_list %}
@@ -17,9 +16,11 @@
             class="col-12 col-md-6 col-lg-4 text-center user-list-margin user-card mx-auto">
             <div class="card h-100">
               <div class="card-body">
-                <a href="{{ followed_user.followed_account.get_absolute_url }}">
+                <a
+                  href="{{ followed_user.followed_account.get_absolute_url }}">
                   {% if followed_user.followed_account.profile.profile_pic %}
-                  <img src="{{ followed_user.followed_account.profile.profile_pic.url }}"
+                  <img
+                    src="{{ followed_user.followed_account.profile.profile_pic.url }}"
                     alt="User profile picture" class="profile-pic"><br>
                   {% else %}
                   <img src="{% static 'images/default_profile_pic.png' %}"
@@ -33,7 +34,7 @@
           {% empty %}
           <div>
             <h2>
-                nobody. 
+              nobody.
             </h2>
           </div>
           {% endfor %}
@@ -41,5 +42,11 @@
       </div>
     </div>
   </div>
-
-  {% endblock %}
+  <div class="div-btn-control auto-margin text-center">
+    <a href="{% url 'dashboard' %}" aria-label="Return button"
+      class="a-btn text-center form-btn margin-btm btn-hover">
+      Return Home
+    </a>
+  </div>
+</div>
+{% endblock %}
