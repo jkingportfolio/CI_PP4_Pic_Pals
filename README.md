@@ -663,14 +663,45 @@ In addition to this there are two scripts which are in templates, these have bee
 
 ### Python Validation
 
-At the time of creating this 
-
-[PEP-8 Validation](http://pep8online.com/) was used to validate the Python code used in the app.
+At the time of developing this project, PEP8 Validator was down therefore the suggested method of validating Python code used in the project was using the tool called `pycodestyle` which was installed to the IDE (GitPod). This tool will continually give the developer feedback in the problems section of the IDE which i was able to use continually through out developement to ensure correct formatting of Python code. All files which contain custom Python code have been verified to have no detectable issues using `pycodestyle`:
 
 <details>
-<summary>Python file - run.py</summary>
-<img src="docs/images/validation/pep8-validation-run.png">
+<summary>Account app</summary>
+
+- `account/admin.py`
+- `account/forms.py`
+- `account/models.py`
+- `account/test_forms.py`
+- `account/test_models.py`
+- `account/test_views.py`
+- `account/urls.py`
+- `account/views.py`
+
 </details>
+
+<details>
+<summary>Contact app</summary>
+
+- `contact/admin.py`
+- `contact/forms.py`
+- `contact/models.py`
+- `contact/test_forms.py`
+- `contact/urls.py`
+- `contact/views.py`
+
+</details>
+
+<details>
+<summary>Post app</summary>
+
+- `post/admin.py`
+- `post/forms.py`
+- `post/models.py`
+- `post/urls.py`
+- `post/views.py`
+
+</details>
+
 
 
 
