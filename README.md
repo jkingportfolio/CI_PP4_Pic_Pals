@@ -746,7 +746,7 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 
 <details>
 <summary>Profile page</summary>
-<img src="readme/validation/light_house/lighthouse.png">
+<img src="readme/validation/light_house/profile-page/lighthouse.png">
 </details>
 
 <details>
