@@ -108,6 +108,10 @@ a {
     margin-bottom: 10px;
 }
 
+.std-btn-width {
+    width: 130px;
+}
+
 .like-button {
     height: 40px;
     width: 40px
