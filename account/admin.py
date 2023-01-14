@@ -1,3 +1,6 @@
+"""
+A module for admin i nthe account app
+"""
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
@@ -20,11 +23,11 @@ class ProfileAdmin(admin.ModelAdmin):
     search_fields = (
         'user',
         'date_of_birth'
-        ) 
+        )
     list_filter = (
         'user',
         'date_of_birth'
-    )          
+        )
     raw_id_fields = [
         'user'
         ]

@@ -1,3 +1,6 @@
+"""
+A module for testing models in the account app
+"""
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 # 3rd party:
@@ -7,8 +10,6 @@ from datetime import datetime
 # Internal
 from .models import Profile, Follow
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
-
-# PASSES
 
 
 class TestAccountModels(TestCase):
@@ -37,4 +38,3 @@ class TestAccountModels(TestCase):
         test_user = User.objects.get(username='test_user')
         profile = Profile.objects.create(user=test_user)
         self.assertEqual(str(profile), f'Profile of {profile.user.username}')
-

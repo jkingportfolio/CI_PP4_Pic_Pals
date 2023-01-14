@@ -22,41 +22,6 @@ from post.models import Post
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-
-
-# def user_login(request):
-#     """
-#     A function based view for the authenticating and
-#     logging in a user with the user of a form requesting
-#     username and password
-#     """
-#     if request.method == 'POST':
-#         form = LoginDetails(request.POST)
-#         if form.is_valid():
-#             clear_form = form.cleaned_data
-#             user = authenticate(
-#                 request, username=clear_form['username'],
-#                 password=clear_form['password'])
-#             print('1')
-#             if user is not None:
-#                 if user.is_active:
-#                     login(request, user)
-#                     # This wont show
-#                     messages.success(request, f'{user.username} successfully logged in!')
-#                     print('2')
-#                     return HttpResponse(('Login authenticated'))
-#                 else:
-#                     print('3')
-#                     return HttpResponse(('Account disabled'))
-#             else:
-#                 print('4')
-#                 return (HttpResponse('Invalid login'))
-#     else:
-#         form = LoginDetails()
-#     print('5')
-#     return render(request, 'account/login.html', {'form': form})
-
-
 def register(request):
     """
     A function based view for the register page with
