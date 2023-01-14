@@ -69,21 +69,21 @@
                                 href="{% url 'contact:contact' %}">Contact</a>
                         </li>
                     </ul>
-                </div>
-                {% endif %}
-                {% if request.user.is_authenticated %}
-                <span class="nav-item navbar-text">
-                    Logged in as: {{ request.user.username }} |
-                    <a class="navbar-text nav-btn"
-                        href="{% url 'logout' %}">Log out</a>
-                </span>
-                {% else %}
-                <span class="nav-item">
-                    <a class="navbar-text nav-btn"
-                        href="{% url 'contact:contact' %}">Contact</a>
-                </span>
-                {% endif %}
 
+                    {% endif %}
+                    {% if request.user.is_authenticated %}
+                    <span class="nav-item navbar-text">
+                        Logged in as: {{ request.user.username }} |
+                        <a class="navbar-text nav-btn"
+                            href="{% url 'logout' %}">Log out</a>
+                    </span>
+                    {% else %}
+                    <span class="nav-item">
+                        <a class="navbar-text nav-btn"
+                            href="{% url 'contact:contact' %}">Contact</a>
+                    </span>
+                    {% endif %}
+                </div>
             </div>
         </nav>
     </header>
