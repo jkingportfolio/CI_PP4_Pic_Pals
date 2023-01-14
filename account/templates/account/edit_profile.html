@@ -17,7 +17,8 @@
         {{ profile_form|crispy }}
         {% csrf_token %}
         <p>
-            <button type="button" class="btn btn-dark text-center btn-hover std-btn-width"
+            <button type="button"
+                class="btn btn-dark text-center btn-hover std-btn-width"
                 data-bs-toggle="modal" data-bs-target="#staticBackdrop"
                 aria-label="Edit post button">
                 Update
@@ -41,13 +42,15 @@
                         Are you sure you want to update your profile with the
                         new information?
                     </div>
-                    <div class="modal-footer">
-                        <button type="button" class="btn btn-danger"
-                            data-bs-dismiss="modal"
-                            aria-label="Close">No</button>
-                        <button type="submit" class="btn btn-success">
+                    <div class="modal-footer justify-center">
+                        <button type="submit"
+                            class="btn btn-success std-btn-width">
                             Yes
                         </button>
+                        <button type="button"
+                            class="btn btn-danger std-btn-width"
+                            data-bs-dismiss="modal"
+                            aria-label="Close">No</button>
                     </div>
                 </div>
             </div>
