@@ -31,31 +31,34 @@ The Pic Pals Social website has been developed to provide users the chance to po
     2. [Frameworks and Tools](#frameworks-and-tools)
     3. [Libraries](#libraries)
 5. [Features](#features)
-6. [Validation](#validation)
+6. [Future implementation](#future-implementation)
+    1. [Future Features](#future-features)
+    2. [Improvements](#improvements)
+7. [Validation](#validation)
     1. [HTML](#html-validation)
     2. [CSS](#css-validation)
     3. [Javascript](#javascript-validation)
     4. [Python](#python-validation)
     5. [Chrome Dev Tools Lighthouse](#chrome-dev-tools-lighthouse-validation)
     6. [WAVE Validation](#wave-validation)
-7. [Testing](#testing)
+8. [Testing](#testing)
     1. [Device Testing](#device-testing)
     2. [Browser Compatibility](#browser-compatibility)
     3. [Manual Testing](#manual-testing)
     4. [Automated Testing](#automated-testing)
-8. [Bugs](#bugs)
-9. [Configuration](#configuration)
+9. [Bugs](#bugs)
+10. [Configuration](#configuration)
     1. [Google emails](#google-emails)
-10. [Deployment](#deployment)
+11. [Deployment](#deployment)
     1. [Heroku](#heroku)
     2. [Forking GitHub Repo](#forking-the-github-repository)
     3. [Clone a GitHub Repo](#clone-a-github-repository)
-11. [Credits](#credits)
+12. [Credits](#credits)
     1. [Tutorial](#tutorials)
     2. [Code](#code)
     3. [Literature](#literature)
     4. [Misc](#misc)
-12. [Acknowledgements](#acknowledgements)
+13. [Acknowledgements](#acknowledgements)
 
 ## Project Goals
 
@@ -618,6 +621,18 @@ The user search bar feature can be found on the People page of the site. At the 
 </details>
 
 - Covered in user stories: 31
+
+## Future implementation
+
+### Future features
+
+While using the AGILE design methology against the time allocated to the project there are a number of features which would be great to implement in the future. These features can be found in the future implementations tab in the [pic pals github project](#https://github.com/users/jkingportfolio/projects/8)
+
+### Improvements
+
+Although alot of effort was put into this project, due to time constraints there is still room for finer refactoring of code. 
+
+- A logged in users dashboard (`dashboard.html`) and a users profile page (`user_detail.html`) use similar code however the amount of django template if statements needed would have made this code as is hard to read and with bugs. In future i hope to be able to be able to merge these two pages into one, with using smaller template blocks to achevie the same outcome but refactored. 
 
 ## Validation
 
