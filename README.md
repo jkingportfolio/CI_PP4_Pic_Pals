@@ -1,7 +1,7 @@
 # pic-pals
 Developer: Jamie King
 
-![Mockup image](readme/misc/mockup.png)
+![Mockup image](readme/misc/mock-up.png)
 
 The Pic Pals Social website has been developed to provide users the chance to post images online and have the ability to view other users posts also. 
 
@@ -591,7 +591,7 @@ Throughout the site the feature of being responsive for various device sizes can
 
 <details>
 <summary>Responsiveness image</summary>
-<img src="readme/misc/mockup.png">
+<img src="readme/misc/mock-up.png">
 </details>
 
 - Covered in user stories: 30
