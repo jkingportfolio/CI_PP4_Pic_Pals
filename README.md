@@ -766,14 +766,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Nav Bar  | Log in and scroll to the top of any page  | Nav Bar to be displayed along the top of the page or via a hamburger toggle if on a smaller screen    | Works as expected |
 
 <details>
-<summary>Screenshots User Story 1</summary>
-
-<details>
-<summary>Feature - Nav Bar</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 
@@ -786,14 +781,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Follow Button  | Log in and navigate to a users profile page via followed users list, following users list or clicking on the users name on a post detail. Below the users profile picute click on the follow button to follow or unfollow the user.  | User to follow or unfollow the account of the currently viewed profile | Works as expected |
 
 <details>
-<summary>Screenshots User Story 2</summary>
-
-<details>
-<summary>Feature - Like / Follow Button</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 3. As a user, I want to like and unlike posts so that i can show my appreciation of another users post.
@@ -803,14 +793,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Like Button  | Log in and navigate to a post detail page via feed or a users profile by clicking on the post. Below the post click on the heart icon to like or unlike the post  | Post heart indicator to visually reflect the current users status with regards to liking the post and the total like tally to plus or minus one like dependant on if the click is a like or unlike | Works as expected |
 
 <details>
-<summary>Screenshots User Story 3</summary>
-
-<details>
-<summary>Feature - Like / Unlike Button</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 4. As a user, I want to delete my posts so that i can permanently remove posts I do not wish to keep.
@@ -820,14 +805,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Delete Post  | Log in and navigate to the post detail by clicking on the post in question. At the top of the post card click on the delete button, click ok on the confirmation modal to delete the post. | Post to be deleted | Works as expected |
 
 <details>
-<summary>Screenshots User Story 4</summary>
-
-<details>
-<summary>Feature - Delete Post</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 5. As a user, I want to edit my posts so that i can correct spelling mistakes or hashtags I may have enter into comments.
@@ -837,14 +817,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 | Edit Post  | Log in and navigate to the post detail by clicking on the post in question. At the top of the post card click on the edit button, the edit post form will show, update the caption field to the desired caption and click update to save changes and redirect back to the post detail page.  | Caption for the post to be updated | Works as expected |
 
 <details>
-<summary>Screenshots User Story 5</summary>
-
-<details>
-<summary>Feature - Edit Post</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 6. As a user, I want to view post comments so that i can fulfill the aim of the app.
@@ -854,14 +829,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Comment on post  | Log in and navigate to a post detail page via feed or a users profile by clicking on the post. Below the post image view the comments.  | User to be able to read all comments on the post or be made aware of no comments if there are none | Works as intended |
 
 <details>
-<summary>Screenshots User Story 6</summary>
-
-<details>
-<summary>Feature - Comment on post</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 7. As a user, I want to comment on other posts so that i can interact with other users.
@@ -871,14 +841,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Comment on post  | Log in and navigate to a post detail page via feed or a users profile by clicking on the post. Below the post image fill in the comment form and click on the add comment button.  | User to fill in the comment form and when submitted will be added to the comments like for the post. | Works as expected |
 
 <details>
-<summary>Screenshots User Story 7</summary>
-
-<details>
-<summary>Feature - Comment on post</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 8. As a user, I want to manage my posts so that i can add, edit or delete posts as needed.
@@ -889,14 +854,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Delete Post  | Log in and navigate to the post detail by clicking on the post in question. At the top of the post card click on the delete button, click ok on the confirmation modal to delete the post. | Post to be deleted | Works as expected |
 
 <details>
-<summary>Screenshots User Story 8</summary>
-
-<details>
-<summary>Feature - Edit Post / Delete Post</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 9. As a user, I want to request a password so that i can log back into my account if i have forgotten my password.
@@ -906,14 +866,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Reset Password  | Navigate to the pic pals site and click on the Reset Password button located below the log in section. Fill in the form with the email used when creating your pic pals account and submit the form. Navigate to your email inbox and find the email from Pic Pals. Click on the link which will direct you to a form on pic pals to enter a new password. Confrim the password and submit the form.  | User will reset their password allowing them to log into their account | Works as intended *See known bugs |
 
 <details>
-<summary>Screenshots User Story 9</summary>
-
-<details>
-<summary>Feature - Reset Password</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 10. As a user, I want to log in so that i can access my account, view my profile, pictures and other users pictures.
@@ -923,14 +878,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Log in  | Naviagte to the pic pals site and from the landing page enter your username and password then click on the log in button.  | User to log in and be redirected to their profile page | Works as expected |
 
 <details>
-<summary>Screenshots User Story 10</summary>
-
-<details>
-<summary>Feature - Log in</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 11. As a user, I want to log out so that other users using the same device cannot access my account.
@@ -940,14 +890,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Log out  | From any page whilst logged in click on the log out button located in the right hand corner of the nav bar, or if using a small screen device from the last item in the list from the hamburger menu toggle.  | User to log out successfully and be presented with the logged out page | Works as intended |
 
 <details>
-<summary>Screenshots User Story 11</summary>
-
-<details>
-<summary>Feature - Log out</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 12. As a new user, I want to register an account with Pic Pals so that i can become a member and use the app as intended.
@@ -957,14 +902,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Register  | Navigate to the pic pals site and click on the Sign up button located below the log in section. Fill in the form with the required fields for registration and click on the create account button.  | User to create an account with the information provided in the form    | Works as intended |
 
 <details>
-<summary>Screenshots User Story 12</summary>
-
-<details>
-<summary>Feature - Register</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 13. As a user, I want to change my password so that i can secure my account.
@@ -974,14 +914,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Change Password  | Log in and navigate to the My profile page by clicking My Profile from the nav bar. Click on the edit profile button located under the Users profile picture. Fill in the form with updated profile detail and click on the update profile button  | Users profile to be updated with the information entered into the edit profile form | Works as expected |
 
 <details>
-<summary>Screenshots User Story 13</summary>
-
-<details>
-<summary>Feature - Change Password</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 14. As a user, I want to have a profile page so that I and other users can view my list of posts.
@@ -991,14 +926,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Profile Page  | Create an account with Pic Pals or sign in if already a member, navigate to the My Profile page from the Nav Bar  | User to have their own profile on the site | Works as intended |
 
 <details>
-<summary>Screenshots User Story 14</summary>
-
-<details>
-<summary>Feature - Profile Page</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 15. As a user, I want to update my profile so that my profile can stay up to date with my latest information.
@@ -1008,14 +938,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Edit Profile  | Log in and navigate to the My profile page via the nav bar. Click on the Edit profile button located below the users profile picture. The user will then be redirected to the edit profile form, fill out new information as intedned and click on the update profile button   | Users profile information to be updated and saved | Works as intended |
 
 <details>
-<summary>Screenshots User Story 15</summary>
-
-<details>
-<summary>Feature - Edit profile</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 16. As a user, I want to add a profile picture so that my followers can easily recognize my posts or comments.
@@ -1025,14 +950,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Profile Picture  | Sign up with pic pals and whilst entering user information upload a picture to be a profile picture, if no image is selected the static default profile picture will be used. If a user already has an account, log in and navigate to the My Profile page from the nav bar. Click on the edit profile button located below the users profile image. Upload the desired image and click on update profile  | User will have a personally selected image as their profile image | Works as intended |
 
 <details>
-<summary>Screenshots User Story 16</summary>
-
-<details>
-<summary>Feature - Profile Picture</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 17. As a user, I want to view the Home Page so that i can understand what the website is about, create an account or log in.
@@ -1042,14 +962,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Home Page  | Navigate to the pic pals landing page  | Users will be presented with a small description of the sites purpose | Works as intended |
 
 <details>
-<summary>Screenshots User Story 17</summary>
-
-<details>
-<summary>Feature - Home Page</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 18. As a user, I want to view how many likes a post has so that i can gauge how popular a post is.
@@ -1059,14 +974,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 | Like count  | Log in and navigate to any post detail page via one of the methods to do so as explained above. Scroll down to below the post image and the like count will be displayed  | To view the total amount of likes a post has. | Works as expected |
 
 <details>
-<summary>Screenshots User Story 18</summary>
-
-<details>
-<summary>Feature - Like count</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 19. As a user, I want to add a bio to my profile page so that other members can learn more about me.
@@ -1076,14 +986,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Bio Section  | Log in and navigate to the My profile page via the nav bar. Click on the Edit profile button located below the users profile picture. The user will then be redirected to the edit profile form, fill out out the bio field and click on the update profile button  | Users profile to display their bio field above their posts | Works as intended |
 
 <details>
-<summary>Screenshots User Story 19</summary>
-
-<details>
-<summary>Feature - Bio Section</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 20. As a user, I want to follow other accounts so that i can view their posts on my feed.
@@ -1093,14 +998,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Follow  | Log in and navigate to the People page of the site located in the Nav Bar, scroll or use the search bar to find the account whom is wished to follow. Click on the follow button located under the profiles profile picture.  | User will follow the desired account, a django message will confirm the follow and the button will change from a "follow" button to an "unfollow" button.    | Works as intended |
 
 <details>
-<summary>Screenshots User Story 20</summary>
-
-<details>
-<summary>Feature - Follow</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 21. As a user, I want to fill in a help form so that i can enquire about issues I may have regarding the app.
@@ -1110,14 +1010,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Contact  | Click on the contact link in the nav bar which will be located at the end of the list, or if not signed in will appear on the right hand side of the nav bar. Fill in the forms fields and click on the submit button  | User form will be submitted and a django message will confirm this.   | Works as intended |
 
 <details>
-<summary>Screenshots User Story 21</summary>
-
-<details>
-<summary>Feature - Contact</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 22. As a user, I want to change my email address so that i can maintain the same account if I change email address.
@@ -1127,14 +1022,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Edit Profile  | Log in and navigate to the My Profile page by clicking on the link in the nav bar. Click on the edit profile button located below the user profile picture. Type in the desired email address in the email field and click submit.  | Users profile will update to be that of the newly entered email address | Works as intended |
 
 <details>
-<summary>Screenshots User Story 22</summary>
-
-<details>
-<summary>Feature - Edit profile</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 23. As a user, I want to receive feedback so that i can confirm the contact form submission was successful or not.
@@ -1144,14 +1034,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Site Feedback  | Navigate to one of the forms in the site for example the contact form> Fill in the form and submit it to be presented with the success / unsuccessfully message feedback  | User to complete an operation for example submitting a contact form and be presented with feedback as to if the form was submitted. | Works as intended. |
 
 <details>
-<summary>Screenshots User Story 23</summary>
-
-<details>
-<summary>Feature - Site feedback</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 24. As a user, I want to scroll through the latest images on my feed so that i can keep up to date with accounts I follow.
@@ -1161,14 +1046,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Feed  | Log in and navigate to the feed page which can be accessed via the nav bar by clicking on the Feed link. Scroll through the image list that is made up of followed accounts posts.  | User will be presented with a list of all followed users posts in order of date created from newest to oldest. | Works as expected |
 
 <details>
-<summary>Screenshots User Story 24</summary>
-
-<details>
-<summary>Feature - Feed</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 25. As a user, I want to browse my list of followed accounts so that i can view that particular user account.
@@ -1178,14 +1058,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 | Followed List  | Log in and navigate to the My Profile page, this can be accessed from clickin on the My Post link in the nav bar. Within the Profile info panel at the top of the page click on the FOLLOW count. This will then display a list of followed accounts.  | User to be displayed with a list of all users they currently follow. | Works as expected |
 
 <details>
-<summary>Screenshots User Story 25</summary>
-
-<details>
-<summary>Feature - Followed List</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 26. As a user, I want to see a visual indicator of following an account so that i can tell if I currently follow that account.
@@ -1195,14 +1070,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Follow / Unfollow button  | Log in and navigate to a users profile page via the People link in the Nav Bar. Below the users profile picture locate the follow button which will indicate if the user is currently followed. If a user is followed the button will display UNFOLLOW and if not followed will display FOLLOW  | Follow button indicator to visually reflect the current following status by showing the relevant message on the button  | Works as expected |
 
 <details>
-<summary>Screenshots User Story 26</summary>
-
-<details>
-<summary>Feature - Follow / Unfollow button</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
 <img src="docs/images/image.jpeg ">
-</details>
-
 </details>
 
 
@@ -1216,13 +1086,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Input Validation  | User to enter data into one of the many forms form fields | Whilst user entering data into a form fields, if the users input does not meet the requirements a prompt will indicate the relevant issue with the users input | Works as intended |
 
 <details>
-<summary>Screenshots User Story 16</summary>
-
-<details>
-<summary>Feature - Input Validation</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
-</details>
 </details>
 
 28. As the site owner, I would want to ensure only logged in users can post from their account and edit their profile so that data privacy is ensured.
@@ -1232,13 +1098,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Authentication  | User to log in via the login page and make a post from the My Profile page  | User to be authenticated via Djangos auth_user and the login view to ensure only a user logged in can post a post from that particular account | Works as expected |
 
 <details>
-<summary>Screenshots User Story 16</summary>
-
-<details>
-<summary>Feature - Authentication</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
-</details>
 </details>
 
 29. As the site owner, I would want to have the ability to remove posts so that i can keep the app clean and friendly.
@@ -1248,13 +1110,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Delete Post  | Admin to log into the admin site of the app and from their go to the posts object and delete the required post database entry  | Admin to log into the admin site and have the ability to delete a post of any user as this profile is a super user | Works as intended |
 
 <details>
-<summary>Screenshots User Story 16</summary>
-
-<details>
-<summary>Feature - Delete Post</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
-</details>
 </details>
 
 30. As the site owner, I would want the site to be fully responsive so that user can use it across multiple devices and create a good user experience.
@@ -1264,13 +1122,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Responsiveness  | Allow users to use the site on their own device regardless of the size  | The site is functional and works as intended on a range of device screen sizes  | Works as intended |
 
 <details>
-<summary>Screenshots User Story 16</summary>
-
-<details>
-<summary>Feature - Responsiveness</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
-</details>
 </details>
 
 31. As the site owner, I would want to use the app search function so that i can search for particular users by their user name.
@@ -1280,13 +1134,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  User Search  | Log in as admin, navigate to the People page via the Nav Bar located at the top of the page. At the top of the page will be the search bar, enter the username and press enter.  | The searched for users profile will list, additionally if other users username has the same text they will show. If no user is found with that user name a message will display stating that no user with that username exists | Works as intended |
 
 <details>
-<summary>Screenshots User Story 16</summary>
-
-<details>
-<summary>Feature - User Search</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
-</details>
 </details>
 
 32. As the site owner, I would want 404 and 500 error pages so that users do not have to use the back navigation button if an error occurs.
@@ -1296,15 +1146,11 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 |  Error Pages  | User to attempt to navigate to a page that doesnt exist or use the site whilst there is a server error. This will display the relevant Error page and return home button  | Error page of the relevant error to display informing the user of the error and allowing them to redirect with the use of a button and not having to click the browser back buttons | Works as intended |
 
 <details>
-<summary>Screenshots User Story 16</summary>
-
-<details>
-<summary>Feature - Error pages</summary>
+<summary>Screenshots</summary>
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
 <img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
-</details>
 </details>
 
 
