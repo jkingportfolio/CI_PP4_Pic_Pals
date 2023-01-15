@@ -817,9 +817,6 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 [WAVE Validation](http://pep8online.com/) was used to validate the accessiblity of the app.
 
 
-
-
-
 ## Testing
 
 ### Device Testing
@@ -1240,22 +1237,39 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 ### Automated Testing
 
-<details>
-<summary>See unit testing</summary>
-
-Using Djangos Unit tests from Pythons standard library module unittest i wrote a series of unit test to test for correct operation of Classes and functions. The overall report findings were produced using the coverage tool.
+Using Djangos Unit tests from Pythons standard library module unittest i wrote a series of unit test to test for correct operation of Classes and functions. Due to time restrictions i was not able to cover 100% of functionality of the site with automated testing, however the same testing although a different method has been acheived via manual testing.
 
 <details>
 <summary>Unit testing Code</summary>
-<img src="docs/images/testing/unit-testing/unit-testing-code.png">
+<details>
+<summary>Account app</summary>
+<details>
+<summary>test_forms.py</summary>
+https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/account/test_forms.py
 </details>
+<details>
+<summary>test_models.py</summary>
+https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/account/test_models.py
+</details>
+<details>
+<summary>test_views.py</summary>
+https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/account/test_views.py
+</details>
+<details>
+<summary>Contact app</summary>
+https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/contact/test_forms.py
+</details>
+</details>
+
+</details>
+
 
 <details>
 <summary>Unit testing Result</summary>
-<img src="docs/images/testing/unit-testing/unit-testing.png">
+<img src="readme/testing/automated/automated-testing.png">
 </details>
 
-</details>
+
 
 ## Bugs
 
