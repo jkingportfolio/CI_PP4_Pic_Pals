@@ -887,7 +887,118 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 
 ### WAVE Validation
 
-[WAVE Validation](http://pep8online.com/) was used to validate the accessiblity of the app.
+[WAVE Validation](http://pep8online.com/) was used to validate the accessiblity of the app. All pages passed with no errors, however some did have alerts. Many of which related to alt text on images. Due to displaying posts in lists, the alt text for each has to be the same, this is the reason why it has a generic name. WAVE indicated this however there is nothing that can be done with this due to not knowing the nature of the image itself.
+
+</details>
+
+<summary>Screenshots</summary>
+<details>
+<summary>Landing page</summary>
+<img src="readme/validation/wave/landing-page-wave.png">
+</details>
+
+<details>
+<summary>Contact page</summary>
+<img src="readme/validation/wave/contact-page-wave.png">
+</details>
+
+<details>
+<summary>Reset Password page</summary>
+<img src="readme/validation/wave/reset-password-wave.png">
+</details>
+
+<details>
+<summary>Sign up page</summary>
+<img src="readme/validation/wave/sign-up-wave.png">
+</details>
+
+<details>
+<summary>Profile page</summary>
+<img src="readme/validation/wave/profile-page-wave.png">
+<img src="readme/validation/wave/profile-page-warning-wave.png">
+</details>
+
+<details>
+<summary>Followers page</summary>
+<img src="readme/validation/wave/followers-wave.png">
+</details>
+
+<details>
+<summary>Following page</summary>
+<img src="readme/validation/wave/following-wave.png">
+</details>
+
+<details>
+<summary>Add post page</summary>
+<img src="readme/validation/wave/add-post-wave.png">
+</details>
+
+<details>
+<summary>Edit profile page</summary>
+<img src="readme/validation/wave/edit-profile-wave.png">
+<img src="readme/validation/wave/edit-profile-warning-wave.png">
+</details>
+
+<details>
+<summary>Change password page</summary>
+<img src="readme/validation/wave/change-password-wave.png">
+</details>
+
+<details>
+<summary>Post detail page</summary>
+<img src="readme/validation/wave/post-detail-wave.png">
+<img src="readme/validation/wave/post-detail-warning-wave.png">
+</details>
+
+<details>
+<summary>Edit post page</summary>
+<img src="readme/validation/wave/edit-post-wave.png">
+<img src="readme/validation/wave/edit-post-warning-wave.png">
+</details>
+
+<details>
+<summary>My posts page</summary>
+<img src="readme/validation/wave/my-posts-wave.png">
+<img src="readme/validation/wave/my-posts-warning-wave.png">
+</details>
+
+<details>
+<summary>Feed page</summary>
+<img src="readme/validation/wave/feed-wave.png">
+<img src="readme/validation/wave/feed-warning-wave.png">
+</details>
+
+<details>
+<summary>Other users page</summary>
+<img src="readme/validation/wave/other-users-page-wave.png">
+<img src="readme/validation/wave/other-users-page-warning-wave.png">
+</details>
+
+<details>
+<summary>People page</summary>
+<img src="readme/validation/wave/people-wave.png">
+<img src="readme/validation/wave/people-warning-wave.png">
+</details>
+
+<details>
+<summary>User search results page</summary>
+<img src="readme/validation/wave/search-results-wave.png">
+</details>
+
+<details>
+<summary>Log out page</summary>
+<img src="readme/validation/wave/log-out-wave.png">
+</details>
+
+<details>
+<summary>404 results page</summary>
+<img src="readme/validation/wave/404-wave.png">
+<img src="readme/validation/wave/404-warning-wave.png">
+</details>
+
+
+</details>
+
 
 
 ## Testing
