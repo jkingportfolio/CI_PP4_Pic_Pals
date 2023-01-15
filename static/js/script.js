@@ -26,9 +26,3 @@ function profile_pic_type(event) {
   file_input.setAttribute('accept', 'image/png, image/jpeg');
 }
 
-document.getElementById("id_image").addEventListener("click", image_type);
-
-function image_type(event) {
-  const file_input = document.querySelector('#id_image');
-  file_input.setAttribute('accept', 'image/png, image/jpeg');
-}
