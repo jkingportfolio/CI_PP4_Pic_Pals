@@ -19,12 +19,16 @@ function scrollToTop(event) {
 }
 
 
-// document.getElementById("#id_profile_pic").onclick = function(file_input){
-//     const file_input = document.querySelector('#id_profile_pic');
-//     file_input.setAttribute('accept', 'image/png, image/jpeg');
-// }
+document.getElementById("id_profile_pic").addEventListener("click", profile_pic_type);
 
-// document.getElementById("#id_image").onclick = function(file_input){
-//   const file_input = document.querySelector('#id_image');
-//   file_input.setAttribute('accept', 'image/png, image/jpeg');
-// }
+function profile_pic_type(event) {
+  const file_input = document.querySelector('#id_profile_pic');
+  file_input.setAttribute('accept', 'image/png, image/jpeg');
+}
+
+document.getElementById("id_image").addEventListener("click", image_type);
+
+function image_type(event) {
+  const file_input = document.querySelector('#id_image');
+  file_input.setAttribute('accept', 'image/png, image/jpeg');
+}

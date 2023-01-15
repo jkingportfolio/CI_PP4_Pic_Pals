@@ -1,5 +1,7 @@
 {% extends "base.html" %}
 
+{% load static %}
+
 {% load crispy_forms_tags %}
 
 {% block title %}Edit profile{% endblock %}
@@ -63,9 +65,9 @@
         </a>
     </div>
 </div>
-<script>
+<!-- <script>
     const file_input = document.querySelector('#id_profile_pic');
     file_input.setAttribute('accept', 'image/png, image/jpeg');
-</script>
+</script> -->
 
 {% endblock %}
