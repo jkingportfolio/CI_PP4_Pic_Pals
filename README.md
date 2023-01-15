@@ -1054,7 +1054,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/2-follow-button-1.png">
+<img src="readme/testing/manual/2-follow-button-1.png"><br>
 <img src="readme/testing/manual/2-like-button-1.png">
 </details>
 
@@ -1066,8 +1066,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/3-like-button-1.png">
-<img src="readme/testing/manual/3-like-button-2.png">
+<img src="readme/testing/manual/3-like-button-1.png"><br>
+<img src="readme/testing/manual/3-like-button-2.png"><br>
 <img src="readme/testing/manual/3-like-button-3.png">
 </details>
 
@@ -1079,8 +1079,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/4-delete-button-1.png">
-<img src="readme/testing/manual/4-delete-button-2.png">
+<img src="readme/testing/manual/4-delete-button-1.png"><br>
+<img src="readme/testing/manual/4-delete-button-2.png"><br>
 <img src="readme/testing/manual/4-delete-button-3.png">
 </details>
 
@@ -1092,9 +1092,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/5-edit-post-1.png">
-<img src="readme/testing/manual/5-edit-post-2.png">
-<img src="readme/testing/manual/5-edit-post-3.png">
+<img src="readme/testing/manual/5-edit-post-1.png"><br>
+<img src="readme/testing/manual/5-edit-post-2.png"><br>
+<img src="readme/testing/manual/5-edit-post-3.png"><br>
 <img src="readme/testing/manual/5-edit-post-4.png">
 </details>
 
@@ -1117,8 +1117,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/7-comment-1.png">
-<img src="readme/testing/manual/7-comment-2.png">
+<img src="readme/testing/manual/7-comment-1.png"><br>
+<img src="readme/testing/manual/7-comment-2.png"><br>
 <img src="readme/testing/manual/7-comment-3.png">
 </details>
 
@@ -1131,8 +1131,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/8-delete-button-1.png">
-<img src="readme/testing/manual/8-delete-button-2.png">
+<img src="readme/testing/manual/8-delete-button-1.png"><br>
+<img src="readme/testing/manual/8-delete-button-2.png"><br>
 <img src="readme/testing/manual/8-delete-button-3.png">
 </details>
 
@@ -1144,10 +1144,10 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/9-reset-pw-1.png">
-<img src="readme/testing/manual/9-reset-pw-2.png">
-<img src="readme/testing/manual/9-reset-pw-3.png">
-<img src="readme/testing/manual/9-reset-pw-4.png">
+<img src="readme/testing/manual/9-reset-pw-1.png"><br>
+<img src="readme/testing/manual/9-reset-pw-2.png"><br>
+<img src="readme/testing/manual/9-reset-pw-3.png"><br>
+<img src="readme/testing/manual/9-reset-pw-4.png"><br>
 <img src="readme/testing/manual/9-reset-pw-5.png">
 </details>
 
@@ -1159,7 +1159,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/10-login-1.png">
+<img src="readme/testing/manual/10-login-1.png"><br>
 <img src="readme/testing/manual/10-login-2.png">
 </details>
 
@@ -1171,7 +1171,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/11-logout-1.png">
+<img src="readme/testing/manual/11-logout-1.png"><br>
 <img src="readme/testing/manual/11-logout-2.png">
 </details>
 
@@ -1183,8 +1183,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/12-register-1.png">
-<img src="readme/testing/manual/12-register-2.png">
+<img src="readme/testing/manual/12-register-1.png"><br>
+<img src="readme/testing/manual/12-register-2.png"><br>
 <img src="readme/testing/manual/12-register-3.png">
 </details>
 
@@ -1196,8 +1196,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/13-change-pw-1.png">
-<img src="readme/testing/manual/13-change-pw-2.png">
+<img src="readme/testing/manual/13-change-pw-1.png"><br>
+<img src="readme/testing/manual/13-change-pw-2.png"><br>
 <img src="readme/testing/manual/13-change-pw-3.png">
 </details>
 
@@ -1220,9 +1220,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/15-edit-profile-1.png">
-<img src="readme/testing/manual/15-edit-profile-2.png">
-<img src="readme/testing/manual/15-edit-profile-3.png">
+<img src="readme/testing/manual/15-edit-profile-1.png"><br>
+<img src="readme/testing/manual/15-edit-profile-2.png"><br>
+<img src="readme/testing/manual/15-edit-profile-3.png"><br>
 <img src="readme/testing/manual/15-edit-profile-4.png">
 </details>
 
@@ -1234,8 +1234,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/16-profile-picture-1.png">
-<img src="readme/testing/manual/16-profile-picture-2.png">
+<img src="readme/testing/manual/16-profile-picture-1.png"><br>
+<img src="readme/testing/manual/16-profile-picture-2.png"><br>
 <img src="readme/testing/manual/16-profile-picture-3.png">
 </details>
 
@@ -1280,7 +1280,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/20-follow-1.png">
+<img src="readme/testing/manual/20-follow-1.png"><br>
 <img src="readme/testing/manual/20-follow-2.png">
 </details>
 
@@ -1303,9 +1303,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/22-edit-profile-1.png">
-<img src="readme/testing/manual/22-edit-profile-2.png">
-<img src="readme/testing/manual/22-edit-profile-3.png">
+<img src="readme/testing/manual/22-edit-profile-1.png"><br>
+<img src="readme/testing/manual/22-edit-profile-2.png"><br>
+<img src="readme/testing/manual/22-edit-profile-3.png"><br>
 <img src="readme/testing/manual/22-edit-profile-4.png">
 </details>
 
@@ -1317,8 +1317,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/23-site-feedback-1.png">
-<img src="readme/testing/manual/23-site-feedback-2.png">
+<img src="readme/testing/manual/23-site-feedback-1.png"><br>
+<img src="readme/testing/manual/23-site-feedback-2.png"><br>
 <img src="readme/testing/manual/23-site-feedback-3.png">
 </details>
 
@@ -1341,7 +1341,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/25-followed-list-1.png">
+<img src="readme/testing/manual/25-followed-list-1.png"><br>
 <img src="readme/testing/manual/25-followed-list-2.png">
 </details>
 
@@ -1353,8 +1353,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/26-follow-button-1.png">
-<img src="readme/testing/manual/26-follow-button-2.png">
+<img src="readme/testing/manual/26-follow-button-1.png"><br>
+<img src="readme/testing/manual/26-follow-button-2.png"><br>
 <img src="readme/testing/manual/26-follow-button-3.png">
 </details>
 
@@ -1381,7 +1381,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/28-authentication-1.png">
+<img src="readme/testing/manual/28-authentication-1.png"><br>
 <img src="readme/testing/manual/28-authentication-2.png">
 </details>
 
@@ -1415,8 +1415,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/31-user-search-1.png">
-<img src="readme/testing/manual/31-user-search-2.png">
+<img src="readme/testing/manual/31-user-search-1.png"><br>
+<img src="readme/testing/manual/31-user-search-2.png"><br>
 <img src="readme/testing/manual/31-user-search-3.png">
 </details>
 
