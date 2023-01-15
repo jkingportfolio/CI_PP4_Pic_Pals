@@ -18,11 +18,3 @@ function scrollToTop(event) {
     document.documentElement.scrollTop = 0;
 }
 
-
-document.getElementById("id_profile_pic").addEventListener("click", profile_pic_type);
-
-function profile_pic_type(event) {
-  const file_input = document.querySelector('#id_profile_pic');
-  file_input.setAttribute('accept', 'image/png, image/jpeg');
-}
-
