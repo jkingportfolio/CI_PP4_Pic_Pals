@@ -9,7 +9,7 @@
     <form action="{% url 'posts:post_comment' post.id %}" method='post'>
         {{ form|crispy }}
         {% csrf_token %}
-        <p><input type="submit" value="Add comment" class="form-btn-pos"></p>
+        <p><input type="submit" value="Add comment" class="btn btn-dark text-center btn-hover std-btn-width"></p>
     </form>
 </div>
 
