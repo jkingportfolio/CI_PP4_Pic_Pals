@@ -161,11 +161,9 @@ Pic Pals handles data with full CRUD Functionality:
 
 The colour scheme used in this project was chosen with simplicity in mind. The colour scheme is used through out all pages to ensure contrast readability and an overall good user experience. 
 
-!!! DECIDE ON A COLOUR PALETTE !!!
-
 <details>
 <summary>Colour Palete</summary>
-<img src="docs/colours/colour-palette.png">
+<img src="readme/misc/colours.png">
 </details>
 
 ### Fonts
