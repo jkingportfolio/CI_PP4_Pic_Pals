@@ -637,21 +637,95 @@ Although alot of effort was put into this project, due to time constraints there
 
 ### HTML Validation
 
-[W3C Validation](https://validator.w3.org/) was used to validate the HTML code used in the project. As this project requires authentication to view most of the pages, the method used to Validate was by Direct Input. To acheive this a page that needed tested was navigated to, on the page right click and then chose the option of view source code. This code was then copy and pasted into the validator and tested.
+[W3C Validation](https://validator.w3.org/) was used to validate the HTML code used in the project. As this project requires authentication to view most of the pages, the method used to Validate was by Direct Input. To acheive this a page that needed tested was navigated to, on the page right click and then chose the option of view source code. This code was then copy and pasted into the validator and tested. There was only one error which was returned, this error is located within the Django Authentication library and is outwidth my control to edit therefore i have had to include this. See change password validation image for details.
 
 <details>
+<summary>Screenshots</summary>
 
-<summary>HTML file - xxx.html</summary>
-<img src="docs/images/validation/w3c.png">
+<summary>Landing page</summary>
+<details>
+<img src="readme/validation/html/landing-html-validation.png">
+</details>
 
-<summary>HTML file - xxxx.html</summary>
-<img src="docs/images/validation/w3c.png">
+<summary>Contact page</summary>
+<details>
+<img src="readme/validation/html/contact-html-validation.png">
+</details>
 
-<summary>HTML file - xxx.html</summary>
-<img src="docs/images/validation/w3c.png">
+<summary>Reset password page</summary>
+<details>
+<img src="readme/validation/html/reset-password-html-validation.png">
+</details>
 
-<summary>HTML file - xxxx.html</summary>
-<img src="docs/images/validation/w3c.png">
+<summary>Sign up page</summary>
+<details>
+<img src="readme/validation/html/sign-up-html-validation.png">
+</details>
+
+<summary>Profile page</summary>
+<details>
+<img src="readme/validation/html/profile-page-html-validation.png">
+</details>
+
+<summary>Add post page</summary>
+<details>
+<img src="readme/validation/html/add-post-html-validation.png">
+</details>
+
+<summary>Edit profile page</summary>
+<details>
+<img src="readme/validation/html/edit-profile-html-validation.png">
+</details>
+
+<summary>Change password page</summary>
+<details>
+<img src="readme/validation/html/change-password-html-validation.png">
+</details>
+
+<summary>Post detail page</summary>
+<details>
+<img src="readme/validation/html/post-detail-html-validation.png">
+</details>
+
+<summary>Edit post page</summary>
+<details>
+<img src="readme/validation/html/edit-post-html-validation.png">
+</details>
+
+<summary>My posts page</summary>
+<details>
+<img src="readme/validation/html/my-posts-html-validation.png">
+</details>
+
+<summary>Feed page</summary>
+<details>
+<img src="readme/validation/html/feed-html-validation.png">
+</details>
+
+<summary>Other users page page</summary>
+<details>
+<img src="readme/validation/html/other-users-page-html-validation.png">
+</details>
+
+<summary>People page</summary>
+<details>
+<img src="readme/validation/html/people-html-validation.png">
+</details>
+
+<summary>Search results page</summary>
+<details>
+<img src="readme/validation/html/search-results-html-validation.png">
+</details>
+
+<summary>Log out page</summary>
+<details>
+<img src="readme/validation/html/log-out-html-validation.png">
+</details>
+
+<summary>404 page</summary>
+<details>
+<img src="readme/validation/html/404-html-validation.png">
+</details>
 
 </details>
 
