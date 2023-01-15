@@ -1239,10 +1239,12 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 Using Djangos Unit tests from Pythons standard library module unittest i wrote a series of unit test to test for correct operation of Classes and functions. Due to time restrictions i was not able to cover 100% of functionality of the site with automated testing, however the same testing although a different method has been acheived via manual testing.
 
-<details>
-<summary>Unit testing Code</summary>
-<details>
+
+#### Unit testing Code
+
+
 <summary>Account app</summary>
+<details>
 <details>
 <summary>test_forms.py</summary>
 https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/account/test_forms.py
@@ -1255,13 +1257,16 @@ https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/account/test_models.
 <summary>test_views.py</summary>
 https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/account/test_views.py
 </details>
-<details>
-<summary>Contact app</summary>
-https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/contact/test_forms.py
-</details>
 </details>
 
+
+<summary>Contact app</summary>
+<details>
+https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/contact/test_forms.py
 </details>
+
+
+
 
 
 <details>
