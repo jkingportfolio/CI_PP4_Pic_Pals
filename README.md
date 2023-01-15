@@ -680,6 +680,16 @@ Although alot of effort was put into this project, due to time constraints there
 <img src="readme/validation/html/change-password-html-validation.png">
 </details>
 
+<summary>Followers page</summary>
+<details>
+<img src="readme/validation/html/followers-html-validation.png">
+</details>
+
+<summary>Following page</summary>
+<details>
+<img src="readme/validation/html/following-html-validation.png">
+</details>
+
 <summary>Post detail page</summary>
 <details>
 <img src="readme/validation/html/post-detail-html-validation.png">
