@@ -318,6 +318,7 @@ Balsamiq was used to create wireframes of the sites pages
 - [Graphviz](https://dreampuf.github.io/GraphvizOnline) - Used to generate pydot file / database diagram image.
 - [Google Fonts](https://fonts.google.com/) - Used to import the sites font family.
 - [Affinity Designer](https://affinity.serif.com/en-gb/) - Used to create the logo and delete buttons.
+- [Microsoft Paint](#https://en.wikipedia.org/wiki/Microsoft_Paint)
 - [Validation](#validation)
     - [WC3 Validator](https://validator.w3.org/) - Used to validate the HTML code of the site.
     - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)- Used to validate the CSS of the site.
