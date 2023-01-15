@@ -80,7 +80,6 @@
         <div class="card h-100">
           <div class="card-body">
             <div class="post-spacing">
-              <a href="{{ post.get_absolute_url }}" class="post-spacing">
                 {% if user.profile.profile_pic %}
                 <img src="{{ user.profile.profile_pic.url }}"
                   alt="User profile picture" class="post-avatar">
@@ -89,7 +88,6 @@
                   alt="Default profile picture" class="post-avatar">
                 {% endif %}
                 {{ post.user }}
-              </a>
             </div>
             <div class="card-img-size">
               <div class="card-h-100">
