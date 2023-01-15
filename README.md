@@ -1040,8 +1040,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-
+<img src="readme/testing/manual/1-navbar-1.png">
 </details>
 
 
@@ -1055,8 +1054,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/2-follow-button-1.png">
+<img src="readme/testing/manual/2-like-button-1.png">
 </details>
 
 3. As a user, I want to like and unlike posts so that i can show my appreciation of another users post.
@@ -1067,8 +1066,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/3-like-button-1.png">
+<img src="readme/testing/manual/3-like-button-2.png">
+<img src="readme/testing/manual/3-like-button-3.png">
 </details>
 
 4. As a user, I want to delete my posts so that i can permanently remove posts I do not wish to keep.
@@ -1079,8 +1079,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/4-delete-button-1.png">
+<img src="readme/testing/manual/4-delete-button-2.png">
+<img src="readme/testing/manual/4-delete-button-3.png">
 </details>
 
 5. As a user, I want to edit my posts so that i can correct spelling mistakes or hashtags I may have enter into comments.
@@ -1091,8 +1092,10 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/5-edit-post-1.png">
+<img src="readme/testing/manual/5-edit-post-2.png">
+<img src="readme/testing/manual/5-edit-post-3.png">
+<img src="readme/testing/manual/5-edit-post-4.png">
 </details>
 
 6. As a user, I want to view post comments so that i can fulfill the aim of the app.
@@ -1103,8 +1106,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/6-comment-1.png">
 </details>
 
 7. As a user, I want to comment on other posts so that i can interact with other users.
@@ -1115,8 +1117,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/7-comment-1.png">
+<img src="readme/testing/manual/7-comment-2.png">
+<img src="readme/testing/manual/7-comment-3.png">
 </details>
 
 8. As a user, I want to manage my posts so that i can add, edit or delete posts as needed.
@@ -1128,8 +1131,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/8-delete-button-1.png">
+<img src="readme/testing/manual/8-delete-button-2.png">
+<img src="readme/testing/manual/8-delete-button-3.png">
 </details>
 
 9. As a user, I want to request a password so that i can log back into my account if i have forgotten my password.
@@ -1140,20 +1144,23 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/9-reset-pw-1.png">
+<img src="readme/testing/manual/9-reset-pw-2.png">
+<img src="readme/testing/manual/9-reset-pw-3.png">
+<img src="readme/testing/manual/9-reset-pw-4.png">
+<img src="readme/testing/manual/9-reset-pw-5.png">
 </details>
 
 10. As a user, I want to log in so that i can access my account, view my profile, pictures and other users pictures.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Log in  | Naviagte to the pic pals site and from the landing page enter your username and password then click on the log in button.  | User to log in and be redirected to their profile page | Works as expected |
+|  Log in  | Navigate to the pic pals site and from the landing page enter your username and password then click on the log in button.  | User to log in and be redirected to their profile page | Works as expected |
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/10-login-1.png">
+<img src="readme/testing/manual/10-login-2.png">
 </details>
 
 11. As a user, I want to log out so that other users using the same device cannot access my account.
@@ -1164,8 +1171,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/11-logout-1.png">
+<img src="readme/testing/manual/11-logout-2.png">
 </details>
 
 12. As a new user, I want to register an account with Pic Pals so that i can become a member and use the app as intended.
@@ -1176,8 +1183,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/12-register-1.png">
+<img src="readme/testing/manual/12-register-2.png">
+<img src="readme/testing/manual/12-register-3.png">
 </details>
 
 13. As a user, I want to change my password so that i can secure my account.
@@ -1188,8 +1196,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/13-change-pw-1.png">
+<img src="readme/testing/manual/13-change-pw-2.png">
+<img src="readme/testing/manual/13-change-pw-3.png">
 </details>
 
 14. As a user, I want to have a profile page so that I and other users can view my list of posts.
@@ -1200,8 +1209,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/14-profile-page-1.png">
 </details>
 
 15. As a user, I want to update my profile so that my profile can stay up to date with my latest information.
@@ -1212,8 +1220,10 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/15-edit-profile-1.png">
+<img src="readme/testing/manual/15-edit-profile-2.png">
+<img src="readme/testing/manual/15-edit-profile-3.png">
+<img src="readme/testing/manual/15-edit-profile-4.png">
 </details>
 
 16. As a user, I want to add a profile picture so that my followers can easily recognize my posts or comments.
@@ -1224,8 +1234,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/16-profile-picture-1.png">
+<img src="readme/testing/manual/16-profile-picture-2.png">
+<img src="readme/testing/manual/16-profile-picture-3.png">
 </details>
 
 17. As a user, I want to view the Home Page so that i can understand what the website is about, create an account or log in.
@@ -1236,8 +1247,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/17-home-page-1.png">
 </details>
 
 18. As a user, I want to view how many likes a post has so that i can gauge how popular a post is.
@@ -1248,8 +1258,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/18-like-count-1.png">
 </details>
 
 19. As a user, I want to add a bio to my profile page so that other members can learn more about me.
@@ -1260,8 +1269,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/19-bio-section-1.png">
 </details>
 
 20. As a user, I want to follow other accounts so that i can view their posts on my feed.
@@ -1272,8 +1280,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/20-follow-1.png">
+<img src="readme/testing/manual/20-follow-2.png">
 </details>
 
 21. As a user, I want to fill in a help form so that i can enquire about issues I may have regarding the app.
@@ -1284,8 +1292,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/21-contact-1.png">
 </details>
 
 22. As a user, I want to change my email address so that i can maintain the same account if I change email address.
@@ -1296,8 +1303,10 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/22-edit-profile-1.png">
+<img src="readme/testing/manual/22-edit-profile-2.png">
+<img src="readme/testing/manual/22-edit-profile-3.png">
+<img src="readme/testing/manual/22-edit-profile-4.png">
 </details>
 
 23. As a user, I want to receive feedback so that i can confirm the contact form submission was successful or not.
@@ -1308,8 +1317,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/23-site-feedback-1.png">
+<img src="readme/testing/manual/23-site-feedback-2.png">
+<img src="readme/testing/manual/23-site-feedback-3.png">
 </details>
 
 24. As a user, I want to scroll through the latest images on my feed so that i can keep up to date with accounts I follow.
@@ -1320,8 +1330,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/24-feed-1.png">
 </details>
 
 25. As a user, I want to browse my list of followed accounts so that i can view that particular user account.
@@ -1332,8 +1341,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/25-followed-list-1.png">
+<img src="readme/testing/manual/25-followed-list-2.png">
 </details>
 
 26. As a user, I want to see a visual indicator of following an account so that i can tell if I currently follow that account.
@@ -1344,8 +1353,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+<img src="readme/testing/manual/26-follow-button-1.png">
+<img src="readme/testing/manual/26-follow-button-2.png">
+<img src="readme/testing/manual/26-follow-button-3.png">
 </details>
 
 
@@ -1360,8 +1370,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
+<img src="readme/testing/manual/27-input-validation-1.png">
 </details>
 
 28. As the site owner, I would want to ensure only logged in users can post from their account and edit their profile so that data privacy is ensured.
@@ -1372,8 +1381,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
+<img src="readme/testing/manual/28-authentication-1.png">
+<img src="readme/testing/manual/28-authentication-2.png">
 </details>
 
 29. As the site owner, I would want to have the ability to remove posts so that i can keep the app clean and friendly.
@@ -1384,8 +1393,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
+<img src="readme/testing/manual/29-delete-post-1.png">
 </details>
 
 30. As the site owner, I would want the site to be fully responsive so that user can use it across multiple devices and create a good user experience.
@@ -1396,8 +1404,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
+<img src="readme/misc/mock-up.png">
 </details>
 
 31. As the site owner, I would want to use the app search function so that i can search for particular users by their user name.
@@ -1408,8 +1415,9 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
+<img src="readme/testing/manual/31-user-search-1.png">
+<img src="readme/testing/manual/31-user-search-2.png">
+<img src="readme/testing/manual/31-user-search-3.png">
 </details>
 
 32. As the site owner, I would want 404 and 500 error pages so that users do not have to use the back navigation button if an error occurs.
@@ -1420,10 +1428,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-1.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
-<img src="docs/images/testing/testing-user-stories/testing-user-story-16-admin-dashboard-2.png">
+<img src="readme/testing/manual/32-error-1.png">
 </details>
 
 
