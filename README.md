@@ -637,7 +637,7 @@ Although alot of effort was put into this project, due to time constraints there
 
 ### HTML Validation
 
-[W3C Validation](https://validator.w3.org/) was used to validate the HTML code used in the project.
+[W3C Validation](https://validator.w3.org/) was used to validate the HTML code used in the project. As this project requires authentication to view most of the pages, the method used to Validate was by Direct Input. To acheive this a page that needed tested was navigated to, on the page right click and then chose the option of view source code. This code was then copy and pasted into the validator and tested.
 
 <details>
 
@@ -719,7 +719,7 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 
 ### Chrome Dev Tools Lighthouse Validation
 
-[Chrome Dev Tools lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to validate the performance of the app.
+[Chrome Dev Tools lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to validate the performance of the app. There was one page which could not be tested with this method and it was the log out success page, this is due to Lighthouse needing to refresh the page to measure load performances but as the user has now logged out this page cannot be displayed at their is not user authenticated.
 
 <details>
 <summary>Screenshots</summary>
