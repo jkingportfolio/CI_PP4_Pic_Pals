@@ -13,23 +13,15 @@
         <div>
           <div class="inline-block sm-top-margin">
             <div>
-              {% if request.user == post.user %}
-              <a href="{% url 'dashboard' %}">
+              <a href="{{ post.user.get_absolute_url }}">
+                {% if post.user.profile.profile_pic %}
+                <img src="{{ post.user.profile.profile_pic.url }}"
+                  alt="User profile picture" class="post-avatar">
                 {% else %}
-                <a href="{{ post.user.get_absolute_url }}">
-                  {% endif %}
-                  {% if post.user.profile.profile_pic %}
-                  <a href="{{ post.user.get_absolute_url }}"
-                    class="post-spacing">
-                    <img src="{{ post.user.profile.profile_pic.url }}"
-                      alt="User profile picture" class="post-avatar">
-                    {% else %}
-                    <img src="{% static 'images/default_profile_pic.png' %}"
-                      alt="Default profile picture" class="post-avatar">
-                    {% endif %}
-                    {{ post.user }}
-                  </a>
-                </a>
+                <img src="{% static 'images/default_profile_pic.png' %}"
+                  alt="Default profile picture" class="post-avatar">
+                {% endif %}
+                {{ post.user }}
               </a>
             </div>
           </div>
@@ -85,7 +77,6 @@
     {% else %}
     <p>Liked by {{ post.likes }} people</p>
     {% endif %}
-    </a>
     <hr>
     <div>
       {% with comments.count as total_comments %}
@@ -109,16 +100,20 @@
                 </div>
                 <div class="modal-body">
                   <p>Are you sure you want to delete this comment?</p>
-                  <p>" {{ comment.comment_body }} "</p>
+                  <p>"{{ comment.comment_body }}"</p>
                 </div>
-                <div class="modal-footer">
-                  <button type="button" class="btn btn-secondary"
-                    data-bs-dismiss="modal" aria-label="Close">Close</button>
+                <div class="modal-footer justify-center">
                   <a href="{% url 'posts:comment_delete' comment.id %}">
-                    <button type="button" class="btn btn-primary"
+                  <div class="btn btn-success std-btn-width">
+                    <!-- <button type="button" class="btn btn-success std-btn-width"
                       data-bs-target="#delete-modal-{{ comment.id }}"
-                      aria-label="Delete Post">Delete comment</button>
+                      aria-label="Yes">Yes</button> -->Yes
+                  </div>
                   </a>
+                  <button type="button" class="btn btn-danger std-btn-width"
+                    data-bs-dismiss="modal" aria-label="No">
+                    No
+                  </button>
                 </div>
               </div>
             </div>
