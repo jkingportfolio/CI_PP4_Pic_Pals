@@ -740,7 +740,7 @@ Although alot of effort was put into this project, due to time constraints there
 
 ### JavaScript Validation
 
-[JSHint](https://jshint.com/) was used to validate the Javascript code used in the app.
+[JSHint](https://jshint.com/) was used to validate the Javascript code used in the app. In addition to the Javascript within script.js there were two additional small scripts which are located on edit profile page and add post page. These were intentionally placed there due to the small size of the scripts and being specific to those pages they were placed. This also allowed the script to run on page load, where these pages do not have a common URL due to each being specific to the user logged in.
 
 <details>
 <summary>Javascript file - script.js</summary>
@@ -922,7 +922,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <details>
 <summary>Screenshots</summary>
 <img src="docs/images/image.jpeg ">
-<img src="docs/images/image.jpeg ">
+
 </details>
 
 
