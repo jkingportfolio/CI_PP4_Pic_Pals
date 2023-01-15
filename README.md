@@ -269,7 +269,6 @@ Balsamiq was used to create wireframes of the sites pages
 <summary>Wireframes</summary>
 <img src="readme/wireframes/dashboard.html.png">
 <img src="readme/wireframes/contact.html.png">
-<img src="readme/wireframes/contact_success.html.png">
 <img src="readme/wireframes/register.html.png">
 <img src="readme/wireframes/register_success.png">
 <img src="readme/wireframes/password_reset_form.png">
