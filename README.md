@@ -459,7 +459,7 @@ The error pages features will display 400, 403, 404 and 500 error pages and allo
 
 <details>
 <summary>Error Pages image</summary>
-<img src="docs/images/features/landing-page.png">
+<img src="readme/features/404-error.png">
 </details>
 
 - Covered in user stories: 32
