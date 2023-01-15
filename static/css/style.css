@@ -21,6 +21,10 @@ ul {
     list-style: none !important;
 }
 
+.text-muted {
+    color: black !important;
+}
+
 .btn-hover:hover {
     background-color: #E5E5E5;
 }
