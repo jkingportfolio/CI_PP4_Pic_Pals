@@ -1436,7 +1436,7 @@ Using Djangos Unit tests from Pythons standard library module unittest i wrote a
 
 
 <summary>Account app</summary>
-<details>
+
 <details>
 <summary>test_forms.py</summary>
 https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/account/test_forms.py
@@ -1449,20 +1449,19 @@ https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/account/test_models.
 <summary>test_views.py</summary>
 https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/account/test_views.py
 </details>
-</details>
 
 
 <summary>Contact app</summary>
+
 <details>
+<summary>test_forms.py</summary>
 https://github.com/jkingportfolio/CI_PP4_Pic_Pals/blob/main/contact/test_forms.py
 </details>
 
 
-
-
-
-<details>
 <summary>Unit testing Result</summary>
+<details>
+<summary>Results screenshot</summary>
 <img src="readme/testing/automated/automated-testing.png">
 </details>
 
