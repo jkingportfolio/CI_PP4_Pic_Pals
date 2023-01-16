@@ -98,9 +98,9 @@ The Pic Pals Social website has been developed to provide users the chance to po
 1. As a user, I want to use the navigation bar so that I can seamlessly navigate around the app.
 2. As a user, I want to see visual indicators for example of having liked a post / followed a user so that I can tell if I have previously liked that post.
 3. As a user, I want to like and unlike posts so that I can show my appreciation of another user's post.
-4. As a user, I want to delete my posts so that I can permanently remove posts I do not wish to keep
+4. As a user, I want to delete my posts so that I can permanently remove posts I do not wish to keep.
 5. As a user, I want to edit my posts so that I can correct spelling mistakes or I may have entered into the post caption.
-6. As a user, I want to view post comments so that I can fulfil the aim of the app
+6. As a user, I want to view post comments so that I can fulfil the aim of the app.
 7. As a user, I want to comment on other posts so that I can interact with other users
 8. As a user, I want to manage my posts so that I can add, edit or delete posts as needed.
 9. As a user, I want to request a password so that I can log back into my account if I have forgotten my password.
@@ -108,18 +108,18 @@ The Pic Pals Social website has been developed to provide users the chance to po
 11. As a user, I want to log out so that other users using the same device cannot access my account.
 12. As a new user, I want to register an account with Pic Pals so that I can become a member and use the app as intended.
 13. As a user, I want to change my password so that I can secure my account.
-14. As a user, I want to have a profile page so that I and other users can view my list of posts
+14. As a user, I want to have a profile page so that I and other users can view my list of posts.
 15. As a user, I want to update my profile so that my profile can stay up to date with my latest information.
-16. As a user, I want to add a profile picture so that my followers can easily recognize my posts or comments
+16. As a user, I want to add a profile picture so that my followers can easily recognize my posts or comments.
 17. As a user, I want to view the Home Page so that I can understand what the website is about, create an account or log in.
-18. As a user, I want to view how many likes a post has so that I can gauge how popular a post is
-19. As a user, I want to add a bio to my profile page so that other members can learn more about me
-20. As a user, I want to follow other accounts so that I can view their posts on my feed
-21. As a user, I want to fill in a help form so that I can enquire about issues I may have regarding the app
-22. As a user, I want to change my email address so that I can maintain the same account if I change email address
+18. As a user, I want to view how many likes a post has so that I can gauge how popular a post is.
+19. As a user, I want to add a bio to my profile page so that other members can learn more about me.
+20. As a user, I want to follow other accounts so that I can view their posts on my feed.
+21. As a user, I want to fill in a help form so that I can enquire about issues I may have regarding the app.
+22. As a user, I want to change my email address so that I can maintain the same account if I change email address.
 23. As a user, I want to receive feedback so that I can confirm whether the contact form submission was successful or not.
-24. As a user, I want to scroll through the latest images on my feed so that I can keep up to date with the accounts I follow
-25. As a user, I want to browse my list of followed accounts so that I can view that particular user account
+24. As a user, I want to scroll through the latest images on my feed so that I can keep up to date with the accounts I follow.
+25. As a user, I want to browse my list of followed accounts so that I can view that particular user account.
 26. As a user, I want to see a visual indicator of following an account so that I can tell if I currently follow that account.
 
 
