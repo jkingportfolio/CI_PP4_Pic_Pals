@@ -641,98 +641,98 @@ Although alot of effort was put into this project, due to time constraints there
 <details>
 <summary>Screenshots</summary>
 
-<summary>Landing page</summary>
 <details>
+<summary>Landing page</summary>
 <img src="readme/validation/html/landing-html-validation.png">
 </details>
 
-<summary>Contact page</summary>
 <details>
+<summary>Contact page</summary>
 <img src="readme/validation/html/contact-html-validation.png">
 </details>
 
-<summary>Reset password page</summary>
 <details>
+<summary>Reset password page</summary>
 <img src="readme/validation/html/reset-password-html-validation.png">
 </details>
 
-<summary>Sign up page</summary>
 <details>
+<summary>Sign up page</summary>
 <img src="readme/validation/html/sign-up-html-validation.png">
 </details>
 
-<summary>Profile page</summary>
 <details>
+<summary>Profile page</summary>
 <img src="readme/validation/html/profile-page-html-validation.png">
 </details>
 
-<summary>Followers page</summary>
 <details>
+<summary>Followers page</summary>
 <img src="readme/validation/html/followers-html-validation.png">
 </details>
 
-<summary>Following page</summary>
 <details>
+<summary>Following page</summary>
 <img src="readme/validation/html/following-html-validation.png">
 </details>
 
-<summary>Add post page</summary>
 <details>
+<summary>Add post page</summary>
 <img src="readme/validation/html/add-post-html-validation.png">
 </details>
 
-<summary>Edit profile page</summary>
 <details>
+<summary>Edit profile page</summary>
 <img src="readme/validation/html/edit-profile-html-validation.png">
 </details>
 
-<summary>Change password page</summary>
 <details>
+<summary>Change password page</summary>
 <img src="readme/validation/html/change-password-html-validation.png">
 </details>
 
-<summary>Post detail page</summary>
 <details>
+<summary>Post detail page</summary>
 <img src="readme/validation/html/post-detail-html-validation.png">
 </details>
 
-<summary>Edit post page</summary>
 <details>
+<summary>Edit post page</summary>
 <img src="readme/validation/html/edit-post-html-validation.png">
 </details>
 
-<summary>My posts page</summary>
 <details>
+<summary>My posts page</summary>
 <img src="readme/validation/html/my-posts-html-validation.png">
 </details>
 
-<summary>Feed page</summary>
 <details>
+<summary>Feed page</summary>
 <img src="readme/validation/html/feed-html-validation.png">
 </details>
 
-<summary>Other users page page</summary>
 <details>
+<summary>Other users page page</summary>
 <img src="readme/validation/html/other-users-page-html-validation.png">
 </details>
 
-<summary>People page</summary>
 <details>
+<summary>People page</summary>
 <img src="readme/validation/html/people-html-validation.png">
 </details>
 
-<summary>User search results page</summary>
 <details>
+<summary>User search results page</summary>
 <img src="readme/validation/html/search-results-html-validation.png">
 </details>
 
-<summary>Log out page</summary>
 <details>
+<summary>Log out page</summary>
 <img src="readme/validation/html/log-out-page-html-validation.png">
 </details>
 
-<summary>404 page</summary>
 <details>
+<summary>404 page</summary>
 <img src="readme/validation/html/404-html-validation.png">
 </details>
 
