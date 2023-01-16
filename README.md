@@ -312,7 +312,7 @@ Balsamiq was used to create wireframes of the sites pages
 - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to format forms.
 - [Website Mockup Generator](https://websitemockupgenerator.com/) - Used to create a mock up image of the site on different screen sizes.
 - [Balsamiq](https://balsamiq.com/) - Used to produce wireframes of the site.
-- [Boostrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Used to develop the layout of the site.
+- [Bootstrap 5](https://getbootstrap.com/docs/5.0/getting-started/introduction/) - Used to develop the layout of the site.
 - [Cloudinary](https://cloudinary.com/) - Used to store post images.
 - [Font Awesome](https://fontawesome.com/) - Used to produce icons on the site.
 - [Graphviz](https://dreampuf.github.io/GraphvizOnline) - Used to generate pydot file / database diagram image.
@@ -728,7 +728,7 @@ Although alot of effort was put into this project, due to time constraints there
 
 <summary>Log out page</summary>
 <details>
-<img src="readme/validation/html/log-out-html-validation.png">
+<img src="readme/validation/html/log-out-page-html-validation.png">
 </details>
 
 <summary>404 page</summary>
@@ -828,7 +828,7 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 
 <details>
 <summary>Profile page</summary>
-<img src="readme/validation/light_house/profile-page/lighthouse.png">
+<img src="readme/validation/light_house/profile-page-lighthouse.png">
 </details>
 
 <details>
@@ -1622,8 +1622,8 @@ You can make a local clone of a repository via the following steps:
 
 ### Tutorials
 
-- Real Python Django redirects tutorial - [The Ultimate Guide to Django Redirects](#https://realpython.com/django-redirects/)
-- Sending user_logged_in signals - [Django rest auth user_logged_in signal](#https://stackoverflow.com/questions/43300305/django-rest-auth-user-logged-in-signal)
+- Real Python Django redirects tutorial - [The Ultimate Guide to Django Redirects](https://realpython.com/django-redirects/)
+- Sending user_logged_in signals - [Django rest auth user_logged_in signal](https://stackoverflow.com/questions/43300305/django-rest-auth-user-logged-in-signal)
 - Using django extensions to generate a database diagram - [Medium - Visualize database in Django](https://medium.com/@yathomasi1/1-using-django-extensions-to-visualize-the-database-diagram-in-django-application-c5fa7e710e16)
 
 ### Code
