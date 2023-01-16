@@ -666,6 +666,16 @@ Although alot of effort was put into this project, due to time constraints there
 <img src="readme/validation/html/profile-page-html-validation.png">
 </details>
 
+<summary>Followers page</summary>
+<details>
+<img src="readme/validation/html/followers-html-validation.png">
+</details>
+
+<summary>Following page</summary>
+<details>
+<img src="readme/validation/html/following-html-validation.png">
+</details>
+
 <summary>Add post page</summary>
 <details>
 <img src="readme/validation/html/add-post-html-validation.png">
@@ -679,16 +689,6 @@ Although alot of effort was put into this project, due to time constraints there
 <summary>Change password page</summary>
 <details>
 <img src="readme/validation/html/change-password-html-validation.png">
-</details>
-
-<summary>Followers page</summary>
-<details>
-<img src="readme/validation/html/followers-html-validation.png">
-</details>
-
-<summary>Following page</summary>
-<details>
-<img src="readme/validation/html/following-html-validation.png">
 </details>
 
 <summary>Post detail page</summary>
@@ -721,7 +721,7 @@ Although alot of effort was put into this project, due to time constraints there
 <img src="readme/validation/html/people-html-validation.png">
 </details>
 
-<summary>Search results page</summary>
+<summary>User search results page</summary>
 <details>
 <img src="readme/validation/html/search-results-html-validation.png">
 </details>
@@ -898,8 +898,7 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 
 [WAVE Validation](http://pep8online.com/) was used to validate the accessibility of the app. All pages passed with no errors, however some did have alerts. Many of which related to alt text on images. Due to displaying posts in lists, the alt text for each has to be the same, this is the reason why it has a generic name. WAVE indicated this however there is nothing that can be done with this due to not knowing the nature of the image itself.
 
-</details>
-
+<details>
 <summary>Screenshots</summary>
 <details>
 <summary>Landing page</summary>
