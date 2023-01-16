@@ -101,7 +101,7 @@ The Pic Pals Social website has been developed to provide users the chance to po
 4. As a user, I want to delete my posts so that I can permanently remove posts I do not wish to keep.
 5. As a user, I want to edit my posts so that I can correct spelling mistakes or I may have entered into the post caption.
 6. As a user, I want to view post comments so that I can fulfil the aim of the app.
-7. As a user, I want to comment on other posts so that I can interact with other users
+7. As a user, I want to comment on other posts so that I can interact with other users.
 8. As a user, I want to manage my posts so that I can add, edit or delete posts as needed.
 9. As a user, I want to request a password so that I can log back into my account if I have forgotten my password.
 10. As a user, I want to log in so that I can access my account, view my profile, pictures and other user's pictures.
@@ -126,11 +126,11 @@ The Pic Pals Social website has been developed to provide users the chance to po
 
 ### Site Owner Stories
 
-27. As the site owner, I would want to validate user's data entries on sign up so that users can create a log in which meets the requirements.
+27. As the site owner, I would want to validate users' data entries on sign up so that users can create a log in which meets the requirements.
 28. As the site owner, I would want to ensure only logged in users can post from their account and edit their profile so that data privacy is ensured.
-29. As the site owner, I would want to have the ability to remove posts so that I can keep the app clean and friendly
+29. As the site owner, I would want to have the ability to remove posts so that I can keep the app clean and friendly.
 30. As the site owner, I would want the site to be fully responsive so that users can use it across multiple devices and create a good user experience.
-31. As the site owner, I would want to use the app search function so that I can search for particular posts by hashtags or search for users by their user name.
+31. As the site owner, I would want to use the app search function so that I can search for particular users by their user name.
 32. As the site owner, I would want 404 and 500 error pages so that users do not have to use the back navigation button if an error occurs.
 
 
@@ -1086,7 +1086,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/4-delete-button-3.png">
 </details>
 
-5. As a user, I want to edit my posts so that I can correct spelling mistakes or hashtags I may have entered into comments.
+5. As a user, I want to edit my posts so that I can correct spelling mistakes or I may have entered into the post caption.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
