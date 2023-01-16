@@ -73,14 +73,14 @@ The Pic Pals Social website has been developed to provide users the chance to po
 - To provide a platform in which users can share pictures
 - To provide an enjoyable user experience which would make users wish to return to the site
 - To have the ability to be given feedback via a contact form
-- To have the ability to connect with site users via GitHub and LinkedIn via links in the sites footer
+- To have the ability to connect with site users via GitHub and LinkedIn via links in the site's footer
 
 ## User Experience
 
 ### Target Audience
 
 - People who enjoy photography and would like to share their images
-- People who enjoy photography and would like to view other peoples images
+- People who enjoy photography and would like to view other people's images
 - People who wish to find an easy way to share images with family and friends
 - People who are looking for a way to interact with other people over the internet
 
@@ -95,42 +95,42 @@ The Pic Pals Social website has been developed to provide users the chance to po
 
 ### User stories
 
-1. As a user, I want to use the navigation bar so that i can seamlessly navigate around the app.
-2. As a user, I want to see a visual indicators for example of having liked a post / followed a user so that i can tell if I have previously like that post.
-3. As a user, I want to like and unlike posts so that *i can show my appreciation of another users post.
-4. As a user, I want to delete my posts so that i can permanently remove posts I do not wish to keep
-5. As a user, I want to edit my posts so that i can correct spelling mistakes or I may have enter into the post caption.
-6. As a user, I want to view post comments so that i can fulfill the aim of the app
-7. As a user, I want to comment on other posts so that i can interact with other users
-8. As a user, I want to manage my posts so that i can add, edit or delete posts as needed.
-9. As a user, I want to request a password so that i can log back into my account if i have forgotten my password.
-10. As a user, I want to log in so that i can access my account, view my profile, pictures and other users pictures.
+1. As a user, I want to use the navigation bar so that I can seamlessly navigate around the app.
+2. As a user, I want to see visual indicators for example of having liked a post / followed a user so that I can tell if I have previously liked that post.
+3. As a user, I want to like and unlike posts so that I can show my appreciation of another user's post.
+4. As a user, I want to delete my posts so that I can permanently remove posts I do not wish to keep
+5. As a user, I want to edit my posts so that I can correct spelling mistakes or I may have entered into the post caption.
+6. As a user, I want to view post comments so that I can fulfil the aim of the app
+7. As a user, I want to comment on other posts so that I can interact with other users
+8. As a user, I want to manage my posts so that I can add, edit or delete posts as needed.
+9. As a user, I want to request a password so that I can log back into my account if I have forgotten my password.
+10. As a user, I want to log in so that I can access my account, view my profile, pictures and other user's pictures.
 11. As a user, I want to log out so that other users using the same device cannot access my account.
-12. As a new user, I want to register an account with Pic Pals so that i can become a member and use the app as intended.
-13. As a user, I want to change my password so that i can secure my account.
+12. As a new user, I want to register an account with Pic Pals so that I can become a member and use the app as intended.
+13. As a user, I want to change my password so that I can secure my account.
 14. As a user, I want to have a profile page so that I and other users can view my list of posts
 15. As a user, I want to update my profile so that my profile can stay up to date with my latest information.
 16. As a user, I want to add a profile picture so that my followers can easily recognize my posts or comments
-17. As a user, I want to view the Home Page so that i can understand what the website is about, create an account or log in.
-18. As a user, I want to view how many likes a post has so that i can gauge how popular a post is
+17. As a user, I want to view the Home Page so that I can understand what the website is about, create an account or log in.
+18. As a user, I want to view how many likes a post has so that I can gauge how popular a post is
 19. As a user, I want to add a bio to my profile page so that other members can learn more about me
-20. As a user, I want to follow other accounts so that i can view their posts on my feed
-21. As a user, I want to fill in a help form so that i can enquire about issues I may have regarding the app
-22. As a user, I want to change my email address so that i can maintain the same account if I change email address
-23. As a user, I want to receive feedback so that i can confirm the contact form submission was successful or not.
-24. As a user, I want to scroll through the latest images on my feed so that i can keep up to date with accounts I follow
-25. As a user, I want to browse my list of followed accounts so that i can view that particular user account
-26. As a user, I want to see a visual indicator of following an account so that i can tell if I currently follow that account.
+20. As a user, I want to follow other accounts so that I can view their posts on my feed
+21. As a user, I want to fill in a help form so that I can enquire about issues I may have regarding the app
+22. As a user, I want to change my email address so that I can maintain the same account if I change email address
+23. As a user, I want to receive feedback so that I can confirm whether the contact form submission was successful or not.
+24. As a user, I want to scroll through the latest images on my feed so that I can keep up to date with the accounts I follow
+25. As a user, I want to browse my list of followed accounts so that I can view that particular user account
+26. As a user, I want to see a visual indicator of following an account so that I can tell if I currently follow that account.
 
 
 
 ### Site Owner Stories
 
-27. As the site owner, I would want to validate users data entries on sign up **so that users can create a log in which meets the requirements.
+27. As the site owner, I would want to validate user's data entries on sign up so that users can create a log in which meets the requirements.
 28. As the site owner, I would want to ensure only logged in users can post from their account and edit their profile so that data privacy is ensured.
-29. As the site owner, I would want to have the ability to remove posts so that i can keep the app clean and friendly
-30. As the site owner, I would want the site to be fully responsive so that user can use it across multiple devices and create a good user experience.
-31. As the site owner, I would want to use the app search function so that i can search for particular posts by hashtags or search for users by their user name.
+29. As the site owner, I would want to have the ability to remove posts so that I can keep the app clean and friendly
+30. As the site owner, I would want the site to be fully responsive so that users can use it across multiple devices and create a good user experience.
+31. As the site owner, I would want to use the app search function so that I can search for particular posts by hashtags or search for users by their user name.
 32. As the site owner, I would want 404 and 500 error pages so that users do not have to use the back navigation button if an error occurs.
 
 
@@ -139,12 +139,12 @@ The Pic Pals Social website has been developed to provide users the chance to po
 
 ### Agile design
 
-An Agile approach to creating this app has been applied. Githubs projects was used to track user stories and implement ideas based on their level of importance for allowing use of the app with no loss of functionality or user experience. Three categories were created indicating their level of importance, those were:
+An Agile approach to creating this app has been applied. GitHub's projects was used to track user stories and implement ideas based on their level of importance for allowing use of the app with no loss of functionality or user experience. Three categories were created indicating their level of importance, those were:
 - MUST HAVE
 - SHOULD HAVE
 - COULD HAVE
 
-By taking using AGILE methodology in this project i was able to deliver a site which had all required functionality and some more. Due to the time limit on this project i was not able to incorporate all intial listed features, but this is where an AGILE approach is great for app design. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation.
+By using AGILE methodology in this project I was able to deliver a site which had all required functionality and some more. Due to the time limit on this project I was not able to incorporate all initial listed features, but this is where an AGILE approach is great for app design. The project displays this by having User stories in the Done section and the ones which decided to be left for future put in the future implementation.
 
 The GitHub project can be found [here](https://github.com/users/jkingportfolio/projects/8)
 
@@ -152,37 +152,37 @@ The GitHub project can be found [here](https://github.com/users/jkingportfolio/p
 
 Pic Pals handles data with full CRUD Functionality:
 <br>
-- Create -  User can create, account, profile, post, comment, like and follow objects.
+- Create -  Users can create, account, profile, post, comment, like and follow objects.
 - Read - Users can view the posts of other users and also the profiles of these users.
 - Update - Users can update their profile, password, posted posts, follow status of other users and the like status of a post via the interactive forms and buttons on the site.
 - Delete - Users can delete posts, comments and follow objects via the interactive buttons on the site.
 
 ### Colours
 
-The colour scheme used in this project was chosen with simplicity in mind. The colour scheme is used through out all pages to ensure contrast readability and an overall good user experience. 
+The colour scheme used in this project was chosen with simplicity in mind. The colour scheme is used throughout all pages to ensure contrast readability and an overall good user experience. 
 
 <details>
-<summary>Colour Palete</summary>
+<summary>Colour Palette</summary>
 <img src="readme/misc/colours.png">
 </details>
 
 ### Fonts
 
-Google fonts was used to decided on the font for the website. 'Do Hyeon' with a back up of sans-serif was decided as the ideal font for the site.
+Google Fonts was used to decide on the font for the website. 'Do Hyeon' with a back up of sans-serif was decided as the ideal font for the site.
 
 ### Structure
 
 #### Web pages
 
-User experience was one of the main driving factors in this project. A simple, clear and easy to navigate app was the desired outcome. To acheive this at the top of each page is a Nav Bar with links to the right hand side or in the form of a hamburger toggle button if using a small screen device in which all links will be listed vertically. At the bottom of each page the developers social links can be found to allow further networking with users of the site.
+User experience was one of the main driving factors in this project. A simple, clear and easy to navigate app was the desired outcome. To achieve this at the top of each page is a Nav Bar with links to the right hand side or in the form of a hamburger toggle button if using a small screen device in which all links will be listed vertically. At the bottom of each page the developer's social links can be found to allow further networking with users of the site.
 
 The site consists of the following sections:
 - Home page in which a logged in user will be displayed their profile and if no user is logged in will display the log in form, reset password and register a new account buttons
 - Reset Password page where a user can request a link to reset their password
-- Register page where new users can register an acocunt with pic pals
+- Register page where new users can register an account with Pic Pals
 - My Profile page where a logged in user can view all their posts, edit their profile, change their password and view stats on their followers and accounts followed.
 - My posts where a list of all currently logged in users posts will be displayed as cards
-- Feed page where posts of all currently "followed" accounts will be show, posts will be displayed in order by date of most recent.
+- Feed page where posts of all currently "followed" accounts will be shown, posts will be displayed in order by date of most recent.
 - People page where a list of all current pic pal users can be found along with  a search bar to search for profile.
 - Contact where users can contact the site admin by filling out the form displayed on the page
 - Post detail page where a more in depth view of a post will be shown, this will include a like button, like count and comments section. Also if the current user owns the post they will have additional options to edit the caption or delete the post.
@@ -219,7 +219,7 @@ The Profile model object contains additional information on the user and consist
 
 #### Follow Model
 
-The Follow model object represents a follow connection between users which is not symetrical and consists of the following fields
+The Follow model object represents a follow connection between users which is not symmetrical and consists of the following fields
 - user (ForeignKey - auth.User)
 - followed_account (ForeignKey - auth.User)
 - created (DateTimeField)
@@ -306,7 +306,7 @@ Balsamiq was used to create wireframes of the sites pages
 - [Psycopg2](https://pypi.org/project/psycopg2/) - Used as a PostgreSQL adaptor
 - [Gunicorn](https://gunicorn.org/) - Used for being a pure-Python HTTP server for WSGI applications
 - [Git](https://git-scm.com/) - Used for version control.
-- [GitHub](https://github.com/) - Used to deploy the projects code.
+- [GitHub](https://github.com/) - Used to deploy the project's code.
 - [Gitpod](https://www.gitpod.io/) - Used to develop and test code.
 - [Heroku Platform](https://id.heroku.com/) - Used to deploy the live project.
 - [Crispy Forms](https://django-crispy-forms.readthedocs.io/en/latest/) - Used to format forms.
@@ -316,7 +316,7 @@ Balsamiq was used to create wireframes of the sites pages
 - [Cloudinary](https://cloudinary.com/) - Used to store post images.
 - [Font Awesome](https://fontawesome.com/) - Used to produce icons on the site.
 - [Graphviz](https://dreampuf.github.io/GraphvizOnline) - Used to generate pydot file / database diagram image.
-- [Google Fonts](https://fonts.google.com/) - Used to import the sites font family.
+- [Google Fonts](https://fonts.google.com/) - Used to import the site's font family.
 - [Affinity Designer](https://affinity.serif.com/en-gb/) - Used to create the logo and delete buttons.
 - [Microsoft Paint](#https://en.wikipedia.org/wiki/Microsoft_Paint)
 - [Validation](#validation)
@@ -324,7 +324,7 @@ Balsamiq was used to create wireframes of the sites pages
     - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)- Used to validate the CSS of the site.
     - [Jshint](https://jshint.com/) - Used to validate the Javascript of the site.
     - [Pycodestyle](https://pypi.org/project/pycodestyle/) - Used to validate code against Python conventions.
-    - [Chrome dev tools (Lighthouse)](https://developer.chrome.com/docs/lighthouse/overview/) - Used to measure site performance, SEO and accessiblity
+    - [Chrome dev tools (Lighthouse)](https://developer.chrome.com/docs/lighthouse/overview/) - Used to measure site performance, SEO and accessibility.
     - [WAVE Validator](https://wave.webaim.org/) - Used to evaluate site accessibility
 
 ### Libraries
@@ -366,7 +366,7 @@ Authentication is a feature of the Pic Pals site, users will have to be authenti
 
 ### Bio-Section
 
-The bio section is an optional feature to appear on a users profile page. A user can chose to write a little bit about themselves if they so desire. The location of the bio section is just above the users posts.
+The bio section is an optional feature to appear on a user's profile page. A user can choose to write a little bit about themselves if they so desire. The location of the bio section is just above the user's posts.
 
 <details>
 <summary>Bio section image</summary>
@@ -377,7 +377,7 @@ The bio section is an optional feature to appear on a users profile page. A user
 
 ### Change Password
 
-The change password feature can be accessed from the current users profile page. A form will prompt the user to enter their current password followed by their new password and a confirmation of the new password.
+The change password feature can be accessed from the current user's profile page. A form will prompt the user to enter their current password followed by their new password and a confirmation of the new password.
 
 <details>
 <summary>Change password image</summary>
@@ -388,7 +388,7 @@ The change password feature can be accessed from the current users profile page.
 
 ### Post comment
 
-The post comment feature can be accessed from any users post detail page, below the post image is a form to enter a comment. The comment will then be posted alongside the users profile picture and username.
+The post comment feature can be accessed from any user's post detail page, below the post image is a form to enter a comment. The comment will then be posted alongside the users profile picture and username.
 
 <details>
 <summary>Post comment image</summary>
@@ -399,7 +399,7 @@ The post comment feature can be accessed from any users post detail page, below 
 
 ### Contact
 
-The contact feature can be found from the nav bar and allows both signed in users and annonymous users to contact the site admin.
+The contact feature can be found from the nav bar and allows both signed in users and anonymous users to contact the site admin.
 
 <details>
 <summary>Contact image</summary>
@@ -433,7 +433,7 @@ The delete post feature can be found above the image on the post detail page of 
 
 ### Edit Post
 
-The edit post feature can be found above the image on the post detail page of a currently logged in user and allows the captoion of the post to be updated. The edit post button will only be visible to owners of that post to avoid other users editing posts they do not own.
+The edit post feature can be found above the image on the post detail page of a currently logged in user and allows the caption of the post to be updated. The edit post button will only be visible to owners of that post to avoid other users editing posts they do not own.
 
 <details>
 <summary>Edit post images</summary>
@@ -500,7 +500,7 @@ The follow / unfollow user button feature can be found on the profile of any use
 
 ### Followed List
 
-The followed list feature can be accessed from the currently logged in users profile. This feature will display a list of all users that the current user follows.
+The Followed list feature can be accessed from the currently logged in user's profile. This feature will display a list of all users that the current user follows.
 
 <details>
 <summary>Followed list image</summary>
@@ -511,7 +511,7 @@ The followed list feature can be accessed from the currently logged in users pro
 
 ### Followers List
 
-The followers list feature can be accessed from the currently logged in users profile. This feature will display a list of all users that the current user is followed by.
+The followers list feature can be accessed from the currently logged in user's profile. This feature will display a list of all users that the current user is followed by.
 
 <details>
 <summary>Followers list image</summary>
@@ -522,7 +522,7 @@ The followers list feature can be accessed from the currently logged in users pr
 
 ### Home Page
 
-The home page feature displays upon initial arrival to the pic pals site and will allow users to log into Pic Pals, Rest password, Register an account and Contact the admin.
+The home page feature displays upon initial arrival to the pic pals site and will allow users to log into Pic Pals, reset password, register an account and contact the admin.
 
 <details>
 <summary>Home page image</summary>
@@ -555,7 +555,7 @@ The like count feature can be found under a post image in the post details page.
 
 ### Like / Unlike button
 
-The like / unlike button feature can be found under a post image in the post details page. A user can click on the like button and it will add / subtract a like based on the users current like status for that post.
+The like / unlike button feature can be found under a post image in the post details page. A user can click on the like button and it will add / subtract a like based on the user's current like status for that post.
 
 <details>
 <summary>Like / Unlike Button image</summary>
@@ -599,7 +599,7 @@ Throughout the site the feature of being responsive for various device sizes can
 
 ### Site Feedback
 
-Site feedback features are presented at various times in the form of Successfull html pages and Django messages.
+Site feedback features are presented at various times in the form of successful html pages and Django messages.
 
 <details>
 <summary>Feedback images</summary>
@@ -624,19 +624,19 @@ The user search bar feature can be found on the People page of the site. At the 
 
 ### Future features
 
-While using the AGILE design methology against the time allocated to the project there are a number of features which would be great to implement in the future. These features can be found in the future implementations tab in the [pic pals github project](#https://github.com/users/jkingportfolio/projects/8)
+While using the AGILE design methodology against the time allocated to the project there are a number of features which would be great to implement in the future. These features can be found in the future implementations tab in the [pic pals github project](#https://github.com/users/jkingportfolio/projects/8)
 
 ### Improvements
 
 Although alot of effort was put into this project, due to time constraints there is still room for finer refactoring of code. 
 
-- A logged in users dashboard (`dashboard.html`) and a users profile page (`user_detail.html`) use similar code however the amount of django template if statements needed would have made this code as is hard to read and with bugs. In future i hope to be able to be able to merge these two pages into one, with using smaller template blocks to achevie the same outcome but refactored. 
+- A logged in users dashboard (`dashboard.html`) and a users profile page (`user_detail.html`) use similar code however the amount of django template if statements needed would have made this code as is hard to read and with bugs. In the future I hope to be able to merge these two pages into one, with using smaller template blocks to achieve the same outcome but refactored. 
 
 ## Validation
 
 ### HTML Validation
 
-[W3C Validation](https://validator.w3.org/) was used to validate the HTML code used in the project. As this project requires authentication to view most of the pages, the method used to Validate was by Direct Input. To acheive this a page that needed tested was navigated to, on the page right click and then chose the option of view source code. This code was then copy and pasted into the validator and tested. There was only one error which was returned, this error is located within the Django Authentication library and is outwidth my control to edit therefore i have had to include this. See change password validation image for details.
+[W3C Validation](https://validator.w3.org/) was used to validate the HTML code used in the project. As this project requires authentication to view most of the pages, the method used to Validate was by Direct Input. To achieve this a page that needed testing was navigated to. Pn the page right click and then choose the option of view source code. This code was then copied and pasted into the validator and tested. There was only one error which was returned, this error is located within the Django Authentication library and is outwidth my control to edit therefore I have had to include this. See change password validation image for details.
 
 <details>
 <summary>Screenshots</summary>
@@ -749,7 +749,7 @@ Although alot of effort was put into this project, due to time constraints there
 
 ### JavaScript Validation
 
-[JSHint](https://jshint.com/) was used to validate the Javascript code used in the app. In addition to the Javascript within script.js there were two additional small scripts which are located on edit profile page and add post page. These were intentionally placed there due to the small size of the scripts and being specific to those pages they were placed. This also allowed the script to run on page load, where these pages do not have a common URL due to each being specific to the user logged in.
+[JSHint](https://jshint.com/) was used to validate the Javascript code used in the app. In addition to the Javascript within script.js there were two additional small scripts which are located on the Edit Profile page and add post page. These were intentionally placed there due to the small size of the scripts and being specific to those pages they were placed. This also allowed the script to run on page load, where these pages do not have a common URL due to each being specific to the user logged in.
 
 <details>
 <summary>Javascript file - script.js</summary>
@@ -760,7 +760,7 @@ In addition to this there are two scripts which are in templates, these have bee
 
 ### Python Validation
 
-At the time of developing this project, PEP8 Validator was down therefore the suggested method of validating Python code used in the project was using the tool called `pycodestyle` which was installed to the IDE (GitPod). This tool will continually give the developer feedback in the problems section of the IDE which i was able to use continually through out developement to ensure correct formatting of Python code. All files which contain custom Python code have been verified to have no detectable issues using `pycodestyle`:
+At the time of developing this project, PEP8 Validator was down therefore the suggested method of validating Python code used in the project was using the tool called `pycodestyle` which was installed to the IDE (GitPod). This tool will continually give the developer feedback in the problems section of the IDE which I was able to use continually throughout development to ensure correct formatting of Python code. All files which contain custom Python code have been verified to have no detectable issues using `pycodestyle`:
 
 <details>
 <summary>Account app</summary>
@@ -802,7 +802,7 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 
 ### Chrome Dev Tools Lighthouse Validation
 
-[Chrome Dev Tools lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to validate the performance of the app. There was one page which could not be tested with this method and it was the log out success page, this is due to Lighthouse needing to refresh the page to measure load performances but as the user has now logged out this page cannot be displayed at their is not user authenticated.
+[Chrome Dev Tools lighthouse](https://developer.chrome.com/docs/lighthouse/overview/) was used to validate the performance of the app. There was one page which could not be tested with this method and it was the log out success page. This is due to Lighthouse needing to refresh the page to measure load performances but as the user has now logged out, this page cannot be displayed if it is not user authenticated.
 
 <details>
 <summary>Screenshots</summary>
@@ -896,7 +896,7 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 
 ### WAVE Validation
 
-[WAVE Validation](http://pep8online.com/) was used to validate the accessiblity of the app. All pages passed with no errors, however some did have alerts. Many of which related to alt text on images. Due to displaying posts in lists, the alt text for each has to be the same, this is the reason why it has a generic name. WAVE indicated this however there is nothing that can be done with this due to not knowing the nature of the image itself.
+[WAVE Validation](http://pep8online.com/) was used to validate the accessibility of the app. All pages passed with no errors, however some did have alerts. Many of which related to alt text on images. Due to displaying posts in lists, the alt text for each has to be the same, this is the reason why it has a generic name. WAVE indicated this however there is nothing that can be done with this due to not knowing the nature of the image itself.
 
 </details>
 
@@ -1033,7 +1033,7 @@ The website was tested on the following web browsers:
 
 To avoid unnecessary repetition of images, only the feature being referred to will have screenshots. Information on how to navigate to the feature referred to will be described within its relevant table reference. 
 
-1. As a user, I want to use the navigation bar so that i can seamlessly navigate around the app.
+1. As a user, I want to use the navigation bar so that I can seamlessly navigate around the app.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1046,12 +1046,12 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 
 
-2. As a user, I want to see a visual indicators for example of having liked a post / followed a user so that i can tell if I have previously like that post.
+2. As a user, I want to see visual indicators for example of having liked a post / followed a user so that I can tell if I have previously liked that post.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Like Button  | Log in and navigate to a post detail page via feed or a users profile by clicking on the post. Below the post click on the heart icon to like or unlike the post  | Post heart indicator to visually reflect the current users status with regards to liking the post and the total like tally to plus or minus one like dependant on if the click is a like or unlike  | Works as expected |
-|  Follow Button  | Log in and navigate to a users profile page via followed users list, following users list or clicking on the users name on a post detail. Below the users profile picute click on the follow button to follow or unfollow the user.  | User to follow or unfollow the account of the currently viewed profile | Works as expected |
+|  Like Button  | Log in and navigate to a post detail page via feed or a user's profile by clicking on the post. Below the post click on the heart icon to like or unlike the post  | Post heart indicator to visually reflect the current users status with regards to liking the post and the total like tally to plus or minus one like dependant on if the click is a like or unlike  | Works as expected |
+|  Follow Button  | Log in and navigate to a users profile page via followed users list, following users list or clicking on the users name on a post detail. Below the users profile picture click on the follow button to follow or unfollow the user.  | User to follow or unfollow the account of the currently viewed profile | Works as expected |
 
 <details>
 <summary>Screenshots</summary>
@@ -1059,11 +1059,11 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/2-like-button-1.png">
 </details>
 
-3. As a user, I want to like and unlike posts so that i can show my appreciation of another users post.
+3. As a user, I want to like and unlike posts so that I can show my appreciation of another user's post.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Like Button  | Log in and navigate to a post detail page via feed or a users profile by clicking on the post. Below the post click on the heart icon to like or unlike the post  | Post heart indicator to visually reflect the current users status with regards to liking the post and the total like tally to plus or minus one like dependant on if the click is a like or unlike | Works as expected |
+|  Like Button  | Log in and navigate to a post detail page via feed or a user's profile by clicking on the post. Below the post click on the heart icon to like or unlike the post  | Post heart indicator to visually reflect the current user's status with regards to liking the post and the total like tally to plus or minus one like dependant on if the click is a like or unlike | Works as expected |
 
 <details>
 <summary>Screenshots</summary>
@@ -1072,7 +1072,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/3-like-button-3.png">
 </details>
 
-4. As a user, I want to delete my posts so that i can permanently remove posts I do not wish to keep.
+4. As a user, I want to delete my posts so that I can permanently remove posts I do not wish to keep.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1085,7 +1085,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/4-delete-button-3.png">
 </details>
 
-5. As a user, I want to edit my posts so that i can correct spelling mistakes or hashtags I may have enter into comments.
+5. As a user, I want to edit my posts so that I can correct spelling mistakes or hashtags I may have entered into comments.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1099,22 +1099,22 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/5-edit-post-4.png">
 </details>
 
-6. As a user, I want to view post comments so that i can fulfill the aim of the app.
+6. As a user, I want to view post comments so that I can fulfil the aim of the app.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Comment on post  | Log in and navigate to a post detail page via feed or a users profile by clicking on the post. Below the post image view the comments.  | User to be able to read all comments on the post or be made aware of no comments if there are none | Works as intended |
+|  Comment on post  | Log in and navigate to a post detail page via feed or a user's profile by clicking on the post. Below the post image view the comments.  | User to be able to read all comments on the post or be made aware of no comments if there are none | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
 <img src="readme/testing/manual/6-comment-1.png">
 </details>
 
-7. As a user, I want to comment on other posts so that i can interact with other users.
+7. As a user, I want to comment on other posts so that I can interact with other users.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Comment on post  | Log in and navigate to a post detail page via feed or a users profile by clicking on the post. Below the post image fill in the comment form and click on the add comment button.  | User to fill in the comment form and when submitted will be added to the comments like for the post. | Works as expected |
+|  Comment on post  | Log in and navigate to a post detail page via feed or a user's profile by clicking on the post. Below the post image fill in the comment form and click on the add comment button.  | User to fill in the comment form and when submitted will be added to the comments like for the post. | Works as expected |
 
 <details>
 <summary>Screenshots</summary>
@@ -1123,7 +1123,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/7-comment-3.png">
 </details>
 
-8. As a user, I want to manage my posts so that i can add, edit or delete posts as needed.
+8. As a user, I want to manage my posts so that I can add, edit or delete posts as needed.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1137,11 +1137,11 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/8-delete-button-3.png">
 </details>
 
-9. As a user, I want to request a password so that i can log back into my account if i have forgotten my password.
+9. As a user, I want to request a password so that I can log back into my account if I have forgotten my password.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Reset Password  | Navigate to the pic pals site and click on the Reset Password button located below the log in section. Fill in the form with the email used when creating your pic pals account and submit the form. Navigate to your email inbox and find the email from Pic Pals. Click on the link which will direct you to a form on pic pals to enter a new password. Confrim the password and submit the form.  | User will reset their password allowing them to log into their account | Works as intended *See known bugs |
+|  Reset Password  | Navigate to the pic pals site and click on the Reset Password button located below the login section. Fill in the form with the email used when creating your pic pals account and submit the form. Navigate to your email inbox and find the email from Pic Pals. Click on the link which will direct you to a form on pic pals to enter a new password. Confirm the password and submit the form.  | User will reset their password allowing them to log into their account | Works as intended *See known bugs |
 
 <details>
 <summary>Screenshots</summary>
@@ -1152,7 +1152,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/9-reset-pw-5.png">
 </details>
 
-10. As a user, I want to log in so that i can access my account, view my profile, pictures and other users pictures.
+10. As a user, I want to log in so that I can access my account, view my profile, pictures and other user's pictures.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1176,7 +1176,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/11-logout-2.png">
 </details>
 
-12. As a new user, I want to register an account with Pic Pals so that i can become a member and use the app as intended.
+12. As a new user, I want to register an account with Pic Pals so that I can become a member and use the app as intended.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1189,11 +1189,11 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/12-register-3.png">
 </details>
 
-13. As a user, I want to change my password so that i can secure my account.
+13. As a user, I want to change my password so that I can secure my account.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Change Password  | Log in and navigate to the My profile page by clicking My Profile from the nav bar. Click on the edit profile button located under the Users profile picture. Fill in the form with updated profile detail and click on the update profile button  | Users profile to be updated with the information entered into the edit profile form | Works as expected |
+|  Change Password  | Log in and navigate to the My profile page by clicking My Profile from the nav bar. Click on the edit profile button located under the user's profile picture. Fill in the form with updated profile detail and click on the update profile button  | Users profile to be updated with the information entered into the edit profile form | Works as expected |
 
 <details>
 <summary>Screenshots</summary>
@@ -1217,7 +1217,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Edit Profile  | Log in and navigate to the My profile page via the nav bar. Click on the Edit profile button located below the users profile picture. The user will then be redirected to the edit profile form, fill out new information as intedned and click on the update profile button   | Users profile information to be updated and saved | Works as intended |
+|  Edit Profile  | Log in and navigate to the My profile page via the nav bar. Click on the Edit profile button located below the user's profile picture. The user will then be redirected to the edit profile form, fill out new information as intended and click on the update profile button   | Users profile information to be updated and saved | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -1231,7 +1231,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Profile Picture  | Sign up with pic pals and whilst entering user information upload a picture to be a profile picture, if no image is selected the static default profile picture will be used. If a user already has an account, log in and navigate to the My Profile page from the nav bar. Click on the edit profile button located below the users profile image. Upload the desired image and click on update profile  | User will have a personally selected image as their profile image | Works as intended |
+|  Profile Picture  | Sign up with pic pals and whilst entering user information upload a picture to be a profile picture, if no image is selected the static default profile picture will be used. If a user already has an account, log in and navigate to the My Profile page from the nav bar. Click on the edit profile button located below the user's profile image. Upload the desired image and click on update profile  | User will have a personally selected image as their profile image | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -1240,7 +1240,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/16-profile-picture-3.png">
 </details>
 
-17. As a user, I want to view the Home Page so that i can understand what the website is about, create an account or log in.
+17. As a user, I want to view the Home Page so that I can understand what the website is about, create an account or log in.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1251,7 +1251,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/17-home-page-1.png">
 </details>
 
-18. As a user, I want to view how many likes a post has so that i can gauge how popular a post is.
+18. As a user, I want to view how many likes a post has so that I can gauge how popular a post is.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1266,18 +1266,18 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Bio Section  | Log in and navigate to the My profile page via the nav bar. Click on the Edit profile button located below the users profile picture. The user will then be redirected to the edit profile form, fill out out the bio field and click on the update profile button  | Users profile to display their bio field above their posts | Works as intended |
+|  Bio Section  | Log in and navigate to the My profile page via the nav bar. Click on the Edit profile button located below the user's profile picture. The user will then be redirected to the edit profile form, fill out out the bio field and click on the update profile button  | Users profile to display their bio field above their posts | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
 <img src="readme/testing/manual/19-bio-section-1.png">
 </details>
 
-20. As a user, I want to follow other accounts so that i can view their posts on my feed.
+20. As a user, I want to follow other accounts so that I can view their posts on my feed.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Follow  | Log in and navigate to the People page of the site located in the Nav Bar, scroll or use the search bar to find the account whom is wished to follow. Click on the follow button located under the profiles profile picture.  | User will follow the desired account, a django message will confirm the follow and the button will change from a "follow" button to an "unfollow" button.    | Works as intended |
+|  Follow  | Log in and navigate to the People page of the site located in the Nav Bar, scroll or use the search bar to find the account whom is wished to follow. Click on the follow button located under the profile's profile picture.  | User will follow the desired account, a django message will confirm the follow and the button will change from a "follow" button to an "unfollow" button.    | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -1285,7 +1285,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/20-follow-2.png">
 </details>
 
-21. As a user, I want to fill in a help form so that i can enquire about issues I may have regarding the app.
+21. As a user, I want to fill in a help form so that I can enquire about issues I may have regarding the app.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1296,7 +1296,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/21-contact-1.png">
 </details>
 
-22. As a user, I want to change my email address so that i can maintain the same account if I change email address.
+22. As a user, I want to change my email address so that I can maintain the same account if I change email address.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1310,7 +1310,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/22-edit-profile-4.png">
 </details>
 
-23. As a user, I want to receive feedback so that i can confirm the contact form submission was successful or not.
+23. As a user, I want to receive feedback so that I can confirm whether the contact form submission was successful or not.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1323,22 +1323,22 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/23-site-feedback-3.png">
 </details>
 
-24. As a user, I want to scroll through the latest images on my feed so that i can keep up to date with accounts I follow.
+24. As a user, I want to scroll through the latest images on my feed so that I can keep up to date with the accounts I follow.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Feed  | Log in and navigate to the feed page which can be accessed via the nav bar by clicking on the Feed link. Scroll through the image list that is made up of followed accounts posts.  | User will be presented with a list of all followed users posts in order of date created from newest to oldest. | Works as expected |
+|  Feed  | Log in and navigate to the feed page which can be accessed via the nav bar by clicking on the Feed link. Scroll through the image list that is made up of followed accounts posts.  | User will be presented with a list of all followed user's posts in order of date created from newest to oldest. | Works as expected |
 
 <details>
 <summary>Screenshots</summary>
 <img src="readme/testing/manual/24-feed-1.png">
 </details>
 
-25. As a user, I want to browse my list of followed accounts so that i can view that particular user account.
+25. As a user, I want to browse my list of followed accounts so that I can view that particular user account.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-| Followed List  | Log in and navigate to the My Profile page, this can be accessed from clickin on the My Post link in the nav bar. Within the Profile info panel at the top of the page click on the FOLLOW count. This will then display a list of followed accounts.  | User to be displayed with a list of all users they currently follow. | Works as expected |
+| Followed List  | Log in and navigate to the My Profile page, this can be accessed from clicking on the My Post link in the nav bar. Within the Profile info panel at the top of the page click on the FOLLOW count. This will then display a list of followed accounts.  | User to be displayed with a list of all users they currently follow. | Works as expected |
 
 <details>
 <summary>Screenshots</summary>
@@ -1346,11 +1346,11 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/25-followed-list-2.png">
 </details>
 
-26. As a user, I want to see a visual indicator of following an account so that i can tell if I currently follow that account.
+26. As a user, I want to see a visual indicator of following an account so that I can tell if I currently follow that account.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Follow / Unfollow button  | Log in and navigate to a users profile page via the People link in the Nav Bar. Below the users profile picture locate the follow button which will indicate if the user is currently followed. If a user is followed the button will display UNFOLLOW and if not followed will display FOLLOW  | Follow button indicator to visually reflect the current following status by showing the relevant message on the button  | Works as expected |
+|  Follow / Unfollow button  | Log in and navigate to a user's profile page via the People link in the Nav Bar. Below the users profile picture locate the follow button which will indicate if the user is currently followed. If a user is followed the button will display UNFOLLOW and if not followed will display FOLLOW  | Follow button indicator to visually reflect the current following status by showing the relevant message on the button  | Works as expected |
 
 <details>
 <summary>Screenshots</summary>
@@ -1363,7 +1363,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 #### Testing User Stories - Site Owner
 
-27. As the site owner, I would want to validate users data entries on sign up so that users can create a log in which meets the requirements.
+27. As the site owner, I would want to validate users' data entries on sign up so that users can create a log in which meets the requirements.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1386,7 +1386,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/28-authentication-2.png">
 </details>
 
-29. As the site owner, I would want to have the ability to remove posts so that i can keep the app clean and friendly.
+29. As the site owner, I would want to have the ability to remove posts so that I can keep the app clean and friendly.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1397,7 +1397,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/29-delete-post-1.png">
 </details>
 
-30. As the site owner, I would want the site to be fully responsive so that user can use it across multiple devices and create a good user experience.
+30. As the site owner, I would want the site to be fully responsive so that users can use it across multiple devices and create a good user experience.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1408,7 +1408,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/misc/mock-up.png">
 </details>
 
-31. As the site owner, I would want to use the app search function so that i can search for particular users by their user name.
+31. As the site owner, I would want to use the app search function so that I can search for particular users by their user name.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
@@ -1425,7 +1425,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
-|  Error Pages  | User to attempt to navigate to a page that doesnt exist or use the site whilst there is a server error. This will display the relevant Error page and return home button  | Error page of the relevant error to display informing the user of the error and allowing them to redirect with the use of a button and not having to click the browser back buttons | Works as intended |
+|  Error Pages  | User to attempt to navigate to a page that doesn't exist or use the site whilst there is a server error. This will display the relevant Error page and return home button  | Error page of the relevant error to display informing the user of the error and allowing them to redirect with the use of a button and not having to click the browser back buttons | Works as intended |
 
 <details>
 <summary>Screenshots</summary>
@@ -1435,7 +1435,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 ### Automated Testing
 
-Using Djangos Unit tests from Pythons standard library module unittest i wrote a series of unit test to test for correct operation of Classes and functions. Due to time restrictions i was not able to cover 100% of functionality of the site with automated testing, however the same testing although a different method has been acheived via manual testing.
+Using Djangos Unit tests from Python's standard library module unittest I wrote a series of unit tests to test for correct operation of Classes and functions. Due to time restrictions I was not able to cover 100% of functionality of the site with automated testing, however the same testing although a different method has been achieved via manual testing.
 
 
 #### Unit testing Code
@@ -1479,13 +1479,13 @@ During the project I encountered a number of bugs some of which were solved some
 
 | Bug           | Fix           |
 | ------------- | ------------- |
-| Django urls not working | As i had used app name spaces i hadnt included the app name followed by : therefore Django couldnt find the templates. All instances referring to Django urls with name spaces were updated to the correct format and the bug was resolved.|
-| Databse migration error | id column in database was edited after creation, after talking with tutor support it wasa deemed the best way to fix this issue was to reset my database, delete all existing migrations and then migrate the database again. After migration the database worked as intended and the bug was resolved |
-| Images not uploading to Cloudinary | Post images were not being sent and stored on cloudinary, a simple mismatch of variable names was the cause and upon updating the bug was resolved. |
-| Static files not showing | Static files would not be loaded by the browser, after searching online i came across a similar issue and the method of fixing this bug was to install the third party library called whitenoise. Upon installation of whitenoise and adding it to the middelware in my settings static files were now loaded in the browser and the bug was resolved | 
-| Follow button would not update to reflect the current follow status | When initially created the filter for the follow object was checking if a follow object for that user existed and not if an object between the request user and the user of the viewing profile existed therefore the button would always state unfollowed aslong as at least one user followed that account. The filter was updated to filtered the relationship between the request user and the user of the profile and the bug was resolved  |
-| Delete post confirmation modal would still delete post when cancelled | The achor for tag was intially wrapped around the delete button therefore no matter what was pressed on the modal it would still redirect to the delete post page and delete the post, to fix this the anchor was moved to wrap around the ok button of the modal which provided the intended outcome and the bug was resolved.| 
-| Reset password wont send an email via Google Mail | At present i have no fix for this, the google mail server just continues to time out. As this function can still be tested using the django email backend setting and returning the one time link via the command line i have decided to keep this feature in my project but class it as a known bug as it does not affect the functioning of the program. |
+| Django urls not working | As I had used app name spaces I hadn't included the app name followed by : therefore Django couldn't find the templates. All instances referring to Django URLs with name spaces were updated to the correct format and the bug was resolved.|
+| Database migration error | The id column in the database was edited after creation, after talking with tutor support it was deemed the best way to fix this issue was to reset my database, delete all existing migrations and then migrate the database again. After migration the database worked as intended and the bug was resolved |
+| Images not uploading to Cloudinary | Post images were not being sent and stored on Cloudinary, a simple mismatch of variable names was the cause and upon updating the bug was resolved. |
+| Static files not showing | Static files would not be loaded by the browser, after speaking with fellow students on slack i discovered i had deleted the STATICFILES_STORAGE variable by mistake. Once this had been recreated all static files were shown once `python3 manage.py collectstatic` command was run.  | 
+| Follow button would not update to reflect the current follow status | When initially created the filter for the follow object was checking if a follow object for that user existed and not if an object between the request user and the user of the viewing profile existed therefore the button would always state unfollowed as long as at least one user followed that account. The filter was updated to filter the relationship between the request user and the user of the profile and the bug was resolved  |
+| Delete post confirmation modal would still delete post when cancelled | The anchor for tag was initially wrapped around the delete button therefore no matter what was pressed on the modal it would still redirect to the delete post page and delete the post, to fix this the anchor was moved to wrap around the ok button of the modal which provided the intended outcome and the bug was resolved.| 
+| Reset password won't send an email via Google Mail | At present I have no fix for this, the google mail server just continues to time out. As this function can still be tested using the django email backend setting and returning the one time link via the command line I have decided to keep this feature in my project but class it as a known bug as it does not affect the functioning of the program. |
 | Post cards would be the height of the largest image in the lists row leaving whitespace below images in cards that are shorter | This was down to simple CSS styling of the class being allocated to the wrong divs. Once this was moved and updated all posts then had the same height and the image was resized within the card with white space above and below to maintain the correct image ratio thus resolving the bug. |
 | Post created without image | There was no requirement for the image field in the post form which could allow a user to post an empty post. Once the field was set to be required the b ug was resolved |
 
@@ -1544,7 +1544,7 @@ The website was deployed with Heroku by following these steps:
 <img src="readme/deployment/elephant-sql-plan.png">
 </details>
 
-10. Select region and chose the nearest data centre to your location.
+10. Select the region and choose the nearest data centre to your location.
 <details>
 <summary>Screenshot</summary>
 <img src="readme/deployment/elephant-sql-region.png">
@@ -1578,7 +1578,7 @@ The website was deployed with Heroku by following these steps:
 
 17. Reveal Config Vars and store the required config var names and values as below:
 
-- `CLOUDINARY_URL`: *your cloudinary URL as obtained above*
+- `CLOUDINARY_URL`: *your Cloudinary URL as obtained above*
 - `DATABASE_URL`: *your ElephantSQL postgres database URL as obtained above*
 - `PORT`: `8000`
 - `SECRET_KEY`: *your secret key*
@@ -1590,7 +1590,7 @@ The website was deployed with Heroku by following these steps:
 
 18. Go to the "deploy" tab and pick GitHub as a deployment method.
 19. Search for a repository to connect to and select the branch you would like to build the app from.
-20. If preferred enable automatic deploys and then deploy branch.
+20. If preferred, enable automatic deploys and then deploy branch.
 21. Wait for the app to build and then click on the "View" link which will redirect you to the deployed link.
 
 ### Forking the GitHub Repository
@@ -1652,8 +1652,8 @@ The source of where I learned how to produce a GitHub fork and clone was from th
 
 I would like to also thank the following:
 - My wife and family for their support and feedback whilst doing this project
-- [Andy Guttridge](https://github.com/andy-guttridge) for his huge help through out the project!
-- Code Institute tutor support who helped with an issue i had with having to reset my database.
+- [Andy Guttridge](https://github.com/andy-guttridge) for his huge help throughout the project!
+- Code Institute tutor support who helped with an issue I had with having to reset my database.
 - My Code Institute mentor Mo Shami for his guidance through this project.
 
 
