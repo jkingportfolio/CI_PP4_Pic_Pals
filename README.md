@@ -3,7 +3,7 @@ Developer: Jamie King
 
 ![Mockup image](readme/misc/mock-up.png)
 
-The Pic Pals Social website has been developed to provide users the chance to post images online and have the ability to view other users posts also. 
+The Pic Pals Social website has been developed to provide user's the chance to post images online and have the ability to view other user's posts also. 
 
 [View live website](https://pic-pals-pp4.herokuapp.com/)
 
@@ -132,6 +132,7 @@ The Pic Pals Social website has been developed to provide users the chance to po
 30. As the site owner, I would want the site to be fully responsive so that users can use it across multiple devices and create a good user experience.
 31. As the site owner, I would want to use the app search function so that I can search for particular users by their user name.
 32. As the site owner, I would want 404 and 500 error pages so that users do not have to use the back navigation button if an error occurs.
+33. As the site owner, I would want control the file types that a user can use when uploading images to the site so that non-image file type cannot be uploaded as this would result in showing broken images resulting in a poor user experience and also potential security concerns.
 
 
 
@@ -540,6 +541,7 @@ Input Validation as a feature is used throughout the site for form inputs.
 <details>
 <summary>Input validation image</summary>
 <img src="readme/features/input-validation.png">
+<img src="readme/features/file-type-validation.png">
 </details>
 
 - Covered in user stories: 27
