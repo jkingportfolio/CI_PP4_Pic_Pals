@@ -32,8 +32,9 @@ class Registration(forms.ModelForm):
         model = User
         fields = ['username', 'first_name', 'email']
 
-    def reset_password_confirm(self):
-        cleaned_data = super(Registration, self).reset_password_confirm()
+
+    def clean(self):
+        cleaned_data = super(Registration, self).clean()
         password = cleaned_data.get("password")
         password_confirm = cleaned_data.get("password_confirm")
 
