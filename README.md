@@ -132,7 +132,7 @@ The Pic Pals Social website has been developed to provide user's the chance to p
 30. As the site owner, I would want the site to be fully responsive so that users can use it across multiple devices and create a good user experience.
 31. As the site owner, I would want to use the app search function so that I can search for particular users by their user name.
 32. As the site owner, I would want 404 and 500 error pages so that users do not have to use the back navigation button if an error occurs.
-33. As the site owner, I would want control the file types that a user can use when uploading images to the site so that non-image file type cannot be uploaded as this would result in showing broken images resulting in a poor user experience and also potential security concerns.
+33. As the site owner, I would want to control the file types that a user can use when uploading images to the site so that non-image file type cannot be uploaded as this would result in showing broken images resulting in a poor user experience and also potential security concerns.
 
 
 
@@ -536,7 +536,7 @@ The home page feature displays upon initial arrival to the pic pals site and wil
 
 ### Input Validation
 
-Input Validation as a feature is used throughout the site for form inputs.
+Input Validation as a feature is used throughout the site for form inputs and also to control the file type input when uploading images. 
 
 <details>
 <summary>Input validation image</summary>
@@ -1433,6 +1433,19 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <details>
 <summary>Screenshots</summary>
 <img src="readme/testing/manual/32-error-1.png">
+</details>
+
+33. As the site owner, I would want to control the file types that a user can use when uploading images to the site so that non-image file type cannot be uploaded as this would result in showing broken images resulting in a poor user experience and also potential security concerns.
+
+| Feature       | Action        | Expected Result  | Actual Result |
+| ------------- | ------------- | -------------    | ------------- |
+|  Input validation  |  User to navigate to the add post form via their profile page or the button that is available on the my posts page if they do not have any posts. Click on the choose file button to initiate the file upload dialogue box, user to then select the image they wish to upload  | User to only be allowed to select the specified file types from the upload dialogue box that the custom Javascript script limits too | Works as intended |
+
+<details>
+<summary>Screenshots</summary>
+<img src="readme/testing/manual/33-file-type-1.png">
+<img src="readme/testing/manual/33-file-type-2.png">
+<img src="readme/testing/manual/33-file-type-3.png">
 </details>
 
 
