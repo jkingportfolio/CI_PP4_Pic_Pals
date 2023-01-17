@@ -115,7 +115,7 @@ The Pic Pals Social website has been developed to provide user's the chance to p
 18. As a user, I want to view how many likes a post has so that I can gauge how popular a post is.
 19. As a user, I want to add a bio to my profile page so that other members can learn more about me.
 20. As a user, I want to follow other accounts so that I can view their posts on my feed.
-21. As a user, I want to fill in a help form so that I can enquire about issues I may have regarding the app.
+21. As a user, I want to fill in a contact form so that I can enquire about issues I may have regarding the app.
 22. As a user, I want to change my email address so that I can maintain the same account if I change email address.
 23. As a user, I want to receive feedback so that I can confirm whether the contact form submission was successful or not.
 24. As a user, I want to scroll through the latest images on my feed so that I can keep up to date with the accounts I follow.
@@ -544,7 +544,7 @@ Input Validation as a feature is used throughout the site for form inputs and al
 <img src="readme/features/file-type-validation.png">
 </details>
 
-- Covered in user stories: 27
+- Covered in user stories: 27 & 33
 
 ### Like count
 
@@ -1288,7 +1288,7 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 <img src="readme/testing/manual/20-follow-2.png">
 </details>
 
-21. As a user, I want to fill in a help form so that I can enquire about issues I may have regarding the app.
+21. As a user, I want to fill in a contact form so that I can enquire about issues I may have regarding the app.
 
 | Feature       | Action        | Expected Result  | Actual Result |
 | ------------- | ------------- | -------------    | ------------- |
