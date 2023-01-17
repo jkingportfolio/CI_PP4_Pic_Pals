@@ -33,10 +33,14 @@ class Registration(forms.ModelForm):
         fields = ['username', 'first_name', 'email']
 
     def reset_password_confirm(self):
-        clear = self.cleaned_data
-        if clear['password'] != clear['password_confirm']:
-            raise forms.ValidationError('Password re entry does not match.')
-        return clear['password_confirm']
+        cleaned_data = super(Registration, self).clean()
+        password = cleaned_data.get("password")
+        password_confirm = cleaned_data.get("password_confirm")
+
+        if password != password_confirm:
+            raise forms.ValidationError(
+                "password and confirm_password does not match"
+            )
 
 
 class EditUser(forms.ModelForm):
