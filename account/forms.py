@@ -32,7 +32,6 @@ class Registration(forms.ModelForm):
         model = User
         fields = ['username', 'first_name', 'email']
 
-
     def clean(self):
         cleaned_data = super(Registration, self).clean()
         password = cleaned_data.get("password")
@@ -40,7 +39,7 @@ class Registration(forms.ModelForm):
 
         if password != password_confirm:
             raise forms.ValidationError(
-                "password and confirm_password does not match"
+                "Passwords do not match!"
             )
 
 
