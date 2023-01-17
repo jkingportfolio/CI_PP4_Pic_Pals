@@ -11,6 +11,7 @@ from django.contrib.auth.decorators import login_required
 from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
 from django.contrib import messages
+from django.views.generic import CreateView, View
 # Internal
 from .models import Profile, Follow
 from .forms import (LoginDetails,
@@ -22,16 +23,22 @@ from post.models import Post
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
-def register(request):
+class SignUpView(CreateView):
     """
-    A function based view for the register page with
+    A class based view for the register page with
     a form to take the new users details
     """
-    if request.method == 'POST':
+
+    def get(self, request, *args, **kwargs):
+        user_form = Registration()
+        return render(request, 'account/register.html',
+                      {'user_form': user_form})
+
+    def post(self, request, *args, **kwargs):
         user_form = Registration(request.POST)
         if user_form.is_valid():
             new_user = user_form.save(commit=False)
-            new_user.set_password(user_form.cleaned_data['password'])
+            new_user.set_password(user_form.cleaned_data['password1'])
             new_user.save()
             Profile.objects.create(user=new_user)
             messages.success(request, f'Welcome {new_user.username}!')
@@ -39,9 +46,20 @@ def register(request):
                 'new_user': new_user,
             }
             return render(request, 'account/register_success.html', context)
-    else:
-        user_form = Registration()
-    return render(request, 'account/register.html', {'user_form': user_form})
+        else:
+            user_form = Registration()
+        return render(request, 'account/register.html',
+                      {'user_form': user_form})
+
+
+class RegisterSuccess(View):
+    def get(self, request):
+        new_user = get_object_or_404(Profile, user=request.user)
+        messages.success(request, f'Welcome {new_user.username}!')
+        context = {
+            'new_user': new_user,
+        }
+        return render(request, 'account/register_success.html', context)
 
 
 @login_required

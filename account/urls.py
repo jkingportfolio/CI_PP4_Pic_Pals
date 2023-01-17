@@ -8,6 +8,7 @@ from django.urls import path, include
 from django.contrib.auth import views as auth_views
 # Internal
 from . import views
+from account.views import SignUpView
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 
@@ -18,7 +19,9 @@ urlpatterns = [
          name='logout'),
     path('', include('django.contrib.auth.urls')),
     path('', views.dashboard, name='dashboard'),
-    path('register/', views.register, name='register'),
+    path('register/', SignUpView.as_view(), name='register'),
+    path('register-success/', views.RegisterSuccess.as_view(),
+         name='register_success'),
     path('password-change/', auth_views.PasswordChangeView.as_view(),
          name='password_change'),
     path('password-change-done/', auth_views.PasswordChangeDoneView.as_view(),
