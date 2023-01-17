@@ -640,7 +640,7 @@ Although alot of effort was put into this project, due to time constraints there
 
 ### HTML Validation
 
-[W3C Validation](https://validator.w3.org/) was used to validate the HTML code used in the project. As this project requires authentication to view most of the pages, the method used to Validate was by Direct Input. To achieve this a page that needed testing was navigated to. Pn the page right click and then choose the option of view source code. This code was then copied and pasted into the validator and tested. There was only one error which was returned, this error is located within the Django Authentication library and is outwidth my control to edit therefore I have had to include this. See change password validation image for details.
+[W3C Validation](https://validator.w3.org/) was used to validate the HTML code used in the project. As this project requires authentication to view most of the pages, the method used to Validate was by Direct Input. To achieve this a page that needed testing was navigated to. On the page right click and then choose the option of view source code. This code was then copied and pasted into the validator and tested. There was two pages which returned an error, this error is located within the Django Authentication library and is outwidth my control to edit therefore I have had to include this. See change password and sign up page validation images for details.
 
 <details>
 <summary>Screenshots</summary>
