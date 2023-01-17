@@ -1682,7 +1682,7 @@ Some images were used in this site and are credited below
 I would like to also thank the following:
 - My wife and family for their support and feedback whilst doing this project
 - [Andy Guttridge](https://github.com/andy-guttridge) for his huge help throughout the project!
-- Code Institute tutor support who helped with many issues I had during this project.
+- Code Institute tutor support who helped with the many issues I had during this project.
 - My Code Institute mentor Mo Shami for his guidance through this project.
 
 
