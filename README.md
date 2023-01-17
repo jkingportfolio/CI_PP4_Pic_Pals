@@ -1,4 +1,4 @@
-# pic-pals
+# Pic Pals
 Developer: Jamie King
 
 ![Mockup image](readme/misc/mock-up.png)
