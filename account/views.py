@@ -12,6 +12,9 @@ from django.shortcuts import get_object_or_404
 from django.contrib.auth.models import User
 from django.contrib import messages
 from django.views.generic import CreateView, View
+from django.contrib.auth.forms import UserCreationForm
+from django.contrib.auth.password_validation import validate_password
+from django.core.exceptions import ValidationError
 # Internal
 from .models import Profile, Follow
 from .forms import (LoginDetails,
@@ -46,8 +49,8 @@ class SignUpView(CreateView):
                 'new_user': new_user,
             }
             return render(request, 'account/register_success.html', context)
-        else:
-            user_form = Registration()
+        # else:
+        #     # user_form = Registration()
         return render(request, 'account/register.html',
                       {'user_form': user_form})
 
