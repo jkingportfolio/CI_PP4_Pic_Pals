@@ -321,7 +321,7 @@ Balsamiq was used to create wireframes of the sites pages
 - [Graphviz](https://dreampuf.github.io/GraphvizOnline) - Used to generate pydot file / database diagram image.
 - [Google Fonts](https://fonts.google.com/) - Used to import the site's font family.
 - [Affinity Designer](https://affinity.serif.com/en-gb/) - Used to create the logo and delete buttons.
-- [Microsoft Paint](#https://en.wikipedia.org/wiki/Microsoft_Paint)
+- [Microsoft Paint](https://en.wikipedia.org/wiki/Microsoft_Paint) - Used to add arrows etc to user stories images.
 - [Validation](#validation)
     - [WC3 Validator](https://validator.w3.org/) - Used to validate the HTML code of the site.
     - [Jigsaw W3 Validator](https://jigsaw.w3.org/css-validator/)- Used to validate the CSS of the site.
@@ -758,6 +758,8 @@ Although alot of effort was put into this project, due to time constraints there
 <details>
 <summary>Javascript file - script.js</summary>
 <img src="readme/validation/jshint/js-hint-validation.png">
+<img src="readme/validation/jshint/js-hint-validation-post-pic.png">
+<img src="readme/validation/jshint/js-hint-validation-profile-pic.png">
 </details>
 
 In addition to this there are two scripts which are in templates, these have been e
@@ -900,7 +902,7 @@ At the time of developing this project, PEP8 Validator was down therefore the su
 
 ### WAVE Validation
 
-[WAVE Validation](http://pep8online.com/) was used to validate the accessibility of the app. All pages passed with no errors, however some did have alerts. Many of which related to alt text on images. Due to displaying posts in lists, the alt text for each has to be the same, this is the reason why it has a generic name. WAVE indicated this however there is nothing that can be done with this due to not knowing the nature of the image itself.
+[WAVE Validation](https://wave.webaim.org/) was used to validate the accessibility of the app. All pages passed with no errors, however some did have alerts. Many of which related to alt text on images. Due to displaying posts in lists, the alt text for each has to be the same, this is the reason why it has a generic name. WAVE indicated this however there is nothing that can be done with this due to not knowing the nature of the image itself.
 
 <details>
 <summary>Screenshots</summary>
@@ -1058,8 +1060,8 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
-<img src="readme/testing/manual/2-follow-button-1.png"><br>
-<img src="readme/testing/manual/2-like-button-1.png">
+<img src="readme/testing/manual/2-like-button-1.png"><br>
+<img src="readme/testing/manual/2-follow-button-1.png">
 </details>
 
 3. As a user, I want to like and unlike posts so that I can show my appreciation of another user's post.
@@ -1135,6 +1137,10 @@ To avoid unnecessary repetition of images, only the feature being referred to wi
 
 <details>
 <summary>Screenshots</summary>
+<img src="readme/testing/manual/5-edit-post-1.png"><br>
+<img src="readme/testing/manual/5-edit-post-2.png"><br>
+<img src="readme/testing/manual/5-edit-post-3.png"><br>
+<img src="readme/testing/manual/5-edit-post-4.png"><br>
 <img src="readme/testing/manual/8-delete-button-1.png"><br>
 <img src="readme/testing/manual/8-delete-button-2.png"><br>
 <img src="readme/testing/manual/8-delete-button-3.png">
@@ -1532,7 +1538,7 @@ To set up the project to send emails and to use a Google account as an SMTP serv
 
 ### Heroku
 
-This project was deployed to Heroku in the project's early stages to allow continual responsive testing. This was achieved via the following steps:
+This project was deployed to [Heroku](https://www.heroku.com) in the project's early stages to allow continual responsive testing. This was achieved via the following steps:
 
 The website was deployed with Heroku by following these steps:
 
