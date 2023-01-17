@@ -1,4 +1,3 @@
-
 """
 A module for models in the contact app
 """

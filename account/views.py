@@ -1,5 +1,5 @@
 """
-A module for views of the account app
+A module for views in the account app
 """
 # Imports
 # ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -81,7 +81,6 @@ def edit_profile(request):
                                    data=request.POST,
                                    files=request.FILES)
         if user_form.is_valid() and profile_form.is_valid():
-            # user_form = EditUser(initial={"date_of_birth": date_of_birth})
             user_form.save()
             profile_form.save()
             messages.success(request, 'Profile updated successfully')
@@ -105,7 +104,6 @@ def site_users(request):
     return render(request, 'account/user/user_list.html', {'users': users})
 
 
-# check user followers var if used, duplicate?
 @login_required
 def user_detail(request, username):
     """
