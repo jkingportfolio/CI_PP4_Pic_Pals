@@ -1674,6 +1674,7 @@ Some images were used in this site and are credited below
 - [Dunnottar Castle](https://www.pexels.com/photo/castle-on-the-cliff-8272030/) image on Admin page -  by [Sofia Gomez Pedroso Zamorano](https://www.pexels.com/@sofia-gomez-pedroso-zamorano-67116955/)
 - [Admin profile picture](https://www.pexels.com/photo/man-with-cigarette-in-mouth-1933873/) - by [Thgusstavo Santana](https://www.pexels.com/@thgusstavo/)
 - [test_user profile picture](https://www.pexels.com/photo/woman-s-face-38289/) - by [Pixabay](https://www.pexels.com/@pixabay/)
+- [test_users post](https://www.pexels.com/photo/close-up-photo-of-orion-nebula-11600672/) by - [Ben Walsham](https://www.pexels.com/@ben-walsham-159059246/)
 
 
 ## Acknowledgements
